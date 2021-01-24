@@ -23,7 +23,9 @@
     text-align: left;
     border-bottom: 1px solid var(--color-border);
   }
-
+  .container :global(img) {
+    max-width: 100%;
+  }
 </style>
 
 <svelte:head>
