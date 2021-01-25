@@ -59,6 +59,9 @@
   .Post :global(h3) {
     font-weight: bold;
   }
+  .Post :global(iframe) {
+    max-width: 100%;
+  }
   @media(max-width: 1024px) {
     aside {
       width: 180px;
