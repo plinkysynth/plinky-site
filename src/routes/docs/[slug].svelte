@@ -15,27 +15,72 @@
 
 <script>
   export let post;
-  console.log(post)
 </script>
 
 <style>
   header {
     text-align: left;
   }
-  .container :global(img) {
-    max-width: 100%;
+  header h1 {
+    border-bottom: 0;
+    margin-bottom: 0;
+  }
+  .Post {
+    display: flex;
+  }
+  aside {
+    width: 280px;
+    flex-shrink: 0;
+  }
+  aside ul {
+    margin: 0;
+    padding: 0;
+  }
+  aside ul li {
+    list-style: none;
+  }
+  aside ul li a {
+    display: block;
+    padding: 1.9rem 0 1.5rem 0;
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-border);
+    letter-spacing: -0.05rem;
   }
   article {
-    padding: 4rem 8rem;
+    padding: 0 8rem 4rem 8rem;
+    flex-grow: 1;
+  }
+  .Post :global(img) {
+    max-width: 100%;
   }
 </style>
 
+<header>
+  <h1>{post.title}</h1>
+</header>
+<div class="Post">
+  <aside>
+    <ul>
+      {#if post.toc}
+        {#each post.toc as toc}
+          {#if toc.level < 3}
+            <li><a href="/docs/{post.slug}#{toc.anchor}">{toc.text}</a></li>
+          {/if}
+        {/each}
+      {/if}
+    </ul>
+  </aside>
+  <article class="content">
+    {@html post.html}
+  </article>
+</div>
+
 <svelte:head>
-  <title>{post.title}</title>
+  <title>Plinky - {post.title}</title>
 <!--   <link rel="canonical" href="" /> -->
 <!-- 	<meta property="og:url" content=""} /> -->
 	<meta property="og:type" content="article" />
-	<meta property="og:title" content={post.title} />
+	<meta property="og:title" content="Plinky - {post.title}" />
 	<meta name="Description" content={post.excerpt} />
 	<meta property="og:description" content={post.excerpt} />
 <!-- 	<meta property="og:image" content="" /> -->
@@ -56,23 +101,3 @@
 	<meta name="twitter:label2" value="Reading Time" />
 	<!--<meta name="twitter:data2" value={post.printReadingTime} />-->
 </svelte:head>
-
-<header>
-  <h1>{post.title}</h1>
-</header>
-<div class="container">
-  <aside>
-    <ul>
-      {#if post.toc}
-        {#each post.toc as toc}
-
-          <li><a href="#{toc.anchor}">{toc.text}</a></li>
-
-        {/each}
-      {/if}
-    </ul>
-  </aside>
-  <article class="content">
-    {@html post.html}
-  </article>
-</div>
