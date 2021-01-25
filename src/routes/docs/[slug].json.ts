@@ -1,4 +1,4 @@
-import posts from './_posts.js';
+import posts from './_posts';
 
 const lookup = new Map();
 posts.forEach(post => {
@@ -9,6 +9,8 @@ export function get(req, res, next) {
 	// the `slug` parameter is available because
 	// this file is called [slug].json.js
 	const { slug } = req.params;
+
+	//console.log(posts);
 
 	if (lookup.has(slug)) {
 		res.writeHead(200, {

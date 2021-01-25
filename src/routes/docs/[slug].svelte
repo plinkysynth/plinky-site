@@ -22,14 +22,15 @@
     text-align: left;
   }
   header h1 {
+    margin-top: 6rem;
     border-bottom: 0;
-    margin-bottom: 0;
+    margin-bottom: 5rem;
   }
   .Post {
     display: flex;
   }
   aside {
-    width: 280px;
+    width: 240px;
     flex-shrink: 0;
   }
   aside ul {
@@ -45,13 +46,39 @@
     text-decoration: none;
     border-bottom: 1px solid var(--color-border);
     letter-spacing: -0.05rem;
+    opacity: 0.75;
+  }
+  aside ul li a:hover {
+    opacity: 1;
   }
   article {
-    padding: 0 8rem 4rem 8rem;
+    padding: 0 0rem 4rem 4rem;
     flex-grow: 1;
+  }
+  article.noToc {
+    padding: 0 0 4rem 0;
   }
   .Post :global(img) {
     max-width: 100%;
+  }
+  @media(max-width: 1024px) {
+    header h1 {
+      margin-top: 2rem;
+      margin-bottom: 0;
+    }
+    aside {
+      width: 180px;
+    }
+  }
+  @media(max-width: 640px) {
+    .Post {
+      flex-direction: column;
+    }
+    aside {
+    }
+    article {
+      padding: 0;
+    }
   }
 </style>
 
@@ -59,18 +86,18 @@
   <h1>{post.title}</h1>
 </header>
 <div class="Post">
-  <aside>
-    <ul>
-      {#if post.toc}
+  {#if post.toc.length}
+    <aside>
+      <ul>
         {#each post.toc as toc}
           {#if toc.level < 3}
             <li><a href="/docs/{post.slug}#{toc.anchor}">{toc.text}</a></li>
           {/if}
         {/each}
-      {/if}
-    </ul>
-  </aside>
-  <article class="content">
+      </ul>
+    </aside>
+  {/if}
+  <article class="content" class:noToc={!post.toc.length}>
     {@html post.html}
   </article>
 </div>

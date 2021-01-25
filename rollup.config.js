@@ -4,6 +4,7 @@ import config from 'sapper/config/rollup.js';
 import glob from 'rollup-plugin-glob'
 import json from '@rollup/plugin-json';
 import markdown from './src/utils/markdown.js'
+import { mdsvex } from 'mdsvex';
 import path from 'path';
 import pkg from './package.json';
 import replace from '@rollup/plugin-replace';
@@ -24,6 +25,12 @@ const onwarn = (warning, onwarn) =>
 	(warning.code === 'THIS_IS_UNDEFINED') ||
 	onwarn(warning);
 
+
+const extensions = [".svelte", ".svx"];
+
+const mdsvexconfig = {
+}
+
 export default {
 	client: {
 		input: config.client.input().replace(/\.js$/, '.ts'),
@@ -35,7 +42,11 @@ export default {
 				'process.env.NODE_ENV': JSON.stringify(mode)
 			}),
 			svelte({
-				preprocess: sveltePreprocess(),
+				preprocess: [
+					sveltePreprocess(),
+					mdsvex(mdsvexconfig),
+				],
+				extensions,
 				compilerOptions: {
 					dev,
 					hydratable: true
@@ -90,12 +101,16 @@ export default {
 				'process.env.NODE_ENV': JSON.stringify(mode)
 			}),
 			svelte({
-				preprocess: sveltePreprocess(),
+				preprocess: [
+					sveltePreprocess(),
+					mdsvex(mdsvexconfig),
+				],
 				compilerOptions: {
 					dev,
 					generate: 'ssr',
 					hydratable: true
 				},
+				extensions,
 				emitCss: false
 			}),
 			url({

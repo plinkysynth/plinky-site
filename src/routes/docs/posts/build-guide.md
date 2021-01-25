@@ -1,5 +1,5 @@
 ---
-title: How to build your Plinky
+title: Plinky build guide
 date: "2021-01-24T08:38:00.000Z"
 ---
 
@@ -7,6 +7,8 @@ date: "2021-01-24T08:38:00.000Z"
 Build Guide v0.2 - Dec 2020 
 
 ![alt_text](/build-guide/image2.png "image_tooltip")
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/wPaNehskB-E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Congratulations on getting a plinky kit! It’s a relatively easy build, with the most unusual bit being the surface mount LEDs - but don’t worry, you can do it!
 
@@ -216,7 +218,7 @@ You can also purchase a custom-made aluminium case from thonk. It is SO nice, bu
 
 Congratulations! The hardware part is done! Now all that’s left is software & calibration!
 
-## Installing the latest firmware and testing
+## Update and test
 
 Let’s get the latest software onto plinky. I STRONGLY RECOMMEND THIS STEP. In the presence of soldering errors, the latest firmware (version 0.9 and up) is better able to self-diagnose, whereas the original firmware (0.7) tends to just lock up if there are soldering errors. 
 

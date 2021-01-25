@@ -92,9 +92,23 @@ h1 {
   font-size: 5rem;
   line-height: 6rem;
 	letter-spacing: -0.15rem;
-	padding-bottom: 4rem;
 	margin-bottom: 4rem;
-	border-bottom: 1px solid var(--color-border);
+}
+
+main .max1280 > h1:first-child {
+  margin-top: 6rem;
+  border-bottom: 0;
+  margin-bottom: 10rem;
+}
+
+@media(max-width: 1024px) {
+
+  main .max1280 > h1:first-child {
+    margin-top: 2rem;
+    border-bottom: 0;
+    margin-bottom: 5rem;
+  }
+  
 }
 
 h2 {
@@ -140,7 +154,7 @@ p+h1 {
 	margin-top: 4rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   h1 {
     font-size: 4rem;
     line-height: 5rem;
@@ -220,4 +234,31 @@ button:hover,
 button+h4,
 .button+h4 {
 	margin-top: 4rem;
+}
+
+hr {
+  border-color: var(--color-border);
+  margin: 4rem 0;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: separate;
+  border: 1px solid var(--color-border);
+  border-bottom: 0;
+  border-right: 0;
+  width: 100%;
+}
+
+table td,
+table th {
+  margin: 0;
+  padding: 1.4rem 2rem 1rem 2rem;
+  border-bottom: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border);
+}
+
+table th {
+  background: white;
+  color: #334;
 }

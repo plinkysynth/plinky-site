@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Banner from "../../components/Banner.svelte";
   import Grid from "../../components/Grid.svelte";
   import firmware from "../../utils/firmware";

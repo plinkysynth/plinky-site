@@ -3,9 +3,9 @@
   "description": "Plinky documentation",
   "version": "0.0.1",
   "scripts": {
-    "dev": "sapper dev",
-    "build": "sapper build --legacy",
-    "export": "sapper export --legacy",
+    "dev": "sapper dev --ext '.svelte .svx'",
+    "build": "sapper build --legacy --ext '.svelte .svx'",
+    "export": "sapper export --legacy --ext '.svelte .svx'",
     "start": "node __sapper__/build",
     "validate": "svelte-check --ignore src/node_modules/@sapper"
   },
@@ -36,6 +36,7 @@
     "@types/compression": "^1.7.0",
     "@types/node": "^14.11.1",
     "@types/polka": "^0.5.1",
+    "mdsvex": "^0.8.9",
     "rollup": "^2.3.4",
     "rollup-plugin-glob": "^1.0.2",
     "rollup-plugin-svelte": "^7.0.0",

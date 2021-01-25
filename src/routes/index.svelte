@@ -1,9 +1,9 @@
-<script>
-import Banner from "../components/Banner.svelte";
-import Blocks from "../components/Blocks.svelte";
-import LinkBlock from "../components/LinkBlock.svelte";
-import TextAndImage from "../components/TextAndImage.svelte";
-import firmware from "../utils/firmware";
+<script lang="ts">
+  import Banner from "../components/Banner.svelte";
+  import Blocks from "../components/Blocks.svelte";
+  import LinkBlock from "../components/LinkBlock.svelte";
+  import TextAndImage from "../components/TextAndImage.svelte";
+  import firmware from "../utils/firmware";
 </script>
 <style>
   h1 {

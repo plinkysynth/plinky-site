@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   export let segment;
 </script>
 
@@ -30,4 +30,5 @@
 <nav>
   <a class='{segment === undefined ? "selected" : ""}' href='.'>Home</a>
   <a rel=prefetch class='{segment === "docs" ? "selected" : ""}' href='docs'>Documentation</a>
+  <a rel=prefetch class='{segment === "community" ? "selected" : ""}' href='community'>Community</a>
 </nav>
