@@ -21,11 +21,6 @@
   header {
     text-align: left;
   }
-  header h1 {
-    margin-top: 6rem;
-    border-bottom: 0;
-    margin-bottom: 5rem;
-  }
   .Post {
     display: flex;
   }
@@ -62,10 +57,6 @@
     max-width: 100%;
   }
   @media(max-width: 1024px) {
-    header h1 {
-      margin-top: 2rem;
-      margin-bottom: 0;
-    }
     aside {
       width: 180px;
     }
@@ -73,8 +64,6 @@
   @media(max-width: 640px) {
     .Post {
       flex-direction: column;
-    }
-    aside {
     }
     article {
       padding: 0;

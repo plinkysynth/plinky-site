@@ -95,7 +95,7 @@ h1 {
 	margin-bottom: 4rem;
 }
 
-main .max1280 > h1:first-child {
+main .max1280 h1:first-child {
   margin-top: 6rem;
   border-bottom: 0;
   margin-bottom: 10rem;
@@ -103,7 +103,7 @@ main .max1280 > h1:first-child {
 
 @media(max-width: 1024px) {
 
-  main .max1280 > h1:first-child {
+  main .max1280 h1:first-child {
     margin-top: 2rem;
     border-bottom: 0;
     margin-bottom: 5rem;
