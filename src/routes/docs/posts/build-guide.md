@@ -3,16 +3,19 @@ title: Plinky build guide
 date: "2021-01-24T08:38:00.000Z"
 ---
 
-![alt_text](/build-guide/image1.png "image_tooltip")
-Build Guide v0.2 - Dec 2020 
+## Build guide video
 
-![alt_text](/build-guide/image2.png "image_tooltip")
+<iframe width="800" height="450" src="https://www.youtube.com/embed/wPaNehskB-E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/wPaNehskB-E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Thank you for the wonderful video, Roland & Enrica of Making Sound Machines.
+
+## Getting ready
+
+![alt_text](/build-guide/image3.png "image_tooltip")
 
 Congratulations on getting a plinky kit! It’s a relatively easy build, with the most unusual bit being the surface mount LEDs - but don’t worry, you can do it!
 
-## Requirements
+### Requirements
 
 You will need:
  - A soldering iron and solder
@@ -50,7 +53,6 @@ IF YOU HAVENT SOLDERED BEFORE, PLEASE READ THE ADAFRUIT SOLDERING GUIDE BEFORE S
 [https://learn.adafruit.com/adafruit-guide-excellent-soldering/](https://learn.adafruit.com/adafruit-guide-excellent-soldering/common-problems)
 
 
-![alt_text](/build-guide/image3.png "image_tooltip")
 
 ### Plinky-specific gotchas
 
@@ -354,3 +356,7 @@ Then click the ‘open file’ tab, and select the latest plinky firmware DFU fi
 Now you have the plinky in DFU mode, the PC software you installed should be showing ‘USB1’ in the ‘Port’ drop down. Press the little ‘refresh’ button on the top right if the port shows ‘No DFU detected’. Once detected, it should show a USB Device with a Serial number, like the picture on the right:
 
 Now click the green ‘Connect’ button, and then the blue Download button. Wait a few seconds, and it should program. Once it’s done, press Disconnect, and you can unplug your plinky. Don’t rush. If you unplug mid-program, you may find that you have to repeat this whole process.
+
+![alt_text](/build-guide/image1.png "image_tooltip")
+
+![alt_text](/build-guide/image2.png "image_tooltip")

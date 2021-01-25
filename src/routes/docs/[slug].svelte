@@ -56,6 +56,9 @@
   .Post :global(img) {
     max-width: 100%;
   }
+  .Post :global(h3) {
+    font-weight: bold;
+  }
   @media(max-width: 1024px) {
     aside {
       width: 180px;

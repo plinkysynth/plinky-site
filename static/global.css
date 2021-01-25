@@ -149,9 +149,24 @@ h6 {
 
 p+h4,
 p+h3,
+ul+h3,
+ul+h4,
+ol+h3,
+ol+h4 {
+	margin-top: 4rem;
+}
+
 p+h2,
 p+h1 {
-	margin-top: 4rem;
+  margin-top: 12rem;
+  padding-bottom: 4rem;
+  margin-bottom: 5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+h2+h3,
+h3+h4 {
+  margin-top: 5rem;
 }
 
 @media (max-width: 640px) {
