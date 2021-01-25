@@ -15,7 +15,7 @@ polka() // You can also use Express
 		compression({ threshold: 0 }),
 		sirv('static', { dev }),
 		function(req, res, next) {
-			if(req.originalUrl === '/firmware/stable') {
+			if(req.originalUrl === '/firmware/stable/CURRENT.uf2') {
 							
 				const file = path.join(process.cwd(), 'firmware/', firmware.stable.file);
 				const s = fs.createReadStream(file);
@@ -34,7 +34,7 @@ polka() // You can also use Express
 						res.status(404).end('Not found');
 				});
 			}
-			else if(req.originalUrl === '/firmware/beta') {
+			else if(req.originalUrl === '/firmware/beta/CURRENT.uf2') {
 							
 				const file = path.join(process.cwd(), 'firmware/', firmware.beta.file);
 				const s = fs.createReadStream(file);

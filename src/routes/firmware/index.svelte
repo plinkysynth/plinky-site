@@ -10,12 +10,12 @@
   <Banner>
     <h4>Latest STABLE firmware</h4>
     <p>The latest stable firmware version is {firmware.stable.version} released on {firmware.stable.date}.</p>
-    <a href="/firmware/stable" class="button">Download STABLE firmware</a>
+    <a href="/firmware/stable/CURRENT.uf2" class="button">Download STABLE firmware</a>
   </Banner>
   <Banner>
     <h4>Latest BETA firmware</h4>
     <p>The latest beta firmware version is {firmware.beta.version} released on {firmware.beta.date}.</p>
-    <a href="/firmware/beta" class="button">Download BETA firmware</a>
+    <a href="/firmware/beta/CURRENT.uf2" class="button">Download BETA firmware</a>
   </Banner>
 </Grid>
 
