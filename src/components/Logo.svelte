@@ -6,5 +6,5 @@
 </style>
 
 <a href="/">
-  <img alt="Sapper" src="logo_alpha_small.png">
+  <img alt="Plinky logo" src="logo_alpha_small.png">
 </a>

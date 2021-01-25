@@ -15,12 +15,12 @@
 
   .Text {
     width: 50%;
-    padding: 4rem 4rem 4rem 0;
+    padding: 4rem 4rem 4rem 4rem;
   }
 
   .Image {
     width: 50%;
-    padding: 4rem 0 4rem 4rem;
+    padding: 4rem 4rem 4rem 4rem;
   }
     
   img {

@@ -2,6 +2,7 @@ import babel from '@rollup/plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
 import config from 'sapper/config/rollup.js';
 import glob from 'rollup-plugin-glob'
+import json from '@rollup/plugin-json';
 import markdown from './src/utils/markdown.js'
 import path from 'path';
 import pkg from './package.json';
@@ -28,6 +29,7 @@ export default {
 		input: config.client.input().replace(/\.js$/, '.ts'),
 		output: config.client.output(),
 		plugins: [
+			json(),
 			replace({
 				'process.browser': true,
 				'process.env.NODE_ENV': JSON.stringify(mode)
@@ -82,6 +84,7 @@ export default {
 		input: { server: config.server.input().server.replace(/\.js$/, ".ts") },
 		output: config.server.output(),
 		plugins: [
+			json(),
 			replace({
 				'process.browser': false,
 				'process.env.NODE_ENV': JSON.stringify(mode)
@@ -118,6 +121,7 @@ export default {
 		input: config.serviceworker.input().replace(/\.js$/, '.ts'),
 		output: config.serviceworker.output(),
 		plugins: [
+			json(),
 			resolve(),
 			replace({
 				'process.browser': true,

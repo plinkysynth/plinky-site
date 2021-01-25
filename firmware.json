@@ -1,0 +1,12 @@
+{
+  "stable": {
+    "file": "plink09d.uf2",
+    "version": "0.9d",
+    "date": "2020-01-23"
+  },
+  "beta": {
+    "file": "plink09d.uf2",
+    "version": "0.9e",
+    "date": "2020-01-23"
+  }
+}

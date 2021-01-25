@@ -3,11 +3,12 @@ import Banner from "../components/Banner.svelte";
 import Blocks from "../components/Blocks.svelte";
 import LinkBlock from "../components/LinkBlock.svelte";
 import TextAndImage from "../components/TextAndImage.svelte";
-
+import firmware from "../utils/firmware";
 </script>
 <style>
-  h2 {
-    text-align: center;
+  h1 {
+    border-bottom: 0;
+    padding-bottom: 0;
   }
 </style>
 
@@ -20,14 +21,14 @@ import TextAndImage from "../components/TextAndImage.svelte";
   <p>It fits into 24HP eurorack cases, but can also be played as a standalone desktop mini-synth, with line-level stereo input and a headphone output, all powered from a micro-USB connector.</p>
 
   <h4>When is it available?</h4>
-  <p>First run of 100 Plinkys sold out in December 2020. There is a second run underway and available in early 2021. You can wishlist it at Thonk, who will then notify you of new stock.</p>
+  <p>As it is a hobby project at heart, the DIY kits are made in limited quantities. The first run of 100 sold out in December 2020. There is a second run of 500 underway and available early 2021. You can wishlist it at Thonk, who will then notify you of new stock.</p>
   <a class="button" target="_blank" href="https://www.thonk.co.uk/shop/plinky/">Wishlist at Thonk</a>
 </TextAndImage>
 
 <Blocks>
-  <LinkBlock href="#" label="Download">
+  <LinkBlock href="/firmware" label="Download">
     <h3>Firmware</h3>
-    <p>The latest firmware version is 0.9D released on 2020-01-23.</p>
+    <p>The latest firmware version is {firmware.stable.version} released on {firmware.stable.date}.</p>
   </LinkBlock>
   <LinkBlock href="/docs/build-guide" label="Building instructions">
     <h3>Building</h3>
