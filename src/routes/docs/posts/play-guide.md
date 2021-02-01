@@ -6,6 +6,8 @@ slug: play-guide
 
 Here's a walkthrough of the main workflow for playing plinky, editing patches, and recording samples:
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/us__mX0_Aqk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Click [HERE](/firmware) to get the latest firmware!!
 
 We have a small [https://discord.gg/Zf6chA9jAz](discord server) where a friendly community is discussing all things plinky. Feel free to join!
