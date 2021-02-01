@@ -77,49 +77,51 @@
   }
 </style>
 
-<header>
-  <h1>{post.title}</h1>
-</header>
-<div class="Post">
-  {#if post.toc.length}
-    <aside>
-      <ul>
-        {#each post.toc as toc}
-          {#if toc.level < 3}
-            <li><a href="/docs/{post.slug}#{toc.anchor}">{toc.text}</a></li>
-          {/if}
-        {/each}
-      </ul>
-    </aside>
-  {/if}
-  <article class="content" class:noToc={!post.toc.length}>
-    {@html post.html}
-  </article>
+<div class="page">
+  <header>
+    <h1>{post.title}</h1>
+  </header>
+  <div class="Post">
+    {#if post.toc.length}
+      <aside>
+        <ul>
+          {#each post.toc as toc}
+            {#if toc.level < 3}
+              <li><a href="/docs/{post.slug}#{toc.anchor}">{toc.text}</a></li>
+            {/if}
+          {/each}
+        </ul>
+      </aside>
+    {/if}
+    <article class="content" class:noToc={!post.toc.length}>
+      {@html post.html}
+    </article>
+  </div>
 </div>
-
-<svelte:head>
-  <title>Plinky - {post.title}</title>
-<!--   <link rel="canonical" href="" /> -->
-<!-- 	<meta property="og:url" content=""} /> -->
-	<meta property="og:type" content="article" />
-	<meta property="og:title" content="Plinky - {post.title}" />
-	<meta name="Description" content={post.excerpt} />
-	<meta property="og:description" content={post.excerpt} />
-<!-- 	<meta property="og:image" content="" /> -->
-	<meta name="twitter:card" content="summary_large_image" />
-<!-- 	<meta name="twitter:domain" value="" /> -->
-<!-- 	<meta name="twitter:creator" value="" /> -->
-	<meta name="twitter:title" value={post.title} />
-	<meta name="twitter:description" content={post.excerpt} />
-<!-- 	<meta name="twitter:image" content="" /> -->
-	<meta name="twitter:label1" value="Published on" />
-	<meta
-		name="twitter:data1"
-		value={new Date(post.printDate).toLocaleDateString(undefined, {
-			year: 'numeric',
-			month: 'short',
-			day: 'numeric'
-		})} />
-	<meta name="twitter:label2" value="Reading Time" />
-	<!--<meta name="twitter:data2" value={post.printReadingTime} />-->
-</svelte:head>
+  
+  <svelte:head>
+    <title>Plinky - {post.title}</title>
+  <!--   <link rel="canonical" href="" /> -->
+  <!-- 	<meta property="og:url" content=""} /> -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Plinky - {post.title}" />
+    <meta name="Description" content={post.excerpt} />
+    <meta property="og:description" content={post.excerpt} />
+  <!-- 	<meta property="og:image" content="" /> -->
+    <meta name="twitter:card" content="summary_large_image" />
+  <!-- 	<meta name="twitter:domain" value="" /> -->
+  <!-- 	<meta name="twitter:creator" value="" /> -->
+    <meta name="twitter:title" value={post.title} />
+    <meta name="twitter:description" content={post.excerpt} />
+  <!-- 	<meta name="twitter:image" content="" /> -->
+    <meta name="twitter:label1" value="Published on" />
+    <meta
+      name="twitter:data1"
+      value={new Date(post.printDate).toLocaleDateString(undefined, {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric'
+      })} />
+    <meta name="twitter:label2" value="Reading Time" />
+    <!--<meta name="twitter:data2" value={post.printReadingTime} />-->
+  </svelte:head>

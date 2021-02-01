@@ -32,18 +32,20 @@
   <title>Plinky - Documentation</title>
 </svelte:head>
 
-<h1>Documentation</h1>
-{#each posts as post, index}
-  {#if index}
-    <hr />
-  {/if}
-  <div class="post-item">
-    <h2>
-      <a rel='prefetch' href='docs/{post.slug}'>{post.title}</a>
-    </h2>
-    <p>{post.excerpt}</p>
-    <div class="post-item-footer">
-      <span class="post-item-date">— {post.printDate}</span>
+<div class="page">
+  <h1>Documentation</h1>
+  {#each posts as post, index}
+    {#if index}
+      <hr />
+    {/if}
+    <div class="post-item">
+      <h2>
+        <a rel='prefetch' href='docs/{post.slug}'>{post.title}</a>
+      </h2>
+      <p>{post.excerpt}</p>
+      <div class="post-item-footer">
+        <span class="post-item-date">— {post.printDate}</span>
+      </div>
     </div>
-  </div>
-{/each}
+  {/each}
+</div>
