@@ -12,10 +12,6 @@
   }
 </style>
 
-<svelte:head>
-  <title>Plinky</title>
-</svelte:head>
-
 <TextAndImage src="plinky_alpha_2.png" alt="Plinky design">
   <h1>Plinky is an 8-voice polyphonic touch synthesiser that specialises in fragile, melancholic sounds.</h1>
   <p>It fits into 24HP eurorack cases, but can also be played as a standalone desktop mini-synth, with line-level stereo input and a headphone output, all powered from a micro-USB connector.</p>
@@ -50,3 +46,16 @@
   <p>Sign up to the Plinky mailing list for updates.</p>
   <a class="button" target="_blank" href="http://eepurl.com/heuCM5">Sign up</a>
 </Banner>
+
+<svelte:head>
+  <title>Plinky - an 8-voice polyphonic touch synthesiser</title>
+ 	<meta property="og:url" content="https://www.plinkysynth.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Plinky - an 8-voice polyphonic touch synthesiser" />
+  <meta name="Description" content="Plinky is an 8-voice polyphonic touch synthesiser that specialises in fragile, melancholic sounds. It fits into 24HP eurorack cases, but can also be played as a standalone desktop mini-synth, with line-level stereo input and a headphone output, all powered from a micro-USB connector." />
+  <meta property="og:description" content="Plinky is an 8-voice polyphonic touch synthesiser that specialises in fragile, melancholic sounds. It fits into 24HP eurorack cases, but can also be played as a standalone desktop mini-synth, with line-level stereo input and a headphone output, all powered from a micro-USB connector." />
+  <meta name="twitter:card" content="summary_large_image" />
+ 	<meta name="twitter:domain" value="plinkysynth.com" />
+  <meta name="twitter:title" content="Plinky - an 8-voice polyphonic touch synthesiser" />
+  <meta name="twitter:description" content="Plinky is an 8-voice polyphonic touch synthesiser that specialises in fragile, melancholic sounds. It fits into 24HP eurorack cases, but can also be played as a standalone desktop mini-synth, with line-level stereo input and a headphone output, all powered from a micro-USB connector." />
+</svelte:head>

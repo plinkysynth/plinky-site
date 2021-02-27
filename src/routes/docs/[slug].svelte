@@ -104,28 +104,12 @@
 </div>
   
   <svelte:head>
-    <title>Plinky - {post.title}</title>
-  <!--   <link rel="canonical" href="" /> -->
-  <!-- 	<meta property="og:url" content=""} /> -->
+    <title>Plinky Documentation - {post.title}</title>
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="Plinky - {post.title}" />
+    <meta property="og:title" content="Plinky Documentation - {post.title}" />
     <meta name="Description" content={post.excerpt} />
     <meta property="og:description" content={post.excerpt} />
-  <!-- 	<meta property="og:image" content="" /> -->
     <meta name="twitter:card" content="summary_large_image" />
-  <!-- 	<meta name="twitter:domain" value="" /> -->
-  <!-- 	<meta name="twitter:creator" value="" /> -->
     <meta name="twitter:title" value={post.title} />
     <meta name="twitter:description" content={post.excerpt} />
-  <!-- 	<meta name="twitter:image" content="" /> -->
-    <meta name="twitter:label1" value="Published on" />
-    <meta
-      name="twitter:data1"
-      value={new Date(post.printDate).toLocaleDateString(undefined, {
-        year: 'numeric',
-        month: 'short',
-        day: 'numeric'
-      })} />
-    <meta name="twitter:label2" value="Reading Time" />
-    <!--<meta name="twitter:data2" value={post.printReadingTime} />-->
   </svelte:head>
