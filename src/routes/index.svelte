@@ -10,6 +10,13 @@
     border-bottom: 0;
     padding-bottom: 0;
   }
+  iframe {
+    width: 100%;
+    max-width: 800px;
+  }
+  .Video {
+    text-align: center;
+  }
 </style>
 
 <TextAndImage src="plinky_alpha_2.png" alt="Plinky design">
@@ -21,6 +28,9 @@
   <a class="button" target="_blank" href="https://www.thonk.co.uk/shop/plinky/">Wishlist at Thonk</a>
 </TextAndImage>
 
+<div class="Video">
+  <iframe width="800" height="450" src="https://www.youtube.com/embed/us__mX0_Aqk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
 <Blocks>
   <LinkBlock href="/firmware" label="Download">
     <h3>Firmware</h3>
@@ -46,6 +56,7 @@
   <p>Sign up to the Plinky mailing list for updates.</p>
   <a class="button" target="_blank" href="http://eepurl.com/heuCM5">Sign up</a>
 </Banner>
+
 
 <svelte:head>
   <title>Plinky - an 8-voice polyphonic touch synthesiser</title>
