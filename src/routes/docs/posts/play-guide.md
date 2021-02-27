@@ -14,4 +14,4 @@ We have a small [discord server](https://discord.gg/Zf6chA9jAz) where a friendly
 
 Please bear with us. More videos, details will be available here shortly.
 
-Click HERE to read the draft manual. It's a little out of date, but contains lots of detail on the parameters. The best manual as of now, is the video above!
+Click [HERE](/plinky_manual.pdf) to read the draft manual. It's a little out of date, but contains lots of detail on the parameters. The best manual as of now, is the video above!
