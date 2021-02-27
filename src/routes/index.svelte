@@ -51,11 +51,11 @@
   <title>Plinky - an 8-voice polyphonic touch synthesiser</title>
  	<meta property="og:url" content="https://www.plinkysynth.com" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Plinky - an 8-voice polyphonic touch synthesiser" />
-  <meta name="Description" content="Plinky is an 8-voice polyphonic touch synthesiser that specialises in fragile, melancholic sounds. It fits into 24HP eurorack cases, but can also be played as a standalone desktop mini-synth, with line-level stereo input and a headphone output, all powered from a micro-USB connector." />
-  <meta property="og:description" content="Plinky is an 8-voice polyphonic touch synthesiser that specialises in fragile, melancholic sounds. It fits into 24HP eurorack cases, but can also be played as a standalone desktop mini-synth, with line-level stereo input and a headphone output, all powered from a micro-USB connector." />
+  <meta property="og:title" content="Plinky - 8-voice polyphonic touch synthesiser" />
+  <meta name="Description" content="Plinky specialises in fragile, melancholic sounds. It fits into 24HP eurorack cases, but can also be played as a standalone desktop mini-synth, with line-level stereo input and a headphone output, all powered from a micro-USB connector." />
+  <meta property="og:description" content="Plinky specialises in fragile, melancholic sounds. It fits into 24HP eurorack cases, but can also be played as a standalone desktop mini-synth, with line-level stereo input and a headphone output, all powered from a micro-USB connector." />
   <meta name="twitter:card" content="summary_large_image" />
  	<meta name="twitter:domain" value="plinkysynth.com" />
-  <meta name="twitter:title" content="Plinky - an 8-voice polyphonic touch synthesiser" />
-  <meta name="twitter:description" content="Plinky is an 8-voice polyphonic touch synthesiser that specialises in fragile, melancholic sounds. It fits into 24HP eurorack cases, but can also be played as a standalone desktop mini-synth, with line-level stereo input and a headphone output, all powered from a micro-USB connector." />
+  <meta name="twitter:title" content="Plinky - 8-voice polyphonic touch synthesiser" />
+  <meta name="twitter:description" content="Plinky specialises in fragile, melancholic sounds. It fits into 24HP eurorack cases, but can also be played as a standalone desktop mini-synth, with line-level stereo input and a headphone output, all powered from a micro-USB connector." />
 </svelte:head>
