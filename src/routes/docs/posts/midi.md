@@ -3,7 +3,15 @@ title: "MIDI"
 date: "2021-02-01T12:51:00.000Z"
 ---
 
-MIDI CC list
+## General
+
+Plinky responds to MIDI! It will show up as `plinkysynth` once you have plugged it into your computer, and will act as an 8-voice synthesizer.
+
+MIDI Out is currently not supported.
+
+## MIDI CC list
+
+Here's a list of all the CC parameters that Plinky listens to.
 
 CC| Category | Parameter
 --|------|-----------
@@ -24,15 +32,15 @@ CC| Category | Parameter
 21 | ENV 2 | Decay
 22 | ENV 2 | Sustain
 23 | ENV 2 | Release
-94 | FX | Delay send amt
-12 | FX | Delay time
-112 | FX | Delay pingpong
-113 | FX | Delay wobble
-95 | FX | Delay feedback amt
-91 | FX | Reverb send amt
-92 | FX | Reverb time
-93 | FX | Reverb shimmer
-114 | FX | Reverb wobble
+94 | FX - Delay | Delay send amt
+12 | FX - Delay | Delay time
+112 | FX - Delay | Delay pingpong
+113 | FX - Delay | Delay wobble
+95 | FX - Delay | Delay feedback amt
+91 | FX - Reverb | Reverb send amt
+92 | FX - Reverb | Reverb time
+93 | FX - Reverb | Reverb shimmer
+114 | FX - Reverb | Reverb wobble
 102 | ARP | On/off
 103 | ARP | Order
 104 | ARP | Clock division

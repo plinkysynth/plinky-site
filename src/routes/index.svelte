@@ -21,7 +21,7 @@
   <p>It fits into 24HP eurorack cases, but can also be played as a standalone desktop mini-synth, with line-level stereo input and a headphone output, all powered from a micro-USB connector.</p>
 
   <h4>When is it available?</h4>
-  <p>As it is a hobby project at heart, the DIY kits are made in limited quantities. The first run of 100 sold out in December 2020. There is a second run of 500 underway and available early 2021. You can wishlist it at Thonk, who will then notify you of new stock.</p>
+  <p>As it is a hobby project at heart, the DIY kits are made in limited quantities. The first run of 100 sold out in December 2020. There is a second run of 500 underway and available in 2021. You can wishlist it at Thonk, who will then notify you of new stock.</p>
   <a class="button" target="_blank" href="https://www.thonk.co.uk/shop/plinky/">Wishlist at Thonk</a>
 </TextAndImage>
 

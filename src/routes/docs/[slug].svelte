@@ -74,6 +74,10 @@
     article {
       padding: 0;
     }
+    aside {
+      margin-bottom: 6rem;
+      width: 100%;
+    }
   }
 </style>
 

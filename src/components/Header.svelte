@@ -17,11 +17,16 @@
     align-items: center;
     justify-content: center;
   }
+  @media(max-width: 640px) {
+    header {
+      padding: 1rem 2rem;
+    }
+  }
 </style>
 
 <header>
   <div class="center max1280">
-    <Logo />
+    <a class='{segment === undefined ? "selected" : ""}' href='.'><Logo /></a>
     <Nav {segment} />
   </div>
 </header>

@@ -10,7 +10,7 @@ Here's a walkthrough of the main workflow for playing plinky, editing patches, a
 
 Click [HERE](/firmware) to get the latest firmware!!
 
-We have a small [https://discord.gg/Zf6chA9jAz](discord server) where a friendly community is discussing all things plinky. Feel free to join!
+We have a small [discord server](https://discord.gg/Zf6chA9jAz) where a friendly community is discussing all things plinky. Feel free to join!
 
 Please bear with us. More videos, details will be available here shortly.
 

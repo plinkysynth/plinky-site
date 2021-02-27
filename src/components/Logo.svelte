@@ -3,6 +3,11 @@
     display: block;
     height: 40px;
   }
+  @media(max-width: 640px) {
+    img {
+      height: 30px;
+    }    
+  }
 </style>
 
 <a href="/">
