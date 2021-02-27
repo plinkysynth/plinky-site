@@ -2,11 +2,11 @@
   "stable": {
     "file": "plink09h.uf2",
     "version": "0.9h",
-    "date": "2020-02-20"
+    "date": "2021-02-20"
   },
   "beta": {
     "file": "plink09i.uf2",
     "version": "0.9i",
-    "date": "2020-02-26"
+    "date": "2021-02-26"
   }
 }
