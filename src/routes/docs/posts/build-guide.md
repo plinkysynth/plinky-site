@@ -11,7 +11,7 @@ Thank you for the wonderful video, Roland & Enrica of Making Sound Machines.
 
 ## Getting ready
 
-![Image of the Plinky kit](/build-guide/image3.png)
+![Image of the Plinky kit](/build-guide-2/image3-min.jpg)
 
 Congratulations on getting a Plinky kit! It’s a relatively easy build, with the most unusual bit being the surface mount LEDs - but don’t worry, you can do it!
 
@@ -52,7 +52,7 @@ IF YOU HAVENT SOLDERED BEFORE, PLEASE READ THE ADAFRUIT SOLDERING GUIDE BEFORE S
 
 [https://learn.adafruit.com/adafruit-guide-excellent-soldering/](https://learn.adafruit.com/adafruit-guide-excellent-soldering/common-problems)
 
-![Different solder pad problems](/build-guide/image34.png)
+![Different solder pad problems](/build-guide-2/image34-min.jpg)
 
 ### Plinky-specific gotchas
 
@@ -70,31 +70,31 @@ OK! Armed with our awesome soldering knowledge, let’s go!
 
 ### 1. Remove the PCB assembly rails
 
-![Removing the assembly rails](/build-guide/image7.png)
+![Removing the assembly rails](/build-guide-2/image7-min.jpg)
 
 You may find that your board has two 5mm ‘rails’ on its left and/or right sides. These are a side effect of the manufacturing process, and are pre-scored to make them easy to remove. You should gently snap them off, if they are there. See 6:07 in this video to see what I mean - [https://youtu.be/M9FH82lPIkM?t=367](https://youtu.be/M9FH82lPIkM?t=367)
 
 ### 2. Trim the PCB headers
 
-![Image](/build-guide/image4.png)
+![Image](/build-guide-2/image4-min.jpg)
 
 Now we need to trim about 1mm off all the pins of these 2x8 pin headers. They make’em a bit too long, sadly. **WEAR EYE PROTECTION WHEN TRIMMING THE HEADERS! YOU DO NOT WANT THE TINY BITS OF OFFCUT METAL GOING IN YOUR EYES, OR ANYONE ELSE’S.** Ron Millar from the Plinky discord suggests doing this step using the cutters inside a plastic bag to catch the offcuts! Clever!
 
 Don’t trim more than 1mm off these pins. It’s better to trim too little than too much. Just the ‘tips’ is enough!  Here’s a before and after picture - not much is snipped at all!
 
-![Image](/build-guide/image27.png)
+![Image](/build-guide-2/image27-min.jpg)
 
 It’s good to keep it even. A good way to do it evenly is, to use the little green rails you snapped off the PCB earlier, as a guide. Place one between the pins of both headers, and trim the tips. This trick was invented by Plinky user OrangeTronic on the discord. Thanks! 
 
-![Image](/build-guide/image11.png)
+![Image](/build-guide-2/image11-min.jpg)
 
 Another way, that I have used - if you have old stripboard lying around, to stack 3 layers (1.6mm x 3) and poke them through - that leaves just the right amount poking through, to be cut flush with side cutters. 
 
-![Image](/build-guide/image16.png)
+![Image](/build-guide-2/image16-min.jpg)
 
 After you’ve trimmed them,**remove any burrs** or other bits of metal as best you can. If the ends of the pins are too bent out of shape or covered in broken burrs, they can break off in the socket and make a bad connection.**Remember, these sockets and pin headers are the heart of Plinky’s UI and the thing that most people trip up on, so take your time.**
 
-![Image](/build-guide/image20.png)
+![Image](/build-guide-2/image20-min.jpg)
 
 Once you’ve trimmed the pins on the headers, turn them upside down and push them firmly but gently into the sockets you soldered.**There’ll still be 1mm of bare metal visible between pin header insulation and socket - that’s fine.**
 
@@ -104,7 +104,7 @@ Once you’ve trimmed the pins on the headers, turn them upside down and push th
 
 ### Solder the headphone & line-in ports
 
-![alt_text](/build-guide/image31.png "image_tooltip")
+![alt_text](/build-guide-2/image31-min.jpg "image_tooltip")
 
 Start by placing & soldering in the stereo jack sockets. Make sure they are flush to the board before soldering them, especially if you have an aluminium or 3d printed case. They go in pairs either side of the USB ports, and there are 4 in total. The ones on the right are for headphones; the ones on the left are for line-in.
 
@@ -112,13 +112,13 @@ Start by placing & soldering in the stereo jack sockets. Make sure they are flus
 
 ### Secure the USB ports
 
-![alt_text](/build-guide/image10.png "image_tooltip")
+![alt_text](/build-guide-2/image10-min.jpg "image_tooltip")
 
 Now solder the through-hole part of the 2 USB connectors, between the jacks that you just soldered. Plinky comes with the USB ports pre-mounted on the top side, but they also have pins that need soldering from the bottom to secure them firmly to the board. They don’t need a massive amount of solder - just make it secure by filling up the little holes with a wee bit of solder!
 
 ### Inter-board connectors
 
-![alt_text](/build-guide/image14.png "image_tooltip")
+![alt_text](/build-guide-2/image14-min.jpg "image_tooltip")
 
 Next, solder the 8x2 pin sockets at the top of the board, where it says ‘fingers’ and ‘thumbs’. Again, make sure they are flush when soldering.   THESE ARE THE CAUSE OF MANY PEOPLES PROBLEMS. DO NOT OVER SOLDER THEM, THEY FILL UP! Just apply a normal amount of solder, and make sure your joints are nice and clean. Because they seem so innocuous and simple, people rush. Don’t rush! These babies are the key to all the lights and touch controls of Plinky, so put on some nice relaxing music and take it nice and slow. Channel your greatest soldering hero. And Don’t overdo the solder :)
 
@@ -126,23 +126,23 @@ _Tip: To get these flush to the board, solder the diagonal pins first. Then insp
 
 ### Eurorack power (optional if you will not use Plinky in a rack)
 
-![alt_text](/build-guide/image17.png "image_tooltip")
+![alt_text](/build-guide-2/image17-min.jpg "image_tooltip")
 
 The eurorack power connector goes into the board where it says ‘europe’. Don’t put it in the footprint next to the hole - that’s for a future expansion and can be left unpopulated. Now, solder away!
 
 ### Solder the OLED screen
 
-![alt_text](/build-guide/image6.png "image_tooltip")
+![alt_text](/build-guide-2/image6-min.jpg "image_tooltip")
 
 Now take the 4 pins for the OLED screen, and slide the little plastic insulation up a tiny bit with your fingers so that when placed into the OLED board, the pins JUST go through the hole, and are flush on the topside.
 
-![alt_text](/build-guide/image30.png "image_tooltip")
+![alt_text](/build-guide-2/image30-min.jpg "image_tooltip")
 
 We want to maximise the length of pins under the display. Solder them in place into the OLED, from the top side. Again, make sure they are flush and perpendicular to the display.
 
 ### Place the sockets and pots
 
-![alt_text](/build-guide/image2.png "image_tooltip")
+![alt_text](/build-guide-2/image2-min.jpg "image_tooltip")
 
 Now place the two pots and encoder in between the pin headers, and black & green [eurorack jack sockets](https://www.thonk.co.uk/shop/thonkiconn/) down the sides. BUT DO NOT SOLDER THEM YET! 
 
@@ -152,13 +152,13 @@ Take care to place the 3 light green jack sockets in the right spots, marked ‘
 
 Lastly, loosely slot the display into its position so that it sits on top of the headphone jacks and usb socket at the top of the board.  At this point, your main board should look like the picture on the left, with the sockets, display and other elements still ‘loose’:
 
-![alt_text](/build-guide/image23.png "image_tooltip")
+![alt_text](/build-guide-2/image23-min.jpg "image_tooltip")
 
-![alt_text](/build-guide/image15.png "image_tooltip")
+![alt_text](/build-guide-2/image15-min.jpg "image_tooltip")
 
 Now place the front panel over all the pots and jack sockets, so that everything is lined up, as in the picture on the right. If you want, screw a couple of the nuts onto the jack sockets to hold things in place. 
 
-![alt_text](/build-guide/image28.png "image_tooltip")
+![alt_text](/build-guide-2/image28-min.jpg "image_tooltip")
 
 Carefully turn it all upside down and balance it on something (like the little plastic box in the pic above) so that it’s kept a tight sandwich while you are soldering everything from the underside.**It’s important everything is as tightly sandwiched as possible**, so that it fits into the case. I also like to pull the encoder (rightmost knob) a little out from the board, to equalise its shaft length with the two pots as much as possible. Although it works flush too, I recommend pulling it out as far as you can while still leaving enough of the pins to solder from the bottom side. Don’t worry about soldering the encoder’s outer leg (the one hanging over the side) - it’s okay to dangle there unsoldered.
 
@@ -166,7 +166,7 @@ Solder the display last, making sure that it is at a nice square angle lined up 
 
 While you still have everything sandwiched together, the last thing to solder are the splayed pin headers that should be just touching the front panel, like this:
 
-![alt_text](/build-guide/image8.png "image_tooltip")
+![alt_text](/build-guide-2/image8-min.jpg "image_tooltip")
 
 It’s a bit fiddly, but by doing it this way, you can be sure it all lines up nicely. Check the sandwich is tight - if the pins are holding the board and front panel too far apart, it means you didn’t trim enough off the pins in the earlier step. If the pins are floating off the front panel, pull them out of the sockets slightly until they are flush with the front panel.
 
@@ -174,7 +174,7 @@ You’ll only be able to solder the visible 8 pins on each side - there are 8 mo
 
 ### Finishing the connectors on the front panel
 
-![alt_text](/build-guide/image19.png "image_tooltip")
+![alt_text](/build-guide-2/image19-min.jpg "image_tooltip")
 
 You’ll need to prise the front panel of your newly soldered Plinky apart - do this carefully and gradually, the pins are quite stiff. I work it slowly bit by bit, alternating both sides.
 
@@ -191,11 +191,11 @@ CONGRATULATIONS! Have a cup of tea, and give yourself a pat on the back, you hav
 
 ### 1. Prepare the LED pads
 
-![alt_text](/build-guide/image18.png "image_tooltip")
+![alt_text](/build-guide-2/image18-min.jpg "image_tooltip")
 
 The first thing to do is prepare the front panel board with solder. If you have a reflow oven or a hot air gun, you can do this all using those tools, but the rest of this guide assumes just a normal soldering iron, and a pair of tweezers. First, put a tiny blob of solder onto one pad of each of the 72 LED footprints. I do the top pad of each pair (just above each hole) and the left pad of the bottom row.
 
-![alt_text](/build-guide/image32.png "image_tooltip")
+![alt_text](/build-guide-2/image32-min.jpg "image_tooltip")
 
 You don’t need a lot of solder - just a tiny blob. It should look like little pillows of solder - like this - when you’re done.
 
@@ -203,7 +203,7 @@ The LEDs come packaged in little strips - there are 8 blue ones for the bottom r
 
 The ones I used are [https://www.digikey.co.uk/product-detail/en/inolux/IN-S124ARUW/1830-1119-1-ND/7604662](https://www.digikey.co.uk/product-detail/en/inolux/IN-S124ARUW/1830-1119-1-ND/7604662) for the white, and [https://www.digikey.co.uk/product-detail/en/inolux/IN-S124ARB/1830-1117-1-ND/7604658](https://www.digikey.co.uk/product-detail/en/inolux/IN-S124ARB/1830-1117-1-ND/7604658) for the blue - though they are available in different colours and from different suppliers.
 
-![alt_text](/build-guide/image33.png "image_tooltip")
+![alt_text](/build-guide-2/image33-min.jpg "image_tooltip")
 
 Let’s do the 8 blue ones first. Carefully pull off the clear plastic cover, and empty them into a dish or a clear bit of your desk.**WATCH OUT they are super easy to lose as they weigh next to nothing. TAKE CARE!!**If you lose them & need more, you’ll have to order some from digikey or mouser or other electronics supplier (links above).
 
@@ -211,15 +211,15 @@ Using tweezers, plop the blue LEDs into the holes along the bottom row (the ‘h
 
 The little plastic lens of the LED sits inside the pre-drilled holes, which really helps to line it up. It should look like this:
 
-![alt_text](/build-guide/image22.png "image_tooltip")
+![alt_text](/build-guide-2/image22-min.jpg "image_tooltip")
 
 Now, with your tweezers in one hand, press gently with the tweezers onto an LED, in the middle (where the green triangle is), and with your other hand touch the soldering iron onto the metal pillow of solder. The solder should melt, and the LED will ‘click’ down flat to the board. Repeat 8 times. Congratulations, you’ve soldered one side of the first 8 LEDs! It should look like this:
 
-![alt_text](/build-guide/image1.png "image_tooltip")
+![alt_text](/build-guide-2/image1-min.jpg "image_tooltip")
 
 Now, using a small amount of solder with your iron, solder the ‘free’ end of each LED down. Thin solder helps, but if you have thick solder just wipe any excess off your iron as needed. It doesn’t matter too much if they aren’t perfectly straight, so long as both ends of each LED are cleanly soldered, and you got the green triangles lined up right with the white triangles marked on the board:
 
-![alt_text](/build-guide/image26.png "image_tooltip")
+![alt_text](/build-guide-2/image26-min.jpg "image_tooltip")
 
 ### 2. Solder the rest of the owl
 
@@ -233,11 +233,11 @@ _Done? _YOUR Plinky IS NEARLY READY! Now you just need to squish the sandwich ba
 
 If you want, you can use 4 M3x15mm hex spacers, along with the 8 included M3 bolts, to hold Plinky together into a nice ‘pocket operator’ style ‘open case’. Screw the spacers into the base plate using M3 bolts, and then screw Plinky into them from above.
 
-![alt_text](/build-guide/image12.png "image_tooltip")
+![alt_text](/build-guide-2/image12-min.jpg "image_tooltip")
 
 Take a moment to appreciate the majesty of your crafting skills.
 
-![alt_text](/build-guide/image5.png "image_tooltip")
+![alt_text](/build-guide-2/image5-min.jpg "image_tooltip")
 
 You can also purchase a custom-made aluminium case from thonk. It is SO nice, but not required. :)
 
@@ -263,7 +263,7 @@ The first time Plinky boots ‘normally’, or after you finish flashing it with
 
 _If nothing happens at all, don’t panic! Power down, check your soldering carefully for shorts, and if it still does nothing, it may just be a software issue. Skip to the ‘help my Plinky is dead’ appendix at the end of this document, and then come back here when it’s working._
 
-![alt_text](/build-guide/image21.png "image_tooltip")
+![alt_text](/build-guide-2/image21-min.jpg "image_tooltip")
 
 In calibration mode, one LED in each column will be lit. Press your finger ‘evenly’ and as centrally as possible on one of the lit pads, ‘mezzo-forte’ (medium hard) for a few seconds. After a few seconds, it will start blinking and you can release. If you aren’t quite central with your finger, don’t release - just slide your finger into place with it held down, and keep it held down a few seconds once it’s central. If you completely mess up, just switch Plinky off and on again, and try again.
 
@@ -308,7 +308,7 @@ A: No sweat! Take a note of which LEDs, remove the front panel, turn it over, an
 
 A: Don’t panic! You’ve just got a single dodgy joint on one of the pins of the connectors that go between the front and back panel. Looking at Plinky with xray eyes from the top (as if you’re playing it), there are two sets of 8x2 pins - one top left, the other top right. The LEDs are on the top right header. The rows of LEDs are controlled by the 8 pins that are on the ‘bottom’ row, as you look at it from above. In other words, the 8 pins further from the top of the board, on the right side connector. The first pin, on the left, is the first row of leds. Each pin to the right, corresponds to a row of LEDs going down the panel. So if the 6th row down of LEDs is out, you have a dodgy joint on the 6th pin from the left, on the bottom row, of the right connector. Go check the pin, on the front panel (bearing in mind that when you flip it over, left and right are swapped!), and on the back of the mainboard. Check if the socket itself is not damaged. For reference, the pinout of the right connector is:
 
-![alt_text](/build-guide/image25.png "image_tooltip")
+![alt_text](/build-guide-2/image25-min.jpg "image_tooltip")
 
 The first 5 pins at the top correspond to columns of LEDs. The top right 2 pins, marked TS2_ and TS1_, correspond to the touch strip with blue LEDs at the bottom of Plinky. And the bottom 8 pins, from left to right, correspond to the LED rows, from top to bottom, as described in the paragraph above.
 
@@ -368,7 +368,7 @@ Get it for free here: [https://www.st.com/en/development-tools/stm32cubeprog.htm
 
 Once the DFU software is installed on your computer, make sure Plinky is unplugged, remove it from its case, then turn it over, and bridge together the 2 little silver pads marked ‘BOOT0’ - using the tips of metal tweezers, a piece of wire, or any small metal object. 
 
-![alt_text](/build-guide/image24.png "image_tooltip")
+![alt_text](/build-guide-2/image24-min.jpg "image_tooltip")
 
 **While they are connected**, power up Plinky over USB.**It can be quite tricky to reliably connect them**while also powering it up, so it may take a few tries. But if you are successful, the PC should recognise a new USB DFU device. Once detected, you can remove the connection across the pads.
 
@@ -376,7 +376,7 @@ If you cannot get the PC to recognise the DFU device at all, there may be someth
 
 Now, run the STM32 Cube Programmer software that you downloaded in the previous step.
 
-![alt_text](/build-guide/image13.png "image_tooltip")
+![alt_text](/build-guide-2/image13-min.jpg "image_tooltip")
 
 When you run stm32cubeprogrammer, a large window should appear similar to the image here. If the blue box on the top right isn’t saying USB, click on that to change it to USB.
 
@@ -384,6 +384,6 @@ Then click the ‘open file’ tab, and select the latest Plinky firmware DFU fi
 
 Now you have the Plinky in DFU mode, the PC software you installed should be showing ‘USB1’ in the ‘Port’ drop down. Press the little ‘refresh’ button on the top right if the port shows ‘No DFU detected’. Once detected, it should show a USB Device with a Serial number, like the picture on the right:
 
-![alt_text](/build-guide/image29.png "image_tooltip")
+![alt_text](/build-guide-2/image29-min.jpg "image_tooltip")
 
 Now click the green ‘Connect’ button, and then the blue Download button. Wait a few seconds, and it should program. Once it’s done, press Disconnect, and you can unplug your Plinky. Don’t rush. If you unplug mid-program, you may find that you have to repeat this whole process.
