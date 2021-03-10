@@ -25,8 +25,6 @@ You will need:
 
 If you want to calibrate the 1V/Octave output, you’ll need a multimeter or calibrated eurorack oscillator, and a eurorack patch cable. But the kit comes pre-CV-calibrated, so it’s not strictly necessary.
 
-**If you want to follow along with a video, you can find the latest build videos at [Plinkysynth.com/build](Plinkysynth.com/build) . There is also a dedicated Plinky Discord server, [https://discord.gg/Zf6chA9jAz](https://discord.gg/Zf6chA9jAz), which is the best place to go if you need help.**
-
 Let’s go!
 
 ## Before you start
@@ -255,7 +253,7 @@ Right so you’ve got flashing lights! That’s great. This is Plinky’s specia
 
 **If Plinky lights up with the tunnel of lights, but does NOT show up as a USB device on your PC, check your cable**. It’s always the cable. Unfortunately, USB cables are a mess. Many are ‘power only’. Plinky needs a cable with 4 wires in it, to carry data. It should be a cable that you can use to transfer data with your phone or other device, for example. Typically, they are slightly fatter and less flexible than the really cheap ‘charging only’ cables. A few people reported raiding their cable boxes for 4 or 5 cables before they found a data cable! Playstation 4 controllers dont use data - they always use bluetooth, even when plugged in. So many playstation controller cables are charging only, and are thus no good.
 
-OK Plinky’s turned up as a USB drive. Great! Drag and drop the latest firmware file (which should have extension .UF2) (which you can download from [Plinkysynth.com/fw](Plinkysynth.com/fw)) onto the Plinky USB ‘drive’. The lights will flicker, and that’s all there is to it! Your Plinky now has the latest software. Click the encoder to finish the upgrade process.
+OK Plinky’s turned up as a USB drive. Great! Drag and drop the latest firmware file (which should have extension .UF2) (which you can download from [the firmware page](/firmware)) onto the Plinky USB ‘drive’. The lights will flicker, and that’s all there is to it! Your Plinky now has the latest software. Click the encoder to finish the upgrade process.
 
 ### 2. Touch calibration
 
@@ -277,12 +275,11 @@ If you left the firmware at the original version (0.7), if there are soldering i
 
 **CONGRATULATIONS! ITS DONE! HAPPY PLINKING!**
 
-Detailed instructions and videos can be found at [https://Plinkysynth.com/play](https://Plinkysynth.com/play) 
+Detailed instructions and videos can be found at [the play guide](/docs/play-guide).
 
 Enjoy!
 
-**IF YOU HAVE PROBLEMS WITH Plinky HAVING UNLIT LEDS, STUCK LEDS, OR NOT REGISTERING TOUCHES CORRECTLY, PLEASE CHECK THE TROUBLESHOOTING APPENDIX BELOW**
-
+**IF YOU HAVE PROBLEMS WITH PLINKY HAVING UNLIT LEDS, STUCK LEDS, OR NOT REGISTERING TOUCHES CORRECTLY, PLEASE CHECK THE TROUBLESHOOTING APPENDIX BELOW**
 
 ## Appendix
 

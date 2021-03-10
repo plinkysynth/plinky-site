@@ -14,8 +14,27 @@
     width: 100%;
     max-width: 800px;
   }
-  .Video {
+  .Examples {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .Video, .Sound {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
+    padding: 0 4rem;
+  }
+  @media(max-width: 1024px) {
+    .Examples {
+      grid-template-columns: 1fr;
+    }
+    .Video {
+      padding: 0 0 4rem 0;
+    }
+    .Sound {
+      padding: 0;
+    }
   }
 </style>
 
@@ -28,9 +47,16 @@
   <a class="button" target="_blank" href="https://www.thonk.co.uk/shop/plinky/">Wishlist at Thonk</a>
 </TextAndImage>
 
-<div class="Video">
-  <iframe width="800" height="450" src="https://www.youtube.com/embed/us__mX0_Aqk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<div class="Examples">
+  <div class="Video">
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/us__mX0_Aqk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+  </div>
+  
+  <div class="Sound">
+    <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1224352735&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+  </div>
 </div>
+
 <Blocks>
   <LinkBlock href="/firmware" label="Download">
     <h3>Firmware</h3>
