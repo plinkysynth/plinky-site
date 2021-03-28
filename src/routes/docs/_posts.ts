@@ -17,8 +17,6 @@ const a = all.concat(svx.map(s => {
 }));
 */
 
-console.log(svx);
-
 const a = all.concat(svx.map(s => s.render()));
 
 export default a
