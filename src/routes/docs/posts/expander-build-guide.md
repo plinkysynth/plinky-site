@@ -3,19 +3,23 @@ title: Expander build guide
 date: "2021-03-28T08:38:00.000Z"
 ---
 
-There is an eurorack expander available for Plinky! Here are the build instructions.
+There is an eurorack expander available for Plinky! Its hardware is open source, available at https://github.com/plinkysynth/plinky-expander 
+PLEASE NOTE that it is at 'prototype' stage. the files for assembly at JLCPCB are included in the repo, but order at your own risk!
+
+Here are the first rough build instructions.
 
 ## For V1 Plinkies
 
-This step is only required for the first-run Plinkies.
+This step is only required for the first-run Plinkies (green mainboard). if your main-board is blue, this step is not needed.
 
 ![Modding V1 Plinky](/expander-build-guide/image0.jpg)
 
 The first step is to solder the right-angle 16 pin header to plinky expansion port AND THEN IF YOU HAVE A V1 PLINKY, MOD YOUR PLINKY!
 
-The third and fifth pins from the top, on the 'upper layer' (so easy to get to) need to be SNIPPED so that they dont connect thru to the PCB. if they do, they will short your power supply. instead, solder 2 wires to the snipped pins, and route them as shown to the euro power connector on plinky.
+The third and fifth pins from the top, on the 'upper layer' (so easy to get to) need to be SNIPPED so that they dont connect thru to the PCB. if they do, they will short your power supply. instead, solder 2 wires to the snipped pins, and route them as shown to the euro power connector on plinky. NOTE THAT THE WIRES CROSS.
+Triple check your connections against the photo above; if you get them the wrong way around, you will damage your expander.
 
-Note, that the expander can be powered from plinky USB no problem. plinky generates +-12v and then routes it via this bodge to the expander.
+Note, that the expander can be powered via this bodge from plinky USB no problem. plinky generates +-12v and then routes it via this bodge to the expander.
 
 ## Expander pack
 
@@ -47,11 +51,11 @@ However I recommend powering it via the plinky-mod we did in step 1, in which ca
 
 All that remains in the build is the front panel!
 
-Slap the 8 leds in - 4 red, 4 blue, as indicated by the silkscreen on the front panel:
+Slap the 8 leds in - 4 white, 4 blue, as indicated by the silkscreen on the front panel:
 
 ![Front panel](/expander-build-guide/image4.jpg)
 
-Be sure to get the LEDs the right way round. the silk screen is correct.
+Be sure to get the LEDs the right way round. the silk screen is correct. The soldering process is covered in the main plinky build guide.
 
 To line up the little 4x2 socket, I find it helpful to plonk it onto the main board upside down, then put the sandwich back together, and awkwardly solder as many of its legs as you can while sandwiched, just like plinky. then take the sanwich off again to solder any remaining legs.
 
