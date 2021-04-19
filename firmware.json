@@ -2,11 +2,13 @@
   "stable": {
     "file": "plink09k.uf2",
     "version": "0.9k",
-    "date": "2021-04-06"
+    "date": "2021-04-06",
+    "comment": "Latest stable firmware"
   },
   "beta": {
-    "file": "plink09k.uf2",
-    "version": "0.9k",
-    "date": "2021-04-06"
+    "file": "plink09l.uf2",
+    "version": "0.9l",
+    "date": "2021-04-19",
+    "comment": "Includes initial WebUSB communication with Plinky"
   }
 }
