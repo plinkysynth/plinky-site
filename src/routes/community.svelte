@@ -1,8 +1,20 @@
 <script>
 import Banner from "../components/Banner.svelte";
 import Grid from "../components/Grid.svelte";
-
 </script>
+
+<svelte:head>
+  <title>Plinky - Community</title>
+ 	<meta property="og:url" content="https://www.plinkysynth.com/community" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Plinky - 8-voice polyphonic touch synthesiser" />
+  <meta name="Description" content="Plinky specialises in fragile, melancholic sounds. It fits into 24HP eurorack cases, but can also be played as a standalone desktop mini-synth, with line-level stereo input and a headphone output, all powered from a micro-USB connector." />
+  <meta property="og:description" content="Plinky specialises in fragile, melancholic sounds. It fits into 24HP eurorack cases, but can also be played as a standalone desktop mini-synth, with line-level stereo input and a headphone output, all powered from a micro-USB connector." />
+  <meta name="twitter:card" content="summary_large_image" />
+ 	<meta name="twitter:domain" value="plinkysynth.com" />
+  <meta name="twitter:title" content="Plinky - 8-voice polyphonic touch synthesiser" />
+  <meta name="twitter:description" content="Plinky specialises in fragile, melancholic sounds. It fits into 24HP eurorack cases, but can also be played as a standalone desktop mini-synth, with line-level stereo input and a headphone output, all powered from a micro-USB connector." />
+</svelte:head>
 
 <div class="page">
   <h1>Community</h1>
