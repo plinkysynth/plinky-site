@@ -30,7 +30,7 @@
       <Banner>
         <h4>Pal Secam Kids presets</h4>
         <p>These are the presets by Pal Secam Kids for the Schneidersladen edition of Plinky.</p>
-        <p>For more info, please go to <a href="http://leipzigwest.org/" target="_blank">leipzigwest.org</a>.
+        <p>For more info, please go to <a href="http://leipzigwest.org/" target="_blank">leipzigwest.org</a>.</p>
         <a class="button" target="_blank" href="/presets/palsecamkids/PRESETS.uf2">Download</a>
       </Banner>
     </Grid>
