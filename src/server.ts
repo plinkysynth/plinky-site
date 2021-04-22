@@ -32,8 +32,12 @@ polka() // You can also use Express
 				});
 				
 				s.on('error', function () {
-						res.set('Content-Type', 'text/plain');
-						res.status(404).end('Not found');
+					res.writeHead(404, {
+						'Content-Type': 'text/plain'
+					});
+					res.end(JSON.stringify({
+						message: `Not found`
+					}));
 				});
 			}
 			else if(req.originalUrl === '/firmware/beta/CURRENT.uf2') {
@@ -51,8 +55,12 @@ polka() // You can also use Express
 				});
 				
 				s.on('error', function () {
-						res.set('Content-Type', 'text/plain');
-						res.status(404).end('Not found');
+					res.writeHead(404, {
+						'Content-Type': 'text/plain'
+					});
+					res.end(JSON.stringify({
+						message: `Not found`
+					}));
 				});
 			}
 			else if(req.originalUrl === '/presets/default/PRESETS.uf2') {
@@ -69,8 +77,12 @@ polka() // You can also use Express
 				});
 				
 				s.on('error', function () {
-						res.set('Content-Type', 'text/plain');
-						res.status(404).end('Not found');
+					res.writeHead(404, {
+						'Content-Type': 'text/plain'
+					});
+					res.end(JSON.stringify({
+						message: `Not found`
+					}));
 				});
 			}
 			else if(req.originalUrl === '/presets/LPZW/LPZW.zip') {
@@ -88,8 +100,12 @@ polka() // You can also use Express
 				});
 				
 				s.on('error', function () {
-						res.set('Content-Type', 'text/plain');
-						res.status(404).end('Not found');
+					res.writeHead(404, {
+						'Content-Type': 'text/plain'
+					});
+					res.end(JSON.stringify({
+						message: `Not found`
+					}));
 				});
 			}
 			else {
