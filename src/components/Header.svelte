@@ -20,6 +20,11 @@
   @media(max-width: 640px) {
     header {
       padding: 1rem 2rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 10;
     }
   }
 </style>

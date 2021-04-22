@@ -3,7 +3,7 @@
 </script>
 
 <nav>
-  <a rel=prefetch class='{segment === "docs" ? "selected" : ""}' href='docs'>Documentation</a>
+  <a rel=prefetch class='{segment === "docs" ? "selected" : ""}' href='docs'>Docs</a>
   <a rel=prefetch class='{segment === "community" ? "selected" : ""}' href='community'>Community</a>
   <a rel=prefetch class='{segment === "presets" ? "selected" : ""}' href='presets'>Presets</a>
 </nav>
@@ -41,6 +41,8 @@
       line-height: 1.75rem;
       position: relative;
       top: 2px;
+      font-weight: bold;
+      padding: 1rem 1rem;
     }
   }
 

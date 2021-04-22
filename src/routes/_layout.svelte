@@ -17,6 +17,11 @@
     padding: 4rem 4rem;
     width: 100%;
   }
+  @media(max-width: 640px) {
+    main {
+      padding-top: 9rem;
+    }
+  }
 
   footer {
     color: #AAA;
