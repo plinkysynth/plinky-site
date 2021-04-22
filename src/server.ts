@@ -61,7 +61,6 @@ polka() // You can also use Express
 				const s = fs.createReadStream(file);
 
 				s.on('open', function () {
-
 						res.writeHead(200, {
 							'Content-Type': 'application/octet-stream',
 							'Content-Disposition': 'attachment; filename="PRESETS.uf2"'
