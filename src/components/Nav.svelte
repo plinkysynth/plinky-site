@@ -5,6 +5,7 @@
 <nav>
   <a rel=prefetch class='{segment === "docs" ? "selected" : ""}' href='docs'>Documentation</a>
   <a rel=prefetch class='{segment === "community" ? "selected" : ""}' href='community'>Community</a>
+  <a rel=prefetch class='{segment === "presets" ? "selected" : ""}' href='presets'>Presets</a>
 </nav>
 
 <style>

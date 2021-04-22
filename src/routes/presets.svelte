@@ -19,19 +19,20 @@
   <div class="page">
     <h1>Presets</h1>
   
-    <p>We're collecting presets and working on <a href="https://plinkysynth.github.io/plinky-webusb-test/">a browser-based patch editor</a>. In the meantime, here is a simple list of presets.</p>
+    <p>We're collecting presets and working on <a href="https://plinkysynth.github.io/plinky-webusb-test/">a browser-based patch editor</a>. In the meantime, here is a simple list of preset banks.</p>
+
+    <p><strong>NOTE: Replacing the preset bank will replace your patterns as well!</strong></p>
 
     <Grid>
       <Banner>
-        <h4>Default presets</h4>
-        <p>This is the default preset set with all 32 sounds empty.</p>
+        <h4>Default bank</h4>
+        <p>This is the default preset set with all 32 patches set to the initial sound.</p>
         <a class="button" target="_blank" href="/presets/default/PRESETS.uf2">Download</a>
       </Banner>
       <Banner>
-        <h4>Pal Secam Kids presets</h4>
-        <p>These are the presets by Pal Secam Kids for the Schneidersladen edition of Plinky.</p>
-        <p>For more info, please go to <a href="http://leipzigwest.org/" target="_blank">leipzigwest.org</a>.</p>
-        <a class="button" target="_blank" href="/presets/palsecamkids/PRESETS.uf2">Download</a>
+        <h4>LPZW.modules bank</h4>
+        <p>These are the presets by LPZW.modules for the Schneidersladen edition of Plinky. It contains the preset file and three samples. For more info, please go to <a href="http://leipzigwest.org/" target="_blank">leipzigwest.org</a>.</p>
+        <a class="button" target="_blank" href="/presets/LPZW/LPZW.zip">Download</a>
       </Banner>
     </Grid>
 
@@ -41,7 +42,9 @@
       <li>Hold the right encoder down while plugging the USB cable into your Plinky.</li>
       <li>Plinky will show up as an attached drive and you should see the "tunnel of lights" effect on the LEDs.</li>
       <li>Drag and drop PRESETS.uf2 to the drive. <b>Make sure that it's called PRESETS.uf2 and nothing else.</b></li>
+      <li>If you're adding samples, drag and drop the SAMPLE1.uf2, SAMPLE2.uf2, etc. that you might have over to the drive as well.</li>
       <li>While flashing, the LEDs will flicker. This is normal.</li>
+      <li>While you're changing banks, it's a good time to also <a href="/firmware">update your firmware</a> to the latest version! Just download the file and drag and drop while you've got Plinky hooked up.</li>
       <li>To finish, just click the encoder again. Plinky will boot up and your presets should be present.</li>
     </ol>
 

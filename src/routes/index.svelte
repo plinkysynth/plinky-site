@@ -76,13 +76,11 @@
   </LinkBlock>
 </Blocks>
 
-
 <Banner>
   <h4>Stay up to date!</h4>
   <p>Sign up to the Plinky mailing list for updates.</p>
   <a class="button" target="_blank" href="http://eepurl.com/heuCM5">Sign up</a>
 </Banner>
-
 
 <svelte:head>
   <title>Plinky - an 8-voice polyphonic touch synthesiser</title>
