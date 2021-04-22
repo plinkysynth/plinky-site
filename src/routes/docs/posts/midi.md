@@ -5,9 +5,7 @@ date: "2021-02-01T12:51:00.000Z"
 
 ## General
 
-Plinky responds to MIDI! It will show up as `plinkysynth` once you have plugged it into your computer, and will act as an 8-voice synthesizer.
-
-MIDI Out is currently not supported.
+Plinky responds to MIDI! It will show up as `plinkysynth` once you have plugged it into your computer, and will act as an 8-voice synthesizer. Plinky also supports MIDI out over USB. Plinky’s implementation has polyphonic aftertouch.
 
 ## MIDI CC list
 
