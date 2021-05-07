@@ -1,9 +1,9 @@
 {
   "stable": {
-    "file": "plink09k.uf2",
-    "version": "0.9k",
-    "date": "2021-04-06",
-    "comment": "Latest stable firmware"
+    "file": "plink09m.uf2",
+    "version": "0.9m",
+    "date": "2021-05-07",
+    "comment": "This moves the accelerometer sensitivity on the 'settings' button, and instead on the 'lower' shift of volume (bottom right) you get stereo width. 50% = normal stereo, 0% = all mid, no side; 100% = all side, no mid. Also supports name and category for presets (editable via web soon!)"
   },
   "beta": {
     "file": "plink09l.uf2",
