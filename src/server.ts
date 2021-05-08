@@ -2,8 +2,8 @@ import * as sapper from '@sapper/server';
 
 import compression from 'compression';
 import firmware from './utils/firmware';
-import fs from 'fs';
-import path from 'path';
+import * as fs from 'fs';
+import * as path from 'path';
 import polka from 'polka';
 import sirv from 'sirv';
 
