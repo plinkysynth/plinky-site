@@ -14,7 +14,7 @@ polka() // You can also use Express
 	.use(
 		compression({ threshold: 0 }),
 		sirv('static', { dev }),
-		function(req, res, next) {
+		function (req: any, res: any, next: any) {
 			// nb. this is just a quick copy paste spaghetti plate- works FOR NOW..
 			// it'll be better once the patch editor is up.
 			if(req.originalUrl === '/firmware/stable/CURRENT.uf2') {

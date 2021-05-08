@@ -10,24 +10,6 @@
   export let posts;
 </script>
 
-<style>
-  h2,
-  .post-item-footer {
-    font-weight: 700;
-  }
-
-  .post-item-date {
-    color: #AAA;
-    text-align: left;
-    text-transform: uppercase;
-    margin-right: 16px;
-  }
-
-  hr {
-    margin: 60px auto;
-  }
-</style>
-
 <svelte:head>
   <title>Plinky - Documentation</title>
 </svelte:head>
