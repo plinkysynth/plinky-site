@@ -3,7 +3,8 @@
 		"compilerOptions": {
 			"lib": ["DOM", "ES2017", "WebWorker"],
 			"types": ["node"],
-			"resolveJsonModule": true
+			"resolveJsonModule": true,
+			"allowSyntheticDefaultImports": true
 		},
 		"include": ["src/**/*", "src/node_modules/**/*"],
 		"exclude": ["node_modules/*", "__sapper__/*", "static/*"]

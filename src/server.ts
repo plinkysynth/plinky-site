@@ -4,17 +4,19 @@ import compression from 'compression';
 import firmware from './utils/firmware';
 import * as fs from 'fs';
 import * as path from 'path';
-import polka from 'polka';
 import sirv from 'sirv';
+import express from 'express';
 
 const { PORT, NODE_ENV } = process.env;
 const dev = NODE_ENV === 'development';
 
-polka() // You can also use Express
+const app = express();
+
+app // You can also use Express
 	.use(
 		compression({ threshold: 0 }),
 		sirv('static', { dev }),
-		function (req: any, res: any, next: any) {
+		function (req, res, next) {
 			// nb. this is just a quick copy paste spaghetti plate- works FOR NOW..
 			// it'll be better once the patch editor is up.
 			if(req.originalUrl === '/firmware/stable/CURRENT.uf2') {
@@ -114,6 +116,4 @@ polka() // You can also use Express
 		},	
 		sapper.middleware()
 	)
-	.listen(PORT, err => {
-		if (err) console.log('error', err);
-	});
+	.listen(PORT);
