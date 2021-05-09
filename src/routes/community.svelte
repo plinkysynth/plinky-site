@@ -1,5 +1,5 @@
 <script>
-import BigArea from "../components/Banner.svelte";
+import BigArea from "../components/BigArea.svelte";
 import Grid from "../components/Grid.svelte";
 </script>
 
