@@ -19,7 +19,7 @@
   <div class="page">
     <h1>Presets</h1>
   
-    <p>We're collecting presets and working on <a href="https://plinkysynth.github.io/plinky-webusb-test/">a browser-based patch editor</a>. In the meantime, here is a simple list of preset banks.</p>
+    <p>We're collecting presets and working on <a href="https://plinkysynth.github.io/editor/">a browser-based patch editor</a>. In the meantime, here is a simple list of preset banks.</p>
 
     <p><strong>NOTE: Replacing the preset bank will replace your patterns as well!</strong></p>
 
