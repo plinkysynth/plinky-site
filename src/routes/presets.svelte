@@ -1,5 +1,5 @@
 <script>
-  import Banner from "../components/Banner.svelte";
+  import BigArea from "../components/BigArea.svelte";
   import Grid from "../components/Grid.svelte";
 </script>
 
@@ -24,16 +24,16 @@
     <p><strong>NOTE: Replacing the preset bank will replace your patterns as well!</strong></p>
 
     <Grid>
-      <Banner>
+      <BigArea>
         <h4>Default bank</h4>
         <p>This is the default preset set with all 32 patches set to the initial sound.</p>
         <a class="button" target="_blank" href="/presets/default/PRESETS.uf2">Download</a>
-      </Banner>
-      <Banner>
+      </BigArea>
+      <BigArea>
         <h4>LPZW.modules bank</h4>
         <p>These are the presets by LPZW.modules for the Schneidersladen edition of Plinky. It contains the preset file and three samples. For more info, please go to <a href="http://leipzigwest.org/" target="_blank">leipzigwest.org</a>.</p>
         <a class="button" target="_blank" href="/presets/LPZW/LPZW.zip">Download</a>
-      </Banner>
+      </BigArea>
     </Grid>
 
     <h2>Manual preset install instructions</h2>

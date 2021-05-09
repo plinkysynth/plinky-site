@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Banner from "../../components/Banner.svelte";
+  import BigArea from "../../components/BigArea.svelte";
   import Grid from "../../components/Grid.svelte";
   import firmware from "../../utils/firmware";
 </script>
@@ -9,22 +9,22 @@
   <h1>Plinky firmware</h1>
 
   <Grid>
-    <Banner>
+    <BigArea>
       <h4>Latest STABLE firmware</h4>
       <p>The latest stable firmware version is {firmware.stable.version} released on {firmware.stable.date}.</p>
       {#if firmware.stable.comment}
         <p>&quot;{firmware.stable.comment}&quot;</p>
       {/if}
       <a href="/firmware/stable/CURRENT.uf2" class="button">Download STABLE firmware</a>
-    </Banner>
-    <Banner>
+    </BigArea>
+    <BigArea>
       <h4>Latest BETA firmware</h4>
       <p>The latest beta firmware version is {firmware.beta.version} released on {firmware.beta.date}.</p>
       {#if firmware.beta.comment}
         <p>&quot;{firmware.beta.comment}&quot;</p>
       {/if}
       <a href="/firmware/beta/CURRENT.uf2" class="button">Download BETA firmware</a>
-    </Banner>
+    </BigArea>
   </Grid>
   
   <h2>Firmware install instructions</h2>
