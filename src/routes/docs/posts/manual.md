@@ -508,7 +508,7 @@ Determines at what relative speed the sample is played back, but without changin
 Controls which sample is being played, allowing you to change samples from within a preset by assigning a LFO or CV source to this parameter.
 
 #### pattern
-![pattern]](/manual-images/P_SEQPAT.png)  
+![pattern](/manual-images/P_SEQPAT.png)  
 Controls which sequencer pattern is being played back, allowing you to change patterns from within a preset by assigning an LFO or CV source to this parameter. If you add a slow rising saw to this parameter you can chain various patterns together. 
 
 #### step offset
