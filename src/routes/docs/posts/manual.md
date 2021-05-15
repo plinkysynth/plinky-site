@@ -173,6 +173,7 @@ Plinky’s parameters are arranged in somewhat logical horizontal rows. Remember
 The leftmost column of pads is a slider. The rightmost column of pads are modulation sources. We’ll cover those later. The middle 6 columns are the parameters themselves. From top to bottom, they are:
 
 # Sound (synthesizer)
+![sound](/manual-images/SOUND.SVG) 
 #### shape
 ![shape](/manual-images/P_PWM.png)  
 Controls the shape of the oscillators in Plinky. When exactly 0%, you get  4 sawtooths per voice. When positive, you blend smoothly through 16 ROM wavetable shapes, (2 per voice,) provided by @miunau. When negative, you get PWM control of pulse/square shapes, (also 2 per voice.)
@@ -258,6 +259,7 @@ Each voice has several oscillators, and this sets a fixed interval between them,
 Controls the interval, in semitones, between each column of plinky. It defaults to 7 semitones, a perfect fifth, like a Cello or Violin. The notes are always snapped to the chosen scale, even if the stride calls for chromatic notes, so plinky does its best to choose column pitches that follow this stride while staying in-scale.
 
 ## Envelope Generator
+![envelope](/manual-images/ENVELOPE.SVG)  
 Plinky has two Envelope Generators. Envelope 1 (the upper parameter) is mapped to the Low Pass Gates and has Attack, Decay, Sustain and Release stages. Envelope 2 (the bottom parameter) is unassigned by default and can be mapped to parameters with the Envelope modulator pad. Like Envelope 1 it is an ADSR envelope. The parameters on the same pads.
 
 #### sensitivity
@@ -289,6 +291,7 @@ Sustain level. Sustain (top) is for the main envelope that controls the sustain 
 Release time. Release(top) is for the main envelope that controls the release time for the lowpass gate. Release (bottom) controls the release time of the secondary envelope.
 
 ## Master Effects
+![effects](/manual-images/FX.svg)  
 Plinky has 2 send/return effects: a Delay and a Reverb. They can be added to both the Synth/Sampler outputs and to the audio coming in through one of the input jacks. The parameters in this section apply to the effect parameters, where the Send parameter determines how much of the effect is sent to the mixer. In the mixer section you can adjust the dry/wet settings for the effects. 
 
 #### delay send
@@ -328,6 +331,7 @@ Amount of octave-up signal that is fed into the reverb, causing a shimmer effect
 Amount of simulated tape speed wobble, causing pitch distortions in the reverb. Avoids metallic artefacts.
 
 ## arpeggiator & sequencer
+![arp & sequencer](/manual-images/ARPSEQ.svg)  
 Plinky has a powerful arpeggiator and sequencer, Each with their own quirks. The arpeggiator can be latched (when you lift your fingers the last notes / pressure  is continued). Besides the obvious clock divisions / multiplications, the arpeggiator can also play euclidean patterns or random rhythms. Additionally the arp has some interesting order/modes, that allow for even more complex rhythms and/or polyphonic arps. 
 The sequencer is polyphonic. The sequencer can also control the arpeggiator: If both are on, the sequencer will play patterns of arps. As both the sequencer and the arpeggiator’s clocks can be divided to up to 256x the clock’s speed, this allows for very long, complex patterns. [TO DO] As the latch on/off and the Arp on/off will become mappable parameters, this allows for even more extensive sequencing possibilities. 
 
@@ -455,6 +459,7 @@ Sets how many octaves the arpeggiator ranges over. This means that if you only p
 Sets the length of the gate of each step. The gate is the signal that determines whether a note is on or off. Longer gates means notes are played longer, which (in tandem with Envelope 1) determines how long notes are sustained.
 
 ## Sampler
+![sampler](/manual-images/SAMPLER.svg)  
 Plinky lets you record 8 samples, each split into 8 'slices', corresponding to the 8 columns (strings).
 Once recorded, the bottom row of parameters control the granular playback of your samples.
 
@@ -516,6 +521,7 @@ Controls which sequencer pattern is being played back, allowing you to change pa
 Offsets the starting point of the sequencer pattern allowing for variations in sequencer playback.
 
 ## Modulation A, B, X and Y (inputs & LFO's)
+![modulators A B X and Y](/manual-images/ABXY.svg)  
 The next two rows controls the A/B  and X/Y modulators. Shift key *SHIFT TOP* gives you parameters for input A and X and shift key *SHIFT BOTTOM* gives you parameters for input B and Y. Each of the modulation sources corresponds to one of the CV input jacks. each input has a dedicated built in LFO that is added on top – so that these modulation sources can be useful even without any jacks plugged in. Finally, modulators A and B correspond to knobs A & B, which offset these two values. 
 
 #### CV level
@@ -571,6 +577,7 @@ Sets the shape of the LFO. The following shapes are available:
 Sets the slope of the LFO shape - for example turning a triangle wave into a sharp ramp up (symmetry +100) or down (symmetry -100). 
 
 ## Mixer
+![mixer and system](/manual-images/MIXER.svg)  
 #### synth
 ![synth](/manual-images/P_MIXSYNTH.png)  
 Sets the gain level of Plinky's synth / sampler. Above 50% you will start hitting a limiter, which can help to glue patches with wide dynamic range together. You can use this as a volume control if you are taking audio from the left / mono output. 
