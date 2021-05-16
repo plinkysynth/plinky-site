@@ -3,6 +3,9 @@ title: Plinky build guide - GREEN (old)
 date: "2021-01-24T08:38:00.000Z"
 ---
 
+This is the build guide for the older plinky kit, which you can identify because it has a GREEN mainboard.
+If your plinky has a BLUE mainboard, please check [the newer build guide](/docs/build-guide-blue).
+
 ## Build guide video
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/wPaNehskB-E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>

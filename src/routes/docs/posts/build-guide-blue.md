@@ -3,10 +3,11 @@ title: Plinky build guide - BLUE (new)
 date: "2021-01-24T08:38:00.000Z"
 ---
 
+This is the build guide for the new improved plinky kit, which you can identify because it has a BLUE mainboard.
+If your plinky has a GREEN mainboard, please check [the older build guide](/docs/build-guide).
+
 ## Build guide video
 
-This is the build guide for the new improved plinky kit, the version with the BLUE mainboard.
-If your plinky has a GREEN mainboard, please check the other build guide. TODO: LINK
 
 This build guide video is for an older, much harder build! but it's still pretty similar, so if any of the following written instructions don't make sense, take a look at this video. In particular, you no longer need to trim any headers, nor solder any surface-mount LEDs. Other than that, it's much the same!
 
