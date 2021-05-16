@@ -1,5 +1,5 @@
 ---
-title: Plinky build guide
+title: Plinky build guide - BLUE (new)
 date: "2021-01-24T08:38:00.000Z"
 ---
 
@@ -16,7 +16,7 @@ Thank you for the wonderful video, Roland & Enrica of Making Sound Machines.
 
 ## Getting ready
 
-![Image of the Plinky kit](/build-guide-2/image3-min.jpg)
+![Image of the Plinky kit](/build-guide-blue/kit.jpg)
 
 Congratulations on getting a Plinky kit! It’s a pretty easy build, especially now that the surface mount LEDs come pre-assembled.
 
