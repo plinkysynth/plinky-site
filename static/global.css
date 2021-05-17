@@ -274,6 +274,8 @@ table th {
 }
 
 table th {
+  position: sticky;
+  top: 0;
   background: white;
   color: #334;
 }
