@@ -27,6 +27,10 @@
   aside {
     width: 240px;
     flex-shrink: 0;
+    position:sticky;
+    top:0;
+    max-height:100vh;
+    overflow-y:scroll;
   }
   aside ul {
     margin: 0;
@@ -77,6 +81,10 @@
     aside {
       margin-bottom: 6rem;
       width: 100%;
+      position:unset;
+      top:0;
+      max-height:unset;
+      overflow-y:unset;
     }
   }
 </style>
