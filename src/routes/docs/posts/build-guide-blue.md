@@ -102,6 +102,10 @@ Now take the 4 pins for the OLED screen, and slide the little plastic insulation
 
 We want to maximise the length of pins under the display. Solder them in place into the OLED, from the top side. Again, make sure they are flush and perpendicular to the display.
 
+A nice tip from Discord user Mark Linton is to use the front panel's sockets as a temporary holder for the screen's pins, and balance the screen on top of one of the knobs, as shown in the image below. This should line things up at a nice 90 degree angle, ready for the screen pins to be soldered.
+
+![alt_text](/build-guide-blue/screenpins.jpg "image_tooltip")
+
 ### Place (not solder) the Inter-board connectors
 
 ![alt_text](/build-guide-blue/toppins.jpg "image_tooltip")
