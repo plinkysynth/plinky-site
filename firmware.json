@@ -6,9 +6,23 @@
     "comment": "This moves the accelerometer sensitivity on the 'settings' button, and instead on the 'lower' shift of volume (bottom right) you get stereo width. 50% = normal stereo, 0% = all mid, no side; 100% = all side, no mid. Also supports name and category for presets (editable via web soon!)"
   },
   "beta": {
-    "file": "plink09p.uf2",
-    "version": "0.9p",
-    "date": "2021-05-14",
-    "comment": "hidden feature: if you hold down encoder for 5 seconds or so it says 'REBOOT?' and if you keep holdin it says'REBOOT!' and when you release, it reboots. if you quickly re-click, it will go into flash mode"
-  }
+    "file": "plink09r.uf2",
+    "version": "0.9r",
+    "date": "2021-05-23",
+    "comment": "increases octave number by 1 and makes it so long-press encoder to reset mod doesnt also reset the parameter value"
+  },
+  "history": [
+    {
+      "file": "plink09p.uf2",
+      "version": "0.9p",
+      "date": "2021-05-14",
+      "comment": "hidden feature: if you hold down encoder for 5 seconds or so it says 'REBOOT?' and if you keep holdin it says'REBOOT!' and when you release, it reboots. if you quickly re-click, it will go into flash mode"
+    },
+    {
+      "file": "plink09m.uf2",
+      "version": "0.9m",
+      "date": "2021-05-07",
+      "comment": "This moves the accelerometer sensitivity on the 'settings' button, and instead on the 'lower' shift of volume (bottom right) you get stereo width. 50% = normal stereo, 0% = all mid, no side; 100% = all side, no mid. Also supports name and category for presets (editable via web soon!)"
+    }
+  ]
 }

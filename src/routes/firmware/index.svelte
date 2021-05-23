@@ -38,5 +38,14 @@
     <li>While flashing, the LEDs will flicker. This is normal.</li>
     <li>To finish, just click the encoder again. Plinky will boot up and you should see the correct version number.</li>
   </ol>
+
+  <h2>History</h2>
+
+    {#each firmware.history as history}
+      <h3>{history.version} ({history.date})</h3>
+      <p>{history.comment}</p>
+      <p><a href="https://github.com/plinkysynth/plinky-site/raw/main/firmware/{history.file}" class="button">Download</a></p>
+      <hr />
+    {/each}
   
 </div>
