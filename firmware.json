@@ -1,17 +1,23 @@
 {
   "stable": {
-    "file": "plink09m.uf2",
-    "version": "0.9m",
-    "date": "2021-05-07",
-    "comment": "This moves the accelerometer sensitivity on the 'settings' button, and instead on the 'lower' shift of volume (bottom right) you get stereo width. 50% = normal stereo, 0% = all mid, no side; 100% = all side, no mid. Also supports name and category for presets (editable via web soon!)"
+    "file": "plink09s.uf2",
+    "version": "0.9s",
+    "date": "2021-05-28",
+    "comment": "fixes bug with note display"
   },
   "beta": {
-    "file": "plink09r.uf2",
-    "version": "0.9r",
-    "date": "2021-05-23",
-    "comment": "increases octave number by 1 and makes it so long-press encoder to reset mod doesnt also reset the parameter value"
+    "file": "plink09s.uf2",
+    "version": "0.9s",
+    "date": "2021-05-28",
+    "comment": "fixes bug with note display"
   },
   "history": [
+    {
+      "file": "plink09r.uf2",
+      "version": "0.9r",
+      "date": "2021-05-23",
+      "comment": "HAS A BUG WITH NOTE DISPLAY - increases octave number by 1 and makes it so long-press encoder to reset mod doesnt also reset the parameter value"
+    },
     {
       "file": "plink09p.uf2",
       "version": "0.9p",
