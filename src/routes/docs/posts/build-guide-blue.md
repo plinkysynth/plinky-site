@@ -149,6 +149,7 @@ Solder the display last, making sure that it is at a nice square angle lined up 
 CONGRATULATIONS! Have a cup of tea, and give yourself a pat on the back, you have completed all the soldering of your plinky kit!
 
 All that is left is to screw on the hex nuts to secure things in place, and add the 3 knobs.
+Depending on the amount you pulled the encoder (right knob) out from the board, you may find that the shaft is a bit short and it doesn't reliably 'click'. If that happens to you, don't worry! you can place a small amount of scrunched up paper into the knob cap itself, padding it out by ~2mm, and the knob will now reliably 'click'. 
 
 **Please don’t over tighten the hex nuts on the sockets**. There are thin copper wires which run along the board under the black insulation. With finger-tightness there is no issue. But if you use a strong driver to tighten the nuts, you may squish the circuit, scraping away the black coating and cause short circuits leading to problems. 
 
