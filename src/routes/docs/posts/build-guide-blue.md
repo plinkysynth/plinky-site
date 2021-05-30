@@ -8,12 +8,16 @@ If your plinky has a GREEN mainboard, please check [the older build guide](/docs
 
 ## Build guide video
 
+Lily & Caspar from up and coming youtube channel Channel37 have made the first and definitive build guide (& review!)
+for the blue-mainboard version of the plinky kit. Worth a watch before you start:
+<iframe width="800" height="450" src="https://www.youtube.com/embed/eIbiFzXvqkY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
-This build guide video is for an older, much harder build! but it's still pretty similar, so if any of the following written instructions don't make sense, take a look at this video. In particular, you no longer need to trim any headers, nor solder any surface-mount LEDs. Other than that, it's much the same!
+MakingSoundMachines also made a build guide for the green-board plinky, a slightly older, much harder build! 
+If you're looking for more tips, it's still pretty similar, and a great video, so if any of the following written instructions don't make sense, take a look at this video too. 
+In particular, you no longer need to trim any headers, nor solder any surface-mount LEDs. Other than that, it's much the same.
+https://www.youtube.com/watch?v=wPaNehskB-E
 
-<iframe width="800" height="450" src="https://www.youtube.com/embed/wPaNehskB-E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-
-Thank you for the wonderful video, Roland & Enrica of Making Sound Machines.
+Thank you for the wonderful videos, Lily & Caspar from Channel37, and Roland & Enrica from Making Sound Machines.
 
 ## Getting ready
 
@@ -110,7 +114,7 @@ A nice tip from Discord user Mark Linton is to use the front panel's sockets as 
 
 ![alt_text](/build-guide-blue/toppins.jpg "image_tooltip")
 
-Next, place the 8x2 pin headers at the top of the board, where it says ‘fingers’ and ‘thumbs’. DO NOT SOLDER THEM YET! JUST PLACE THEM LOOSELY
+Next, place the 8x2 pin headers at the top of the board, where it says ‘fingers’ and ‘thumbs’. DO NOT SOLDER THEM YET! JUST PLACE THEM LOOSELY. If you find them jiggling out in the next step, just put them back in last before you start soldering.
 
 ### Place the sockets and pots
 
