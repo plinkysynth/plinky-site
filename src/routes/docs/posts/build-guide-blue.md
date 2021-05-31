@@ -61,11 +61,19 @@ IF YOU HAVENT SOLDERED BEFORE, PLEASE READ THE ADAFRUIT SOLDERING GUIDE BEFORE S
 
 ## Preparation
 
-### 1. Remove the PCB assembly rails
+### 1. Remove the PCB assembly rails 
 
 ![Removing the assembly rails](/build-guide-blue/rails.jpg)
 
 You may find that your board and front panel have 5mm ‘rails’ on its left and/or right sides. These are a side effect of the manufacturing process, and are pre-scored to make them easy to remove. You should gently snap them off, if they are there. See 6:07 in this video to see what I mean - [https://youtu.be/M9FH82lPIkM?t=367](https://youtu.be/M9FH82lPIkM?t=367)
+
+### 1b. Aluminium Enclosure Owners: Sand down the edges of the pcb!
+
+Due to varying tolerances, different Plinky runs may be fractionally different widths.
+IF YOU ORDERED THE ALUMINIUM CASE, THE MAINBOARD MAY BE A FRACTION OF A MILLIMETER TOO WIDE - YOU NEED TO SAND IT!
+Please don't force the pcb assembly into your case, it's really hard to get out.
+Instead, sand down the edges of your plinky mainboard to make it maybe 0.1mm thinner - it should then slot into the case without having to be forced.
+If you don't have any sandpaper (like me!), you may find that running another PCB (for example, one of the rails you just removed) along the edge you want to 'sand' will do the trick. A bit like sharpening knives...
 
 ## Mainboard assembly
 
