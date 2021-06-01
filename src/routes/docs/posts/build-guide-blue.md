@@ -161,6 +161,8 @@ Depending on the amount you pulled the encoder (right knob) out from the board, 
 
 **Please don’t over tighten the hex nuts on the sockets**. There are thin copper wires which run along the board under the black insulation. With finger-tightness there is no issue. But if you use a strong driver to tighten the nuts, you may squish the circuit, scraping away the black coating and cause short circuits leading to problems. 
 
+In particular, the bottom right hex nut falls over a track that powers the blue LEDs. If your blue LEDs do not light, try loosening that nut. If that fixes the issue, you may have 'crushed' that track in the past. luckily, it usually recovers when you loosen the nut. you can also paint the nut (or the board under it) with some (Nail) varnish to insulate it.
+
 ## Making the case
 
 If you want, you can use 4 M3x15mm hex spacers, along with the 8 included M3 bolts, to hold Plinky together into a nice ‘pocket operator’ style ‘open case’. Screw the spacers into the base plate using M3 bolts, and then screw Plinky into them from above.
@@ -231,13 +233,17 @@ A: check the solder joints around the encoder. Reflow them, and try again. Be su
 
 #### Q: A whole row of LEDs is unlit.
 
-A: Don’t panic! You’ve just got a single dodgy joint on one of the pins of the connectors that go between the front and back panel. Looking at Plinky with xray eyes from the top (as if you’re playing it), there are two sets of 8x2 pins - one top left, the other top right. The LEDs are on the top right header. The rows of LEDs are controlled by the 8 pins that are on the ‘bottom’ row, as you look at it from above. In other words, the 8 pins further from the top of the board, on the right side connector. The first pin, on the left, is the first row of leds. Each pin to the right, corresponds to a row of LEDs going down the panel. So if the 6th row down of LEDs is out, you have a dodgy joint on the 6th pin from the left, on the bottom row, of the right connector. Go check the pins on the back of the mainboard. Check if the socket itself is not damaged. For reference, the pinout of the right connector is:
+
+A: Don’t panic! If it's the blue row at the bottom, it may be that you've tightened the bottom right hex nut tightly and it's ended up crushing a hidden trace and shorting it out. If loosening that hex nut fixes it, then either leave it loose or paint it with varnish to insulate it.
+
+If that nut doesn't fix it, or it's another row, you’ve just got a single dodgy joint on one of the pins of the connectors that go between the front and back panel. Looking at Plinky with xray eyes from the top (as if you’re playing it), there are two sets of 8x2 pins - one top left, the other top right. The LEDs are on the top right header. The rows of LEDs are controlled by the 8 pins that are on the ‘bottom’ row, as you look at it from above. In other words, the 8 pins further from the top of the board, on the right side connector. The first pin, on the left, is the first row of leds. Each pin to the right, corresponds to a row of LEDs going down the panel. So if the 6th row down of LEDs is out, you have a dodgy joint on the 6th pin from the left, on the bottom row, of the right connector. Go check the pins on the back of the mainboard. Check if the socket itself is not damaged. For reference, the pinout of the right connector is:
 
 ![alt_text](/build-guide-2/image25-min.jpg "image_tooltip")
 
-The first 5 pins at the top correspond to columns of LEDs. The top right 2 pins, marked TS2_ and TS1_, correspond to the touch strip with blue LEDs at the bottom of Plinky. And the bottom 8 pins, from left to right, correspond to the LED rows, from top to bottom, as described in the paragraph above.
+The first 5 pins at the top correspond to columns of LEDs. 
+The top right 2 pins, marked TS2_ and TS1_, correspond to the *touch* strip (not LEDs) horizontally at the bottom of Plinky. And the bottom 8 pins, from left to right, correspond to the white LED rows, from top to bottom, as described in the paragraph above.
 
-Bottom line: Row of LED’s  out? Check your lower pins on the right connector. 
+Bottom line: Row of LED’s out? Check your lower pins on the right connector, and/or try loosening the bottom right nut. 
 
 #### Q: A whole column (or several) of LEDs is unlit
 
