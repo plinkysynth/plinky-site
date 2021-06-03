@@ -8,12 +8,16 @@ If your plinky has a GREEN mainboard, please check [the older build guide](/docs
 
 ## Build guide video
 
+Lily & Caspar from up and coming youtube channel Channel37 have made the first and definitive build guide (& review!)
+for the blue-mainboard version of the plinky kit. Worth a watch before you start:
+<iframe width="800" height="450" src="https://www.youtube.com/embed/eIbiFzXvqkY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
-This build guide video is for an older, much harder build! but it's still pretty similar, so if any of the following written instructions don't make sense, take a look at this video. In particular, you no longer need to trim any headers, nor solder any surface-mount LEDs. Other than that, it's much the same!
+MakingSoundMachines also made a build guide for the green-board plinky, a slightly older, much harder build! 
+If you're looking for more tips, it's still pretty similar, and a great video, so if any of the following written instructions don't make sense, take a look at this video too. 
+In particular, you no longer need to trim any headers, nor solder any surface-mount LEDs. Other than that, it's much the same.
+https://www.youtube.com/watch?v=wPaNehskB-E
 
-<iframe width="800" height="450" src="https://www.youtube.com/embed/wPaNehskB-E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-
-Thank you for the wonderful video, Roland & Enrica of Making Sound Machines.
+Thank you for the wonderful videos, Lily & Caspar from Channel37, and Roland & Enrica from Making Sound Machines.
 
 ## Getting ready
 
@@ -57,11 +61,19 @@ IF YOU HAVENT SOLDERED BEFORE, PLEASE READ THE ADAFRUIT SOLDERING GUIDE BEFORE S
 
 ## Preparation
 
-### 1. Remove the PCB assembly rails
+### 1. Remove the PCB assembly rails 
 
 ![Removing the assembly rails](/build-guide-blue/rails.jpg)
 
 You may find that your board and front panel have 5mm ‘rails’ on its left and/or right sides. These are a side effect of the manufacturing process, and are pre-scored to make them easy to remove. You should gently snap them off, if they are there. See 6:07 in this video to see what I mean - [https://youtu.be/M9FH82lPIkM?t=367](https://youtu.be/M9FH82lPIkM?t=367)
+
+### 1b. Aluminium Enclosure Owners: Sand down the edges of the pcb!
+
+Due to varying tolerances, different Plinky runs may be fractionally different widths.
+IF YOU ORDERED THE ALUMINIUM CASE, THE MAINBOARD MAY BE A FRACTION OF A MILLIMETER TOO WIDE - YOU NEED TO SAND IT!
+Please don't force the pcb assembly into your case, it's really hard to get out.
+Instead, sand down the edges of your plinky mainboard to make it maybe 0.1mm thinner - it should then slot into the case without having to be forced.
+If you don't have any sandpaper (like me!), you may find that running another PCB (for example, one of the rails you just removed) along the edge you want to 'sand' will do the trick. A bit like sharpening knives...
 
 ## Mainboard assembly
 
@@ -110,7 +122,7 @@ A nice tip from Discord user Mark Linton is to use the front panel's sockets as 
 
 ![alt_text](/build-guide-blue/toppins.jpg "image_tooltip")
 
-Next, place the 8x2 pin headers at the top of the board, where it says ‘fingers’ and ‘thumbs’. DO NOT SOLDER THEM YET! JUST PLACE THEM LOOSELY
+Next, place the 8x2 pin headers at the top of the board, where it says ‘fingers’ and ‘thumbs’. DO NOT SOLDER THEM YET! JUST PLACE THEM LOOSELY. If you find them jiggling out in the next step, just put them back in last before you start soldering.
 
 ### Place the sockets and pots
 
@@ -145,8 +157,11 @@ Solder the display last, making sure that it is at a nice square angle lined up 
 CONGRATULATIONS! Have a cup of tea, and give yourself a pat on the back, you have completed all the soldering of your plinky kit!
 
 All that is left is to screw on the hex nuts to secure things in place, and add the 3 knobs.
+Depending on the amount you pulled the encoder (right knob) out from the board, you may find that the shaft is a bit short and it doesn't reliably 'click'. If that happens to you, don't worry! you can place a small amount of scrunched up paper into the knob cap itself, padding it out by ~2mm, and the knob will now reliably 'click'. 
 
 **Please don’t over tighten the hex nuts on the sockets**. There are thin copper wires which run along the board under the black insulation. With finger-tightness there is no issue. But if you use a strong driver to tighten the nuts, you may squish the circuit, scraping away the black coating and cause short circuits leading to problems. 
+
+In particular, the bottom right hex nut falls over a track that powers the blue LEDs. If your blue LEDs do not light, try loosening that nut. If that fixes the issue, you may have 'crushed' that track in the past. luckily, it usually recovers when you loosen the nut. you can also paint the nut (or the board under it) with some (Nail) varnish to insulate it.
 
 ## Making the case
 
@@ -218,13 +233,17 @@ A: check the solder joints around the encoder. Reflow them, and try again. Be su
 
 #### Q: A whole row of LEDs is unlit.
 
-A: Don’t panic! You’ve just got a single dodgy joint on one of the pins of the connectors that go between the front and back panel. Looking at Plinky with xray eyes from the top (as if you’re playing it), there are two sets of 8x2 pins - one top left, the other top right. The LEDs are on the top right header. The rows of LEDs are controlled by the 8 pins that are on the ‘bottom’ row, as you look at it from above. In other words, the 8 pins further from the top of the board, on the right side connector. The first pin, on the left, is the first row of leds. Each pin to the right, corresponds to a row of LEDs going down the panel. So if the 6th row down of LEDs is out, you have a dodgy joint on the 6th pin from the left, on the bottom row, of the right connector. Go check the pins on the back of the mainboard. Check if the socket itself is not damaged. For reference, the pinout of the right connector is:
+
+A: Don’t panic! If it's the blue row at the bottom, it may be that you've tightened the bottom right hex nut tightly and it's ended up crushing a hidden trace and shorting it out. If loosening that hex nut fixes it, then either leave it loose or paint it with varnish to insulate it.
+
+If that nut doesn't fix it, or it's another row, you’ve just got a single dodgy joint on one of the pins of the connectors that go between the front and back panel. Looking at Plinky with xray eyes from the top (as if you’re playing it), there are two sets of 8x2 pins - one top left, the other top right. The LEDs are on the top right header. The rows of LEDs are controlled by the 8 pins that are on the ‘bottom’ row, as you look at it from above. In other words, the 8 pins further from the top of the board, on the right side connector. The first pin, on the left, is the first row of leds. Each pin to the right, corresponds to a row of LEDs going down the panel. So if the 6th row down of LEDs is out, you have a dodgy joint on the 6th pin from the left, on the bottom row, of the right connector. Go check the pins on the back of the mainboard. Check if the socket itself is not damaged. For reference, the pinout of the right connector is:
 
 ![alt_text](/build-guide-2/image25-min.jpg "image_tooltip")
 
-The first 5 pins at the top correspond to columns of LEDs. The top right 2 pins, marked TS2_ and TS1_, correspond to the touch strip with blue LEDs at the bottom of Plinky. And the bottom 8 pins, from left to right, correspond to the LED rows, from top to bottom, as described in the paragraph above.
+The first 5 pins at the top correspond to columns of LEDs. 
+The top right 2 pins, marked TS2_ and TS1_, correspond to the *touch* strip (not LEDs) horizontally at the bottom of Plinky. And the bottom 8 pins, from left to right, correspond to the white LED rows, from top to bottom, as described in the paragraph above.
 
-Bottom line: Row of LED’s  out? Check your lower pins on the right connector. 
+Bottom line: Row of LED’s out? Check your lower pins on the right connector, and/or try loosening the bottom right nut. 
 
 #### Q: A whole column (or several) of LEDs is unlit
 
