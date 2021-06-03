@@ -1,17 +1,23 @@
 {
   "stable": {
-    "file": "plink09s.uf2",
-    "version": "0.9s",
-    "date": "2021-05-28",
-    "comment": "fixes bug with note display"
+    "file": "plink09x.uf2",
+    "version": "0.9x",
+    "date": "2021-06-02",
+    "comment": "added 'diminished' scale"
   },
   "beta": {
-    "file": "plink09s.uf2",
-    "version": "0.9s",
-    "date": "2021-05-27",
-    "comment": "FIXES BAD BUG IN 09r. increases octave number by 1 and makes it so long-press encoder to reset mod doesnt also reset the parameter value"
+    "file": "plink09w.uf2",
+    "version": "0.9w",
+    "date": "2021-06-01",
+    "comment": "found the bug that trashes the last sample slice position! also now display sample amplitudes on the pad LEDs during tape playback. also re-enable expander midi out after bug hunting. add a new saw LFO shape."
   },
   "history": [
+    {
+      "file": "plink09s.uf2",
+      "version": "0.9s",
+      "date": "2021-05-27",
+      "comment": "FIXES BAD BUG IN 09r. increases octave number by 1 and makes it so long-press encoder to reset mod doesnt also reset the parameter value"
+    },
     {
       "file": "plink09r.uf2",
       "version": "0.9r",
