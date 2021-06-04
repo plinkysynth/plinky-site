@@ -89,7 +89,7 @@ A TRS, ⅛” audio jack. Useful for two things. Plinky’s sampler can sample 6
 > Remember, if you have Plinky V2 (with the blue main board) you can and absolutely should try running Eurorack signals through Line level inputs to enloy that crunchy analog saturation. 
 
 #### USB
-Micro USB slot. It can power Plinky (as long as it is not Eurorack powered, Best not to connect both at the same time.
+Micro USB slot. It can power Plinky.  Warning -- do not attempt to power Plinky with both USB and Eurorack simultaneously. 
 USB is also used for MIDI in/out. It needs a USB host, so you can connect it to your computer and integrate Plinky into your DAW. It has polyphonic aftertouch, and most parameters can be edited over MIDI (see the MIDI chapter). Finally, USB is used for Firmware updates.
 
 #### Audio out (line level stereo)
