@@ -3,9 +3,9 @@
 </script>
 
 <nav>
-  <a rel=prefetch class='{segment === "docs" ? "selected" : ""}' href='docs'>Docs</a>
-  <a rel=prefetch class='{segment === "community" ? "selected" : ""}' href='community'>Community</a>
-  <a rel=prefetch class='{segment === "presets" ? "selected" : ""}' href='presets'>Presets</a>
+  <a class='{segment === "docs" ? "selected" : ""}' href='docs'>Docs</a>
+  <a class='{segment === "community" ? "selected" : ""}' href='community'>Community</a>
+  <a class='{segment === "presets" ? "selected" : ""}' href='presets'>Presets</a>
 </nav>
 
 <style>
