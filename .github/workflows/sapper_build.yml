@@ -13,7 +13,7 @@ jobs:
       - name: Build Sapper
         uses: truewebartisans/actions-sapper@master
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@master
+        uses: peaceiris/actions-gh-pages@main
         with:
           publish_dir: __sapper__/export
           publish_branch: gh-pages
