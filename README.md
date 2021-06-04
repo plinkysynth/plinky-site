@@ -1,6 +1,6 @@
 # plinky-site
 
-This is the website for [www.plinkysynth.com](https://www.plinkysynth.com). It is deployed on Netlify, and this website is from the default template for setting up a [Sapper](https://github.com/sveltejs/sapper) project. Typescript is (lightly) used.
+This is the website for [www.plinkysynth.com](https://www.plinkysynth.com). It is deployed on Github Pages, and this website is from the default template for setting up a [Sapper](https://github.com/sveltejs/sapper) project. Typescript is (lightly) used.
 
 ## Running the project locally
 
