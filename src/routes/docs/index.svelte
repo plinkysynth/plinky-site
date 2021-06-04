@@ -19,7 +19,7 @@
   {#each posts as post, index}
     <div class="post-item">
       <h2>
-        <a rel='prefetch' href='docs/{post.slug}'>{post.title}</a>
+        <a href='docs/{post.slug}'>{post.title}</a>
       </h2>
     </div>
   {/each}
