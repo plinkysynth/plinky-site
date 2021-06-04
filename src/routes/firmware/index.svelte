@@ -35,7 +35,7 @@
     <li>Hold the right encoder down while plugging the USB cable into your Plinky.</li>
     <li>Plinky will show up as an attached drive and you should see the "tunnel of lights" effect on the LEDs.</li>
     <li>Drag and drop CURRENT.uf2 to the drive. <b>Make sure that it's called CURRENT.uf2 and nothing else.</b></li>
-    <li>While flashing, the LEDs will flicker. This is normal.</li>
+    <li>While flashing, the LEDs will flicker. This is normal!</li>
     <li>To finish, just click the encoder again. Plinky will boot up and you should see the correct version number.</li>
   </ol>
 
