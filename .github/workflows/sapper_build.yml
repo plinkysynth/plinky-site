@@ -1,0 +1,20 @@
+name: Build Sapper and Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Build Sapper
+        uses: truewebartisans/actions-sapper@master
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@master
+        with:
+          publish_dir: __sapper__/export
+          publish_branch: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
