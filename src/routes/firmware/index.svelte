@@ -47,5 +47,13 @@
       <p><a href="https://github.com/plinkysynth/plinky-site/raw/main/firmware/{history.file}" class="button">Download</a></p>
       <hr />
     {/each}
+
+  <p style="display: none;">
+    Redirects:
+    <a href="/fw">/fw</a>
+    <a href="/webusb">/webusb</a>
+    <a href="/play">/play</a>
+    <a href="/build">/build</a>
+  </p>
   
 </div>
