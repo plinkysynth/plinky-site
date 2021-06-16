@@ -16,7 +16,7 @@
       "file": "plink09w.uf2",
       "version": "0.9w",
       "date": "2021-06-01",
-      "comment": "found the bug that trashes the last sample slice position! also now display sample amplit$
+      "comment": "found the bug that trashes the last sample slice position! also now display sample amplitudes on the pad LEDs during tape playback. also re-enable expander midi out after bug hunting. add a new saw LFO shape."
     },
     {
       "file": "plink09s.uf2",
