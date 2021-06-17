@@ -223,6 +223,10 @@ So, your Plinky booted up. You probably managed to put new firmware on it, even 
 
 Here are some common problems
 
+#### Q: I can't get Plinky into flashing mode by pressing down the encoder while plugging in the USB cable.
+
+A: This is the most common question - check that the encoder can actually click! The knobs you received can be of varying height due to manufacturing tolerances, and the encoder needs a little bit of room to click down. You might have to put a tiny paper ball under the knob if you soldered the encoder a little low- this will help keep the knob up and make the encoder click.
+
 #### Q: Plinky always boots either to ‘calibration’ or play mode, but I can’t get it to boot into the ‘USB update’ mode (by holding down the encoder on boot)
 
 A: check the solder joints around the encoder. Reflow them, and try again. Be sure to hold the encoder firmly down as you power Plinky up.
