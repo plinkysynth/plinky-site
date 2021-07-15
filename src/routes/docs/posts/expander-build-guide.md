@@ -37,7 +37,7 @@ There's a little 2x4 socket that goes on the front panel, a USB socket, 4 thonki
 
 ![Connectors](/expander-build-guide/image2.jpg)
 
-Shove the jacks, usb and 4x2 pins into it, and solder it from the other side. you can push the little 4x2 socket upside down onto the pins to hold them neatly in placeshove the jacks, usb and 4x2 pins into it, and solder it from the other side. you can push the little 4x2 socket upside down onto the pins to hold them neatly in place.
+Shove the jacks, usb and 4x2 pins into it, and solder it from the other side. You can push the little 4x2 socket upside down onto the pins to hold them neatly in place.
 
 You want to use the face plate to hold it all in place like a sandwich, just like making plinky.
 
