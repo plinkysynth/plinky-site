@@ -43,7 +43,7 @@
   <p>It fits into 24HP eurorack cases, but can also be played as a standalone desktop mini-synth, with line-level stereo input and a headphone output, all powered from a micro-USB connector.</p>
 
   <h4>When is it available?</h4>
-  <p>As it is a hobby project at heart, the DIY kits are made in limited quantities. The first run of 100 sold out in December 2020. There was a second run of 200 in May 2021, <a href="https://www.thonk.co.uk/plinky-2021/" target="_blank">with more on the way</a>. You can sign up for a waitlist at Thonk, who will notify you of new stock. If you want one, sign up on the list as there <i>will</i> eventually be enough Plinky kits made for everyone on it!</p>
+  <p>Due to the current semiconductor shortage, the DIY kits <a href="https://www.thonk.co.uk/plinky-2021/" target="_blank">are made in limited quantities by Thonk</a>. You can sign up for their waiting list and they will notify you of new stock via e-mail. If you want a Plinky, sign up as there <i>will</i> be enough kits made for everyone on it!</p>
   <a class="button" target="_blank" href="https://www.thonk.co.uk/shop/plinky/">Waitlist at Thonk</a>
 </TextAndImage>
 
