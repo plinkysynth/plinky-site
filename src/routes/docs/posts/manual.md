@@ -90,7 +90,13 @@ A TRS, ⅛” audio jack. Useful for two things. Plinky’s sampler can sample 6
 
 #### USB
 Micro USB slot. It can power Plinky.  Warning -- do not attempt to power Plinky with both USB and Eurorack simultaneously. 
-USB is also used for MIDI in/out. It needs a USB host, so you can connect it to your computer and integrate Plinky into your DAW. It has polyphonic aftertouch, and most parameters can be edited over MIDI (see the MIDI chapter). Finally, USB is used for Firmware updates.
+USB is also used for MIDI in/out. It needs a USB host, so you can connect it to your computer and integrate Plinky into your DAW. It has polyphonic aftertouch, and most parameters can be edited over MIDI (see the MIDI chapter). Finally, USB is used for Firmware, preset and wavetable updates.
+
+- Firmware files are in the form of: `CURRENT.UF2`
+- Wavetable files are in the form of: `WAVETABL.UF2`
+- Preset files are in the form of: `PRESETS.UF2`
+
+When copying over any of these, make sure the filename matches.
 
 #### Audio out (line level stereo)
 A TRS ⅛”audio jack that outputs the mixed output at line level. 

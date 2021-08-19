@@ -1,17 +1,29 @@
 {
   "stable": {
-    "file": "plink09x.uf2",
-    "version": "0.9x",
-    "date": "2021-06-02",
-    "comment": "added 'diminished' scale"
+    "file": "plink09z.uf2",
+    "version": "0.9z",
+    "date": "2021-06-26",
+    "comment": "fix for clicks in the shimmer reverb"
   },
   "beta": {
     "file": "plink09y.uf2",
     "version": "0.9y",
     "date": "2021-06-17",
-    "comment": "fixed wavetable import. update the wavetable by copying a wavetabl.uf2 over to plinky!"
+    "comment": "fixed wavetable import. update the wavetable by copying a WAVETABL.UF2 over to plinky!"
   },
   "history": [
+    {
+      "file": "plink09y.uf2",
+      "version": "0.9y",
+      "date": "2021-06-17",
+      "comment": "fixed wavetable import. update the wavetable by copying a WAVETABL.UF2 over to plinky!"
+    },
+    {
+      "file": "plink09x.uf2",
+      "version": "0.9x",
+      "date": "2021-06-02",
+      "comment": "added 'diminished' scale"
+    },
     {
       "file": "plink09w.uf2",
       "version": "0.9w",
