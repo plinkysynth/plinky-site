@@ -9,14 +9,14 @@
     "file": "plink09y.uf2",
     "version": "0.9y",
     "date": "2021-06-17",
-    "comment": "fixed wavetable import. update the wavetable by copying a WAVETABL.UF2 over to plinky!"
+    "comment": "fixed wavetable import. update the wavetable by copying a WAVETAB.UF2 over to plinky!"
   },
   "history": [
     {
       "file": "plink09y.uf2",
       "version": "0.9y",
       "date": "2021-06-17",
-      "comment": "fixed wavetable import. update the wavetable by copying a WAVETABL.UF2 over to plinky!"
+      "comment": "fixed wavetable import. update the wavetable by copying a WAVETAB.UF2 over to plinky!"
     },
     {
       "file": "plink09x.uf2",
