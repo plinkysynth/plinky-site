@@ -67,7 +67,7 @@ app // You can also use Express
 			}
 			else if(req.originalUrl === '/presets/default/PRESETS.uf2') {
 							
-				const file = path.join(process.cwd(), 'presets/', 'DEFAULT.uf2');
+				const file = path.join(process.cwd(), 'presets/', 'DEFAULT.UF2');
 				const s = fs.createReadStream(file);
 
 				s.on('open', function () {
