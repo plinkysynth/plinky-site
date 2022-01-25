@@ -328,6 +328,17 @@ table th {
 
 @media print {
 
+  .Post p,
+  .Post h1,
+  .Post h2,
+  .Post h3,
+  .Post h4,
+  .Post blockquote
+  .Post img {
+    page-break-inside: avoid!important;
+    break-inside:avoid !important;
+  }
+
   header {
     display: none !important;
   }
