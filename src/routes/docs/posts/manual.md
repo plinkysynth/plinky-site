@@ -3,8 +3,6 @@ title: Manual
 date: "2021-01-24T08:38:00.000Z"
 ---
 
-Work in progress!
-
 # Plinky Manual
 
 *Plinky is an 8 voice polyphonic touch synthesiser that specialises in fragile, melancholic sounds.*
@@ -104,8 +102,6 @@ A TRS ⅛”audio jack that outputs the mixed output at line level.
 ## Main Interface
 Plinky is built around 64 playable ‘pads’. Actually they are not really pads, they are zones on a vertical strip. By calibrating Plinky’s touch strips, we make them function as pads. 
 
-![](/manual-images/main_interface.png)  
-
 ### Top Row
 
 #### Knobs A & B
@@ -139,34 +135,26 @@ The column of jacks on the left are all inputs. The column of jacks on the right
 The Bottom row of pads (blue leds), are shift and transport controls, from left to right: 
 
 #### Shift Top & Shift Bottom
-![Shift Top](/manual-images/shift-top.svg)
-![Shift Bottom](/manual-images/shift-bottom.svg)  
-**Edit Mode** The first two shift buttons are the most important: they allow you to modify the sound. Why two? They map to two complete sets of parameters – primary (top) on SB_PARAMS_TOP and secondary (bottom) on SB_PARAMS_BOT, corresponding to the parameters that are written above and below each of the pads. Tap or hold either, then tap an icon pads to choose a parameter to edit.
+![Shift Top](/manual-images/shift-top.svg) ![Shift Bottom](/manual-images/shift-bottom.svg)  **Edit Mode** The first two shift buttons are the most important: they allow you to modify the sound. Why two? They map to two complete sets of parameters – primary (top) on SB_PARAMS_TOP and secondary (bottom) on SB_PARAMS_BOT, corresponding to the parameters that are written above and below each of the pads. Tap or hold either, then tap an icon pads to choose a parameter to edit.
 
 Once in edit mode, adjust the chosen parameter using the left most column of pads as a slider, or use the encoder to the left of the screen. While in this mode you can play all the pads, except for the left most (slider) pads. Tap again to return to play mode (LED off). 
 
 #### Preset
-![Preset](/manual-images/preset.svg)  
-**Preset Mode** Tap or hold, then tap a main pad to select a preset (left 32 pads), pattern (middle 24), or sample (right 8). A long press on a sample pad will edit it; on other pads, it will copy the current preset / pattern to it. Press and hold SB_CLEAR to clear the last touched preset or pattern.
+![Preset](/manual-images/preset.svg)  **Preset Mode** Tap or hold, then tap a main pad to select a preset (left 32 pads), pattern (middle 24), or sample (right 8). A long press on a sample pad will edit it; on other pads, it will copy the current preset / pattern to it. Press and hold SB_CLEAR to clear the last touched preset or pattern.
 
 #### Previous
-![Previous](/manual-images/previous.svg)  
-Previous Button Tap to jump to the previous step (sequencer paused) or first step (sequencer playing). *Or, hold it then tap a main pad to jump to a step within the current loop, or to set a new loop start outside the current loop.*
+![Previous](/manual-images/previous.svg) **Previous Button** Tap to jump to the previous step (sequencer paused) or first step (sequencer playing). *Or, hold it then tap a main pad to jump to a step within the current loop, or to set a new loop start outside the current loop.*
 
 #### Next
-![Next](/manual-images/next.svg)  
-Next Button Tap to jump to the next step.
+![Next](/manual-images/next.svg) **Next Button** Tap to jump to the next step.  
 *Or, hold it then tap a main pad to set the end of the current loop.*
 
 #### Clear
-![Clear](/manual-images/clear.svg)  
-Clear Button Tap or hold to clear stuff. Useful to mute recorded notes, live, while the sequencer is playing. If recording, this will permanently clear steps.
+![Clear](/manual-images/clear.svg) **Clear Button** Tap or hold to clear stuff. Useful to mute recorded notes, live, while the sequencer is playing. If recording, this will permanently clear steps.
 In preset mode, hold this after tapping a main pad to clear whole patterns or re-initialize presets. 
  
 #### Record and Play
-![Record](/manual-images/record.svg)  
-![Play](/manual-images/play.svg)  
-Play / Record Buttons Tap to toggle playback & recording.
+![Record](/manual-images/record.svg) ![Play](/manual-images/play.svg) **Play / Record Buttons** Tap to toggle playback & recording.
 Recording can be step based (when sequencer is paused) or realtime (when sequencer is playing). When you enter a note (or multiple notes, the sequencer is polyphonic) the sequencer jumps to the next step.
 
 ### Center Pads & LEDs
@@ -186,10 +174,7 @@ The leftmost column of pads is a slider. The rightmost column of pads are modula
 
 # Sound (Synthesizer)
 #### Shape
-![Shift Top](/manual-images/shift-top.svg)
-![hold...](/manual-images/hold.svg)
-![Shape](/manual-images/shape.svg)  
-Controls the shape of the oscillators in Plinky. When exactly 0%, you get  4 sawtooths per voice. When positive, you blend smoothly through 16 ROM wavetable shapes, (2 per voice,) provided by @miunau. When negative, you get PWM control of pulse/square shapes, (also 2 per voice.)
+![Shift Top](/manual-images/shift-top.svg) ![hold...](/manual-images/hold.svg) ![Shape](/manual-images/shape.svg)  Controls the shape of the oscillators in Plinky. When exactly 0%, you get  4 sawtooths per voice. When positive, you blend smoothly through 16 ROM wavetable shapes, (2 per voice,) provided by @miunau. When negative, you get PWM control of pulse/square shapes, (also 2 per voice.)
 
 CV and internal modulation only work either positive or negative: you can blend through the wavetables when the parameter is over 0, or you can modulate pulse/square waves when the value is negative. You cant cross through zero.
 
@@ -197,50 +182,31 @@ Plinky pans each set of oscillators, (and the sample grains) a little giving the
 
 > Tip: Honestly, just play with this one for a bit. Assign it to a knob, play an arp or pads and listen to the rich, full scope of sounds Plinky will play. From there on see for yourself. Add an envelope to it, or let pressure modulate the timbre of the sound.
 
-#### Noise
-![Shift Bottom](/manual-images/shift-bottom.svg)
-![hold...](/manual-images/hold.svg)
-![Noise](/manual-images/noise.svg)  
-Each voice can add a variable amount of white noise to the oscillator, before the low-pass gate.
-
->Tip: Try assigning an envelope (eg. envelope 2 if you want the noise to modulate separately from what Envelope 1 is controlling) to the noise parameter. An envelope with a short attack and decay will give a percussive feel, while longer attack will ‘wash over’ the sound which is more suitable for pads.
+#### Noise 
+![Shift Bottom](/manual-images/shift-bottom.svg) ![hold...](/manual-images/hold.svg) ![Noise](/manual-images/noise.svg)  Each voice can add a variable amount of white noise to the oscillator, before the low-pass gate. Try assigning an envelope to the noise parameter. An envelope with a short attack and decay will give a percussive feel, while longer attack will ‘wash over’ the sound which is more suitable for pads.
 
 #### Drive
-![Shift Top](/manual-images/shift-top.svg)
-![hold...](/manual-images/hold.svg)
-![Distortion](/manual-images/distortion--resonance.svg)  
-Drive/Saturation. When turned up high, the saturation unit will create guitar-like tones, especially when playing polyphonically. It can also be used to compensate for changes in volume, for example if the Sensitivity parameter is low.
+![Shift Top](/manual-images/shift-top.svg) ![hold...](/manual-images/hold.svg) ![Distortion](/manual-images/distortion--resonance.svg)  When turned up high, the saturation unit will create guitar-like tones, especially when playing polyphonically. It can also be used to compensate for changes in volume, for example if the Sensitivity parameter is low.
 
 #### Resonance
-![Shift Bottom](/manual-images/shift-bottom.svg)
-![hold...](/manual-images/hold.svg)
-![Resonance](/manual-images/distortion--resonance.svg)  
-Each voice has a 2-pole lowpass gate controlled by your finger pressure and the Sensitivity control. This parameter adds resonance to the filter. Note that at high levels of resonance, you may wish to adjust the drive or the high pass filter parameters.
+![Shift Bottom](/manual-images/shift-bottom.svg) ![hold...](/manual-images/hold.svg) ![Resonance](/manual-images/distortion--resonance.svg)   Each voice has a 2-pole lowpass gate controlled by your finger pressure and the Sensitivity control. This parameter adds resonance to the filter. Note that at high levels of resonance, you may wish to adjust the drive or the high pass filter parameters.
  
 #### Pitch
-![Shift Top](/manual-images/shift-top.svg)
-![hold...](/manual-images/hold.svg)
-![Pitch](/manual-images/pitch.svg)  
-Use this to (fine) tune Plinky. Range is 1 octave up or down, unquantized.
+![Shift Top](/manual-images/shift-top.svg) ![hold...](/manual-images/hold.svg) ![Pitch](/manual-images/pitch.svg)  Use this to (fine) tune Plinky. Range is 1 octave up or down, unquantized.
 Tip: By default Plinky is tuned to C, so to play in G we could set this value to either 7 or - 5
 
 #### Degree
-![Shift Top](/manual-images/shift-top.svg)
-![hold...](/manual-images/hold.svg)
-![Degree](/manual-images/degree.svg)  
-Think of this as a quantized pitch control, that transposes plinky in such a way that all the notes stay in the same scale. In other words, it changes which degree of the scale is played, but not the root of the scale itself.
+![Shift Top](/manual-images/shift-top.svg) ![hold...](/manual-images/hold.svg) ![Degree](/manual-images/degree.svg)  Think of this as a quantized pitch control, that transposes plinky in such a way that all the notes stay in the same scale. In other words, it changes which degree of the scale is played, but not the root of the scale itself.
 
 #### Octave
-![Shift Top](/manual-images/shift-top.svg)
-![hold...](/manual-images/hold.svg)
-![Octave](/manual-images/octave--scale.svg)   
-Use this to quickly change pitch, quantised to octaves.
+![Shift Top](/manual-images/shift-top.svg) ![hold...](/manual-images/hold.svg) ![Octave](/manual-images/octave--scale.svg) Use this to quickly change pitch, quantised to octaves.
 
 #### Scale
-![Shift Bottom](/manual-images/shift-bottom.svg)
-![hold...](/manual-images/hold.svg)
-![Scale](/manual-images/octave--scale.svg)  
-Selects which scale of notes plinky uses. The following Scales are available on Plinky:
+
+![Shift Bottom](/manual-images/shift-bottom.svg) ![hold...](/manual-images/hold.svg) ![Scale](/manual-images/octave--scale.svg) Selects which scale of notes plinky uses.  
+
+#### The following Scales are available:
+
 * Major
 * Minor
 * Harminoc Min
@@ -269,156 +235,90 @@ Selects which scale of notes plinky uses. The following Scales are available on 
 * Chromatic
 
 #### Glide
-![Shift Top](/manual-images/shift-top.svg)
-![hold...](/manual-images/hold.svg)
-![Glide](/manual-images/glide--microtone.svg)  
-Controls the speed of the portamento between notes in a single voice. Higher = slower
+![Shift Top](/manual-images/shift-top.svg) ![hold...](/manual-images/hold.svg) ![Glide](/manual-images/glide--microtone.svg)  Controls the speed of the portamento between notes in a single voice. Higher = slower
 
 #### Microtone
-![Shift Bottom](/manual-images/shift-bottom.svg)
-![hold...](/manual-images/hold.svg)
-![Microtone](/manual-images/glide--microtone.svg)  
-Controls how much vertical movement of your finger detunes the note. This also thickens the sound through 'unison' detuning of the individual oscillators in each note, so values above 0 are recommended.
+![Shift Bottom](/manual-images/shift-bottom.svg) ![hold...](/manual-images/hold.svg) ![Microtone](/manual-images/glide--microtone.svg)  Controls how much vertical movement of your finger detunes the note. This also thickens the sound through 'unison' detuning of the individual oscillators in each note, so values above 0 are recommended.
 
 #### Osc Interval
-![Shift Top](/manual-images/shift-top.svg)
-![hold...](/manual-images/hold.svg)
-![Osc Interval](/manual-images/osc-interval--column.svg)  
-Each voice has several oscillators, and this sets a fixed interval between them, from +1 to -1 octaves.
+![Shift Top](/manual-images/shift-top.svg) ![hold...](/manual-images/hold.svg) ![Osc Interval](/manual-images/osc-interval--column.svg)  Each voice has several oscillators, and this sets a fixed interval between them, from +1 to -1 octaves.
 
 #### Stride (Column)
-![Shift Bottom](/manual-images/shift-bottom.svg)
-![hold...](/manual-images/hold.svg)
-![Stride](/manual-images/osc-interval--column.svg)  
-Controls the interval, in semitones, between each column of plinky. It defaults to 7 semitones, a perfect fifth, like a Cello or Violin. The notes are always snapped to the chosen scale, even if the stride calls for chromatic notes, so plinky does its best to choose column pitches that follow this stride while staying in-scale.
+![Shift Bottom](/manual-images/shift-bottom.svg) ![hold...](/manual-images/hold.svg) ![Stride](/manual-images/osc-interval--column.svg)  Controls the interval, in semitones, between each column of plinky. It defaults to 7 semitones, a perfect fifth, like a Cello or Violin. The notes are always snapped to the chosen scale, even if the stride calls for chromatic notes, so plinky does its best to choose column pitches that follow this stride while staying in-scale.
 
 ## Envelope Generator
-![Attack](/manual-images/attack.svg)
-![Decay](/manual-images/decay.svg)
-![Sustain](/manual-images/sustain.svg)
-![Release](/manual-images/release.svg)  
-Plinky has two Envelope Generators. Envelope 1 (the upper parameter) is mapped to the Low Pass Gates and has Attack, Decay, Sustain and Release stages. Envelope 2 (the bottom parameter) is unassigned by default and can be mapped to parameters with the Envelope modulator pad. Like Envelope 1 it is an ADSR envelope. The parameters on the same pads.
+![Attack](/manual-images/attack.svg) ![Decay](/manual-images/decay.svg) ![Sustain](/manual-images/sustain.svg) ![Release](/manual-images/release.svg)  Plinky has two Envelope Generators. Envelope 1 (the upper parameter) is mapped to the Low Pass Gates and has Attack, Decay, Sustain and Release stages. Envelope 2 (the bottom parameter) is unassigned by default and can be mapped to parameters with the Envelope modulator pad. Like Envelope 1 it is an ADSR envelope. The parameters on the same pads.
 
 #### Sensitivity
-![Shift Top](/manual-images/shift-top.svg)
-![hold...](/manual-images/hold.svg)
-![Sensitivity](/manual-images/sensitivity--env-2-level.svg)  
-Master sensitivity, controlling the mapping of finger pressure to the opening/closing of each voice's low-pass gate. If you are looking for a lowpass cutoff frequency, this is the parameter you want.
+![Shift Top](/manual-images/shift-top.svg) ![hold...](/manual-images/hold.svg) ![Sensitivity](/manual-images/sensitivity--env-2-level.svg)   Master sensitivity, controlling the mapping of finger pressure to the opening/closing of each voice's low-pass gate. If you are looking for a lowpass cutoff frequency, this is the parameter you want.
 
 #### Envelope 2 Level
-![Shift Bottom](/manual-images/shift-bottom.svg)
-![hold...](/manual-images/hold.svg)
-![Envelope 2 Level](/manual-images/sensitivity--env-2-level.svg)  
-Sets the peak level of the second envelope, which can be used as a modulation source.
+![Shift Bottom](/manual-images/shift-bottom.svg) ![hold...](/manual-images/hold.svg) ![Envelope 2 Level](/manual-images/sensitivity--env-2-level.svg)  Sets the peak level of the second envelope, which can be used as a modulation source.
 
 #### Attack 1 & 2
-![Attack](/manual-images/attack.svg)  
-Attack time. Attack (top) is for the main envelope that controls the lowpass gate. The peak level is set by the pressure of your finger, modulated by the Sensitivity parameter. Attack (bottom) controls the attack time for the secondary envelope. The peak level is controlled by ENV 2 Level.
+![Attack](/manual-images/attack.svg) **Attack time.** Attack (top) is for the main envelope that controls the lowpass gate. The peak level is set by the pressure of your finger, modulated by the Sensitivity parameter. Attack (bottom) controls the attack time for the secondary envelope. The peak level is controlled by ENV 2 Level.
 
 #### Decay 1 & 2
-![Decay](/manual-images/decay.svg)  
-Decay time. Decay (top) is for the main envelope that controls the decay time for the lowpass gate. Decay (bottom) controls the decay time of the secondary envelope.
+![Decay](/manual-images/decay.svg) **Decay time.** Decay (top) is for the main envelope that controls the decay time for the lowpass gate. Decay (bottom) controls the decay time of the secondary envelope.
 
 #### Sustain 1 & 2
-![Sustain](/manual-images/sustain.svg)  
-Sustain level. Sustain (top) is for the main envelope that controls the sustain level for the lowpass gate. Sustain (bottom) controls the sustain level of the secondary envelope.
+![Sustain](/manual-images/sustain.svg) **Sustain level.** Sustain (top) is for the main envelope that controls the sustain level for the lowpass gate. Sustain (bottom) controls the sustain level of the secondary envelope.
 
 #### Release 1 & 2
-![Release](/manual-images/release.svg)  
-Release time. Release(top) is for the main envelope that controls the release time for the lowpass gate. Release (bottom) controls the release time of the secondary envelope.
+![Release](/manual-images/release.svg) **Release time.** Release(top) is for the main envelope that controls the release time for the lowpass gate. Release (bottom) controls the release time of the secondary envelope.
 
 ## Master Effects
-![effects](/manual-images/FX.svg)  
-Plinky has 2 send/return effects: a Delay and a Reverb. They can be added to both the Synth/Sampler outputs and to the audio coming in through one of the input jacks. The parameters in this section apply to the effect parameters, where the Send parameter determines how much of the effect is sent to the mixer. In the mixer section you can adjust the dry/wet settings for the effects. 
+![effects](/manual-images/FX.svg)  Plinky has 2 send/return effects: a Delay and a Reverb. They can be added to both the Synth/Sampler outputs and to the audio coming in through one of the input jacks. The parameters in this section apply to the effect parameters, where the Send parameter determines how much of the effect is sent to the mixer. In the mixer section you can adjust the dry/wet settings for the effects. 
 
 #### Delay Send
-![Shift Top](/manual-images/shift-top.svg)
-![hold...](/manual-images/hold.svg)
-![Delay](/manual-images/delay--reverb.svg)  
-Amount of the dry sound sent to the delay unit. Turn it up for echos
+![Shift Top](/manual-images/shift-top.svg) ![hold...](/manual-images/hold.svg) ![Delay](/manual-images/delay--reverb.svg)  Amount of the dry sound sent to the delay unit.  
+Turn it up for echos!
 
 #### Delay Time
-![Shift Top](/manual-images/shift-top.svg)
-![hold...](/manual-images/hold.svg)
-![Delay Time](/manual-images/time.svg)  
-The time between each echo. Positive values are un-quantized; negative values are multiples of the current tempo.
+![Shift Top](/manual-images/shift-top.svg) ![hold...](/manual-images/hold.svg) ![Delay Time](/manual-images/time.svg)  The time between each echo. Positive values are un-quantized; negative values are multiples of the current tempo.
 
 #### Delay Ratio
-![Shift Top](/manual-images/shift-top.svg)
-![hold...](/manual-images/hold.svg)
-![Pingpong](/manual-images/pingpong--shimmer.svg)  
-The delay unit is stereo. This moves the right tap to an earlier time, causing ping-pong poly-rhthmic repeats. Try simple ratios like 33%, 50%, 75%.
+![Shift Top](/manual-images/shift-top.svg) ![hold...](/manual-images/hold.svg) ![Pingpong](/manual-images/pingpong--shimmer.svg)  The delay unit is stereo. This moves the right tap to an earlier time, causing ping-pong poly-rhthmic repeats. Try simple ratios like 33%, 50%, 75%.
 
 #### Delay Wobble
-![Shift Top](/manual-images/shift-top.svg)
-![hold...](/manual-images/hold.svg)
-![Delay Wobble](/manual-images/wobble.svg)  
-Amount of simulated tape speed wobble, causing pitch distortions in the delay.
+![Shift Top](/manual-images/shift-top.svg) ![hold...](/manual-images/hold.svg) ![Delay Wobble](/manual-images/wobble.svg)  Amount of simulated tape speed wobble, causing pitch distortions in the delay.
 
 #### Delay Feedback
-![Shift Top](/manual-images/shift-top.svg)
-![hold...](/manual-images/hold.svg)
-![Delay Feedback](/manual-images/feedback.svg)  
-Amount of feedback - the volume of each echo reduces by this amount.
+![Shift Top](/manual-images/shift-top.svg) ![hold...](/manual-images/hold.svg) ![Delay Feedback](/manual-images/feedback.svg)  Amount of feedback - the volume of each echo reduces by this amount.
 
 #### Reverb Send
-![Shift Bottom](/manual-images/shift-bottom.svg)
-![hold...](/manual-images/hold.svg)
-![Reverb send](/manual-images/delay--reverb.svg)  
-Amount of the dry sound sent to the reverb unit. Turn it up for reverb!
+![Shift Bottom](/manual-images/shift-bottom.svg) ![hold...](/manual-images/hold.svg) ![Reverb send](/manual-images/delay--reverb.svg)  Amount of the dry sound sent to the reverb unit. Turn it up for reverb!
 
 #### Reverb Time
-![Shift Bottom](/manual-images/shift-bottom.svg)
-![hold...](/manual-images/hold.svg)
-![Reverb Time](/manual-images/time.svg)  
-Controls the length of the decay of the reverb.
+![Shift Bottom](/manual-images/shift-bottom.svg) ![hold...](/manual-images/hold.svg) ![Reverb Time](/manual-images/time.svg)  Controls the length of the decay of the reverb.
 
 #### Shimmer
-![Shift Bottom](/manual-images/shift-bottom.svg)
-![hold...](/manual-images/hold.svg)
-![Shimmer](/manual-images/pingpong--shimmer.svg)  
-Amount of octave-up signal that is fed into the reverb, causing a shimmer effect.
+![Shift Bottom](/manual-images/shift-bottom.svg) ![hold...](/manual-images/hold.svg) ![Shimmer](/manual-images/pingpong--shimmer.svg)  Amount of octave-up signal that is fed into the reverb, causing a shimmer effect.
 
 #### Reverb Wobble
-![Shift Bottom](/manual-images/shift-bottom.svg)
-![hold...](/manual-images/hold.svg)
-![Reverb Wobble](/manual-images/wobble.svg)  
-Amount of simulated tape speed wobble, causing pitch distortions in the reverb. Avoids metallic artefacts.
+![Shift Bottom](/manual-images/shift-bottom.svg) ![hold...](/manual-images/hold.svg) ![Reverb Wobble](/manual-images/wobble.svg)  Amount of simulated tape speed wobble, causing pitch distortions in the reverb. Avoids metallic artefacts.
 
 ## Arpeggiator & Sequencer
 Plinky has a powerful arpeggiator and sequencer, Each with their own quirks. The arpeggiator can be latched (when you lift your fingers the last notes / pressure  is continued). Besides the obvious clock divisions / multiplications, the arpeggiator can also play euclidean patterns or random rhythms. Additionally the arp has some interesting order/modes, that allow for even more complex rhythms and/or polyphonic arps. 
 The sequencer is polyphonic. The sequencer can also control the arpeggiator: If both are on, the sequencer will play patterns of arps. As both the sequencer and the arpeggiator’s clocks can be divided to up to 256x the clock’s speed, this allows for very long, complex patterns. [TO DO] As the latch on/off and the Arp on/off will become mappable parameters, this allows for even more extensive sequencing possibilities. 
 
 #### Tempo / BPM
-![Shift Top](/manual-images/shift-top.svg)
-![hold...](/manual-images/hold.svg)
-![Tempo](/manual-images/tempo--swing.svg)  
-Tempo in BPM. You can also tap this parameter pad rhythmically to set the tempo. It controls the sequencer, arpeggiator and clocked parameters (like echo time for synced delays) and devices
+![Shift Top](/manual-images/shift-top.svg) ![hold...](/manual-images/hold.svg) ![Tempo](/manual-images/tempo--swing.svg)  Tempo in BPM. You can also tap this parameter pad rhythmically to set the tempo. It controls the sequencer, arpeggiator and clocked parameters (like echo time for synced delays) and devices
 
 #### Swing
-![Shift Bottom](/manual-images/shift-bottom.svg)
-![hold...](/manual-images/hold.svg)
-![Swing](/manual-images/tempo--swing.svg)  
-[OUT OF ORDER]. This parameter will be used to add swing in a future firmware update
+![Shift Bottom](/manual-images/shift-bottom.svg) ![hold...](/manual-images/hold.svg) ![Swing](/manual-images/tempo--swing.svg)  [OUT OF ORDER]. This parameter will be used to add swing in a future firmware update
 
 #### Latch
-![Shift Bottom](/manual-images/shift-bottom.svg)
-![hold...](/manual-images/hold.svg)
-![latch](/manual-images/arp--latch.svg)  
-Switches the latch on/off. When on, played notes will sustain even when you take your fingers off plinky. Useful for chords, arps, drones, or using plinky as an oscillator voice.
-
+![Shift Bottom](/manual-images/shift-bottom.svg) ![hold...](/manual-images/hold.svg) ![latch](/manual-images/arp--latch.svg)  Switches the latch on/off. When on, played notes will sustain even when you take your fingers off plinky. Useful for chords, arps, drones, or using plinky as an oscillator voice.
 
 ### Arpeggiator
-![Shift Top](/manual-images/shift-top.svg)
-![hold...](/manual-images/hold.svg)
-![Arp](/manual-images/arp--latch.svg)  
-Switches the arpeggiator on and off.
+![Shift Top](/manual-images/shift-top.svg) ![hold...](/manual-images/hold.svg) ![Arp](/manual-images/arp--latch.svg)  Switches the arpeggiator on and off.
 
 #### Arpeggiator Mode / Order (Top)
-![Shift Top](/manual-images/shift-top.svg)
-![hold...](/manual-images/hold.svg)
-![Arp Mode](/manual-images/order.svg)  
-The following arpeggiator modes are available: 
+![Shift Top](/manual-images/shift-top.svg) ![hold...](/manual-images/hold.svg) ![Arp Mode](/manual-images/order.svg) Select the arpeggiator mode.
+
+#### The following arpeggiator modes are available:
+
 * Up
 * Down
 * Up then Down
@@ -434,13 +334,12 @@ The following arpeggiator modes are available:
 * Up then Down (all 8 columns)
 * Random (all 8 columns)
 * Random, 2 notes at a time (all 8 columns)
+
 The '8 column' modes include every column, even those without a note, introducing rests into the arpeggio. 
 
 #### Arpeggiator Clock Division
-![Shift Top](/manual-images/shift-top.svg)
-![hold...](/manual-images/hold.svg)
-![Arp Clock Division](/manual-images/clock-div.svg)  
-Sets the speed of the arpeggiator. Negative numbers are un-quantized, positive numbers divide a 32nd note clock. The following divisions are available:
+![Shift Top](/manual-images/shift-top.svg) ![hold...](/manual-images/hold.svg) ![Arp Clock Division](/manual-images/clock-div.svg)  Sets the speed of the arpeggiator. Negative numbers are un-quantized, positive numbers divide a 32nd note clock. The following divisions are available:
+
 * 1/32
 * 2/32 
 * 3/32
@@ -465,30 +364,19 @@ Sets the speed of the arpeggiator. Negative numbers are un-quantized, positive n
 * 256/32
 
 #### Arpeggiator Chance / Density (top)
-![Shift Top](/manual-images/shift-top.svg)
-![hold...](/manual-images/hold.svg)
-![Arpeggiator Chance](/manual-images/chance.svg)  
-Sets the probability of the arpeggiator progressing on each tick of its clock. If the arp length parameter is 0, this is a true random probability, otherwise it's the density of a euclidean rhythm.
+![Shift Top](/manual-images/shift-top.svg) ![hold...](/manual-images/hold.svg) ![Arpeggiator Chance](/manual-images/chance.svg)  Sets the probability of the arpeggiator progressing on each tick of its clock. If the arp length parameter is 0, this is a true random probability, otherwise it's the density of a euclidean rhythm.
 
 #### Arpeggiator Euclidian Length (top)
-![Shift Top](/manual-images/shift-top.svg)
-![hold...](/manual-images/hold.svg)
-![Arpeggiator Euclid Length](/manual-images/euclid-len.svg)  
-When non zero, this sets the length of the euclidean pattern used by the arp. Use the arp probability parameter to change how many notes are included in each pattern. Negative values treat rests differently, try both.
+![Shift Top](/manual-images/shift-top.svg) ![hold...](/manual-images/hold.svg) ![Arpeggiator Euclid Length](/manual-images/euclid-len.svg)  When non zero, this sets the length of the euclidean pattern used by the arp. Use the arp probability parameter to change how many notes are included in each pattern. Negative values treat rests differently, try both.
 
 #### Arpeggiator Octaves
-![Shift Top](/manual-images/shift-top.svg)
-![hold...](/manual-images/hold.svg)
-![Arpeggiator Octaves](/manual-images/arp-octaves.svg)  
-Sets how many octaves the arpeggiator ranges over. This means that if you only play 1 note, the arp will play as many octaves of that note (upwards) as you have set the parameter to.
+![Shift Top](/manual-images/shift-top.svg) ![hold...](/manual-images/hold.svg) ![Arpeggiator Octaves](/manual-images/arp-octaves.svg)  Sets how many octaves the arpeggiator ranges over. This means that if you only play 1 note, the arp will play as many octaves of that note (upwards) as you have set the parameter to.
 
 ### Sequencer
 
 #### Sequencer Mode / Order
-![Shift Bottom](/manual-images/shift-bottom.svg)
-![hold...](/manual-images/hold.svg)
-![Sequencer Mode](/manual-images/order.svg)  
-Sets the order in which steps are played by the sequencer.
+![Shift Bottom](/manual-images/shift-bottom.svg) ![hold...](/manual-images/hold.svg) ![Sequencer Mode](/manual-images/order.svg)  Sets the order in which steps are played by the sequencer.
+
 * Pause
 * Forwards
 * Backwards
@@ -497,10 +385,8 @@ Sets the order in which steps are played by the sequencer.
 * Random
 
 #### Sequencer Clock Division
-![Shift Bottom](/manual-images/shift-bottom.svg)
-![hold...](/manual-images/hold.svg)
-![Sequencer Clock Division](/manual-images/clock-div.svg)  
-Sets the speed of the sequencer. Negative numbers are un-quantized, positive numbers divide a 32nd note clock. The following divisions are available:
+![Shift Bottom](/manual-images/shift-bottom.svg) ![hold...](/manual-images/hold.svg) ![Sequencer Clock Division](/manual-images/clock-div.svg)  Sets the speed of the sequencer. Negative numbers are un-quantized, positive numbers divide a 32nd note clock. The following divisions are available:
+
 * 1/32
 * 2/32 
 * 3/32
@@ -525,27 +411,16 @@ Sets the speed of the sequencer. Negative numbers are un-quantized, positive num
 * 256/32
 
 #### Sequencer Chance / Density
-![Shift Bottom](/manual-images/shift-bottom.svg)
-![hold...](/manual-images/hold.svg)
-![Chance](/manual-images/chance.svg)  
-Sets the probability of the sequencer progressing on each tick of its clock. If the sequencer length parameter is 0, this is a true random probability, otherwise it's the density of a euclidean rhythm.
+![Shift Bottom](/manual-images/shift-bottom.svg) ![hold...](/manual-images/hold.svg) ![Chance](/manual-images/chance.svg)  Sets the probability of the sequencer progressing on each tick of its clock. If the sequencer length parameter is 0, this is a true random probability, otherwise it's the density of a euclidean rhythm.
 
 #### Sequencer Euclidian Length
-![Shift Bottom](/manual-images/shift-bottom.svg)
-![hold...](/manual-images/hold.svg)
-![Euclidian Length](/manual-images/euclid-len.svg)  
-When non zero, this sets the length of the euclidean pattern used by the sequencer. Use the sequencer probability parameter *(density bottom)* to change how many notes are included in each pattern. Negative values treat rests differently, try both.
+![Shift Bottom](/manual-images/shift-bottom.svg) ![hold...](/manual-images/hold.svg) ![Euclidian Length](/manual-images/euclid-len.svg)  When non zero, this sets the length of the euclidean pattern used by the sequencer. Use the sequencer probability parameter *(density bottom)* to change how many notes are included in each pattern. Negative values treat rests differently, try both.
 
 #### Sequencer Gate Length
-![Shift Bottom](/manual-images/shift-bottom.svg)
-![hold...](/manual-images/hold.svg)
-![Sequencer Gate Length](/manual-images/gate-len.svg)  
-Sets the length of the gate of each step. The gate is the signal that determines whether a note is on or off. Longer gates means notes are played longer, which (in tandem with Envelope 1) determines how long notes are sustained.
+![Shift Bottom](/manual-images/shift-bottom.svg) ![hold...](/manual-images/hold.svg) ![Sequencer Gate Length](/manual-images/gate-len.svg)  Sets the length of the gate of each step. The gate is the signal that determines whether a note is on or off. Longer gates means notes are played longer, which (in tandem with Envelope 1) determines how long notes are sustained.
 
 ## Sampler
-![sampler](/manual-images/SAMPLER.svg)  
-Plinky lets you record 8 samples, each split into 8 'slices', corresponding to the 8 columns (strings).
-Once recorded, the bottom row of parameters control the granular playback of your samples.
+![sampler](/manual-images/SAMPLER.svg)  Plinky lets you record 8 samples, each split into 8 'slices', corresponding to the 8 columns (strings). Once recorded, the bottom row of parameters control the granular playback of your samples.
 
 To record or edit a sample, press *PRESET* to go into preset mode, then press and hold one of the 8 rightmost pads. Now press and hold *RECORD* to record a new sample. Plinky will first have to clear the data stored for that slot which will take a few seconds. Use knob A to adjust the recording level.
 Press *RECORD* or *PLAY* to 'arm'. Plinky will start recording when it hears audio, or tap *RECORD*/*PLAY* again to start recording silence. 
@@ -565,107 +440,69 @@ In Pitch mode, each slice is assigned a base pitch, visible like 'C#3' in the OL
 Press *CLEAR* to leave sample edit mode.
 
 #### Scrub
-![Shift Top](/manual-images/shift-top.svg)
-![hold...](/manual-images/hold.svg)
-![Scrub](/manual-images/scrub--jitter.svg)  
-Controls the starting point of the sample playback, relative to the slice point. If you modulate this parameter you get dynamic slicing.
+![Shift Top](/manual-images/shift-top.svg) ![hold...](/manual-images/hold.svg) ![Scrub](/manual-images/scrub--jitter.svg)  Controls the starting point of the sample playback, relative to the slice point. If you modulate this parameter you get dynamic slicing.
 
 #### Scrub Jitter
-![Shift Bottom](/manual-images/shift-bottom.svg)
-![hold...](/manual-images/hold.svg)
-![Scrub](/manual-images/scrub--jitter.svg)  
-Adds an amount of randomness to the sample playback position.
+![Shift Bottom](/manual-images/shift-bottom.svg) ![hold...](/manual-images/hold.svg) ![Scrub](/manual-images/scrub--jitter.svg)  Adds an amount of randomness to the sample playback position.
 
 #### Grain Size
-![Shift Top](/manual-images/shift-top.svg)
-![hold...](/manual-images/hold.svg)
-![Grain Size](/manual-images/grain-size--jitter.svg)  
-Sets the size of the grains. Modulate to achieve granular sound effects.
+![Shift Top](/manual-images/shift-top.svg) ![hold...](/manual-images/hold.svg) ![Grain Size](/manual-images/grain-size--jitter.svg)  Sets the size of the grains. Modulate to achieve granular sound effects.
 
 #### Grain Size Jitter
-![Shift Bottom](/manual-images/shift-bottom.svg)
-![hold...](/manual-images/hold.svg)
-![Grain Size](/manual-images/grain-size--jitter.svg)  
-Adds an amount of randomness to the sample grain size.
+![Shift Bottom](/manual-images/shift-bottom.svg) ![hold...](/manual-images/hold.svg) ![Grain Size](/manual-images/grain-size--jitter.svg)  Adds an amount of randomness to the sample grain size.
 
 #### Play Speed
-![Shift Top](/manual-images/shift-top.svg)
-![hold...](/manual-images/hold.svg)
-![Play Speed](/manual-images/play-speed--jitter.svg)  
-Determines at what relative speed the sample is played back, eg. 50% slows the sample down by a factor of 2, 200% speeds up the sample twice. Playback speed affects the pitch of the sample accordingly, slowing the sample down pitches it down, speeding up also pitches up.
+![Shift Top](/manual-images/shift-top.svg) ![hold...](/manual-images/hold.svg) ![Play Speed](/manual-images/play-speed--jitter.svg)  Determines at what relative speed the sample is played back, eg. 50% slows the sample down by a factor of 2, 200% speeds up the sample twice. Playback speed affects the pitch of the sample accordingly, slowing the sample down pitches it down, speeding up also pitches up.
 
 #### Play Speed Jitter
-![Shift Bottom](/manual-images/shift-bottom.svg)
-![hold...](/manual-images/hold.svg)
-![Play Speed](/manual-images/play-speed--jitter.svg)  
-Adds an amount of randomness to the sample playback speed.
+![Shift Bottom](/manual-images/shift-bottom.svg) ![hold...](/manual-images/hold.svg) ![Play Speed](/manual-images/play-speed--jitter.svg)   Adds an amount of randomness to the sample playback speed.
 
 #### Time Stretch
-![Shift Top](/manual-images/shift-top.svg)
-![hold...](/manual-images/hold.svg)
-![Time Stretch](/manual-images/timestretch.svg)  
-Determines at what relative speed the sample is played back, but without changing the pitch. As the sample is cut up in miniscule ‘grains’ of audio (milliseconds), Plinky repeats some of these grains to slow down, and leaves some grains out to speed up. Changes in grain size have more drastic effects when samples are stretched severely. 
+![Shift Top](/manual-images/shift-top.svg) ![hold...](/manual-images/hold.svg) ![Time Stretch](/manual-images/timestretch.svg)  Determines at what relative speed the sample is played back, but without changing the pitch. As the sample is cut up in miniscule ‘grains’ of audio (milliseconds), Plinky repeats some of these grains to slow down, and leaves some grains out to speed up. Changes in grain size have more drastic effects when samples are stretched severely. 
 
 #### Sample
-![Sample](/manual-images/sample.svg)  
-Controls which sample is being played, allowing you to change samples from within a preset by assigning a LFO or CV source to this parameter.
+![Sample](/manual-images/sample.svg)  Controls which sample is being played, allowing you to change samples from within a preset by assigning a LFO or CV source to this parameter.
 
 #### Pattern
-![Shift Top](/manual-images/shift-top.svg)
-![hold...](/manual-images/hold.svg)
-![Pattern](/manual-images/pattern--step-offset.svg)  
-Controls which sequencer pattern is being played back, allowing you to change patterns from within a preset by assigning an LFO or CV source to this parameter. If you add a slow rising saw to this parameter you can chain various patterns together. 
+![Shift Top](/manual-images/shift-top.svg) ![hold...](/manual-images/hold.svg) ![Pattern](/manual-images/pattern--step-offset.svg)  Controls which sequencer pattern is being played back, allowing you to change patterns from within a preset by assigning an LFO or CV source to this parameter. If you add a slow rising saw to this parameter you can chain various patterns together. 
 
 #### Step Offset
-![Shift Bottom](/manual-images/shift-bottom.svg)
-![hold...](/manual-images/hold.svg)
-![Step Offset](/manual-images/pattern--step-offset.svg)  
-Offsets the starting point of the sequencer pattern allowing for variations in sequencer playback.
+![Shift Bottom](/manual-images/shift-bottom.svg) ![hold...](/manual-images/hold.svg) ![Step Offset](/manual-images/pattern--step-offset.svg)  Offsets the starting point of the sequencer pattern allowing for variations in sequencer playback.
 
 ## Modulation A, B, X and Y (Inputs & LFO's)
 The next two rows controls the A/B  and X/Y modulators. Each are split so that *SHIFT TOP* and *SHIFT BOTTOM* access one of the two inputs.
 
-![Shift Top](/manual-images/shift-top.svg)
-![hold...](/manual-images/hold.svg)
-![AB SV Level](/manual-images/a-b-cv-level.svg)
-![Offset](/manual-images/offset.svg)
-![LFO Depth](/manual-images/lfo--depth.svg)
-![LFO Rate](/manual-images/lfo--rate.svg)
-![LFO Shape](/manual-images/lfo--shape.svg)
-![LFO Symmetry](/manual-images/lfo--symmetry.svg)
-![tap!](/manual-images/tap.svg)  
+<div>
+
+![Shift Top](/manual-images/shift-top.svg) ![hold...](/manual-images/hold.svg) ![AB SV Level](/manual-images/a-b-cv-level.svg) ![Offset](/manual-images/offset.svg) ![LFO Depth](/manual-images/lfo--depth.svg) ![LFO Rate](/manual-images/lfo--rate.svg) ![LFO Shape](/manual-images/lfo--shape.svg) ![LFO Symmetry](/manual-images/lfo--symmetry.svg) ![tap!](/manual-images/tap.svg)  
+
+</div>
+
 * CV A *SHIFT TOP* on the A/B row (pictured)
 * CV B *SHIFT BOTTOM* on the A/B row
 * CV X *SHIFT TOP* on the X/Y row
 * CV Y *SHIFT BOTTOM* on the X/Y row
 
 ### LFOs & Knobs
-![LFO Depth](/manual-images/lfo--depth.svg)
-![LFO Rate](/manual-images/lfo--rate.svg)
-![LFO Shape](/manual-images/lfo--shape.svg)
-![LFO Symmetry](/manual-images/lfo--symmetry.svg)  
-Each input also has a dedicated built in LFO that is added on top so that these modulation sources can be useful even without any jacks plugged in. Finally, modulators A and B correspond to knobs A & B, which offset these two values.
+![LFO Depth](/manual-images/lfo--depth.svg) ![LFO Rate](/manual-images/lfo--rate.svg) ![LFO Shape](/manual-images/lfo--shape.svg) ![LFO Symmetry](/manual-images/lfo--symmetry.svg)  Each input also has a dedicated built in LFO that is added on top so that these modulation sources can be useful even without any jacks plugged in. Finally, modulators A and B correspond to knobs A & B, which offset these two values.
 
 #### CV Level
-![AB CV Level](/manual-images/a-b-cv-level.svg)  
-![XY CV Level](/manual-images/x-y-cv-level.svg)  
-An attenuator for the signal coming from the corresponding CV input jacks.
+![AB CV Level](/manual-images/a-b-cv-level.svg) ![XY CV Level](/manual-images/x-y-cv-level.svg) An attenuator for the signal coming from the corresponding CV input jacks.
 
 #### Offset
-![Offset](/manual-images/offset.svg)  
-Offsets the CV and/or LFO. This is a constant voltage that is being added (or subtracted) from the sum of the CV input and the LFO.
+![Offset](/manual-images/offset.svg) Offsets the CV and/or LFO. This is a constant voltage that is being added (or subtracted) from the sum of the CV input and the LFO.
 
 #### LFO Depth
-![LFO Depth](/manual-images/lfo--depth.svg)  
-Attenuator for the internal LFO's.The default value is zero so turn this up for LFO's.
+![LFO Depth](/manual-images/lfo--depth.svg) Attenuator for the internal LFO's.The default value is zero so turn this up for LFO's.
 
 #### LFO Rate
-![LFO Rate](/manual-images/lfo--rate.svg)  
-Controls the rate of the internal LFO. The LFO rates can range from 20 sceonds (at +100%) to milliseconds at -100%. At 0% the rate is [y] milliseconds. 
+![LFO Rate](/manual-images/lfo--rate.svg) Controls the rate of the internal LFO. The LFO rates can range from 20 sceonds (at +100%) to milliseconds at -100%. At 0% the rate is [y] milliseconds. 
 
 #### LFO Shape
-![LFO Shape](/manual-images/lfo--shape.svg)  
-Sets the shape of the LFO. The following shapes are available:
+![LFO Shape](/manual-images/lfo--shape.svg)  Sets the shape of the LFO.
+
+##### The following shapes are available:
+
 * Triangle
 * Sine
 * SmthRnd (Smooth Random)
@@ -678,71 +515,53 @@ Sets the shape of the LFO. The following shapes are available:
 * Env
 
 #### LFO Symmetry
-![LFO Symmetry](/manual-images/lfo--symmetry.svg)  
-Sets the slope of the LFO shape - for example turning a triangle wave into a sharp ramp up (symmetry +100) or down (symmetry -100). 
+![LFO Symmetry](/manual-images/lfo--symmetry.svg)  Sets the slope of the LFO shape - for example turning a triangle wave into a sharp ramp up (symmetry +100) or down (symmetry -100). 
 
 ## Mixer
 
 #### Synth
-![Synth](/manual-images/synth.svg)  
-Sets the gain level of Plinky's synth / sampler. Above 50% you will start hitting a limiter, which can help to glue patches with wide dynamic range together. You can use this as a volume control if you are taking audio from the left / mono output. 
+![Synth](/manual-images/synth.svg)  Sets the gain level of Plinky's synth / sampler. Above 50% you will start hitting a limiter, which can help to glue patches with wide dynamic range together. You can use this as a volume control if you are taking audio from the left / mono output. 
 
 #### Input
-![Input](/manual-images/input.svg)  
-Sets the gain level of Plinky's inputs. These inputs take line level signals and amplify them to Eurorack levels, but... If you feed it eurorack level, the analog saturation unit in Plinky V2 does it's thing. In case both the inputs on the face plate and the front/back side are used, Plinky mixes the inputs at fixed levels.
+![Input](/manual-images/input.svg)  Sets the gain level of Plinky's inputs. These inputs take line level signals and amplify them to Eurorack levels, but... If you feed it eurorack level, the analog saturation unit in Plinky V2 does it's thing. In case both the inputs on the face plate and the front/back side are used, Plinky mixes the inputs at fixed levels.
 
 #### Wet/Dry
-![Shift Top](/manual-images/shift-top.svg)
-![hold...](/manual-images/hold.svg)
-![Wet/Dry](/manual-images/wet-dry.svg)  
-Sets the balance between the dry signal of Plinky's voice (synth or sampler) and the wet signal of the Reverb and Delay units (the distortion/saturation device is applied directly to the 8 individual voices.) The default setting is zero where there is an equal mix of wet and dry signals. 100 is completely wet and -100 is completely dry.
+![Shift Top](/manual-images/shift-top.svg) ![hold...](/manual-images/hold.svg) ![Wet/Dry](/manual-images/wet-dry.svg)  Sets the balance between the dry signal of Plinky's voice (synth or sampler) and the wet signal of the Reverb and Delay units (the distortion/saturation device is applied directly to the 8 individual voices.) The default setting is zero where there is an equal mix of wet and dry signals. 100 is completely wet and -100 is completely dry.
 
 #### Input FX
-![Shift Bottom](/manual-images/shift-bottom.svg)
-![hold...](/manual-images/hold.svg)
-![Input FX](/manual-images/wet-dry.svg)  
-Sets the balance between the dry signal of the audio inputs and the wet signal passing through the Reverb and Delay units.
+![Shift Bottom](/manual-images/shift-bottom.svg) ![hold...](/manual-images/hold.svg) ![Input FX](/manual-images/wet-dry.svg)  Sets the balance between the dry signal of the audio inputs and the wet signal passing through the Reverb and Delay units.
 
 #### High Pass Filter (HPF)
-![High Pass Filter](/manual-images/hpf.svg)  
-After the synth/sampler, external audio and the effects are mixed, they pass through a High Pass Filter. This parameter controls the cut off frequency.
+![High Pass Filter](/manual-images/hpf.svg)  After the synth/sampler, external audio and the effects are mixed, they pass through a High Pass Filter. This parameter controls the cut off frequency.
 
 #### CV Quantize
-![CV Quantize](/manual-images/cv-quantize.svg)  
-Plinky’s pitch input is most useful when you have a sequence or latched note playing; the pitch is transposed according to the pitch CV input (1 volt per octave), and you can use this last parameter to choose if the transposition is unquantized, quantized to semitones, or transposed in-scale. 0v (C0) means no transposition.
+![CV Quantize](/manual-images/cv-quantize.svg)  Plinky’s pitch input is most useful when you have a sequence or latched note playing; the pitch is transposed according to the pitch CV input (1 volt per octave), and you can use this last parameter to choose if the transposition is unquantized, quantized to semitones, or transposed in-scale. 0v (C0) means no transposition.
 
 #### Volume
-![Volume](/manual-images/volume.svg)  
-Sets the level of the final output stage for the headphone out. Turn this up to 11.
+![Volume](/manual-images/volume.svg)  Sets the level of the final output stage for the headphone out. Turn this up to 11.
 
 #### Empty Pad
-![Accelrometer Sensitivity](/manual-images/blank.svg)  
-Attenuator for the Accelerometer. This parameter controls how sensitive Plinky reacts to the accelerometer. The icon is left blank because this parameter will be moved to the settings menu, which will be included in a firmware update.
+![Accelrometer Sensitivity](/manual-images/blank.svg)  Attenuator for the Accelerometer. This parameter controls how sensitive Plinky reacts to the accelerometer. The icon is left blank because this parameter will be moved to the settings menu, which will be included in a firmware update.
 
 ## Modulators
 #### Modulator Base
-![Modulator Base](/manual-images/mod-src--base.svg)  
-Toggles between the selected modulator and the base parameter of a device. This way you can set both the base value, and the amount of modulation that is assigned to that parameter. 
+![Modulator Base](/manual-images/mod-src--base.svg)  Toggles between the selected modulator and the base parameter of a device. This way you can set both the base value, and the amount of modulation that is assigned to that parameter. 
 
 #### Envelope 2
-![Mod Source Envelope 2](/manual-images/mod-src--envelope-2.svg)  
-An assignable ADSR envelope generator. Set it's Attack, Decay, Sustain, Release and peak level with the bottom parameters of the Envelope Generator. Envelope 1 is assigned to the sensitivity by default, but this second ADSR is unassigned by default.
+![Mod Source Envelope 2](/manual-images/mod-src--envelope-2.svg)  An assignable ADSR envelope generator. Set it's Attack, Decay, Sustain, Release and peak level with the bottom parameters of the Envelope Generator. Envelope 1 is assigned to the sensitivity by default, but this second ADSR is unassigned by default.
 
 #### Pressure
-![Mod Source Pressure](/manual-images/mod-src--sensitivity.svg)  
-Modulate any parameter with the maximum pressure that is applied on each of the strings. Corresponds with the pressure bar in the right of screen.
+![Mod Source Pressure](/manual-images/mod-src--sensitivity.svg)  Modulate any parameter with the maximum pressure that is applied on each of the strings. Corresponds with the pressure bar in the right of screen.
 
 #### Modulator A, B, X and Y
-![MODULATOR A](/manual-images/mod-src--a.svg)  
-![MODULATOR B](/manual-images/mod-src--b.svg)  
-![MODULATOR X](/manual-images/mod-src--x.svg)  
-![MODULATOR Y](/manual-images/mod-src--y.svg)  
-These pads assign Modulator A, B, X and Y to parameters. Each of these modulators feature a CV input (which can be attenauted) and an LFO with extensive options. Modulator A & B have physical knobs A & B as extra offset, and Modulators X & Y correspond to the X- and Y-axis of the accelerometer. 
+![MODULATOR A](/manual-images/mod-src--a.svg)  ![MODULATOR B](/manual-images/mod-src--b.svg)  ![MODULATOR X](/manual-images/mod-src--x.svg)  ![MODULATOR Y](/manual-images/mod-src--y.svg)   These pads assign Modulator A, B, X and Y to parameters. Each of these modulators feature a CV input (which can be attenauted) and an LFO with extensive options. Modulator A & B have physical knobs A & B as extra offset, and Modulators X & Y correspond to the X- and Y-axis of the accelerometer. 
 
 #### Random
-![random](/manual-images/mod-src--random.svg)  
-Assigns (an amount of) randomness to parameters.
+![random](/manual-images/mod-src--random.svg)  Assigns (an amount of) randomness to parameters.
 
+### That's it for the parameters!
+
+It's a bunch of information, but you'll get it quick!
 
 # MIDI & CV
 #### General
@@ -859,7 +678,7 @@ A CV signal that outputs highest amount of pressure that is currently being put 
 
 
 # The Expander
-the Plinky Expander is a 4HP Eurorack module that adds a bunch of funtionality to Plinky, mostly to interface even better with the rest of your Eurorack setup. The following features will be included in the first version of the firmware:
+The Plinky Expander is a 4HP Eurorack module that adds a bunch of funtionality to Plinky, mostly to interface even better with the rest of your Eurorack setup. The following features will be included in the first version of the firmware:
 #### TRS Midi Input
 Gate and 1v/oct MIDI input, both Korg and Arturia standards (A and B) are supported. 
 #### TRS Midi Output
@@ -868,4 +687,6 @@ Gate and 1v/oct MIDI output, both Korg and Arturia standards (A and B) are suppo
 4 jacks that output the A, B, X and Y signals as CV. 
 
 # Patch Import / Export 
-[currently being developed by Miunau and Orangetronic, woot woot!] 
+
+You can import and export patches via the web editor:
+https://plinkysynth.github.io/editor/

@@ -125,8 +125,8 @@ h3 {
 }
 
 h4 {
-  font-size: 2.75rem;
-  line-height: 3.5rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
   letter-spacing: -0.08rem;
   font-weight: 600;
   color: var(--color-header);
@@ -276,4 +276,110 @@ table th {
 table th {
   background: white;
   color: #334;
+}
+
+.Post.manual blockquote {
+  border: 1px solid rgba(255,255,255,0.25);
+  margin: 0;
+  border-left: 1rem solid rgba(255,255,255,0.25);
+  padding: 2rem 2rem 2rem 3rem;
+}
+
+.Post.manual div+ul {
+  padding-top: 2rem;
+  clear: both;
+}
+
+.Post.manual blockquote p {
+  margin: 0;
+  font-size: 1.75rem;
+}
+
+.Post.manual blockquote p img {
+  height: 3rem;
+  vertical-align: middle;
+}
+
+.Post.manual blockquote p img:hover {
+  height: 6rem;
+}
+
+.Post.manual p > img {
+  float: left;
+  vertical-align: top;
+  padding: 0 2rem 0 0;
+}
+
+.Post.manual h1,
+.Post.manual h2,
+.Post.manual h4,
+.Post.manual h3,
+.Post.manual p+blockquote {
+  clear: both !important
+}
+
+.Post.manual p+h3 {
+  padding-top: 4rem;
+}
+
+.Post.manual p+h4 {
+  padding-top: 2rem;
+}
+
+@media print {
+
+  header {
+    display: none !important;
+  }
+ 
+  html {
+    font-size: 10px !important;
+  }
+
+  p,
+  ul li {
+    font-size: 1.25rem !important;
+    line-height: 1.75rem !important;
+    color: black !important;
+  }
+
+  .Post.manual h1,
+  .Post.manual h2 {
+    font-size: 2.5rem !important;
+    line-height: 3rem !important;
+    margin: 0 0 2rem 0 !important;
+  }
+
+  .Post.manual h2 {
+    padding-bottom: 1rem !important;
+  }
+
+  .Post.manual h3 {
+    font-size: 2rem !important;
+    line-height: 2.5rem !important;
+    margin: 0 0 1rem 0 !important;
+  }
+
+  .Post.manual h4 {
+    font-size: 1.25rem !important;
+    font-weight: bold !important;
+    line-height: 1.75rem !important;
+    margin: 0 0 1rem 0 !important;
+  }
+
+  .Post.manual aside {
+    display: none !important;
+  }
+
+  .Post.manual blockquote {
+    border: 1px solid rgba(0,0,0,0.25);
+    margin: 0;
+    border-left: 1rem solid rgba(0,0,0,0.25);
+    padding: 2rem 2rem 2rem 3rem;
+  }
+
+  .Post.manual blockquote +h3,
+  .Post.manual blockquote +h2 {
+    margin-top: 3rem !important;
+  }
 }

@@ -11,10 +11,15 @@
       this.error(res.status, data.message);
     }
   }
+  
 </script>
 
 <script>
   export let post;
+
+  function decodeHTMLEntities (str) {
+    return str.replace(/&amp;/g, '&').replace(/&#39;/g, '\'');
+  }
 </script>
 
 <style>
@@ -85,13 +90,13 @@
   <header>
     <h1>{post.title}</h1>
   </header>
-  <div class="Post">
+  <div class="Post {post.slug}">
     {#if post.toc.length}
       <aside>
         <ul>
           {#each post.toc as toc}
             {#if toc.level < 3}
-              <li><a href="/docs/{post.slug}#{toc.anchor}">{toc.text}</a></li>
+              <li><a href="/docs/{post.slug}#{toc.anchor}">{decodeHTMLEntities(toc.text)}</a></li>
             {/if}
           {/each}
         </ul>
