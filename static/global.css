@@ -285,6 +285,12 @@ table th {
   padding: 2rem 2rem 2rem 3rem;
 }
 
+.Post.manual div>p:after {
+  display:block;
+  content:'';
+  clear:left;
+}
+
 .Post.manual div+ul {
   padding-top: 2rem;
   clear: both;
@@ -304,10 +310,18 @@ table th {
   height: 6rem;
 }
 
-.Post.manual p > img {
+.Post.manual p > img,
+.Post.manual p > img+em{
   float: left;
-  vertical-align: top;
-  padding: 0 2rem 0 0;
+  height: 7rem;
+  line-height: 7rem;
+}
+.Post.manual p > img{
+  padding-right:0.5rem;
+}
+.Post.manual p > img:last-child,
+.Post.manual p > img+em{
+  padding-right: 3rem;
 }
 
 .Post.manual h1,
