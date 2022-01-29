@@ -298,7 +298,7 @@ table th {
 
 .Post.manual blockquote p {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 1.75rem;
 }
 
 .Post.manual blockquote p img {
@@ -405,7 +405,6 @@ table th {
   }
 
   .Post.manual blockquote {
-    font-size: 0.9rem;
     border: 1px solid rgba(0,0,0,0.25);
     margin: 0;
     border-left: 1rem solid rgba(0,0,0,0.25);
