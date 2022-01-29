@@ -285,6 +285,12 @@ table th {
   padding: 2rem 2rem 2rem 3rem;
 }
 
+.Post.manual div>p:after {
+  display:block;
+  content:'';
+  clear:left;
+}
+
 .Post.manual div+ul {
   padding-top: 2rem;
   clear: both;
@@ -304,10 +310,18 @@ table th {
   height: 6rem;
 }
 
-.Post.manual p > img {
+.Post.manual p > img,
+.Post.manual p > img+em{
   float: left;
-  vertical-align: top;
-  padding: 0 2rem 0 0;
+  height: 7rem;
+  line-height: 7rem;
+}
+.Post.manual p > img{
+  padding-right:0.5rem;
+}
+.Post.manual p > img:last-child,
+.Post.manual p > img+em{
+  padding-right: 3rem;
 }
 
 .Post.manual h1,
@@ -328,6 +342,16 @@ table th {
 
 @media print {
 
+  :root {
+    --color-header: black;
+    --color-text: black;
+  }
+
+  body {
+    font-size: 12pt;
+    background: none;
+  }
+
   .Post p,
   .Post h1,
   .Post h2,
@@ -335,51 +359,49 @@ table th {
   .Post h4,
   .Post blockquote
   .Post img {
-    page-break-inside: avoid!important;
-    break-inside:avoid !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin: 0 0 2rem 0;
+  }
+
+  .Post h1:not(:first-child) {
+    page-break-before: always;
   }
 
   header {
-    display: none !important;
-  }
- 
-  html {
-    font-size: 10px !important;
+    display: none;
   }
 
   p,
   ul li {
-    font-size: 1.25rem !important;
-    line-height: 1.75rem !important;
-    color: black !important;
+    line-height: 2.5rem;
   }
 
-  .Post.manual h1,
-  .Post.manual h2 {
-    font-size: 2.5rem !important;
-    line-height: 3rem !important;
-    margin: 0 0 2rem 0 !important;
+  .Post h1,
+  .Post h2,
+  .Post h3,
+  .Post h4 {
+    font-weight:bold;
+    padding: 2rem 0 0.05em 0;
   }
 
+  .Post.manual h1 {
+    font-size: 3.5rem;
+  }
   .Post.manual h2 {
-    padding-bottom: 1rem !important;
+    font-size: 3rem;
   }
 
   .Post.manual h3 {
-    font-size: 2rem !important;
-    line-height: 2.5rem !important;
-    margin: 0 0 1rem 0 !important;
+    font-size: 2.5rem;
   }
 
   .Post.manual h4 {
-    font-size: 1.25rem !important;
-    font-weight: bold !important;
-    line-height: 1.75rem !important;
-    margin: 0 0 1rem 0 !important;
+    font-size: 2rem;
   }
 
   .Post.manual aside {
-    display: none !important;
+    display: none;
   }
 
   .Post.manual blockquote {
@@ -392,5 +414,9 @@ table th {
   .Post.manual blockquote +h3,
   .Post.manual blockquote +h2 {
     margin-top: 3rem !important;
+  }
+
+  table th{
+    text-align: left;
   }
 }
