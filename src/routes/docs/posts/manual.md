@@ -369,6 +369,7 @@ Amount of simulated tape speed wobble, causing pitch distortions in the reverb. 
 ![Arpeggiator Octaves](/manual-images/arp-octaves.svg)
 
 </div>
+
 Plinky has a powerful arpeggiator and sequencer, Each with their own quirks. The arpeggiator can be latched (when you lift your fingers the last notes / pressure  is continued). Besides the obvious clock divisions / multiplications, the arpeggiator can also play euclidean patterns or random rhythms. Additionally the arp has some interesting order/modes, that allow for even more complex rhythms and/or polyphonic arps. 
 The sequencer is polyphonic. The sequencer can also control the arpeggiator: If both are on, the sequencer will play patterns of arps. As both the sequencer and the arpeggiator’s clocks can be divided to up to 256x the clock’s speed, this allows for very long, complex patterns. [TO DO] As the latch on/off and the Arp on/off will become mappable parameters, this allows for even more extensive sequencing possibilities. 
 

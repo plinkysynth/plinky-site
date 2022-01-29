@@ -298,7 +298,7 @@ table th {
 
 .Post.manual blockquote p {
   margin: 0;
-  font-size: 1.75rem;
+  font-size: 2.5rem;
 }
 
 .Post.manual blockquote p img {
@@ -342,6 +342,16 @@ table th {
 
 @media print {
 
+  :root {
+    --color-header: black;
+    --color-text: black;
+  }
+
+  body {
+    font-size: 12pt;
+    background: none;
+  }
+
   .Post p,
   .Post h1,
   .Post h2,
@@ -349,54 +359,53 @@ table th {
   .Post h4,
   .Post blockquote
   .Post img {
-    page-break-inside: avoid!important;
-    break-inside:avoid !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin: 0 0 2rem 0;
+  }
+
+  .Post h1:not(:first-child) {
+    page-break-before: always;
   }
 
   header {
-    display: none !important;
-  }
- 
-  html {
-    font-size: 10px !important;
+    display: none;
   }
 
   p,
   ul li {
-    font-size: 1.25rem !important;
-    line-height: 1.75rem !important;
-    color: black !important;
+    line-height: 2.5rem;
   }
 
-  .Post.manual h1,
-  .Post.manual h2 {
-    font-size: 2.5rem !important;
-    line-height: 3rem !important;
-    margin: 0 0 2rem 0 !important;
+  .Post h1,
+  .Post h2,
+  .Post h3,
+  .Post h4 {
+    font-weight:bold;
+    padding: 2rem 0 0.05em 0;
   }
 
+  .Post.manual h1 {
+    font-size: 3.5rem;
+  }
   .Post.manual h2 {
-    padding-bottom: 1rem !important;
+    font-size: 3rem;
   }
 
   .Post.manual h3 {
-    font-size: 2rem !important;
-    line-height: 2.5rem !important;
-    margin: 0 0 1rem 0 !important;
+    font-size: 2.5rem;
   }
 
   .Post.manual h4 {
-    font-size: 1.25rem !important;
-    font-weight: bold !important;
-    line-height: 1.75rem !important;
-    margin: 0 0 1rem 0 !important;
+    font-size: 2rem;
   }
 
   .Post.manual aside {
-    display: none !important;
+    display: none;
   }
 
   .Post.manual blockquote {
+    font-size: 0.9rem;
     border: 1px solid rgba(0,0,0,0.25);
     margin: 0;
     border-left: 1rem solid rgba(0,0,0,0.25);
@@ -406,5 +415,9 @@ table th {
   .Post.manual blockquote +h3,
   .Post.manual blockquote +h2 {
     margin-top: 3rem !important;
+  }
+
+  table th{
+    text-align: left;
   }
 }
