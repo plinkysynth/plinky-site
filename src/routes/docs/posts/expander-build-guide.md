@@ -47,7 +47,7 @@ The expansion pins (8x2) go in the top corner on the other side. they're actuall
 
 If you didnt dare mod your plinky with 2 wires, you can choose to power the expander separately, by populating the 5x2 power header top left, shown empty in the pic above. if you do that, just plug the expander into your euro power bus like it was a module with a normal 10 pin plug/cable.
 
-However I recommend powering it via the plinky-mod we did in step 1, in which case there is no need to populate the 5x2 power header top left. instead, blob solder over JP1 and JP2. if you look carefully in the picture above, top left, you can see JP1 and JP2 have been blobbed over. good job! only do that if you have done your plinkymod, mind.
+However I recommend powering it via the plinky, in which case there is no need to populate the 5x2 power header top left. instead, blob solder over JP1 and JP2 to bridge them together. if you look carefully in the picture above, top left, you can see JP1 and JP2 have been blobbed over. good job!
 
 All that remains in the build is the front panel!
 
