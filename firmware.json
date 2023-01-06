@@ -6,10 +6,10 @@
     "comment": "fix for clicks in the shimmer reverb"
   },
   "beta": {
-    "file": "plink09y.uf2",
-    "version": "0.9y",
-    "date": "2021-06-17",
-    "comment": "fixed wavetable import. update the wavetable by copying a WAVETAB.UF2 over to plinky!"
+    "file": "plink091a.uf2",
+    "version": "0.91a",
+    "date": "2023-01-06",
+    "comment": "USB MIDI fixes"
   },
   "history": [
     {
