@@ -29,7 +29,7 @@ import Grid from "../components/Grid.svelte";
     </BigArea>
     <BigArea>
       <h4>Contribute to Plinky</h4>
-      <p>All things related to Plinky are going on our Github- including everything about the synth itself eventually.</p>
+      <p>All things related to Plinky are on our Github- firmware, hardware, etc.</p>
       <a class="button" target="_blank" href="https://github.com/plinkysynth">Plinky Github</a>
     </BigArea>
   </Grid>
