@@ -1,6 +1,6 @@
 const path = require('path');
 const prism = require('prismjs');
-const marked = require('marked');
+const {marked} = require('marked');
 const matter = require('gray-matter');
 const formatDate = require('date-fns/format');
 //const readingTime = require('reading-time');
