@@ -1,5 +1,5 @@
 ---
-title: Plinky build guide - GREEN (old)
+title: Plinky build guide - V1 Green (old)
 date: "2021-01-24T08:38:00.000Z"
 ---
 
