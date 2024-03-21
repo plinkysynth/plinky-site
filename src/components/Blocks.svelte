@@ -22,7 +22,10 @@
   .Blocks :global(.Block h3) {
     margin: 0 0 2rem 0;
   }
-  .Blocks :global(a.button, button) {
+  .Blocks :global(a.button) {
+    text-align: center;
+  }
+  .Blocks :global(button) {
     text-align: center;
   }
   @media(max-width: 1024px) {
