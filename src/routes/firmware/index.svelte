@@ -30,7 +30,7 @@
   <h2>Firmware install instructions</h2>
   
   <p>Installing the firmware takes only a few moments.</p>
-  
+
   <ol>
     <li>Hold the right encoder down while plugging the USB cable into your Plinky.</li>
     <li>Plinky will show up as an attached drive and you should see the "tunnel of lights" effect on the LEDs.</li>
@@ -38,6 +38,8 @@
     <li>While flashing, the LEDs will flicker. This is normal!</li>
     <li>To finish, just click the encoder again. Plinky will boot up and you should see the correct version number.</li>
   </ol>
+
+  <p><strong>MacOS Sonoma 14.4</strong>: The drive might not show up in Sonoma 14.4. There is no known solution for now as it's a widely reported issue with USB devices that Apple should fix. Your only choice is to wait for a fix or use another computer.</p>
 
   <h2>History</h2>
 
