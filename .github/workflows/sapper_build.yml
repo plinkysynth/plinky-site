@@ -6,12 +6,18 @@ on:
       - main
 
 jobs:
-  build_deploy:
+  test:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [21.x]
+
     steps:
-      - uses: actions/checkout@master
-      - name: Build Sapper
-        uses: truewebartisans/actions-sapper@master
+      - uses: actions/checkout@v4
+      - name: Install dependencies
+        run: npm install
+      - name: Build 
+        run: npm run export
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
