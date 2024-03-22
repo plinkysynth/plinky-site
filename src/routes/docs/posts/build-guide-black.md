@@ -43,6 +43,9 @@ If this is your first time soldering, please read the [Adafruit Guide to Excelle
 
 ![Plinky DIY Kit – Build Guide](/build-guide-black/Plinky_Build-Guide_2630a.jpg)
 
+<div class="three">
+<div>
+
 - Eurorack power cable
 - OLED screen
 - Green spacer PCB
@@ -50,11 +53,17 @@ If this is your first time soldering, please read the [Adafruit Guide to Excelle
 - 4x black hex standoffs
 - 8x black M3 screws
 
+</div>
+<div>
+
 - 1x encoder + silver nut
 - 2x potentiometers B10k
 - 3x black hex nuts
 - 1x encoder cap
 - 2x potentiometer caps with indicator
+
+</div>
+<div>
 
 - 13x black Thonkiconn
 - 3x green Thonkiconn
@@ -62,6 +71,8 @@ If this is your first time soldering, please read the [Adafruit Guide to Excelle
 - 4x rubber feet
 - Quickstart Guide
 
+</div>
+</div>
 
 ## Build Guide
 
@@ -128,9 +139,13 @@ Place the two potentiometers into the footprints marked ‘pot’ and ‘kettle�
 
 The encoder has a flatter housing than the potentiometers. You will find a hex nut in the kit. Screw it onto the encoder to offset the difference in height. Then place the encoder in the footprint that says ‘ink’.
 
+<div class="two">
+
 ![Plinky DIY Kit – Build Guide](/build-guide-black/Plinky_Build-Guide_2678.jpg)
 
 ![Plinky DIY Kit – Build Guide](/build-guide-black/Plinky_Build-Guide_2784.jpg)
+
+</div>
 
 With both the potentiometers and encoder, you may need to squidge the side brackets a little to make them fit. Be gentle as the pins may bend easily if you don’t line them up with the holes. Inspect to make sure all legs stick through the PCB, and the parts sit straight on top of the board.
 
@@ -204,7 +219,7 @@ Use the four M3x15mm hex spacers, along with the 8 included M3 screws, to hold P
 
 ![Plinky DIY Kit – Build Guide](/build-guide-black/Plinky_Build-Guide_2692.jpg)
 
-First, screw the spacers into the base plate using the M3 screws and a Philipps screwdriver.
+First, screw the spacers into the base plate using the M3 screws and a Philips screwdriver.
 
 ![Plinky DIY Kit – Build Guide](/build-guide-black/Plinky_Build-Guide_2562.jpg)
 

@@ -1,9 +1,9 @@
 {
   "stable": {
-    "file": "plink09z.uf2",
-    "version": "0.9z",
-    "date": "2021-06-26",
-    "comment": "fix for clicks in the shimmer reverb"
+    "file": "plink0A1.uf2",
+    "version": "0.A1",
+    "date": "2024-03-15",
+    "comment": "Fixes midi clock via hard midi (via expander or TRS input on V3)"
   },
   "beta": {
     "file": "plink0A1.uf2",
@@ -17,6 +17,12 @@
       "version": "0.A",
       "date": "2023-01-06",
       "comment": "USB MIDI fixes"
+    },
+    {
+      "file": "plink09z.uf2",
+      "version": "0.9z",
+      "date": "2021-06-26",
+      "comment": "fix for clicks in the shimmer reverb"
     },
     {
       "file": "plink09y.uf2",

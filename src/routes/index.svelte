@@ -62,7 +62,7 @@
     <h3>Firmware</h3>
     <p>The latest firmware version is {firmware.stable.version} released on {firmware.stable.date}.</p>
   </LinkBlock>
-  <LinkBlock href="/docs/build-guide-blue" label="Building instructions">
+  <LinkBlock href="/docs/build-guide-black" label="Building instructions">
     <h3>Building</h3>
     <p>Building your Plinky is part of the fun, and easy!</p>
   </LinkBlock>
