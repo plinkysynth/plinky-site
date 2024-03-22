@@ -278,6 +278,10 @@ table th {
   color: #334;
 }
 
+.Post article {
+  max-width: 960px;
+}
+
 .Post.manual blockquote {
   border: 1px solid rgba(255,255,255,0.25);
   margin: 0;
@@ -339,6 +343,32 @@ table th {
 .Post.manual p+h4 {
   padding-top: 2rem;
 }
+
+.Post .three {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.Post .two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media(max-width: 1024px) {
+  .Post .three {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 640px) {
+  .Post .three,
+  .Post .two {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 @media print {
 
