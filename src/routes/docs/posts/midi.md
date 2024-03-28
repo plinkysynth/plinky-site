@@ -39,6 +39,7 @@ CC| Category | Parameter
 92 | FX - Reverb | Reverb time
 93 | FX - Reverb | Reverb shimmer
 114 | FX - Reverb | Reverb wobble
+101 | ARP | Latch On/off
 102 | ARP | On/off
 103 | ARP | Order
 104 | ARP | Clock division
