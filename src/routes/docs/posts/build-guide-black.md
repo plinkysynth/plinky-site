@@ -308,6 +308,8 @@ Here are the steps required to update your firmware to the latest build:
 - The screen remains blank, and you’ll see a tunnel of flashing LEDs
 - Plinky should show up on your PC as a USB Drive
 - Drag and drop the UF2 file onto the Plinky USB Drive
+- The blinking LEDs will change to a flashing pattern
+- Once that is done, press the encoder once to reset Plinky
 
 ![Plinky DIY Kit – Build Guide](/build-guide-black/Plinky_Build-Guide_2610.jpg)
 
@@ -322,6 +324,41 @@ If you run into trouble with updating your build, here are some things you can c
 
 You can see the update process in this [video](https://youtu.be/M9FH82lPIkM?t=2759), at the 46 minute mark. 
 
+### Install firmware (Linux)
+
+Here are the steps required to update your firmware to the latest build under Linux. This was tested on Raspberry Pi 4 running Raspian.
+
+Download the latest .bin file from the [GitHub Repository](https://github.com/plinkysynth/plinky_public) page. To do this from the command line, open a terminal and enter
+
+```
+wget https://plinkysynth.com/firmware/stable/CURRENT.uf2
+```
+
+- With Plinky powered off, hold down the encoder (the rightmost knob)
+- While still held down, connect Plinky to a PC or Mac USB port
+- The screen remains blank, and you’ll see a tunnel of flashing LEDs
+- Mount Plinky as USB Drive from the terminal:
+
+```
+sudo mkdir /mnt/plinky 
+sudo mount /dev/sda /mnt/plinky
+ls /mnt/plinky
+```
+
+You should see the content of Plinky listed as follows:
+
+```
+BOOTLOAD.UF2  CURRENT.UF2  INFO_UF2.TXT  SAMPLE0.UF2  SAMPLE2.UF2  SAMPLE4.UF2  SAMPLE6.UF2 
+ CALIB.UF2     INDEX.HTM    PRESETS.UF2   SAMPLE1.UF2  SAMPLE3.UF2  SAMPLE5.UF2  SAMPLE7.UF2
+```
+
+Copy the firmware to Plinky.
+
+```
+sudo cp -f CURRENT.uf2 /mnt/plinky/
+```
+
+The blinking LEDs will change to a flashing pattern. Once that is done, press the encoder once to reset Plinky.
 
 
 ## Troubleshooting Appendix
