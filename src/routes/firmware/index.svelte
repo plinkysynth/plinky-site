@@ -32,7 +32,7 @@
   <p>Installing the firmware takes only a few moments.</p>
 
   <p><strong>WARNING:</strong></p>
-  <p><strong>Linux</strong>: These steps don't work on Linux. Do not use dfu-util as it can brick the Plinky, needing to re-flash the firmware using a programmer. The community is trying to get this sorted currently- if you have ideas, come help!</p>
+  <p><strong>Linux</strong>: These steps don't work on Linux. Disable automount and mount the drive by hand, then copy the UF2 file over (remember to rename it CURRENT.uf2).</p>
   <p><strong>MacOS Sonoma 14.4</strong>: The drive might not show up in Sonoma 14.4. There is no known solution for now as it's a widely reported issue with USB devices that Apple should fix. Your only choice is to wait for a fix or use another computer.</p>
 
   <ol>

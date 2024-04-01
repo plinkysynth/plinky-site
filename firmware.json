@@ -6,10 +6,10 @@
     "comment": "Fixes midi clock via hard midi (via expander or TRS input on V3)"
   },
   "beta": {
-    "file": "plink0A1.uf2",
-    "version": "0.A1",
-    "date": "2024-03-15",
-    "comment": "Fixes midi clock via hard midi (via expander or TRS input on V3)"
+    "file": "plink0A2.uf2",
+    "version": "0.A2",
+    "date": "2024-04-01",
+    "comment": "This version lets you record a loop to the sequencer, and play over it."
   },
   "history": [
     {
