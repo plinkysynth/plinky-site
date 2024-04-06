@@ -40,7 +40,7 @@
 
 <TextAndImage src="plinky_alpha_2.png" alt="Plinky design">
   <h1>Plinky is an 8-voice polyphonic touch synthesiser that specialises in fragile, melancholic sounds.</h1>
-  <p>It fits into 24HP eurorack cases, but can also be played as a standalone desktop mini-synth, with line-level stereo input and a headphone output, all powered from a micro-USB connector.</p>
+  <p>It fits into 24HP eurorack cases, but can also be played as a standalone desktop mini-synth over CV or MIDI, with line-level stereo input and a headphone output, all powered by USB.</p>
 
   <h4>When is it available?</h4>
   <p>Plinky is now fully open source! V3 is becoming available as DIY and ready-made kits at Thonk and Schneidersladen. Or you can make your own!</p>
