@@ -82,7 +82,7 @@ A TRS, ⅛” audio jack. Useful for two things. Plinky’s sampler can sample 6
 > Remember, if you have Plinky V2 (with the blue main board) you can and absolutely should try running Eurorack signals through Line level inputs to enloy that crunchy analog saturation. 
 
 #### USB
-Micro USB slot. It can power Plinky.  Warning -- do not attempt to power Plinky with both USB and Eurorack simultaneously. 
+The USB jack is either USB Micro-b on v1/v2, or USB-C on v3. It can power Plinky.  Warning -- do not attempt to power Plinky with both USB and Eurorack simultaneously. 
 USB is also used for MIDI in/out. It needs a USB host, so you can connect it to your computer and integrate Plinky into your DAW. It has polyphonic aftertouch, and most parameters can be edited over MIDI (see the MIDI chapter). Finally, USB is used for Firmware, preset and wavetable updates.
 
 - Firmware files are in the form of: `CURRENT.UF2`
@@ -93,6 +93,12 @@ When copying over any of these, make sure the filename matches.
 
 #### Audio out (line level stereo)
 A TRS ⅛”audio jack that outputs the mixed output at line level. 
+
+#### TRS MIDI Out (v3 hardware only)
+TRS ⅛” jack - MIDI Type-A
+
+#### TRS MIDI In (v3 hardware only)
+TRS ⅛” jack - autosensing - accepts both MIDI Type-A and Type-B
 
 ## Main Interface
 Plinky is built around 64 playable ‘pads’. Actually they are not really pads, they are zones on a vertical strip. By calibrating Plinky’s touch strips, we make them function as pads. 
@@ -122,6 +128,8 @@ The push encoder is used to set parameter values. Values can often be negative a
 The encoder remains tied to the parameter that was last edited, even when Plinky is not in parameter edit mode. 
 
 When pushed, the encoder will snap the parameter value back to 0. This is useful to remove modulation from a parameter. A long push on the encoder  clears the modulation.
+
+Press and hold the push encoder down while plugging Plinky into power and it will enter the "tunnel of lights" mode where you can update the firmware or change presets. See [https://plinkysynth.com/presets](https://plinkysynth.com/presets) for details. 
  
 ### Columns of Jacks
 The column of jacks on the left are all inputs. The column of jacks on the right are all outputs. Their individual functions are described in detail in the ‘Eurorack’ chapter. 
@@ -726,7 +734,9 @@ It's a bunch of information, but you'll get it quick!
 
 # MIDI & CV
 #### General
-Plinky responds to MIDI! It will show up as plinkysynth once you have plugged it into your computer, and will act as an 8-voice synthesizer. If you also bought the Expander for Plinky, this will respond to and output MIDI over TRS. Refer to the Expander part of the manual. Plinky listens to midi channel 1 by default. 
+Plinky responds to MIDI! It will show up as plinkysynth once you have plugged it into your computer, and will act as an 8-voice synthesizer. If you also bought the Expander for Plinky, this will respond to and output MIDI over TRS. Refer to the Expander part of the manual. Plinky v3 adds hardware TRS MIDI jacks on the bottom edge. The TRS MIDI Out is Type-A while the TRS MIDI In is autosensing and can accept both MIDI Type-A and Type-B.
+
+Plinky listens to MIDI channel 1 by default. 
 
 You can play Plinky while MIDI is being sent to it. Plinky will prioritise touch input over MIDI input, so you can jam over a pre-recorded MIDI pattern.
 
