@@ -274,7 +274,8 @@ Congratulations, it is done! Happy Plinking!
 Please check out the [Play Guide](https://plinkysynth.com/docs/play-guide) and the [Manual](https://plinkysynth.com/docs/manual).
 
 Plinky also has a a browser-based patch editor at [plinkysynth.github.io/editor](https://plinkysynth.github.io/editor/).
-You will need a Web-Serial enabled browser like Google Chrome to run it, and allow it to connect with Plinky.
+You will need a Web-Serial enabled browser like Google Chrome to run it, and allow it to connect with Plinky. 
+On Linux, you will need to [grant hardware access](#undefinedbrowser-based-patch-editor-linux-) to Plinky. 
 
 ![Plinky DIY Kit – Build Guide](/build-guide-black/Plinky_Patch_Editor_2.png)
 
@@ -344,6 +345,65 @@ sudo cp -f CURRENT.uf2 /mnt/plinky/
 ```
 
 The blinking LEDs will change to a flashing pattern. Once that is done, press the encoder once to reset Plinky.
+
+
+### Browser-based patch editor (Linux)
+
+When trying to connect to the [browser-based patch editor](https://plinkysynth.github.io/editor/) using Linux, if you get a message like 
+
+```
+SecurityError: Failed to execute 'open' on 'USBDevice': Access denied. 
+```
+
+you may need to grant hardware access to Plinky. This can be done by adding an udev rule.
+
+First, ensure that the Plinky is connected to your computer via USB. 
+</br>You can check if the Plinky is connected by running:
+```
+lsusb
+```
+
+You should see a line similar to:
+```
+Bus 001 Device 026: ID cafe:4018 Plinky PlinkySynth MIDI
+```
+
+Note the cafe id. If this is not showing up, you may need to check your USB cable.
+
+Next, add yourself to the plugdev group. You can do this by running:
+```
+sudo usermod -a -G plugdev $USER
+```
+
+You will need to log out and log back in for the group membership to take effect. 
+</br>To check if you are in the plugdev group, you can run:
+```
+groups
+```
+
+This should show a list of groups you are in, and plugdev should be one of them.
+
+
+Next, you need to create a udev rule to allow access to the Plinky. 
+</br>You can use nano or any other editor of your choice:
+```
+sudo nano /etc/udev/rules.d/99-plinky.rules
+```
+
+The file should have the following line:
+```
+SUBSYSTEM=="usb", ATTRS{idVendor}=="cafe", MODE="0660", GROUP="plugdev"
+```
+
+This grants read access to the Plinky to the plugdev group.
+
+Then, reload the udev rules:
+```
+sudo udevadm control --reload-rules
+```
+
+Finally, unplug and replug the Plinky, and you should be able to connect to the editor.
+</br>Thank you to users ddmm64 and ch-one for submitting this solution.
 
 
 ## Troubleshooting Appendix
