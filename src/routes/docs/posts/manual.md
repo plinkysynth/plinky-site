@@ -55,7 +55,10 @@ Each of the center pads plays a note. Plinky is either playing a blank preset, w
 ![Shift Top](/manual-images/shift-top.svg) *hold*
 ![Delay](/manual-images/delay--reverb.svg) *tap*
 To enter parameter edit mode you hold down a shift button, and while holding it down, select one of the icon pads. Then you release all your fingers. The bottom row of buttons are the shift / transport / mode buttons, with the blue LEDs. Its LED lights up while you have your finger held down on it. While in parameter edit mode, both the shift button and the icon pad's LEDs will flicker. The screen shows the device you are editing in the upper half and the parameter in the lower half.
-Now, let's use this workflow to add some delay. Tap and hold the bottom left button, the ‘primary’ parameter editing button, referred to as *SHIFT TOP* from here on. Tap the *delay* pad, second column third row. This is the send level to the delay unit. you are now in parameter edit mode. Slide your finger upwards on the leftmost column of pads to increase the amount of delay. To hear this, play any of the pads other than the most left column (which acts as a slider). Play & tweak. Alternatively, you can twist the encoder (right knob) to adjust the value finely. Click the encoder to reset the value to default. Tap the *SHIFT TOP* button to return to 'full play mode', where you can use the left most column for notes. That’s the basic workflow for creating patches in Plinky!
+
+Now, let's use this workflow to add some delay. Tap and hold the bottom left button, the ‘primary’ parameter editing button, referred to as *SHIFT TOP* from here on. Tap the *delay* pad, second column third row. This is the send level to the delay unit. you are now in parameter edit mode. Slide your finger upwards on the leftmost column of pads to increase the amount of delay. To hear this, play any of the pads other than the most left column (which acts as a slider). 
+
+Play & tweak. Alternatively, you can twist the encoder (right knob) to adjust the value finely. Click the encoder to reset the value to default. Tap the *SHIFT TOP* button to return to 'full play mode', where you can use the left most column for notes. That’s the basic workflow for creating patches in Plinky!
 
 ### Adding Modulation
 Adding modulation has a similar workflow. You tap and hold down a shift button, and select a parameter to enter parameter edit mode like before, but now you keep on holding down the shift button and tap one of the mod sources (the right most column of icon pads). 
@@ -65,7 +68,8 @@ Adding modulation has a similar workflow. You tap and hold down a shift button, 
 ![Mod Source A](/manual-images/mod-src--a.svg) *tap*
 
 Let’s use the physical knob at the top left of Plinky to adjust overdrive. Hold Down *SHIFT TOP* again, then tap *drive* (third columd first row) to select overdrive. While still holding down *SHIFT TOP*, tap the *MODULATOR A* pad on the right column. What you are saying to plinky is, 'I want to link modulation source A to the parameter *distortion*'. Now you'll see three blinking LEDS: the shift button, the parameter pad and the modulation pad. The screen still shows the parameter you are editing in the lower half, but the upper half now shows the modulation source instead of the sound device. 
-You have now linked the modulation source, but you also have to tell Plinky how much that modulation should impact the overdrive. You do this with the left slider, or the encoder for fine adjustments. In this case we want the knob to control the full overdrive range, so we turn it all the way up with the slider (turning the knob fully counter clockwise adds 0% overdrive, turning it all the way clockwise adds 100% overdrive). Now, the physical knob at the top left of Plinky will control overdrive. To switch between adjusting the 'base value' of the parameter and the 'modulation amount' you can tap top right *MODULATOR_BASE*. To return to full play mode, tap *SHIFT TOP* one more time. That’s as complex as it gets! You now know everything you need to know to play, edit patches and modulate. Enjoy! Details follow.
+
+You have now linked the modulation source, but you also have to tell Plinky how much that modulation should impact the overdrive. You do this with the left slider, or the encoder for fine adjustments. In this case we want the knob to control the full overdrive range, so we turn it all the way up with the slider (turning the knob fully counter clockwise adds 0% overdrive, turning it all the way clockwise adds 100% overdrive). Now, the physical knob at the top left of Plinky will control overdrive. To switch between adjusting the 'base value' of the parameter and the 'modulation amount' you can tap top right *MODULATOR BASE*. To return to full play mode, tap *SHIFT TOP* one more time. That’s as complex as it gets! You now know everything you need to know to play, edit patches and modulate. Enjoy! Details follow.
 
 > To remove a parameter's modulation, simply repeat the steps as described, and turn modulation amount back to 0% (clicking the encoder is perfect for this). To see which modulation sources are linked to a parameter, select it and check which of the modulator LEDs light up. Use *MODULATOR Base* to switch between 'base value' and 'modulation amount'
 > ![Modulator Base](/manual-images/mod-src--base.svg)  
@@ -73,7 +77,6 @@ You have now linked the modulation source, but you also have to tell Plinky how 
 # Plinky hardware
 
 ## Top and bottom edge
-![](/manual-images/edges.jpg)
 Let’s take a look at Plinky’s inputs and outputs on the top and bottom edges. They have identical functions, and both can be used. On each side you find:
 
 #### Audio in (line level stereo)
@@ -106,23 +109,29 @@ Plinky is built around 64 playable ‘pads’. Actually they are not really pads
 ### Top Row
 
 #### Knobs A & B
-These two knobs act as offsets for modulator A and B respectively. Modulator A is the sum of LFO A, CV input A and the offset of the button. These modulators can be assigned to all the parameters
+These two knobs act as offsets for modulator A and B respectively. Modulator A is the sum of LFO A, CV input A and the offset of the button. These modulators can be assigned to all the parameters.
 
 #### Screen
-Plinky's screen may be small, but it shows a lot of useful information. There are three modes, each have their own interface on the screen: Play mode, Parameter Edit mode and Sampler mode
-**Play mode**
+Plinky's screen may be small, but it shows a lot of useful information. There are three modes, each have their own interface on the screen: Play mode, Parameter Edit mode and Sampler mode.
+
+##### Play mode
 Plinky’s screen shows the last note played on the top left. On the bottom left we see the current sequencer/arp pattern. To the right of the arp/seq pattern number we see if, and if yes, which sample is selected. All the way on the right, a narrow bar shows the current pressure (max from each of the strings) that is being applied to the pads. Also on the right (left of the pressure bar) you see 4 small visualisations of modulator/LFO A, B, X and Y. The center shows a nice big waveform of what’s being played through the Mixer stage.
-**Parameter edit mode**
+
+##### Parameter edit mode
 Top left shows the device you are currently editing (Sound, Envelope, Delay, Reverb, Arp, Sequencer, A, B, X, Y, Sampler, Mixer, System)
 Bottom left shows which parameter of the current device is being edited.
+
 On the right we still see the pressure bar and the modulators. In the center we see one or two parameter values. In the upper half of the screen we see a big number, which is the current actual value of the parameter. When no modulation is applied, you will only see the big value, because the the base value and the total is equal, which you set with the slider or the encoder. 
+
 When modulation is applied, you will see 2 numbers. The small number in the lower half of the screen is the base value of the preset, the large number in the upper half is the sum of the base values and all modulation. This means that the base value is a static number, while the current value will change with the modulation (for example, an LFO). The small value is the one you can set with the slider/encoder, and the large value is the result of this.
-**Sampler Mode**
+
+##### Sampler Mode
 In Sampler mode you will see a large visualisation of the sample with vertical bars representing one of the 8 slice points. A small number to the right of this bar tells you which slide it is. 
+
 On the bottom left we see the mode the sampler is in (tape/pitch). When in pitch mode, we see the base note of the current slide. On the bottom right we see the sampler playback mode (all, loop, loop all)
 
 #### Encoder
-ENC_P
+
 The push encoder is used to set parameter values. Values can often be negative and positive, where different types of units correspond to the positive or negative values (eg. in the shape parameter, negative values modulate the Pulsewidth of a pulse wave, at 0 it is a supersaw, when positive it is a wavetable).
 
 The encoder remains tied to the parameter that was last edited, even when Plinky is not in parameter edit mode. 
@@ -138,12 +147,12 @@ The column of jacks on the left are all inputs. The column of jacks on the right
 The Bottom row of pads (blue leds), are shift and transport controls, from left to right: 
 
 #### Shift Top & Shift Bottom
-![Shift Top](/manual-images/shift-top.svg) ![Shift Bottom](/manual-images/shift-bottom.svg)  **Edit Mode** The first two shift buttons are the most important: they allow you to modify the sound. Why two? They map to two complete sets of parameters – primary (top) on SB_PARAMS_TOP and secondary (bottom) on SB_PARAMS_BOT, corresponding to the parameters that are written above and below each of the pads. Tap or hold either, then tap an icon pads to choose a parameter to edit.
+![Shift Top](/manual-images/shift-top.svg) ![Shift Bottom](/manual-images/shift-bottom.svg)  **Edit Mode** The first two shift buttons are the most important: they allow you to modify the sound. Why two? They map to two complete sets of parameters – primary (top) on *SHIFT TOP* and secondary (bottom) on *SHIFT BOTTOM*, corresponding to the parameters that are written above and below each of the pads. Tap or hold either, then tap an icon pads to choose a parameter to edit.
 
 Once in edit mode, adjust the chosen parameter using the left most column of pads as a slider, or use the encoder to the left of the screen. While in this mode you can play all the pads, except for the left most (slider) pads. Tap again to return to play mode (LED off). 
 
 #### Preset
-![Preset](/manual-images/preset.svg)  **Preset Mode** Tap or hold, then tap a main pad to select a preset (left 32 pads), pattern (middle 24), or sample (right 8). A long press on a sample pad will edit it; on other pads, it will copy the current preset / pattern to it. Press and hold SB_CLEAR to clear the last touched preset or pattern.
+![Preset](/manual-images/preset.svg)  **Preset Mode** Tap or hold, then tap a main pad to select a preset (left 32 pads), pattern (middle 24), or sample (right 8). A long press on a sample pad will edit it; on other pads, it will copy the current preset / pattern to it. Press and hold *CLEAR* to clear the last touched preset or pattern.
 
 #### Previous
 ![Previous](/manual-images/previous.svg) **Previous Button** Tap to jump to the previous step (sequencer paused) or first step (sequencer playing). *Or, hold it then tap a main pad to jump to a step within the current loop, or to set a new loop start outside the current loop.*
@@ -171,7 +180,7 @@ in **parameter mode** the LEDs show both the parameter that is being edited and 
 in **preset mode** the LED's show the active preset, sequencer pattern and current sample (when in sample mode)
 
 # Parameters
-Plinky’s parameters are arranged in somewhat logical horizontal rows. Remember to touch/hold SB_PARAMS_TOP or SB_PARAMS_BOT to enter parameter edit mode, then touch a pad with an icon to select that parameter. The left most column then becomes a dedicated slider, or you can use the encoder right of the screen. Pressing SB_PARAMS_TOP or SB_PARAMS_BOT again leaves the left slider active, allowing you to continue to tweak a single parameter while playing with the majority of the pads. Pressing SB_PARAMS_TOP or SB_PARAMS_BOT a third time returns to play mode, with all 64 pads available to play. This is the main workflow when making patches with Plinky.
+Plinky’s parameters are arranged in somewhat logical horizontal rows. Remember to touch/hold *SHIFT TOP* or *SHIFT BOTTOM* to enter parameter edit mode, then touch a pad with an icon to select that parameter. The left most column then becomes a dedicated slider, or you can use the encoder right of the screen. Pressing *SHIFT TOP* or *SHIFT BOTTOM* again leaves the left slider active, allowing you to continue to tweak a single parameter while playing with the majority of the pads. Pressing *SHIFT TOP* or *SHIFT BOTTOM* a third time returns to play mode, with all 64 pads available to play. This is the main workflow when making patches with Plinky.
 
 The leftmost column of pads is a slider. The rightmost column of pads are modulation sources. We’ll cover those later. The middle 6 columns are the parameters themselves. From top to bottom, they are:
 
@@ -541,13 +550,13 @@ Sets the length of the gate of each step. The gate is the signal that determines
 Plinky lets you record 8 samples, each split into 8 'slices', corresponding to the 8 columns (strings). Once recorded, the bottom row of parameters control the granular playback of your samples.
 
 To record or edit a sample, press *PRESET* to go into preset mode, then press and hold one of the 8 rightmost pads. Now press and hold *RECORD* to record a new sample. Plinky will first have to clear the data stored for that slot which will take a few seconds. Use knob A to adjust the recording level.
-Press *RECORD* or *PLAY* to 'arm'. Plinky will start recording when it hears audio, or tap *RECORD*/*PLAY* again to start recording silence. 
+Press *RECORD* or *PLAY* to 'arm'. Plinky will start recording when it hears audio, or tap *RECORD* / *PLAY* again to start recording silence. 
 
 If you want to set the 8 slice points while recording, tap any of the main pad buttons at the start of each slice. If not, Plinky will cut the sample into 8 equal length slices. You can edit the split points later. Press *RECORD* or *PLAY* any time to stop recording. 
 
 When recording is finished, to audition the slices, press and hold the main pad buttons along the top row. If you slide your finger up and down, it adjusts the start point of each slice. 
 
-There are two options associated with samples, controlled by the usual 2 parameter shift keys *SHIFT TOP*/*SHIFT BOTTOM*: Tape/Pitch mode and Loop mode. 
+There are two options associated with samples, controlled by the usual 2 parameter shift keys *SHIFT TOP* / *SHIFT BOTTOM*: Tape/Pitch mode and Loop mode. 
 Press *SHIFT BOTTOM* to cycle loop mode between 'play slice', 'loop slice', 'play all', 'loop all'.
 Press *SHIFT TOP* to toggle between Tape mode and Pitch mode.
 
@@ -692,8 +701,8 @@ Sets the balance between the dry signal of the audio inputs and the wet signal p
 ![High Pass Filter](/manual-images/hpf.svg)
 After the synth/sampler, external audio and the effects are mixed, they pass through a High Pass Filter. This parameter controls the cut off frequency.
 
-#### CV Quantize
-![CV Quantize](/manual-images/cv-quantize.svg)
+#### Settings
+![Settings](/manual-images/cv-quantize.svg)
 Plinky’s pitch input is most useful when you have a sequence or latched note playing; the pitch is transposed according to the pitch CV input (1 volt per octave), and you can use this last parameter to choose if the transposition is unquantized, quantized to semitones, or transposed in-scale. 0v (C0) means no transposition.
 
 #### Volume
@@ -821,7 +830,7 @@ Plinky (V2) fits in standard Eurorack rails. It can be powered over Eurorack, bu
 
 The 8 jack inputs, at left, from top to bottom provide:
 #### Clock Input
-A 1/16th note clock input. Plinky responds to 2PPQN audio pulses. As soon as Plinky receives a clock in the Arpegiator / Sequencer will start playing. Other clocked devices (delay, in the future possibly the LFO’s) will switch back to the internal clock as soon as the external clock stops. 
+A 1/16th note clock input. Plinky responds to 4 PPQN audio pulses. As soon as Plinky receives a clock in the Arpegiator / Sequencer will start playing. Other clocked devices (delay, in the future possibly the LFO’s) will switch back to the internal clock as soon as the external clock stops. 
 #### Gate Input
 An analogue gate that scales the openness of all low pass gates (0-5v).
 #### Pitch Input
