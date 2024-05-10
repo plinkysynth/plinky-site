@@ -78,8 +78,8 @@
 
 <BigArea>
   <h4>Stay up to date!</h4>
-  <p>Sign up to the Plinky mailing list for updates.</p>
-  <a class="button" target="_blank" href="https://eepurl.com/heuCM5">Sign up</a>
+  <p>Join the Plinky Discord server for updates.</p>
+  <a href="https://discord.gg/Zf6chA9jAz" target="_blank" class="button">Join server</a>
 </BigArea>
 
 <svelte:head>
