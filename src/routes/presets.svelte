@@ -72,4 +72,18 @@
       <li>To finish, just click the encoder again. Plinky will boot up and your presets should be present.</li>
     </ul>
 
+    <p>No tunnel of lights on Plinky?</p>
+    
+    <ul>
+      <li> Double check that all 5 Encoder pins are soldered. The side with 2 pins is the switch for the "click".</li>
+    </ul>
+
+    <p>USB drive not showing up?</p>
+    
+    <ul>
+      <li>Make sure your cable can transmit data. Try another cable.</li>
+      <li>Mac M1 / M2 users on MacOS 14 follow these <a href="https://plinkysynth.com/docs/build-guide-black/#undefinedinstall-firmware-mac-m1-os-14-">steps</a></li>
+      <li>Linux users follow these <a href="https://plinkysynth.com/docs/build-guide-black/#undefinedinstall-firmware-linux-">steps</a></li>
+    </ul>
+
   </div>
