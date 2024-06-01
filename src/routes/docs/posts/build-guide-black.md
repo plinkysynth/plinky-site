@@ -74,6 +74,8 @@ If this is your first time soldering, please read the [Adafruit Guide to Excelle
 </div>
 </div>
 
+Please take a moment to find all 16x knurled nuts. They have a tendency to hide inside the Thonkiconn jacks - if you find you are missing any, most of the time they are just hidden inside the back of a Thonkiconn jack!
+
 ## Build Guide
 
 All of the SMD components on the PCB have already been assembled for you, so this is a very quick build. However, it does require very careful and precise soldering. 
@@ -203,6 +205,8 @@ Screw on the knurled Thonkiconn nuts and the black hex nuts for potentiometers a
 Before you solder, make sure everything is as tightly sandwiched as possible. Solder the jacks first, so the whole arrangement holds together.
 Check one last time everything sits right, then solder the potentiometer and encoder legs on the back.
 
+Do not solder the four screen pins.
+
 ![Plinky DIY Kit – Build Guide](/build-guide-black/Plinky_Build-Guide_2554.jpg)
 
 
@@ -321,9 +325,40 @@ If you run into trouble with updating your build, here are some things you can c
 - If Plinky shows no sign of powering on at all, unplug and check for shorts or bad joints.
 - Check that every light is working. If not, you may need to touch up your soldering.
 - If you see the tunnel of LEDs, but no USB drive, make sure you use a USB-C cable that you can use to transfer data with.
-- Mac M1 / M2 users with OS 14 have reported issues connecting in bootloader mode. Check with another machine to make sure Plinky is working correctly
+- Mac M1 / M2 users with OS 14 have reported issues connecting in bootloader mode. 
+You can use the command line to mount Plinky's drive and install UF2 files, follow the [instructions](#undefinedinstall-firmware-mac-m1-os-14-) below
+- Linux users need to follow the [instructions](#undefinedinstall-firmware-linux-) here
 
 You can see the update process in this [video](https://youtu.be/M9FH82lPIkM?t=2759), at the 46 minute mark. 
+
+### Install firmware (Mac M1 / OS 14)
+
+In UF2 (tunnel of light) mode, Plinky has been unhappy to automatically mount on some Mac OS versions (14 and higher). You can try using the terminal.
+
+- Make sure your USB cable can transmit data
+- Plug the USB cable into Plinky. 
+- Hold the Encoder (rightmost knob) on Plinky. 
+- With Encoder held, plug the USB cable into your Mac. 
+- Plinky should come up in UF2 (tunnel of light) mode, with a black screen. 
+- You can release the encoder.
+
+Open a terminal, and execute 
+```
+diskutil list
+```
+Plinky should be listed as a device. It looks like this or similar:
+```
+/dev/disk4 (external, physical)
+#:     TYPE NAME         SIZE       IDENTIFIER
+0:          PLINKY      *100.7 MB   disk4
+```
+The disk number is the information you are looking for.
+Mount Plinky manually via the command line, and adjust the disk number if needed:
+```
+sudo mkdir /Volumes/USB
+sudo mount -t msdos /dev/disk4 /Volumes/USB
+```
+You should see the Plinky drive with the UF2 files. You can now either backup the files to your Mac, or replace them with new firmware or presets.
 
 ### Install firmware (Linux)
 
