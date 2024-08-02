@@ -745,9 +745,23 @@ It's a bunch of information, but you'll get it quick!
 #### General
 Plinky responds to MIDI! It will show up as plinkysynth once you have plugged it into your computer, and will act as an 8-voice synthesizer. If you also bought the Expander for Plinky, this will respond to and output MIDI over TRS. Refer to the Expander part of the manual. Plinky v3 adds hardware TRS MIDI jacks on the bottom edge. The TRS MIDI Out is Type-A while the TRS MIDI In is autosensing and can accept both MIDI Type-A and Type-B.
 
-Plinky listens to MIDI channel 1 by default. 
-
 You can play Plinky while MIDI is being sent to it. Plinky will prioritise touch input over MIDI input, so you can jam over a pre-recorded MIDI pattern.
+
+#### Set MIDI Input and Output channels
+
+Plinky sends and listens to MIDI channel 1 by default. 
+
+To set the MIDI I/O channels, use the unprinted pad in the bottom row.
+
+![Shift Top](/manual-images/shift-top.svg) *hold*
+![Unprinted](/manual-images/unprinted.svg) *tap*
+To change the MIDI input channel, you hold down the shift top button, and while holding it down, select one the unprinted pad. Use the Encoder to select the MIDI input channel, ranging from 1 - 16.
+
+![Shift Bottom](/manual-images/shift-bottom.svg) *hold*
+![Unprinted](/manual-images/unprinted.svg) *tap*
+To change the MIDI output channel, you hold down the shift bottom button, and while holding it down, select one the unprinted pad. Use the Encoder to select the MIDI output channel, ranging from 1 - 16.
+
+This setting is stored with each patch. That means you can set and recall it individually for each preset.
 
 #### USB Midi in
 Here's a list of all the CC parameters that Plinky listens to.

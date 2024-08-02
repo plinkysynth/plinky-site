@@ -29,19 +29,37 @@
   
   <h2>Firmware install instructions</h2>
   
-  <p>Installing the firmware takes only a few moments.</p>
+  <p>Installing the firmware takes only a few moments:</p>
 
-  <p><strong>WARNING:</strong></p>
-  <p><strong>Linux</strong>: These steps don't work on Linux. Disable automount and mount the drive by hand, then copy the UF2 file over (remember to rename it CURRENT.uf2).</p>
-  <p><strong>MacOS Sonoma 14.4</strong>: The drive might not show up in Sonoma 14.4. There is no known solution for now as it's a widely reported issue with USB devices that Apple should fix. Your only choice is to wait for a fix or use another computer.</p>
+  <ul>
+    <li>Unplug all cables from Plinky</li>
+    <li>Connect a USB cable to your Plinky</li>
+    <li>Do not power from Eurorack at the same time, and use only one USB port</li>
+    <li>Hold down the encoder (rightmost knob), and plug the USB cable into your computer</li>
+  </ul>
 
-  <ol>
-    <li>Hold the right encoder down while plugging the USB cable into your Plinky.</li>
-    <li>Plinky will show up as an attached drive and you should see the "tunnel of lights" effect on the LEDs.</li>
-    <li>Drag and drop CURRENT.uf2 to the drive. <b>Make sure that it's called CURRENT.uf2 and nothing else.</b></li>
-    <li>While flashing, the LEDs will flicker. This is normal!</li>
+  <p>Plinky will show up as a drive and you should see the "tunnel of lights" effect on Plinky's LEDs.</p>
+
+  <ul>
+    <li>Drag and drop CURRENT.uf2 to the drive. <b>Make sure the file is called CURRENT.uf2 - do not rename.</b></li>
+    <li>While flashing, the LEDs will flicker. This is normal.</li>
     <li>To finish, just click the encoder again. Plinky will boot up and you should see the correct version number.</li>
-  </ol>
+  </ul>
+
+  <p>No tunnel of lights on Plinky?</p>
+  
+  <ul>
+    <li> Double check that all 5 Encoder pins are soldered. The side with 2 pins is the switch for the "click".</li>
+  </ul>
+
+  <p>USB drive not showing up?</p>
+  
+  <ul>
+    <li>Make sure your cable can transmit data. Try another cable.</li>
+    <li><strong>Mac M1 / M2</strong> users on MacOS 14 follow these <a href="https://plinkysynth.com/docs/build-guide-black/#undefinedinstall-firmware-mac-m1-os-14-">steps</a></li>
+    <li><strong>Linux</strong> users follow these <a href="https://plinkysynth.com/docs/build-guide-black/#undefinedinstall-firmware-linux-">steps</a></li>
+  </ul>
+
 
   <h2>History</h2>
 

@@ -1,17 +1,47 @@
 {
   "stable": {
-    "file": "plink0A1.uf2",
-    "version": "0.A1",
-    "date": "2024-03-15",
-    "comment": "Fixes midi clock via hard midi (via expander or TRS input on V3)"
+    "file": "plink0A6.uf2",
+    "version": "0.A6",
+    "date": "2024-08-02",
+    "comment": "Set the MIDI I/O channels from the unprinted pad in the bottom row. Shift up + unprinted pad = MIDI input, Shift down + unprinted pad = MIDI output channel. Stored with each preset."
   },
   "beta": {
-    "file": "plink0A2.uf2",
-    "version": "0.A2",
-    "date": "2024-04-01",
-    "comment": "This version lets you record a loop to the sequencer, and play over it."
+    "file": "plink0A6.uf2",
+    "version": "0.A6",
+    "date": "2024-08-02",
+    "comment": "Set the MIDI I/O channels from the unprinted pad in the bottom row. Shift up + unprinted pad = MIDI input, Shift down + unprinted pad = MIDI output channel. Stored with each preset."
   },
   "history": [
+    {
+      "file": "plink0A5.uf2",
+      "version": "0.A5",
+      "date": "2024-08-01",
+      "comment": "Fixes scaling issue with the Encoder when adjusting headphone volume."
+    },
+    {
+      "file": "plink0A4.uf2",
+      "version": "0.A4",
+      "date": "2024-07-05",
+      "comment": "Reverts loop recording from 0.A2. Keeps USB fix."
+    },
+    {
+      "file": "plink0A3.uf2",
+      "version": "0.A3",
+      "date": "2024-07-04",
+      "comment": "Fixes compatibility for some USB MIDI hosts, like Tubbtec Brainstep."
+    },
+    {
+      "file": "plink0A2.uf2",
+      "version": "0.A2",
+      "date": "2024-04-01",
+      "comment": "This version lets you record a loop to the sequencer, and play over it."
+    },
+    {
+      "file": "plink0A1.uf2",
+      "version": "0.A1",
+      "date": "2024-03-15",
+      "comment": "Fixes midi clock via hard midi (via expander or TRS input on V3)"
+    },
     {
       "file": "plink091a.uf2",
       "version": "0.A",
