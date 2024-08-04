@@ -858,7 +858,7 @@ An audio output, at Eurorack level, mono (left channel)
 #### Right Output
 An audio output, at Eurorack level, mono (right channel)
 #### Clock Output
-Outputs the clock, which is controlled by the BPM parameter. [outputs at 2 pulses per beat]
+Outputs the clock, which is controlled by the BPM parameter. Outputs 4 pulses per beat (4 PPQN).
 #### Trigger Output
 Outputs a trigger signal on for each of the notes played (by hand, arpeggiator or sequencer)
 #### Pitch Hi Output
