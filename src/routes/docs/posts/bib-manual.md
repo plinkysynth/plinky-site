@@ -6,6 +6,8 @@ date: "2024-09-07T08:38:00.000Z"
 
 <img src="/bibspin.gif">
 
+If you're looking for the build guide, go <a href="docs/build-guide_bib">here</a>.
+
 ## Overview
 
 Bib is the first collaboration between Alex Evans - creator of Plinky! - and Ray Yokell aka CrazyEmperor893 of <a href="https://crey.space">The crey emporium</a>. 

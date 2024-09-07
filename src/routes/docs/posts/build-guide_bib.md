@@ -82,13 +82,13 @@ Ok let's prepare the pots (aka knobs)! Both the pots have standoffs that get in 
 </p>
 
 ## Placing the hardware (but not soldering it) 
-OK Now we're ready to put all the pots and sockets into Bib! prise the sandwich gently apart, if you didn't already, and put the digital half aside - it's finished actually! (Feel free to have a celebratory cup of tea). Freshly revitalised, **remove the nuts and washers** from the knobs, then place them along with the 5 Thonk jack sockets, and don't forget the little 4 pin header - as shown below. **DONT SOLDER ANYTHING YET!** Just plop 'em in place. The stereo pairs of thonkiconns actually share a single hole for the 'ground' pins, so it can be a bit fiddly, but you can do it! I believe in you!
+OK Now we're ready to put all the pots and sockets into Bib! prise the sandwich gently apart, if you didn't already, and put the digital half aside - it's finished actually! (Feel free to have a celebratory cup of tea). Freshly revitalised, **remove the nut and washer** from the smaller pot, then place them along with the 5 Thonk jack sockets, and don't forget the little 4 pin header - as shown below. (You can leave the nut on the larger, transparent pot, as it helps alignment later, and the kit should contain a separate black nut to fit over the top, later.) **DONT SOLDER ANYTHING YET!** Just plop 'em in place. The stereo pairs of thonkiconns actually share a single hole for the 'ground' pins, so it can be a bit fiddly, but you can do it! I believe in you!
 
 ![Parts](/bib-build-guide/IMG_6326.jpeg)
 
-Why not solder them? You'll see! Now is the exciting moment we get to place the front panel over the top of everything. The pots and thonkis should all go through the holes (did you remember to remove the pot nuts? good), perhaps after a little wiggling and persuasion (good thing you didn't solder them right!). The 4 pin header and the socket you soldered earlier should mesh together beautifully inside the sandwich. 
+Why not solder them? You'll see! Now is the exciting moment we get to place the front panel over the top of everything. The pots and thonkis should all go through the holes (did you remember to remove the nut from the smaller pot, if one was there? good), perhaps after a little wiggling and persuasion (good thing you didn't solder them right!). The 4 pin header and the socket you soldered earlier should mesh together beautifully inside the sandwich. 
 
-Take a moment to marvel at your achievement! I mean, why not loosely screw the nuts back on top of the panel to the pots and thonkis - it's really starting to look like a music thing now!
+Take a moment to marvel at your achievement! I mean, why not loosely screw the nuts back on top of the panel to the pots and thonkis - it's really starting to look like a music thing now! Your kit probably included black nuts for the pots, which adds a certain *je ne sais quoi*... Alas, I didn't have those when I took the pictures below.
 
 ![Parts](/bib-build-guide/IMG_6328.jpeg)
 
@@ -108,6 +108,12 @@ All that remains is to tighten the nuts, push the knobs onto the pot shafts, and
 ![Parts](/bib-build-guide/IMG_6331.jpeg)
 
 ## The Software Adventure
+
+Your Bib kit should come pre-flashed with firmware, so in theory it should just work straight away without any further ado.
+
+However, if you wish to update Bib, read on.
+
+First, download the firmware in this file: <a href="bib-firmware/bib_001.uf2">`bib_001.uf2`</a>.
 
 Use a USB-C cable (not included) to plug your computer into Bib. You do **not** need Bib to be powered from eurorack for this step. 
 

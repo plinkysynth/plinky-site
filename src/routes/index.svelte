@@ -56,7 +56,7 @@
   <h4>Tell me more!</h4>
   <p>You can read the Bib <a href="docs/bib-manual">manual</a> and <a href="docs/build-guide_bib">build guide</a> right now. More information on Buzzrito and Blueberry will be coming soon! For sneak peaks and sound demos, follow <a href="https://www.instagram.com/plinkysynth">PlinkySynth</a> and <a href="https://www.instagram.com/crazyemperor893/">CrazyEmperor893</a> on instagram.</p>
   <h4>When will they be available?</h4>
-  <p>Bib is on sale now, in prebuilt form the <a href="https://crey.space">Crey Emprorium</a>, and shortly from <a href="https://thonk.co.uk">Thonk</a> as a kit. The other two buddies will be available soon!</p>
+  <p>Bib is on sale now, in prebuilt form from the <a href="https://crey.space">Crey Emprorium</a>, and shortly from <a href="https://thonk.co.uk">Thonk</a> as a kit. The other two buddies will be available soon!</p>
 </TextAndImage>
 
 
