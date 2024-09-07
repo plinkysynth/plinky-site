@@ -1,5 +1,5 @@
 ---
-title: Expander build guide
+title: Plinky Expander build guide
 date: "2021-03-28T08:38:00.000Z"
 ---
 
