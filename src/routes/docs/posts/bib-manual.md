@@ -32,7 +32,7 @@ You can clock the delay by feeding a regular trigger into the CV input, or assig
 
 Bib has stereo eurorack level inputs and outputs on its front panel, but also sports a 6 pin header on its back for line level stereo in and out. These are compatible, for example, with the intellijel palette cases, allowing use of two case mounted TRS jacks as stereo in/out. 
 
-However, the line-in connection when unused can, in some cases and environments, pick up a bit of noise. For that reason, we added an option in the Bib software to enable and disable this line-in connection. If you're not using the line-in feature, you can disable the line-in connection by pressing and holding firmly on both the spider and the slider for 5 or more seconds. 
+However, the line-in connection when unused can, in some cases and environments, pick up a bit of noise. For that reason, we added an option in the Bib software to enable and disable this line-in connection. If you're not using the line-in feature, you can disable it by pressing and holding firmly on both the spider and the slider for 5 or more seconds. 
 
 After 2 seconds, the knob will pulse white, indicating that all settings have been reset. Keep holding! After 5 seconds, it will pulse either red (line-in disabled) or green (line-in enabled). Release your fingers. Hold again for 5 seconds to toggle as needed.
 
