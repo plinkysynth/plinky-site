@@ -8,6 +8,8 @@ date: "2024-09-07T08:38:00.000Z"
 
 If you're looking for the build guide, go <a href="docs/build-guide_bib">here</a>.
 
+The latest firmware is available to download <a href="docs/build-guide_bib/#undefinedthe-software-adventure">here</a> along with instructions on how to flash it onto your Bib. 
+
 ## Overview
 
 Bib is the first collaboration between Alex Evans - creator of Plinky! - and Ray Yokell aka CrazyEmperor893 of <a href="https://crey.space">The crey emporium</a>. 
@@ -26,4 +28,14 @@ You can clock the delay by feeding a regular trigger into the CV input, or assig
 
 <a href="bib_manual.png" target="blank"><img src="bib_manual.png"></a>
 
+## Enabling and Disabling the line-in connection
 
+Bib has stereo eurorack level inputs and outputs on its front panel, but also sports a 6 pin header on its back for line level stereo in and out. These are compatible, for example, with the intellijel palette cases, allowing use of two case mounted TRS jacks as stereo in/out. 
+
+However, the line-in connection when unused can, in some cases and environments, pick up a bit of noise. For that reason, we added an option in the Bib software to enable and disable this line-in connection. If you're not using the line-in feature, you can disable the line-in connection by pressing and holding firmly on both the spider and the slider for 5 or more seconds. 
+
+After 2 seconds, the knob will pulse white, indicating that all settings have been reset. Keep holding! After 5 seconds, it will pulse either red (line-in disabled) or green (line-in enabled). Release your fingers. Hold again for 5 seconds to toggle as needed.
+
+This feature was added in version 3 of the firmware, which is the version flashed to all Thonk bibs and crey.emporium bibs sold *after* knobconn 24.
+
+The line-out and front panel connections are always enabled, ie they are not affected by this setting.
