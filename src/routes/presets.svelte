@@ -82,8 +82,8 @@
     
     <ul>
       <li>Make sure your cable can transmit data. Try another cable.</li>
-      <li>Mac M1 / M2 users on MacOS 14 follow these <a href="https://plinkysynth.com/docs/build-guide-black/#undefinedinstall-firmware-mac-m1-os-14-">steps</a></li>
-      <li>Linux users follow these <a href="https://plinkysynth.com/docs/build-guide-black/#undefinedinstall-firmware-linux-">steps</a></li>
+      <li>Mac M1 / M2 users on MacOS 14 follow these <a href="https://plinkysynth.com/docs/build-guide-black/#install-firmware-mac-m1-os-14-">steps</a></li>
+      <li>Linux users follow these <a href="https://plinkysynth.com/docs/build-guide-black/#install-firmware-linux-">steps</a></li>
     </ul>
 
   </div>

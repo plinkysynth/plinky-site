@@ -21,7 +21,6 @@
     return str.replace(/&amp;/g, '&').replace(/&#39;/g, '\'');
   }
 
-  console.log(post)
 </script>
 
 <style>
