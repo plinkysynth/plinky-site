@@ -16,7 +16,6 @@ Thank you for getting a Plinky kit. It is an easy DIY build suited for beginners
 
 If this is your first time soldering, please read the [Adafruit Guide to Excellent Soldering](https://learn.adafruit.com/adafruit-guide-excellent-soldering/) first.
 
-
 ### Some tools you will need
 
 ![Plinky DIY Kit – Build Guide](/build-guide-black/Build-Guide_1616.jpg)
@@ -25,7 +24,6 @@ If this is your first time soldering, please read the [Adafruit Guide to Excelle
 - A soldering iron for electronics. A good temperature for soldering lead free solder is 375 - 380° C.
 - Snipe-nose pliers
 - A Multimeter
-
 
 ### Here’s what you will find in the kit
 

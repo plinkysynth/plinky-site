@@ -1,6 +1,7 @@
 <script lang="ts">
   export let src;
   export let alt;
+  export let border = false;
 </script>
 
 <style>
@@ -9,8 +10,11 @@
     align-items: center;
     display: flex;
     flex: 1;
-    margin: 0 0 4rem 0;
     justify-content: center;
+  }
+  .TextAndImage.border {
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
   }
 
   .Text {
@@ -63,7 +67,7 @@
 
 </style>
 
-<div class="TextAndImage">
+<div class="TextAndImage {border? 'border' : ''}">
   <div class="Text">
     <slot></slot>
   </div>

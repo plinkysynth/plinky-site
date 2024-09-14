@@ -36,7 +36,8 @@ export default () => ({
     var toc = [];
 
     renderer.heading = function(text, level, raw) {
-        var anchor = this.options.headerPrefix + raw.toLowerCase().replace(/[^\w]+/g, '-');
+      console.log('heading', text, level, raw);
+        var anchor = (this.options.headerPrefix ? this.options.headerPrefix : '') + raw.toLowerCase().replace(/[^\w]+/g, '-');
         toc.push({
             anchor: anchor,
             level: level,

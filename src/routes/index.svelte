@@ -15,6 +15,7 @@
     max-width: 800px;
   }
   .Examples {
+    padding-top: 4rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -47,7 +48,7 @@
   <a class="button" target="_blank" href="https://github.com/plinkysynth/plinky_public">View on Github</a>
 </TextAndImage>
 
-<TextAndImage src="buddies2.png" alt="Buddies design">
+<TextAndImage src="buddies2.png" alt="Buddies design" border={true}>
   <h1>Plinky now welcomes 3 small 12HP x 1U modules to the family: Bib, Buzzrito and Blueberry.</h1>
   <p>These little buddies provide a plinky style stereo reverb, delay, and drive (<a href="docs/bib-manual">Bib</a>), a rich swarm oscillator (Buzzrito), and a generative touch sequencer (Blueberry).
   They take the touch-enabled sensitivity of Plinky, and break it out into 3 small (12HP) modules for your 1U eurorack row.</p>

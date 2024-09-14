@@ -204,6 +204,9 @@ ul {
   margin: 0 0 3rem 0;
 }
 
+pre {
+  overflow-x: auto;
+}
 
 code {
 	font-family: menlo, inconsolata, monospace;
