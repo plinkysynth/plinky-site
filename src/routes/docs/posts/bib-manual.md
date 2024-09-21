@@ -10,6 +10,13 @@ If you're looking for the build guide, go <a href="docs/build-guide_bib">here</a
 
 The latest firmware is available to download <a href="docs/build-guide_bib/#undefinedthe-software-adventure">here</a> along with instructions on how to flash it onto your Bib. 
 
+## Video demo and Jam by izaak from toadstool.tech
+
+<div class="Video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/c-n1z9zD5Pw?si=tRR9bGGUOqtbDU-O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
 ## Overview
 
 Bib is the first collaboration between Alex Evans - creator of Plinky! - and Ray Yokell aka CrazyEmperor893 of <a href="https://crey.space">The crey emporium</a>. 
