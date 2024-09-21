@@ -8,7 +8,7 @@ date: "2024-09-07T08:38:00.000Z"
 
 If you're looking for the build guide, go <a href="docs/build-guide_bib">here</a>.
 
-The latest firmware is available to download <a href="docs/build-guide_bib/#undefinedthe-software-adventure">here</a> along with instructions on how to flash it onto your Bib. 
+The latest firmware is available to download <a href="docs/build-guide_bib/#the-software-adventure">here</a> along with instructions on how to flash it onto your Bib. 
 
 ## Video demo and Jam by izaak from toadstool.tech
 

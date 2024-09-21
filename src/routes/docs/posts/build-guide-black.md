@@ -16,7 +16,6 @@ Thank you for getting a Plinky kit. It is an easy DIY build suited for beginners
 
 If this is your first time soldering, please read the [Adafruit Guide to Excellent Soldering](https://learn.adafruit.com/adafruit-guide-excellent-soldering/) first.
 
-
 ### Some tools you will need
 
 ![Plinky DIY Kit – Build Guide](/build-guide-black/Build-Guide_1616.jpg)
@@ -25,7 +24,6 @@ If this is your first time soldering, please read the [Adafruit Guide to Excelle
 - A soldering iron for electronics. A good temperature for soldering lead free solder is 375 - 380° C.
 - Snipe-nose pliers
 - A Multimeter
-
 
 ### Here’s what you will find in the kit
 
@@ -294,7 +292,7 @@ Please check out the [Play Guide](https://plinkysynth.com/docs/play-guide) and t
 
 Plinky also has a a browser-based patch editor at [plinkysynth.github.io/editor](https://plinkysynth.github.io/editor/).
 You will need a Web-Serial enabled browser like Google Chrome to run it, and allow it to connect with Plinky. 
-On Linux, you will need to [grant hardware access](#undefinedbrowser-based-patch-editor-linux-) to Plinky. 
+On Linux, you will need to [grant hardware access](#browser-based-patch-editor-linux-) to Plinky. 
 
 ![Plinky DIY Kit – Build Guide](/build-guide-black/Plinky_Patch_Editor_2.png)
 
@@ -326,8 +324,8 @@ If you run into trouble with updating your build, here are some things you can c
 - Check that every light is working. If not, you may need to touch up your soldering.
 - If you see the tunnel of LEDs, but no USB drive, make sure you use a USB-C cable that you can use to transfer data with.
 - Mac M1 / M2 users with OS 14 have reported issues connecting in bootloader mode. 
-You can use the command line to mount Plinky's drive and install UF2 files, follow the [instructions](#undefinedinstall-firmware-mac-m1-os-14-) below
-- Linux users need to follow the [instructions](#undefinedinstall-firmware-linux-) here
+You can use the command line to mount Plinky's drive and install UF2 files, follow the [instructions](#install-firmware-mac-m1-os-14-) below
+- Linux users need to follow the [instructions](#install-firmware-linux-) here
 
 You can see the update process in this [video](https://youtu.be/M9FH82lPIkM?t=2759), at the 46 minute mark. 
 
