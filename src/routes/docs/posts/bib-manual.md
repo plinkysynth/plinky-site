@@ -46,3 +46,35 @@ After 2 seconds, the knob will pulse white, indicating that all settings have be
 This feature was added in version 3 of the firmware, which is the version flashed to all Thonk bibs and crey.emporium bibs sold *after* knobconn 24.
 
 The line-out and front panel connections are always enabled, ie they are not affected by this setting.
+
+## Firmware
+
+First, download the latest firmware in this file: <a href="bib-firmware/bib_004.uf2">`bib_004.uf2`</a>.
+Use a USB-C cable (not included) to plug your computer into Bib. You do **not** need Bib to be powered from eurorack for this step. 
+
+Bib should show up as a USB drive called `RPI-RP2` (on mac, you may find it under `/Volumes/RPI-RP2`). If it does not, try disconnecting the USB cable, holding down the *tiny* button on the digital board, just  opposite to the USB connector (hilighted below), while reconnecting the cable - then release the button. If it *still* doesn't show up, make sure your cable has data lines (and isn't just for charging).
+
+Drag and drop or otherwise copy the downloaded file onto the RPI-RP2 folder, and after a second Bib should reboot, flashing white and then glowing red. You're ready to bib!
+
+## Patch notes & versions
+
+## [bib_004.uf2](bib-firmware/bib_004.uf2) - September 2024 - 'Toadstool edition' 
+* The spider now has different functions depending on the mode: 
+    * in red it toggles between a new wavefolder / old overdrive 
+    * in green it does tap tempo as before
+    * in blue it sets shimmer amount as before
+    * in white it is a new 'dub mute' feature: while holding temporarily it sets main red = OFF (mute input) and green feedback = FULL (freeze the delay).
+* shimmer is now cyan, not peach; and the delay mode's blue shifts from blue to cyan to show how much shimmer is in at all times
+* new wavefolder mode! in drive mode (red), the red color turns pink when in wavefolder mode. you tap spider to toggle (in red mode).
+* the drive & wavefolder are 2x more oversampled than before so feel less digital
+* the touch strip only changes mode on tap, not swipe (less confusing)
+* the knob glows brighter by default
+* rebalanced the parameter curves for the delay, now the 'short end' of delay time is super fun for KS type string sounds (but mad, because, bib)
+
+## [bib_003.uf2](bib-firmware/bib_003.uf2) - August 2024 - 'Thonk edition'
+* add visual feedback on factory reset, and ability to switch on/off the line input
+* this is the version flashed onto first run Thonk kits
+
+## [bib_002.uf2](bib-firmware/bib_002.uf2) - July 2024 - 'Knobconn edition'
+* fixed a 'spider pressure overflow' 16 bit bug. this is the earliest usable firmware
+

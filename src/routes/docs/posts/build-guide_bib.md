@@ -113,7 +113,7 @@ Your Bib kit should come pre-flashed with firmware, so in theory it should just 
 
 However, if you wish to update Bib, read on.
 
-First, download the firmware in this file: <a href="bib-firmware/bib_003.uf2">`bib_003.uf2`</a>.
+First, download the firmware in this file: <a href="bib-firmware/bib_004.uf2">`bib_004.uf2`</a>. Patch notes are available on the manual page.
 
 Use a USB-C cable (not included) to plug your computer into Bib. You do **not** need Bib to be powered from eurorack for this step. 
 
