@@ -58,7 +58,8 @@ Drag and drop or otherwise copy the downloaded file onto the RPI-RP2 folder, and
 
 ## Patch notes & versions
 
-## [bib_004.uf2](bib-firmware/bib_004.uf2) - September 2024 - 'Toadstool edition' 
+## v4 - September 2024 - 'Toadstool edition' 
+[Download here: bib_004.uf2](bib-firmware/bib_004.uf2)
 * The spider now has different functions depending on the mode: 
     * in red it toggles between a new wavefolder / old overdrive 
     * in green it does tap tempo as before
@@ -71,10 +72,12 @@ Drag and drop or otherwise copy the downloaded file onto the RPI-RP2 folder, and
 * the knob glows brighter by default
 * rebalanced the parameter curves for the delay, now the 'short end' of delay time is super fun for KS type string sounds (but mad, because, bib)
 
-## [bib_003.uf2](bib-firmware/bib_003.uf2) - August 2024 - 'Thonk edition'
+## v3 - August 2024 - 'Thonk edition'
+[Download here: bib_003.uf2](bib-firmware/bib_003.uf2)
 * add visual feedback on factory reset, and ability to switch on/off the line input
 * this is the version flashed onto first run Thonk kits
 
-## [bib_002.uf2](bib-firmware/bib_002.uf2) - July 2024 - 'Knobconn edition'
+## v2 - July 2024 - 'Knobconn edition'
+[Download here: bib_002.uf2](bib-firmware/bib_002.uf2)
 * fixed a 'spider pressure overflow' 16 bit bug. this is the earliest usable firmware
 
