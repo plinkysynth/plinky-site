@@ -8,7 +8,7 @@ date: "2024-09-07T08:38:00.000Z"
 
 If you're looking for the build guide, go <a href="docs/build-guide_bib">here</a>.
 
-The latest firmware is available to download <a href="docs/build-guide_bib#the-software-adventure">here</a> along with instructions on how to flash it onto your Bib. 
+The latest firmware is available to download at the bottom of this page. 
 
 ## Video demo and Jam by izaak from toadstool.tech
 
@@ -57,6 +57,10 @@ Bib should show up as a USB drive called `RPI-RP2` (on mac, you may find it unde
 Drag and drop or otherwise copy the downloaded file onto the RPI-RP2 folder, and after a second Bib should reboot, flashing white and then glowing red. You're ready to bib!
 
 ## Patch notes & versions
+
+## v5 - October 2024 - 'Timo edition'
+[Download here: bib_005.uf2](bib-firmware/bib_005.uf2)
+* The touch sensitivity is improved, and some users reported the spider 'locking up' and becoming unresponsive after a while, which should be fixed. 
 
 ## v4 - September 2024 - 'Toadstool edition' 
 [Download here: bib_004.uf2](bib-firmware/bib_004.uf2)
