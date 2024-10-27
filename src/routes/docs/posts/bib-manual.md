@@ -49,7 +49,7 @@ The line-out and front panel connections are always enabled, ie they are not aff
 
 ## Firmware
 
-First, download the latest firmware in this file: <a href="bib-firmware/bib_004.uf2">`bib_004.uf2`</a>.
+First, download the latest firmware in this file: <a href="bib-firmware/bib_006.uf2">`bib_006.uf2`</a>.
 Use a USB-C cable (not included) to plug your computer into Bib. You do **not** need Bib to be powered from eurorack for this step. 
 
 Bib should show up as a USB drive called `RPI-RP2` (on mac, you may find it under `/Volumes/RPI-RP2`). If it does not, try disconnecting the USB cable, holding down the *tiny* button on the digital board, just  opposite to the USB connector (hilighted below), while reconnecting the cable - then release the button. If it *still* doesn't show up, make sure your cable has data lines (and isn't just for charging).
@@ -58,7 +58,13 @@ Drag and drop or otherwise copy the downloaded file onto the RPI-RP2 folder, and
 
 ## Patch notes & versions
 
-## v5 - October 2024 - 'Timo edition'
+## v6 - End October 2024 - 'Oops edition'
+[Download here: bib_006.uf2](bib-firmware/bib_006.uf2)
+* Allow for slightly longer presses on the slider to count as a tap
+* BUGFIX! Ooops, some grotty 'grumbling' had crept into the delay. much better now.
+* BUGFIX! Ooops, the tape stop and tape speed wobble effects were broken in 005. fixed!
+
+## v5 - Start October 2024 - 'Timo edition'
 [Download here: bib_005.uf2](bib-firmware/bib_005.uf2)
 * The touch sensitivity is improved, and some users reported the spider 'locking up' and becoming unresponsive after a while, which should be fixed. 
 
