@@ -21,6 +21,10 @@ This video is Loopops in-depth review for Plinky's release. Ziv walks you throug
 
 <iframe width="1008" height="567" src="https://www.youtube.com/embed/Xh2w6RWPo28" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+Mylar Melodies conducted an interview with mmalex in 2024 and set it to some beautiful Plinky sounds.
+
+<iframe width="1008" height="567" src="https://www.youtube.com/embed/pyvWqJq8AV8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Patch Tutorials
 
 Meska, musician with [Statik Collective](https://statikwave.bandcamp.com/) and member of the [Plinky Discord](https://discord.gg/Zf6chA9jAz), has created a number of great patch explainers for his [YouTube channel](https://www.youtube.com/@Meska_Statik). Meska's patches sound fantastic, arriving at expressive sounds through creative use of Plinky's parameter space.

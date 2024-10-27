@@ -44,7 +44,7 @@
   <p>It fits into 24HP eurorack cases, but can also be played as a standalone desktop mini-synth over CV or MIDI, with line-level stereo input and a headphone output, all powered by USB.</p>
 
   <h4>When is it available?</h4>
-  <p>Plinky is now fully open source! V3 is becoming available as DIY and ready-made kits at Thonk and Schneidersladen. Or you can make your own!</p>
+  <p>Plinky is now fully open source! V3 is available as DIY and ready-made kits at <a href="https://www.thonk.co.uk/brand/plinkysynth/">Thonk</a> and <a href="https://schneidersladen.de/en/plinky-plinky-v3">Schneidersladen</a>. Or you can make your own!</p>
   <a class="button" target="_blank" href="https://github.com/plinkysynth/plinky_public">View on Github</a>
 </TextAndImage>
 
