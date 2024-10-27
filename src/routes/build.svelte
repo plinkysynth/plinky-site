@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-  let url = 'https://www.plinkysynth.com/docs/build-guide-blue'
+  let url = 'https://www.plinkysynth.com/docs/build-guide-black'
   onMount(() => {
     setTimeout(() => {
       window.location.href = url;
