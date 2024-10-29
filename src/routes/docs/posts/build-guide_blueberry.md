@@ -71,7 +71,7 @@ Use a USB-C cable (not included) to plug your computer into Blueberry. You do **
 
 Blueberry should show up as a USB drive called `RPI-RP2` (on mac, you may find it under `/Volumes/RPI-RP2`). If it does not, try disconnecting the USB cable, holding down the *tiny* button on the main board, just next to the USB connector (hilighted below), while reconnecting the cable - then release the button. If it *still* doesn't show up, make sure your cable has data lines (and isn't just for charging). And if that's definitely ok - maybe check your soldering?
 
-![Boot0](/blueberry-build-guide/IMG_7255_2.jpeg)
+![Boot0](/blueberry-build-guide/IMG_7243_2.jpeg)
 
 Assuming the drive shows up, drag and drop the `blueberry_xxx.uf2` (where xxx is a version number) onto the drive. It should upload the software. 
 
