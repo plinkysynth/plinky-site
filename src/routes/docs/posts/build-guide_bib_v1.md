@@ -1,10 +1,10 @@
 ---
-title: Bib build guide - V2
+title: Bib build guide - V1
 date: "2024-09-07T16:36:00.000Z"
 ---
 
-Hello! Welcome to the Bib ~~build~~ bibld guide (v2).
-Bib is quite a simple build, and fairly beginner friendly. This updated build guide involves less trimming of pins, which makes it a little easier - but is 'electrically' the same. If you want to check out v1, it is <a href="docs/build-guide_bib_v1">here</a>.
+Hello! Welcome to the Bib ~~build~~ bibld guide.
+Bib is quite a simple build, and fairly beginner friendly. 
 
 <img src="/bibspin.gif">
 
@@ -67,21 +67,28 @@ Ok now pop the 12 pin header+pin combos you made into both boards - we are joini
 
 ![Parts](/bib-build-guide/IMG_6318.jpeg)
 
-OK! Flip Bib over but **DONT SOLDER THE OTHER SIDE YET**. 
+OK! Flip Bib over but **DONT SOLDER THE OTHER SIDE YET**. First we need to trim the pins flush in the hilighted areas below. Use side cutters and cut them flush to the board - the pin is still inside the hole, but shouldn't poke up. PLEASE WEAR EYE PROTECTION and make sure no children/pets are near by. the little bits of metal tend to 'ping' off. Be careful.
 
-## Trimming the pot
-Ok I used to say to trim both pots, but there's only 1 tab you need to remove, from the smaller pot. Use sharp side cutters, wear eye protection, avoid curious pets/kids, and get rid of the little metal tab shown in yellow below (on the small pot). You can also 'wiggle' it off with pliers - either way, make sure the *whole* vertical tab is gone, up to the base of the pot, otherwise it will short out some pins. While you're here, I tend to find the wiggly pins on the smaller pot a bit too wiggly for my taste - I flatten them very slightly with a gentle squeeze of some pliers. if you struggle to fit the pot into the board later, this'll help.
+Why trim them? It's to avoid the pins shorting out on the underside of the knobs we'll add later. 1U is cramped! Once you've trimmed them, go ahead and solder all 24 pins. Your sandwich should be nice and solid now! To prove it to yourself, feel free to gently pull it apart, setting the digital board aside for a bit.
 
-![choppy choppy](/bib-build-guide/IMG_7324.jpeg)
+![Parts](/bib-build-guide/IMG_6319.jpeg)
+
+## Trimming the pots
+Ok let's prepare the pots (aka knobs)! Both the pots have standoffs that get in the way. use sharp side cutters, wear eye protection, avoid curious pets/kids, and get rid of the little metal tabs shown in yellow below (one on the small pot, two on the bigger pot). While you're here, I tend to find the wiggly pins on the smaller pot a bit too wiggly for my taste - I flatten them very slightly with a gentle squeeze of some pliers. if you struggle to fit the pot into the board later, this'll help.
+
+<p float="left">
+  <img src="/bib-build-guide/IMG_6355.jpeg" width="60%" />
+  <img src="/bib-build-guide/IMG_6354.jpeg" width="38%" />
+</p>
 
 ## Placing the hardware (but not soldering it) 
-OK Now we're ready to put all the pots and sockets into Bib! prise the sandwich gently apart, if you didn't already, and put the digital half aside - it's finished actually! (Feel free to have a celebratory cup of tea). Freshly revitalised, remove the nut and washer from the smaller pot, but **leave the silver nut on the larger pot!**. I did *not* do this in the picture below, and I should have. You see, having that nut under the panel on the larger pot, helps to get all the heights equal underneath the panel. Anyway, place the pots along with the 5 Thonk jack sockets, and don't forget the little 4 pin header - as shown below. **DONT SOLDER ANYTHING YET!** Just plop 'em in place. The stereo pairs of thonkiconns actually share a single hole for the 'ground' pins, so it can be a bit fiddly, but you can do it! I believe in you!
+OK Now we're ready to put all the pots and sockets into Bib! prise the sandwich gently apart, if you didn't already, and put the digital half aside - it's finished actually! (Feel free to have a celebratory cup of tea). Freshly revitalised, **remove the nut and washer** from the smaller pot, then place them along with the 5 Thonk jack sockets, and don't forget the little 4 pin header - as shown below. (You can leave the nut on the larger, transparent pot, as it helps alignment later, and the kit should contain a separate black nut to fit over the top, later.) **DONT SOLDER ANYTHING YET!** Just plop 'em in place. The stereo pairs of thonkiconns actually share a single hole for the 'ground' pins, so it can be a bit fiddly, but you can do it! I believe in you!
 
 ![Parts](/bib-build-guide/IMG_6326.jpeg)
 
 Why not solder them? You'll see! Now is the exciting moment we get to place the front panel over the top of everything. The pots and thonkis should all go through the holes (did you remember to remove the nut from the smaller pot, if one was there? good), perhaps after a little wiggling and persuasion (good thing you didn't solder them right!). The 4 pin header and the socket you soldered earlier should mesh together beautifully inside the sandwich. 
 
-Take a moment to marvel at your achievement! I mean, why not loosely screw the nuts onto the pots and thonkis - it's really starting to look like a music thing now! Your kit probably included black nuts for the pots, and brass nuts for the thonkis which adds a certain *je ne sais quoi*... Alas, I didn't have those when I took the pictures below.
+Take a moment to marvel at your achievement! I mean, why not loosely screw the nuts back on top of the panel to the pots and thonkis - it's really starting to look like a music thing now! Your kit probably included black nuts for the pots, which adds a certain *je ne sais quoi*... Alas, I didn't have those when I took the pictures below.
 
 ![Parts](/bib-build-guide/IMG_6328.jpeg)
 
@@ -91,7 +98,7 @@ At this point you should solder all of the pins poking through the bottom of the
 ![Not Kittens](/bib-build-guide/IMG_6351.jpeg)
 
 ## Hardware Victory
-My goodness! That was it! Double check you got *all* the solder joints above - are you SURE you got the 3 next to the white pins, or the two either side of the 6 pin SMD pin header? SURE? SURE? OK! - then just plug the digital board back into your freshly soldered analog board, forming a 3 level club sandwich of Bibness. Make sure you get it the right way around - as shown in the picture. If things are a little wonky, that's ok - look at mine! Wonky, but it works. That's the Bib way. (You see, if I had left the nut on the larger pot, it wouldn't have been wonky! If only I had listened to Crazy Ray! Don't make my mistake - leave that nut on, and line that stuff up!)
+My goodness! That was it! Double check you got *all* the solder joints above - are you SURE you got the 3 next to the white pins, or the two either side of the 6 pin SMD pin header? SURE? SURE? OK! - then just plug the digital board back into your freshly soldered analog board, forming a 3 level club sandwich of Bibness. Make sure you get it the right way around - as shown in the picture. If things are a little wonky, that's ok - look at mine! Wonky, but it works. That's the Bib way.
 
 ![Parts](/bib-build-guide/IMG_6329.jpeg)
 ![Parts](/bib-build-guide/IMG_6330.jpeg)
