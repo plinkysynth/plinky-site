@@ -4,7 +4,7 @@ date: "2024-10-28T21:50:00.000Z"
 ---
 
 Hello! Welcome to the Blueberry build  guide.
-Buzzy is quite a simple build, and fairly beginner friendly. 
+Blueberry is quite a simple build, and fairly beginner friendly. 
 
 <img src="/blueberryspin.gif">
 
