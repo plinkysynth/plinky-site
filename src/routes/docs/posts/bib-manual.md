@@ -37,7 +37,7 @@ You can clock the delay by feeding a regular trigger into the CV input, or assig
 
 ## Color editor
 
-If you don't like the default colours for the Bib LED knob, and your bib is on firmware 007 or later, you can edit them here! Simply connect Bib to your browser via a usb-c cable, and assuming your browser supports WebUSB (you can check [here](https://caniuse.com/?search=webusb)) you can use the UI below to edit the colours live. After you've finished editing, wait at least 5 seconds before powering down your bib (so that it can save your changes to its flash storage).
+If you don't like the default colours for the Bib LED knob, and your bib is on [firmware 007 or later](#patch-notes-versions), you can edit them here! Simply connect Bib to your browser via a usb-C cable, and assuming your browser supports WebUSB (you can check [here](https://caniuse.com/?search=webusb)) you can use the UI below to edit the colours live. After you've finished editing, wait at least 5 seconds before powering down your bib (so that it can save your changes to its flash storage).
 
 <iframe id="embedded-frame" src="/bib_palette.html" style="border: none;" width="100%"></iframe>
 <script>
@@ -73,11 +73,21 @@ Drag and drop or otherwise copy the downloaded file onto the RPI-RP2 folder, and
 
 ## Patch notes & versions
 
-## v6 - End October 2024 - 'Oops edition'
+### Beta versions
+
+## v7 - End October 2024 - 'Color Editor edition' 
+[Download here: bib_007.uf2](bib-firmware/bib_007.uf2)
+* Add WebUSB support and color palette editing
+
+### Current release version
+
+## v6 - End October 2024 - 'Oops edition' 
 [Download here: bib_006.uf2](bib-firmware/bib_006.uf2)
 * Allow for slightly longer presses on the slider to count as a tap
 * BUGFIX! Ooops, some grotty 'grumbling' had crept into the delay. much better now.
 * BUGFIX! Ooops, the tape stop and tape speed wobble effects were broken in 005. fixed!
+
+### Older versions
 
 ## v5 - Start October 2024 - 'Timo edition'
 [Download here: bib_005.uf2](bib-firmware/bib_005.uf2)
