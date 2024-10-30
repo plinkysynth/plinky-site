@@ -220,7 +220,7 @@
             async function update_color(index, color) {
                 palette[index] = color;
                 console.log(`Updated color at index ${index} to ${color}`);
-                await sendPaletteMessage(palette, index, index+1);
+                await sendPaletteMessage(palette, index, index + 1);
             }
 
             document.querySelectorAll('.color-picker').forEach(async (picker) => {
@@ -245,10 +245,10 @@
                     const importedPalette = JSON.parse(text);
 
                     if (Array.isArray(importedPalette) && importedPalette.length === palette.length) {
-                        importedPalette.forEach((color, index) => {
-                            palette[index] = color;
-                            document.querySelector(`#${Object.keys(idToIndexMap)[index]}`).value = color;
-                        });
+                        for (let index = 0; index < palette.length; index++) {
+                            palette[index] = palette[index];
+                            document.querySelector(`#${idToIndexMap[index]}`).value = palette[index];
+                        }
                         console.log('Palette imported successfully');
                         await sendPaletteMessage(palette);
                     } else {
@@ -261,9 +261,9 @@
 
             document.getElementById('reset').addEventListener('click', async () => {
                 palette = getDefaultPalette();
-                palette.forEach((color, index) => {
-                    document.querySelector(`#${Object.keys(idToIndexMap)[index]}`).value = color;
-                });
+                for (let index = 0; index < palette.length; index++) {
+                    document.querySelector(`#${idToIndexMap[index]}`).value = palette[index];
+                }
                 console.log('Palette reset to default values');
                 await sendPaletteMessage(palette);
             });
@@ -279,7 +279,7 @@
             function makePaletteMessage(palette, firstindex = 0, lastindex = null, request = false) {
                 if (!lastindex) lastindex = palette.length;
                 if (lastindex < firstindex) throw new Error('Invalid index range');
-                const header = [0x23, 0x72, 0, request ? 0 : 1, firstindex, lastindex];
+                const header = [0x23, 0x72, request ? 1 : 0, firstindex, lastindex];
                 const colorData = request ? [] : palette.slice(firstindex, lastindex).flatMap(hexToRGB);
                 return new Uint8Array([...header, ...colorData]);
             }
@@ -298,10 +298,26 @@
                     await sendPaletteMessage(palette, 0, 15, true);
                     while (connected) {
                         const result = await device.transferIn(endpointIn, 64);
-                        console.log('Received:', result);
+                        const buf = new Uint8Array(result.data.buffer);
+                        const count = buf.length;
+                        console.log('Received:', buf);
+                        if (count >= 5 && buf[0] == 0x23 && buf[1] == 0x72 && buf[2] == 0 && buf[3] < 15 && buf[4] <= 15 && buf[4] >= buf[3]) {
+                            const first = buf[3];
+                            const last = buf[4];
+                            const num = last-first;
+                            for (let i = 0; i < num; ++i) {
+                              const col = (buf[5 + i * 3 + 2] << 16) | (buf[5 + i * 3 + 1] << 8) | buf[5 + i * 3 + 0];
+                              palette[i + first] = '#' + col.toString(16).padStart(6, '0');
+                              document.getElementById(idToIndexMap[first+i]).value = palette[i + first];
+                              console.log(i,'=',palette[i + first]);
+                            }
+
+                        }
                     }
                 } catch (error) {
                     console.error('Error during transferIn:', error);
+                    // this fires when the device is disconnected
+                    updateConnectedUI(false);
                 }
             }
 
