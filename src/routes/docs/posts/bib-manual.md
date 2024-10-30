@@ -35,9 +35,9 @@ You can clock the delay by feeding a regular trigger into the CV input, or assig
 
 <a href="bib_manual.png" target="blank"><img src="bib_manual.png"></a>
 
-## Color editor on the web
+## Color editor
 
-If you don't like the default colours for the Bib LED knob, you can edit them here! Simply connect Bib to your browser via a usb-c cable, and assuming your browser supports WebUSB (you can check [here](https://caniuse.com/?search=webusb)) you can use the UI below to edit the colours live.
+If you don't like the default colours for the Bib LED knob, and your bib is on firmware 007 or later, you can edit them here! Simply connect Bib to your browser via a usb-c cable, and assuming your browser supports WebUSB (you can check [here](https://caniuse.com/?search=webusb)) you can use the UI below to edit the colours live. After you've finished editing, wait at least 5 seconds before powering down your bib (so that it can save your changes to its flash storage).
 
 <iframe id="embedded-frame" src="/bib_palette.html" style="border: none;" width="100%"></iframe>
 <script>
