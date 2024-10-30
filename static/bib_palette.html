@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palette Editor</title>
+    <link rel='stylesheet' href='global.css'>
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+
+        .palette {
+            width: 400px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        .label {
+            font-weight: bold;
+            padding-top: 8px;
+        }
+
+        .color-picker {
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            margin-left: 5px;
+            border: none;
+            border-radius: 20px;
+            padding: 0;
+            background-color: transparent;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            outline: none;
+            /* Ensure no outline on focus */
+        }
+
+        /* Remove borders from the swatches */
+        .color-picker::-webkit-color-swatch {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .color-picker::-webkit-color-swatch-wrapper {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .color-picker::-moz-color-swatch {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .color-picker:focus {
+            outline: none;
+        }
+
+
+        .color-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+
+        }
+
+        button {
+            padding: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .status {
+            font-size: 14px;
+            color: var(--color-text);
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let connected = false;
+            let palette = getDefaultPalette();
+
+            function getDefaultPalette() {
+                return [
+                    '#ff3018', // overdrive
+                    '#ff0050', // wavefold
+                    '#20cc20', // delay_mode
+                    '#1800ff', // reverb_1
+                    '#18ffff', // reverb_2
+                    '#aaaaaa', // mix_mode
+                    '#aa0000', // dubflash_1
+                    '#ffffff', // dubflash_2
+                    '#aa0000', // pingpong_1
+                    '#aaff00', // pingpong_2
+                    '#800000', // delay_send_1
+                    '#aacc00', // delay_send_2
+                    '#cc55aa', // bipolar_mix_1
+                    '#000000', // bipolar_mix_2
+                    '#808080'  // bipolar_mix_3
+                ];
+            }
+
+            const idToIndexMap = [
+                'overdrive',
+                'wavefold',
+                'delay_mode',
+                'reverb_1',
+                'reverb_2',
+                'mix_mode',
+                'dubflash_1',
+                'dubflash_2',
+                'pingpong_1',
+                'pingpong_2',
+                'delay_send_1',
+                'delay_send_2',
+                'bipolar_mix_1',
+                'bipolar_mix_2',
+                'bipolar_mix_3'
+            ];
+
+            const connectButton = document.getElementById('connect');
+            const statusDiv = document.getElementById('status');
+            const uiContainer = document.getElementById('ui-container');
+
+            function updateConnectedUI(conn) {
+                connected = conn;
+                connectButton.textContent = connected ? 'Disconnect' : 'Connect...';
+                statusDiv.textContent = connected ? 'Connected to your Bib' : 'Press Connect to connect to your Bib';
+                uiContainer.style.display = connected ? 'block' : 'none';
+            }
+
+            let device;
+            let endpointIn;
+            let endpointOut;
+            let interfaceNumber;
+
+            // Function to handle the connection logic
+            async function connectDevice(selectedDevice) {
+                try {
+                    device = selectedDevice;
+                    statusDiv.innerText = `Device selected: ${device.productName}`;
+
+                    await device.open();
+
+                    if (device.configuration === null) {
+                        await device.selectConfiguration(1);
+                    }
+
+                    const interfaces = device.configuration.interfaces;
+                    for (const element of interfaces) {
+                        for (const alternate of element.alternates) {
+                            if (alternate.interfaceClass === 0xFF) {
+                                interfaceNumber = element.interfaceNumber;
+                                for (const endpoint of alternate.endpoints) {
+                                    if (endpoint.direction === 'in') {
+                                        endpointIn = endpoint.endpointNumber;
+                                    }
+                                    if (endpoint.direction === 'out') {
+                                        endpointOut = endpoint.endpointNumber;
+                                    }
+                                }
+                                break;
+                            }
+                        }
+                    }
+
+                    if (endpointIn === undefined || endpointOut === undefined) {
+                        throw new Error('Endpoints not found');
+                    }
+
+                    await device.claimInterface(interfaceNumber);
+                    await device.selectAlternateInterface(interfaceNumber, 0);
+
+                    updateConnectedUI(true);
+                    readLoop();
+                } catch (error) {
+                    console.error('Error during connection:', error);
+                    statusDiv.innerText = `Error: ${error.message}`;
+                }
+            }
+
+            async function disconnectDevice() {
+                if (device) {
+                    try {
+                        await device.close();
+                        updateConnectedUI(false);
+                    } catch (error) {
+                        console.error('Error during disconnection:', error);
+                        statusDiv.innerText = `Error: ${error.message}`;
+                    }
+
+                }
+            }
+
+
+            async function update_color(index, color) {
+                palette[index] = color;
+                console.log(`Updated color at index ${index} to ${color}`);
+                await sendPaletteMessage(palette, index, index+1);
+            }
+
+            document.querySelectorAll('.color-picker').forEach(async (picker) => {
+                const index = idToIndexMap.indexOf(picker.id);
+                picker.addEventListener('input', async (event) => {
+                    await update_color(index, event.target.value);
+                });
+            });
+
+            document.getElementById('export').addEventListener('click', () => {
+                const jsonPalette = JSON.stringify(palette);
+                navigator.clipboard.writeText(jsonPalette).then(() => {
+                    console.log('Palette copied to clipboard');
+                }).catch(err => {
+                    console.error('Failed to copy: ', err);
+                });
+            });
+
+            document.getElementById('import').addEventListener('click', async () => {
+                try {
+                    const text = await navigator.clipboard.readText();
+                    const importedPalette = JSON.parse(text);
+
+                    if (Array.isArray(importedPalette) && importedPalette.length === palette.length) {
+                        importedPalette.forEach((color, index) => {
+                            palette[index] = color;
+                            document.querySelector(`#${Object.keys(idToIndexMap)[index]}`).value = color;
+                        });
+                        console.log('Palette imported successfully');
+                        await sendPaletteMessage(palette);
+                    } else {
+                        console.error('Invalid palette format');
+                    }
+                } catch (err) {
+                    console.error('Failed to import palette or read from clipboard: ', err);
+                }
+            });
+
+            document.getElementById('reset').addEventListener('click', async () => {
+                palette = getDefaultPalette();
+                palette.forEach((color, index) => {
+                    document.querySelector(`#${Object.keys(idToIndexMap)[index]}`).value = color;
+                });
+                console.log('Palette reset to default values');
+                await sendPaletteMessage(palette);
+            });
+
+            function hexToRGB(hex) {
+                const intVal = parseInt(hex.slice(1), 16);
+                const r = (intVal >> 16) & 0xff;
+                const g = (intVal >> 8) & 0xff;
+                const b = intVal & 0xff;
+                return [b, g, r]; // Little-endian: Blue, Green, Red
+            }
+
+            function makePaletteMessage(palette, firstindex = 0, lastindex = null, request = false) {
+                if (!lastindex) lastindex = palette.length;
+                if (lastindex < firstindex) throw new Error('Invalid index range');
+                const header = [0x23, 0x72, 0, request ? 0 : 1, firstindex, lastindex];
+                const colorData = request ? [] : palette.slice(firstindex, lastindex).flatMap(hexToRGB);
+                return new Uint8Array([...header, ...colorData]);
+            }
+
+            async function sendPaletteMessage(palette, firstindex = 0, lastindex = null, request = false) {
+                if (!connected) return;
+                const data = makePaletteMessage(palette, firstindex, lastindex, request);
+                console.log('Sending:', data);
+                await device.transferOut(endpointOut, data);
+            }
+
+            async function readLoop() {
+                try {
+                    await new Promise(resolve => setTimeout(resolve, 500));
+                    await sendPaletteMessage(palette, 0, 15, true);
+                    await sendPaletteMessage(palette, 0, 15, true);
+                    while (connected) {
+                        const result = await device.transferIn(endpointIn, 64);
+                        console.log('Received:', result);
+                    }
+                } catch (error) {
+                    console.error('Error during transferIn:', error);
+                }
+            }
+
+            // Handle Connect/Disconnect button
+            connectButton.addEventListener('click', async () => {
+                if (connected) {
+                    await disconnectDevice();
+                } else {
+                    try {
+                        const selectedDevice = await navigator.usb.requestDevice({ filters: [{ vendorId: 0xcafe }] });
+                        connectDevice(selectedDevice);
+                    } catch (error) {
+                        console.error('Error during device request:', error);
+                    }
+                }
+            });
+
+            function sendHeight() {
+                const height = document.body.scrollHeight;
+                window.parent.postMessage({ height: height }, '*');
+            }
+
+            // Call sendHeight once the window is loaded and whenever resizing occurs
+            window.onload = sendHeight;
+            const observer = new MutationObserver(sendHeight);
+            observer.observe(document.body, { attributes: true, childList: true, subtree: true });
+        }); // content loaded
+    </script>
+</head>
+
+<body>
+    <div class="palette">
+        <div class="button-group">
+            <button id="connect">Connect...</button>
+            <div id="status" class="status">Press Connect to connect to your Bib</div>
+        </div>
+        <div id="ui-container" style="display: none;">
+            <ul>
+                <li
+                    title="The 'drive' mode colors. You can tap the spider to toggle between overdrive and wavefold mode.">
+                    <span class="label">Drive/Wavefold Mode</span>
+                    <div class="color-group">
+                        <input type="color" class="color-picker" id="overdrive" value="#ff3018">
+                        <input type="color" class="color-picker" id="wavefold" value="#ff0050">
+                    </div>
+                </li>
+                <li title="The 'delay' mode color.">
+                    <span class="label">Delay Mode</span>
+                    <div class="color-group">
+                        <input type="color" class="color-picker" id="delay_mode" value="#20cc20">
+                    </div>
+                </li>
+                <li title="The 'reverb' mode colors, with a range from low to high shimmer.">
+                    <span class="label">Reverb Mode</span>
+                    <div class="color-group">
+                        <input type="color" class="color-picker" id="reverb_1" value="#1800ff">
+                        <input type="color" class="color-picker" id="reverb_2" value="#18ffff">
+                    </div>
+                </li>
+                <li title="The 'mix' mode color.">
+                    <span class="label">Mix Mode</span>
+                    <div class="color-group">
+                        <input type="color" class="color-picker" id="mix_mode" value="#aaaaaa">
+                    </div>
+                </li>
+                <li title="When adjusting the dry/wet mix, we blend through these colors to indicate Dry / Both / Wet.">
+                    <span class="label">Dry/Wet Mix Value</span>
+                    <div class="color-group">
+                        <input type="color" class="color-picker" id="bipolar_mix_1" value="#cc55aa">
+                        <input type="color" class="color-picker" id="bipolar_mix_2" value="#000000">
+                        <input type="color" class="color-picker" id="bipolar_mix_3" value="#808080">
+                    </div>
+                </li>
+                <li
+                    title="When dialing in negative delay-send amount, we flash these colors to indicate pingpong delay.">
+                    <span class="label">Pingpong</span>
+                    <div class="color-group">
+                        <input type="color" class="color-picker" id="pingpong_1" value="#aa0000">
+                        <input type="color" class="color-picker" id="pingpong_2" value="#aaff00">
+                    </div>
+                </li>
+                <li
+                    title="When dialing in positive delay-send amount, we blend through these colors to indicate 0 to 100% send.">
+                    <span class="label">Delay Send</span>
+                    <div class="color-group">
+                        <input type="color" class="color-picker" id="delay_send_1" value="#800000">
+                        <input type="color" class="color-picker" id="delay_send_2" value="#aacc00">
+                    </div>
+                </li>
+                <li title="When holding the spider in mix mode, we flash these colors.">
+                    <span class="label">Dubflash</span>
+                    <div class="color-group">
+                        <input type="color" class="color-picker" id="dubflash_1" value="#aa0000">
+                        <input type="color" class="color-picker" id="dubflash_2" value="#ffffff">
+                    </div>
+                </li>
+            </ul>
+            <div class="button-group">
+                <button id="export">Export to Clipboard</button>
+                <button id="import">Import from Clipboard</button>
+                <button id="reset">Reset to Default</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

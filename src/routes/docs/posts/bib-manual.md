@@ -35,6 +35,21 @@ You can clock the delay by feeding a regular trigger into the CV input, or assig
 
 <a href="bib_manual.png" target="blank"><img src="bib_manual.png"></a>
 
+## Color editor on the web
+
+If you don't like the default colours for the Bib LED knob, you can edit them here! Simply connect Bib to your browser via a usb-c cable, and assuming your browser supports WebUSB (you can check [here](https://caniuse.com/?search=webusb)) you can use the UI below to edit the colours live.
+
+<iframe id="embedded-frame" src="/bib_palette.html" style="border: none;" width="100%"></iframe>
+<script>
+  window.addEventListener('message', function(event) {
+    console.log(event.data);
+    if (event.data && event.data.height) {
+      const iframe = document.getElementById('embedded-frame');
+      iframe.style.height = event.data.height + 'px';
+    }
+  });
+</script>
+
 ## Enabling and Disabling the line-in connection
 
 Bib has stereo eurorack level inputs and outputs on its front panel, but also sports a 6 pin header on its back for line level stereo in and out. These are compatible, for example, with the intellijel palette cases, allowing use of two case mounted TRS jacks as stereo in/out. 
