@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buzzrito Presets Editor</title>
+    <link rel='stylesheet' href='global.css'>
+    <style>
+        .palette {
+            width: 400px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+
+        }
+
+        button {
+            padding: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .status {
+            font-size: 14px;
+            color: var(--color-text);
+        }
+
+        label {
+            margin-right: 20px;
+            white-space: nowrap;
+            width: 140px;
+            text-align: right;
+            font-size: 12px;
+        }
+
+        .short {
+            width: 15%;
+            margin-left: 10px;
+        }
+
+        .slider-container {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+
+        .slider {
+            appearance: none;
+            width: 100%;
+            height: 8px;
+            background: #666;
+            outline: none;
+            opacity: 0.8;
+        }
+
+        #sliders {
+            margin-bottom: 20px;
+        }
+
+        .slider::-webkit-slider-thumb {
+            appearance: none;
+            width: 16px;
+            height: 16px;
+            background: #FFD700;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        .xypad {
+            display: flex;
+            width: 75%;
+            margin: 0 auto;
+            aspect-ratio: 1.1547;
+            background: #555;
+            border-radius: 0%;
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+
+            opacity: 1;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .preset-circle {
+            width: 33%;
+            aspect-ratio: 1.1547;
+            background-color: #fff;
+            opacity: 0.3;
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            border-radius: 0%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            cursor: none;
+        }
+
+
+        .draggable-circle {
+            width: 10%;
+            aspect-ratio: 1;
+            background-color: #FFD700;
+            border-radius: 50%;
+            position: absolute;
+            cursor: pointer;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 1;
+            z-index: 100;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let connected = false;
+            const connectButton = document.getElementById('connect');
+            const statusDiv = document.getElementById('status');
+            const uiContainer = document.getElementById('ui-container');
+            const xypad = document.querySelector('.xypad');
+            const circle = document.querySelector('.draggable-circle');
+
+            const copyButton = document.getElementById('copy');
+            const pasteButton = document.getElementById('paste');
+
+            function updateConnectedUI(conn) {
+                connected = conn;
+                connectButton.textContent = connected ? 'Disconnect' : 'Connect...';
+                statusDiv.textContent = connected ? 'Connected to your Buzzy' : 'Press Connect to connect to your Buzzy';
+                uiContainer.style.display = connected ? 'block' : 'none';
+            }
+
+            let device;
+            let endpointIn;
+            let endpointOut;
+            let interfaceNumber;
+
+            // Function to handle the connection logic
+            async function connectDevice(selectedDevice) {
+                try {
+                    device = selectedDevice;
+                    statusDiv.innerText = `Device selected: ${device.productName}`;
+
+                    await device.open();
+
+                    if (device.configuration === null) {
+                        await device.selectConfiguration(1);
+                    }
+
+                    const interfaces = device.configuration.interfaces;
+                    for (const element of interfaces) {
+                        for (const alternate of element.alternates) {
+                            if (alternate.interfaceClass === 0xFF) {
+                                interfaceNumber = element.interfaceNumber;
+                                for (const endpoint of alternate.endpoints) {
+                                    if (endpoint.direction === 'in') {
+                                        endpointIn = endpoint.endpointNumber;
+                                    }
+                                    if (endpoint.direction === 'out') {
+                                        endpointOut = endpoint.endpointNumber;
+                                    }
+                                }
+                                break;
+                            }
+                        }
+                    }
+
+                    if (endpointIn === undefined || endpointOut === undefined) {
+                        throw new Error('Endpoints not found');
+                    }
+
+                    await device.claimInterface(interfaceNumber);
+                    await device.selectAlternateInterface(interfaceNumber, 0);
+
+                    updateConnectedUI(true);
+                    readLoop();
+                } catch (error) {
+                    console.error('Error during connection:', error);
+                    statusDiv.innerText = `Error: ${error.message}`;
+                }
+            }
+
+            async function disconnectDevice() {
+                if (device) {
+                    try {
+                        await device.close();
+                        updateConnectedUI(false);
+                    } catch (error) {
+                        console.error('Error during disconnection:', error);
+                        statusDiv.innerText = `Error: ${error.message}`;
+                    }
+
+                }
+            }
+            let padx = 0, pady = 0;
+            function get_defaults() {
+                return [
+                    [122, 163, 980, 411, 2048, 4103, 1111, 0, -42],
+                    [184, 163, -18, 997, 1392, 4095, -331, 0, -204],
+                    [732, 163, -18, 1351, 2047, 4095, 3285, 0, 919],
+                    [1094, 163, 925, 693, 2048, 4096, 4151,/*715*/0, 3785],
+                    [-5, 623, 1351, -116, 1675, 81, 5063, 0, 4096],
+                    [0, 849, 1359, 614, 1433, -651, 5063, 0, -196],
+                    [-2, 163, 0, -17, 2059, 4096, 15, 0, 3],
+                ];
+            }
+            let presets = get_defaults();
+            let paramnames = ['spread', 'glide', 'boc_amount', 'wobble_amount', 'wobble_speed', 'saw_level', 'sub_level', 'noise_level', 'comb_depth'];
+
+            async function readLoop() {
+                try {
+                    await new Promise(resolve => setTimeout(resolve, 500));
+                    await sendRequestMessage();
+                    await sendRequestMessage();
+                    while (connected) {
+                        const result = await device.transferIn(endpointIn, 64);
+                        const buf = new Int16Array(result.data.buffer);
+                        const count = buf.length;
+                        console.log('Received:', buf);
+                        if (count >= 3 && buf[0] == 0x0b47) {
+                            padx = buf[1] / 4096;
+                            pady = buf[2] / 4096;
+                            if (count>=4) {
+                                const i = buf[3];
+                                if (i<7 && count==4+9) {
+                                    for (let j = 0; j<9; ++j) {
+                                        presets[i][j] = buf[4+j];
+                                    }
+                                }
+                            }
+                            update_xypad(padx, pady);
+                        }
+                    }
+                } catch (error) {
+                    console.error('Error during transferIn:', error);
+                    // this fires when the device is disconnected
+                    updateConnectedUI(false);
+                }
+            }
+
+            // Handle Connect/Disconnect button
+            connectButton.addEventListener('click', async () => {
+                if (connected) {
+                    await disconnectDevice();
+                } else {
+                    try {
+                        const selectedDevice = await navigator.usb.requestDevice({ filters: [{ vendorId: 0xcafe }, { vendorId: 0xcaff }] });
+                        connectDevice(selectedDevice);
+                    } catch (error) {
+                        console.error('Error during device request:', error);
+                    }
+                }
+            });
+
+            function set_preset_color(el, u) {
+                el = document.getElementById('p' + el);
+                el.style.opacity = 0.1 + 0.8 * u;
+                u = 1 - u;
+                let g = 0xd7 + (u * 0x28) | 0;
+                let b = (0xff * u) | 0;
+                el.style.backgroundColor = `rgb(255,${g},${b})`;
+            }
+
+            async function sendMessage(data) {
+                if (!connected) return;
+                await device.transferOut(endpointOut, new Int16Array(data));
+            }
+
+            async function sendRequestMessage() {
+                await sendMessage([0x0b47]);
+            }
+            async function sendXYMessage() {
+                await sendMessage([0x0b47, (padx*4096)|0, (pady*4096)|0]);
+            }
+            async function sendPresetMessage(i) {
+                await sendMessage([0x0b47, (padx*4096)|0, (pady*4096)|0, i, ...presets[i]]);
+            }
+            async function sendAllPresetsMessage() {
+                for (let i = 0; i < 7; ++i) {
+                    await sendPresetMessage(i);
+                }
+            }
+            async function sendWriteMessage(i, uel, vel, wel) {
+                await sendMessage([0x0b47, (padx*4096)|0, (pady*4096)|0, i+0x80, uel, vel, wel, presets[uel][i], presets[vel][i], presets[wel][i]]);
+            }
+
+            let current_preset = [];
+            let sliders = [];
+            for (let i = 0; i < 9; ++i) {
+                sliders.push(document.getElementById(paramnames[i]));
+                sliders[i].addEventListener('input', slider_moved);
+            }
+            function update_xypad(x, y, writeidx = -1, writeval = 0) {
+                padx = x;
+                pady = y;
+                y = Math.max(-1, Math.min(1, y));
+                let inny = Math.abs(y) * 0.5;
+                x = Math.max(-1 + inny, Math.min(1 - inny, x));
+                for (var el = 1; el < 7; ++el) set_preset_color(el, 0);
+                let ax = Math.abs(x);
+                let ay = Math.abs(y);
+                let u = ax - ay * 0.5, v = ay, uel = (x <= 0) ? 6 : 3, vel = (y <= 0) ? 2 : 4;
+                if (ax * 2. <= ay) {
+                    u = ay * 0.5 - x;
+                    v = ay * 0.5 + x;
+                    uel = (y <= 0) ? 1 : 5;
+                } else if (x <= 0) {
+                    vel = (y <= 0) ? 1 : 5;
+                }
+                let w = 1 - u - v;
+                let wel = 0;
+                set_preset_color(uel, u);
+                set_preset_color(vel, v);
+                set_preset_color(wel, w);
+                current_preset = [];
+                for (let i = 0; i < 9; ++i) {
+                    let val = presets[uel][i] * u + presets[vel][i] * v + presets[wel][i] * w;
+                    const themin = (i == 8) ? -4096 : 0;
+                    val = Math.min(4096, Math.max(themin, val));
+                    if (i == writeidx) {
+                        let uwr = (u > 0.2) ? u - 0.2 : 0;
+                        let vwr = (v > 0.2) ? v - 0.2 : 0;
+                        let wwr = (w > 0.2) ? w - 0.2 : 0;
+                        let delta = writeval - val;
+                        let scale = delta / (uwr * u + vwr * v + wwr * w);
+                        //console.log('updating', name, 'by delta', scale, 'wr:', uwr, vwr, wwr);
+                        presets[uel][i] += uwr * scale;
+                        presets[vel][i] += vwr * scale;
+                        presets[wel][i] += wwr * scale;
+                        presets[uel][i] = Math.min(4096, Math.max(themin, presets[uel][i]));
+                        presets[vel][i] = Math.min(4096, Math.max(themin, presets[vel][i]));
+                        presets[wel][i] = Math.min(4096, Math.max(themin, presets[wel][i]));
+                    }
+                    current_preset.push(val);
+                    sliders[i].value = val;
+                }
+                circle.style.left = `${(x * 50 + 50).toFixed(2)}%`;
+                circle.style.top = `${(y * 50 + 50).toFixed(2)}%`;
+                return [uel, vel, wel];
+            }
+            async function onMouseMove(e) {
+                if (!isDragging) return;
+                e.preventDefault();
+                const rect = xypad.getBoundingClientRect();
+                let x = (e.clientX - rect.left) / rect.width;
+                let y = (e.clientY - rect.top) / rect.height;
+                update_xypad(x * 2 - 1, y * 2 - 1);
+                sendXYMessage();
+            }
+
+            async function onMouseUp() {
+                isDragging = false;
+                circle.style.transform = 'translate(-50%, -50%)';
+                document.removeEventListener('mousemove', onMouseMove);
+                document.removeEventListener('mouseup', onMouseUp);
+            }
+
+
+            xypad.addEventListener('mousedown', async function (e) {
+                isDragging = true;
+                e.preventDefault();
+                circle.style.transform = 'translate(-50%, -50%) scale(1.5)';
+                document.addEventListener('mousemove', onMouseMove);
+                document.addEventListener('mouseup', onMouseUp);
+                await onMouseMove(e);
+            });
+            function slider_moved(event) {
+                const i = paramnames.indexOf(event.target.name);
+                els = update_xypad(padx, pady, i, parseFloat(event.target.value));
+                sendWriteMessage(i, els[0], els[1], els[2]);
+            }
+
+            document.getElementById('reset').addEventListener('click', async () => {
+                presets = get_defaults();
+                update_xypad(0, 0);
+                sendAllPresetsMessage();
+            });
+            document.getElementById('export').addEventListener('click', () => {
+                const jj = JSON.stringify(presets);
+                navigator.clipboard.writeText(jj).then(() => {
+                    console.log('Presets copied to clipboard');
+                }).catch(err => {
+                    console.error('Failed to copy: ', err);
+                });
+            });
+            document.getElementById('copy').addEventListener('click', () => {
+                const jj = JSON.stringify(current_preset);
+                navigator.clipboard.writeText(jj).then(() => {
+                    console.log('Preset copied to clipboard');
+                }).catch(err => {
+                    console.error('Failed to copy: ', err);
+                });
+            });
+
+            async function paste() {
+                try {
+                    const text = await navigator.clipboard.readText();
+                    const jj = JSON.parse(text);
+                    if (Array.isArray(jj) && jj.length === presets.length) {
+                        for (let i = 0; i < jj.length; ++i) {
+                            const kk = jj[i];
+                            if (Array.isArray(kk) && kk.length == presets[i].length) {
+                                presets[i] = kk;
+                            }
+                        }
+                        update_xypad(padx, pady);
+                        sendAllPresetsMessage();
+                    } else if (Array.isArray(jj) && jj.length == presets[0].length) {
+                        for (let i = 0; i<jj.length; ++i) {
+                            update_xypad(padx, pady, i, jj[i]);
+                        }
+                        sendAllPresetsMessage();
+                    } else {
+                        console.error('Invalid data in clipboard');
+                    }
+                } catch (err) {
+                    console.error('Failed to import presets or read from clipboard: ', err);
+                }
+            }
+            document.getElementById('import').addEventListener('click', paste);
+            document.getElementById('paste').addEventListener('click', paste);
+
+
+            function sendHeight() {
+                const height = document.body.scrollHeight;
+                window.parent.postMessage({ height: height }, '*');
+            }
+
+            // Call sendHeight once the window is loaded and whenever resizing occurs
+            window.onload = sendHeight;
+            const observer = new MutationObserver(sendHeight);
+            observer.observe(document.body, { attributes: true, childList: true, subtree: true });
+
+            update_xypad(0, 0);
+
+        }); // content loaded
+    </script>
+</head>
+
+<body>
+    <div class="palette">
+        <div class="button-group">
+            <button id="connect">Connect...</button>
+            <div id="status" class="status">Press Connect to connect to Buzzy</div>
+        </div>
+        <div id="ui-container" style="display: block;">
+            <div class="xypad" id="xypad">
+                <div class="draggable-circle"></div>
+                <div id="p0" class="preset-circle" style="left: 50%; top: 50%;"></div>
+                <div id="p1" class="preset-circle" style="left: 25%; top: 0%;"></div>
+                <div id="p2" class="preset-circle" style="left: 75%; top: 0%;"></div>
+                <div id="p3" class="preset-circle" style="left: 100%; top: 50%;"></div>
+                <div id="p4" class="preset-circle" style="left: 75%; top: 100%;"></div>
+                <div id="p5" class="preset-circle" style="left: 25%; top: 100%;"></div>
+                <div id="p6" class="preset-circle" style="left: 0%; top: 50%;"></div>
+            </div>
+            <br />
+            <div class="button-group">
+                <button id="copy">Copy just this sound</button>
+                <button id="paste">Paste just this sound</button>
+            </div>
+
+            <div id="sliders">
+                <!-- comb  mul is now fixed at 1.5x ie fifth <div class="slider-container">
+                        <label for="comb_mul">Comb Pitch</label>
+                        <input type="range" id="comb_mul" class="slider" name="comb_mul" min="-12" max="12" step="1">
+                    </div> -->
+                <div class="slider-container">
+                    <label for="spread">Spread</label>
+                    <input type="range" id="spread" class="slider" name="spread" min="0" max="4096" step="1">
+                </div>
+                <div class="slider-container">
+                    <label for="glide">Glide</label>
+                    <input type="range" id="glide" class="slider" name="glide" min="0" max="4096" step="1">
+                </div>
+                <div class="slider-container">
+                    <label for="boc_amount">BOC Amount</label>
+                    <input type="range" id="boc_amount" class="slider" name="boc_amount" min="0" max="4096" step="1">
+                </div>
+
+                <div class="slider-container">
+                    <label for="wobble_amount">Wobble Amount</label>
+                    <input type="range" id="wobble_amount" class="slider" name="wobble_amount" min="0" max="4096"
+                        step="1">
+                </div>
+                <div class="slider-container">
+                    <label for="wobble_speed">Wobble Speed</label>
+                    <input type="range" id="wobble_speed" class="slider" name="wobble_speed" min="0" max="4096"
+                        step="1">
+                </div>
+                <div class="slider-container">
+                    <label for="saw_level">Saw Level</label>
+                    <input type="range" id="saw_level" class="slider" name="saw_level" min="0" max="4096" step="1">
+                </div>
+                <div class="slider-container">
+                    <label for="sub_level">Sub Level</label>
+                    <input type="range" id="sub_level" class="slider" name="sub_level" min="0" max="4096" step="1">
+                </div>
+                <div class="slider-container">
+                    <label for="noise_level">Noise Level</label>
+                    <input type="range" id="noise_level" class="slider" name="noise_level" min="0" max="4096" step="1">
+                </div>
+                <div class="slider-container">
+                    <label for="comb_depth">Comb Depth</label>
+                    <input type="range" id="comb_depth" class="slider" name="comb_depth" min="-4096" max="4096"
+                        step="1">
+                </div>
+            </div>
+            <div class="button-group">
+                <button id="export">Export All to Clipboard</button>
+                <button id="import">Import All from Clipboard</button>
+                <button id="reset">Reset All to Default</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
