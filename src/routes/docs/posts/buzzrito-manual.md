@@ -32,6 +32,24 @@ Buzzy is a very simple module to use: Pitch and Gate go into the left-most jacks
 
 <a href="buzzrito_manual.png" target="blank"><img src="buzzrito_manual.png"></a>
 
+## Patch editor
+
+Buzzrito presents as an XY pad that allows you to morph between 7 sounds across the 2D surface. But what if you want to edit those sounds? You are in the right place! Simply connect Buzzy to your PC/Mac's browser via a usb-C cable, and assuming your browser supports WebUSB (you can check [here](https://caniuse.com/?search=webusb)) you can use the UI below to edit the presets live. After you've finished editing, wait at least 5 seconds before powering down your buzzrito (so that it can save your changes to its flash storage).
+
+<iframe id="embedded-frame" src="/buzzy_presets.html" style="border: none;" width="100%"></iframe>
+<script>
+  window.addEventListener('message', function(event) {
+    console.log(event.data);
+    if (event.data && event.data.height) {
+      const iframe = document.getElementById('embedded-frame');
+      iframe.style.height = event.data.height + 'px';
+    }
+  });
+</script>
+
+Here's a demo of the above editor, if you're not sure what I am talking about:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rJC73ZvjzAI?si=aJrhNecRch8Lq6A5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Firmware
 
 First, download the latest firmware in this file: <a href="buzzrito-firmware/buzzrito_001.uf2">`buzzrito_001.uf2`</a>.
