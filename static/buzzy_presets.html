@@ -36,6 +36,7 @@
         .status {
             font-size: 14px;
             color: var(--color-text);
+            margin-top: 7px;
         }
 
         label {
@@ -401,11 +402,11 @@
                 });
             });
 
-            async function paste() {
+            async function paste(single_only) {
                 try {
                     const text = await navigator.clipboard.readText();
                     const jj = JSON.parse(text);
-                    if (Array.isArray(jj) && jj.length === presets.length) {
+                    if (Array.isArray(jj) && jj.length === presets.length && !single_only) {
                         for (let i = 0; i < jj.length; ++i) {
                             const kk = jj[i];
                             if (Array.isArray(kk) && kk.length == presets[i].length) {
@@ -414,10 +415,12 @@
                         }
                         update_xypad(padx, pady);
                         sendAllPresetsMessage();
-                    } else if (Array.isArray(jj) && jj.length == presets[0].length) {
+                        console.log("pasted all sounds");
+                    } else if (Array.isArray(jj) && jj.length == presets[0].length && single_only) {
                         for (let i = 0; i<jj.length; ++i) {
                             update_xypad(padx, pady, i, jj[i]);
                         }
+                        console.log("pasted single sound");
                         sendAllPresetsMessage();
                     } else {
                         console.error('Invalid data in clipboard');
@@ -426,8 +429,8 @@
                     console.error('Failed to import presets or read from clipboard: ', err);
                 }
             }
-            document.getElementById('import').addEventListener('click', paste);
-            document.getElementById('paste').addEventListener('click', paste);
+            document.getElementById('import').addEventListener('click', async () => { await paste(false); });
+            document.getElementById('paste').addEventListener('click', async () => { await paste(true); });
 
 
             function sendHeight() {
@@ -452,7 +455,7 @@
             <button id="connect">Connect...</button>
             <div id="status" class="status">Press Connect to connect to Buzzy</div>
         </div>
-        <div id="ui-container" style="display: block;">
+        <div id="ui-container" style="display: none;">
             <div class="xypad" id="xypad">
                 <div class="draggable-circle"></div>
                 <div id="p0" class="preset-circle" style="left: 50%; top: 50%;"></div>
