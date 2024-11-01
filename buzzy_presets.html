@@ -205,18 +205,18 @@
             let padx = 0, pady = 0;
             function get_defaults() {
                 return [
-                    [122, 163, 980, 411, 2048, 4103, 1111, 0, -42],
-                    [184, 163, -18, 997, 1392, 4095, -331, 0, -204],
-                    [732, 163, -18, 1351, 2047, 4095, 3285, 0, 919],
-                    [1094, 163, 925, 693, 2048, 4096, 4151,/*715*/0, 3785],
-                    [-5, 623, 1351, -116, 1675, 81, 5063, 0, 4096],
-                    [0, 849, 1359, 614, 1433, -651, 5063, 0, -196],
-                    [-2, 163, 0, -17, 2059, 4096, 15, 0, 3],
+                    [122, 163, 980, 411, 2048, 4103, 1111, 0, -42, 7 * 256],
+                    [184, 163, -18, 997, 1392, 4095, -331, 0, -204, 7 * 256],
+                    [732, 163, -18, 1351, 2047, 4095, 3285, 0, 919, 7 * 256],
+                    [1094, 163, 925, 693, 2048, 4096, 4151,/*715*/0, 3785, 7 * 256],
+                    [-5, 623, 1351, -116, 1675, 81, 5063, 0, 4096, 7 * 256],
+                    [0, 849, 1359, 614, 1433, -651, 5063, 0, -196, 7 * 256],
+                    [-2, 163, 0, -17, 2059, 4096, 15, 0, 3, 7 * 256],
                 ];
             }
             let presets = get_defaults();
-            let paramnames = ['spread', 'glide', 'boc_amount', 'wobble_amount', 'wobble_speed', 'saw_level', 'sub_level', 'noise_level', 'comb_depth'];
-
+            let paramnames = ['spread', 'glide', 'boc_amount', 'wobble_amount', 'wobble_speed', 'saw_level', 'sub_level', 'noise_level', 'comb_depth', 'comb_mul'];
+            const NUM_PARAMS = paramnames.length;
             async function readLoop() {
                 try {
                     await new Promise(resolve => setTimeout(resolve, 500));
@@ -230,11 +230,11 @@
                         if (count >= 3 && buf[0] == 0x0b47) {
                             padx = buf[1] / 4096;
                             pady = buf[2] / 4096;
-                            if (count>=4) {
+                            if (count >= 4) {
                                 const i = buf[3];
-                                if (i<7 && count==4+9) {
-                                    for (let j = 0; j<9; ++j) {
-                                        presets[i][j] = buf[4+j];
+                                if (i < 7 && count == 4 + NUM_PARAMS) {
+                                    for (let j = 0; j < NUM_PARAMS; ++j) {
+                                        presets[i][j] = buf[4 + j];
                                     }
                                 }
                             }
@@ -280,10 +280,10 @@
                 await sendMessage([0x0b47]);
             }
             async function sendXYMessage() {
-                await sendMessage([0x0b47, (padx*4096)|0, (pady*4096)|0]);
+                await sendMessage([0x0b47, (padx * 4096) | 0, (pady * 4096) | 0]);
             }
             async function sendPresetMessage(i) {
-                await sendMessage([0x0b47, (padx*4096)|0, (pady*4096)|0, i, ...presets[i]]);
+                await sendMessage([0x0b47, (padx * 4096) | 0, (pady * 4096) | 0, i, ...presets[i]]);
             }
             async function sendAllPresetsMessage() {
                 for (let i = 0; i < 7; ++i) {
@@ -291,12 +291,12 @@
                 }
             }
             async function sendWriteMessage(i, uel, vel, wel) {
-                await sendMessage([0x0b47, (padx*4096)|0, (pady*4096)|0, i+0x80, uel, vel, wel, presets[uel][i], presets[vel][i], presets[wel][i]]);
+                await sendMessage([0x0b47, (padx * 4096) | 0, (pady * 4096) | 0, i + 0x80, uel, vel, wel, presets[uel][i], presets[vel][i], presets[wel][i]]);
             }
 
             let current_preset = [];
             let sliders = [];
-            for (let i = 0; i < 9; ++i) {
+            for (let i = 0; i < NUM_PARAMS; ++i) {
                 sliders.push(document.getElementById(paramnames[i]));
                 sliders[i].addEventListener('input', slider_moved);
             }
@@ -323,9 +323,9 @@
                 set_preset_color(vel, v);
                 set_preset_color(wel, w);
                 current_preset = [];
-                for (let i = 0; i < 9; ++i) {
+                for (let i = 0; i < NUM_PARAMS; ++i) {
                     let val = presets[uel][i] * u + presets[vel][i] * v + presets[wel][i] * w;
-                    const themin = (i == 8) ? -4096 : 0;
+                    const themin = (i >= 8) ? -4096 : 0;
                     val = Math.min(4096, Math.max(themin, val));
                     if (i == writeidx) {
                         let uwr = (u > 0.2) ? u - 0.2 : 0;
@@ -337,9 +337,9 @@
                         presets[uel][i] += uwr * scale;
                         presets[vel][i] += vwr * scale;
                         presets[wel][i] += wwr * scale;
-                        presets[uel][i] = Math.min(4096, Math.max(themin, presets[uel][i]));
-                        presets[vel][i] = Math.min(4096, Math.max(themin, presets[vel][i]));
-                        presets[wel][i] = Math.min(4096, Math.max(themin, presets[wel][i]));
+                        presets[uel][i] = presets[uel][i];
+                        presets[vel][i] = presets[vel][i];
+                        presets[wel][i] = presets[wel][i];
                     }
                     current_preset.push(val);
                     sliders[i].value = val;
@@ -417,7 +417,7 @@
                         sendAllPresetsMessage();
                         console.log("pasted all sounds");
                     } else if (Array.isArray(jj) && jj.length == presets[0].length && single_only) {
-                        for (let i = 0; i<jj.length; ++i) {
+                        for (let i = 0; i < jj.length; ++i) {
                             update_xypad(padx, pady, i, jj[i]);
                         }
                         console.log("pasted single sound");
@@ -439,11 +439,13 @@
             }
 
             // Call sendHeight once the window is loaded and whenever resizing occurs
+
+            update_xypad(0, 0);
             window.onload = sendHeight;
             const observer = new MutationObserver(sendHeight);
             observer.observe(document.body, { attributes: true, childList: true, subtree: true });
 
-            update_xypad(0, 0);
+            sendHeight();
 
         }); // content loaded
     </script>
@@ -473,10 +475,6 @@
             </div>
 
             <div id="sliders">
-                <!-- comb  mul is now fixed at 1.5x ie fifth <div class="slider-container">
-                        <label for="comb_mul">Comb Pitch</label>
-                        <input type="range" id="comb_mul" class="slider" name="comb_mul" min="-12" max="12" step="1">
-                    </div> -->
                 <div class="slider-container">
                     <label for="spread">Spread</label>
                     <input type="range" id="spread" class="slider" name="spread" min="0" max="4096" step="1">
@@ -509,13 +507,17 @@
                     <input type="range" id="sub_level" class="slider" name="sub_level" min="0" max="4096" step="1">
                 </div>
                 <div class="slider-container">
-                    <label for="noise_level">Noise Level</label>
+                    <label for="noise_level">Crackle Level</label>
                     <input type="range" id="noise_level" class="slider" name="noise_level" min="0" max="4096" step="1">
                 </div>
                 <div class="slider-container">
                     <label for="comb_depth">Comb Depth</label>
                     <input type="range" id="comb_depth" class="slider" name="comb_depth" min="-4096" max="4096"
                         step="1">
+                </div>
+                <div class="slider-container">
+                    <label for="comb_mul">Comb Pitch</label>
+                    <input type="range" id="comb_mul" class="slider" name="comb_mul" min="-3072" max="3072" step="1">
                 </div>
             </div>
             <div class="button-group">
