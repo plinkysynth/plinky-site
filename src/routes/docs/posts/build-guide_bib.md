@@ -63,14 +63,18 @@ Turn it over, and solder the 10 power header pins. Again, **be careful to avoid 
 
 ## Making the sandwich: 12 pin headers
 
-Ok now pop the 12 pin header+pin combos you made into both boards - we are joining them together in a kind of Bib-ish silicon sandwich. The pre-soldered components go on the inside of the sandwich, you see. Turn the board over to see the back with the Power pins you just soldered, and solder the two rows of 12 header pins, as shown below. **WE ARE ONLY SOLDERING THIS ONE SIDE! DONT JUMP AHEAD TO THE OTHER SIDE!** I tend to solder a *single* pin first, and make sure it is all nice and square and flush, before soldering the rest. That's a good trick with multipin parts in general - do one pin, line it up, then do the rest when you're happy. It's much easier to align a single pin, than it is to fix things when you've soldered 12 wonky. Ask me how I know... Oh, while you're here, maybe melt a bit of solder into the USB-C connector's holes, if they are not already full. It just adds a bit of mechanical rigidity.
+Ok now pop the 12 pin header+pin combos you made into both boards - we are joining them together in a kind of Bib-ish silicon sandwich. The pre-soldered components go on the inside of the sandwich, you see. Turn the board over to see the back with the Power pins you just soldered, and solder the two rows of 12 header pins, as shown below. I tend to solder a *single* pin first, and make sure it is all nice and square and flush, before soldering the rest. That's a good trick with multipin parts in general - do one pin, line it up, then do the rest when you're happy. It's much easier to align a single pin, than it is to fix things when you've soldered 12 wonky. Ask me how I know... Oh, while you're here, maybe melt a bit of solder into the USB-C connector's holes, if they are not already full. It just adds a bit of mechanical rigidity.
 
 ![Parts](/bib-build-guide/IMG_6318.jpeg)
 
-OK! Flip Bib over but **DONT SOLDER THE OTHER SIDE YET**. 
+## Solder the other half of the sandwich
+
+OK! Flip Bib over and solder the header pins on the other side of the sandwich. You need to do this before putting the pots in, otherwise you won't be able to reach the pins! 
+
+<div style="font-size:10px">(In the V1 Version of the guide, I asked you to trim some pins first; we decided that wasn't necessary, so just go ahead and solder the rest. And in an early version of this V2 build guide, I forgot to tell you to do this at all! Thanks @TGarnett for the bug report). </div>
 
 ## Trimming the pot
-Ok I used to say to trim both pots, but there's only 1 tab you need to remove, from the smaller pot. Use sharp side cutters, wear eye protection, avoid curious pets/kids, and get rid of the little metal tab shown in yellow below (on the small pot). You can also 'wiggle' it off with pliers - either way, make sure the *whole* vertical tab is gone, up to the base of the pot, otherwise it will short out some pins. While you're here, I tend to find the wiggly pins on the smaller pot a bit too wiggly for my taste - I flatten them very slightly with a gentle squeeze of some pliers. if you struggle to fit the pot into the board later, this'll help.
+There's 1 tab you need to remove from the smaller pot. Use sharp side cutters, wear eye protection, avoid curious pets/kids, and get rid of the little metal tab shown in yellow below (on the small pot). You can also 'wiggle' it off with pliers - either way, make sure the *whole* vertical tab is gone, up to the base of the pot, otherwise it will short out some pins. While you're here, I tend to find the wiggly pins on the smaller pot a bit too wiggly for my taste - I flatten them very slightly with a gentle squeeze of some pliers. if you struggle to fit the pot into the board later, this'll help.
 
 ![choppy choppy](/bib-build-guide/IMG_7324.jpeg)
 
