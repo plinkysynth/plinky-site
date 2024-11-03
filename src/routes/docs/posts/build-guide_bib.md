@@ -24,7 +24,7 @@ Put a small pillow of solder on a *single* pin on each footprint - one on the fr
 
 ![Solder one pin](/bib-build-guide/IMG_6307.jpeg)
 
-now line up the socket and use your iron to heat up the pollow and solder that first pin. It's worth getting the socket nice and straight, centered, and upright while only 1 pin is soldered. 
+now line up the socket and use your iron to heat up the pillow and solder that first pin. It's worth getting the socket nice and straight, centered, and upright while only 1 pin is soldered. 
 
 Don't bend it! just touch your iron to re-heat it and gently move the socket into place while the solder is melted. Once you're happy, it should look like this:
 
@@ -110,7 +110,7 @@ Your Bib kit should come pre-flashed with firmware, so in theory it should just 
 
 However, if you wish to update Bib, read on.
 
-First, download the firmware in this file: <a href="bib-firmware/bib_006.uf2">`bib_006.uf2`</a>. Patch notes are available on the manual page.
+First, download the firmware in this file: <a href="bib-firmware/bib_007.uf2">`bib_007.uf2`</a>. Patch notes are available on the manual page.
 
 Use a USB-C cable (not included) to plug your computer into Bib. You do **not** need Bib to be powered from eurorack for this step. 
 

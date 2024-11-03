@@ -64,7 +64,7 @@ The line-out and front panel connections are always enabled, ie they are not aff
 
 ## Firmware
 
-First, download the latest firmware in this file: <a href="bib-firmware/bib_006.uf2">`bib_006.uf2`</a>.
+First, download the latest firmware in this file: <a href="bib-firmware/bib_007.uf2">`bib_007.uf2`</a>.
 Use a USB-C cable (not included) to plug your computer into Bib. You do **not** need Bib to be powered from eurorack for this step. 
 
 Bib should show up as a USB drive called `RPI-RP2` (on mac, you may find it under `/Volumes/RPI-RP2`). If it does not, try disconnecting the USB cable, holding down the *tiny* button on the digital board, just  opposite to the USB connector (hilighted below), while reconnecting the cable - then release the button. If it *still* doesn't show up, make sure your cable has data lines (and isn't just for charging).
