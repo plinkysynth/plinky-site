@@ -203,15 +203,16 @@
                 }
             }
             let padx = 0, pady = 0;
+            function K(x) { return (x*3)/4; }
             function get_defaults() {
                 return [
-                    [122, 163, 980, 411, 2048, 4103, 1111, 0, -42, 7 * 256],
-                    [184, 163, -18, 997, 1392, 4095, -331, 0, -204, 7 * 256],
-                    [732, 163, -18, 1351, 2047, 4095, 3285, 0, 919, 7 * 256],
-                    [1094, 163, 925, 693, 2048, 4096, 4151,/*715*/0, 3785, 7 * 256],
-                    [-5, 623, 1351, -116, 1675, 81, 5063, 0, 4096, 7 * 256],
-                    [0, 849, 1359, 614, 1433, -651, 5063, 0, -196, 7 * 256],
-                    [-2, 163, 0, -17, 2059, 4096, 15, 0, 3, 7 * 256],
+                    [122, 163, 980, 411, 2048, K(4103), 1111, 0, -42, 7 * 256],
+                    [184, 163, -18, 997, 1392, K(4095), -331, 0, -204, 7 * 256],
+                    [732, 163, -18, 1351, 2047, K(4095), 3285, 0, 919, 7 * 256],
+                    [1094, 163, 925, 693, 2048, K(4096), 4151,/*715*/0, 3785, 7 * 256],
+                    [-5, 623, 1351, -116, 1675, 81, K(5063), 0, 4096, 7 * 256],
+                    [0, 849, 1359, 614, 1433, -651, K(5063), 0, -196, 7 * 256],
+                    [-2, 163, 0, -17, 2059, K(4096), 15, 0, 3, 7 * 256],
                 ];
             }
             let presets = get_defaults();
@@ -300,6 +301,12 @@
                 sliders.push(document.getElementById(paramnames[i]));
                 sliders[i].addEventListener('input', slider_moved);
             }
+            function update_comb_label() {
+                let val = current_preset[9];
+                let label = 'Comb Pitch: ';
+                label+=(val/256).toFixed(2);
+                sliders[9].labels[0].textContent = label;
+            }
             function update_xypad(x, y, writeidx = -1, writeval = 0) {
                 padx = x;
                 pady = y;
@@ -343,7 +350,9 @@
                     }
                     current_preset.push(val);
                     sliders[i].value = val;
+                    
                 }
+                update_comb_label();
                 circle.style.left = `${(x * 50 + 50).toFixed(2)}%`;
                 circle.style.top = `${(y * 50 + 50).toFixed(2)}%`;
                 return [uel, vel, wel];
@@ -378,6 +387,7 @@
                 const i = paramnames.indexOf(event.target.name);
                 els = update_xypad(padx, pady, i, parseFloat(event.target.value));
                 sendWriteMessage(i, els[0], els[1], els[2]);
+                if (i==9) update_comb_label();
             }
 
             document.getElementById('reset').addEventListener('click', async () => {
@@ -507,7 +517,7 @@
                     <input type="range" id="sub_level" class="slider" name="sub_level" min="0" max="4096" step="1">
                 </div>
                 <div class="slider-container">
-                    <label for="noise_level">Crackle Level</label>
+                    <label for="noise_level">Noise Level</label>
                     <input type="range" id="noise_level" class="slider" name="noise_level" min="0" max="4096" step="1">
                 </div>
                 <div class="slider-container">
