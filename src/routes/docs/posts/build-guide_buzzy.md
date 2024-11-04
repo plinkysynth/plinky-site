@@ -83,7 +83,7 @@ Your Buzzrito kit should come pre-flashed with firmware, so in theory it should 
 
 However, if you wish to update Buzzrito, read on.
 
-First, download the firmware in this file: <a href="buzzrito-firmware/buzzrito_001.uf2">`buzzrito_001.uf2`</a>. Patch notes are available on the manual page.
+First, download the firmware in this file: <a href="buddies-firmware/buzzrito_001.uf2">`buzzrito_001.uf2`</a>. Patch notes are available on the manual page.
 
 Use a USB-C cable (not included) to plug your computer into Buzzrito. You do **not** need Buzzrito to be powered from eurorack for this step. 
 

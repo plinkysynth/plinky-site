@@ -37,7 +37,7 @@ Blueberry calibrates its INPUTS automatically whenever there is no jack plugged 
 
 ## Firmware
 
-First, download the latest firmware in this file: <a href="blueberry-firmware/blueberry_001.uf2">`blueberry_001.uf2`</a>.
+First, download the latest firmware in this file: <a href="buddies-firmware/blueberry_001.uf2">`blueberry_001.uf2`</a>.
 Use a USB-C cable (not included) to plug your computer into Blueberry. You do **not** need Blueberry to be powered from eurorack for this step. 
 
 Blueberry should show up as a USB drive called `RPI-RP2` (on mac, you may find it under `/Volumes/RPI-RP2`). If it does not, try disconnecting the USB cable, holding down the *tiny* button on the digital board, just  opposite to the USB connector (hilighted below), while reconnecting the cable - then release the button. If it *still* doesn't show up, make sure your cable has data lines (and isn't just for charging).
@@ -47,5 +47,5 @@ Drag and drop or otherwise copy the downloaded file onto the RPI-RP2 folder, and
 ## Patch notes & versions
 
 ## v1 - End October 2024 - 'Thonk edition'
-[Download here: blueberry_001.uf2](blueberry-firmware/blueberry_001.uf2)
+[Download here: blueberry_001.uf2](buddies-firmware/blueberry_001.uf2)
 * Initial release.

@@ -52,7 +52,7 @@ Here's a demo of the above editor, if you're not sure what I am talking about:
 
 ## Firmware
 
-First, download the latest firmware in this file: <a href="buzzrito-firmware/buzzrito_001.uf2">`buzzrito_001.uf2`</a>.
+First, download the latest firmware in this file: <a href="buddies-firmware/buzzrito_001.uf2">`buzzrito_001.uf2`</a>.
 Use a USB-C cable (not included) to plug your computer into Buzzrito. You do **not** need Buzzrito to be powered from eurorack for this step. 
 
 Buzzrito should show up as a USB drive called `RPI-RP2` (on mac, you may find it under `/Volumes/RPI-RP2`). If it does not, try disconnecting the USB cable, holding down the *tiny* button on the digital board, just  opposite to the USB connector (hilighted below), while reconnecting the cable - then release the button. If it *still* doesn't show up, make sure your cable has data lines (and isn't just for charging).
@@ -62,5 +62,5 @@ Drag and drop or otherwise copy the downloaded file onto the RPI-RP2 folder, and
 ## Patch notes & versions
 
 ## v1 - End October 2024 - 'Thonk edition'
-[Download here: buzzrito_001.uf2](buzzrito-firmware/buzzrito_001.uf2)
+[Download here: buzzrito_001.uf2](buddies-firmware/buzzrito_001.uf2)
 * Initial release.

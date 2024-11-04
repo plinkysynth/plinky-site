@@ -64,7 +64,7 @@ The line-out and front panel connections are always enabled, ie they are not aff
 
 ## Firmware
 
-First, download the latest firmware in this file: <a href="bib-firmware/bib_007.uf2">`bib_007.uf2`</a>.
+First, download the latest firmware in this file: <a href="buddies-firmware/bib_007.uf2">`bib_007.uf2`</a>.
 Use a USB-C cable (not included) to plug your computer into Bib. You do **not** need Bib to be powered from eurorack for this step. 
 
 Bib should show up as a USB drive called `RPI-RP2` (on mac, you may find it under `/Volumes/RPI-RP2`). If it does not, try disconnecting the USB cable, holding down the *tiny* button on the digital board, just  opposite to the USB connector (hilighted below), while reconnecting the cable - then release the button. If it *still* doesn't show up, make sure your cable has data lines (and isn't just for charging).
@@ -76,13 +76,13 @@ Drag and drop or otherwise copy the downloaded file onto the RPI-RP2 folder, and
 ### Beta versions
 
 ## v7 - End October 2024 - 'Color Editor edition' 
-[Download here: bib_007.uf2](bib-firmware/bib_007.uf2)
+[Download here: bib_007.uf2](buddies-firmware/bib_007.uf2)
 * Add WebUSB support and color palette editing
 
 ### Current release version
 
 ## v6 - End October 2024 - 'Oops edition' 
-[Download here: bib_006.uf2](bib-firmware/bib_006.uf2)
+[Download here: bib_006.uf2](buddies-firmware/bib_006.uf2)
 * Allow for slightly longer presses on the slider to count as a tap
 * BUGFIX! Ooops, some grotty 'grumbling' had crept into the delay. much better now.
 * BUGFIX! Ooops, the tape stop and tape speed wobble effects were broken in 005. fixed!
@@ -90,11 +90,11 @@ Drag and drop or otherwise copy the downloaded file onto the RPI-RP2 folder, and
 ### Older versions
 
 ## v5 - Start October 2024 - 'Timo edition'
-[Download here: bib_005.uf2](bib-firmware/bib_005.uf2)
+[Download here: bib_005.uf2](buddies-firmware/bib_005.uf2)
 * The touch sensitivity is improved, and some users reported the spider 'locking up' and becoming unresponsive after a while, which should be fixed. 
 
 ## v4 - September 2024 - 'Toadstool edition' 
-[Download here: bib_004.uf2](bib-firmware/bib_004.uf2)
+[Download here: bib_004.uf2](buddies-firmware/bib_004.uf2)
 * The spider now has different functions depending on the mode: 
     * in red it toggles between a new wavefolder / old overdrive 
     * in green it does tap tempo as before
@@ -108,11 +108,11 @@ Drag and drop or otherwise copy the downloaded file onto the RPI-RP2 folder, and
 * rebalanced the parameter curves for the delay, now the 'short end' of delay time is super fun for KS type string sounds (but mad, because, bib)
 
 ## v3 - August 2024 - 'Thonk edition'
-[Download here: bib_003.uf2](bib-firmware/bib_003.uf2)
+[Download here: bib_003.uf2](buddies-firmware/bib_003.uf2)
 * add visual feedback on factory reset, and ability to switch on/off the line input
 * this is the version flashed onto first run Thonk kits
 
 ## v2 - July 2024 - 'Knobconn edition'
-[Download here: bib_002.uf2](bib-firmware/bib_002.uf2)
+[Download here: bib_002.uf2](buddies-firmware/bib_002.uf2)
 * fixed a 'spider pressure overflow' 16 bit bug. this is the earliest usable firmware
 

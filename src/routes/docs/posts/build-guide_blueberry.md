@@ -65,7 +65,7 @@ Your Blueberry kit should come pre-flashed with firmware, so in theory it should
 
 However, if you wish to update Blueberry, read on.
 
-First, download the firmware in this file: <a href="blueberry-firmware/blueberry_001.uf2">`blueberry_001.uf2`</a>. Patch notes are available on the manual page.
+First, download the firmware in this file: <a href="buddies-firmware/blueberry_001.uf2">`blueberry_001.uf2`</a>. Patch notes are available on the manual page.
 
 Use a USB-C cable (not included) to plug your computer into Blueberry. You do **not** need Blueberry to be powered from eurorack for this step. 
 
