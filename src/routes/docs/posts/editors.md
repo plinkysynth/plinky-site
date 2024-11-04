@@ -163,3 +163,57 @@ Use the sliders to set Plinkys parameters in realtime, via MIDI.
 ![Plinky - TouchOSC Editor](/editors/TouchOSC_4.1_Play.png)
 
 While this example is written for the desktop app, TouchOSC runs on Android and iOS as well. You should be able to connect Plinky via an OTG USB cable and be able to control Plinky in a similar fashion.
+
+
+## Max for Live Editor
+
+Luca Spagnoletti / [PixFoil](https://www.eklerorecords.com/pixfoil/) has contributed a Max for Live Editor for Plinky.
+<br>Luca is an electronic musician and composer. Check out his work here: [Atlante](https://eklero.bandcamp.com/album/atlante) - [OOPArt](https://eklero.bandcamp.com/album/oopart) - [C H O N (Compilation)](https://eklero.bandcamp.com/album/c-h-o-n)
+
+It allows you to edit a subset of Plinkys parameters via MIDI in realtime, using Plinky's [MIDI implementation](../docs/midi).
+To run the patch, you need an installation of [Ableton Live](https://www.ableton.com/en/live/) (11 or newer) with a [Max for Live](https://www.ableton.com/en/live/max-for-live/) license.
+
+Follow these steps to setup the editor:
+
+- Connect Plinky to your computer via USB
+- Download the editor file for Plinky: [Plinky_Editor_1.0.amxd](/editors/Plinky_Editor_1.0.amxd)
+- Open Ableton Live
+- Right click the User Library
+- Select Show in Explorer (Windows) or Show in Finder (Mac)
+- Create a Folder Editors and a subfolder Plinky Editor
+- Place the .amxd file in it
+
+The Editor should now be visible in Live under User Library > Editors > Plinky Editor > Plinky_Editor_1.0
+
+![Plinky - TouchOSC Editor](/editors/Max4Live_1.png)
+
+Now we need to set up the MIDI connection.
+
+- In Live, go to Options > Preferences
+- Navigate to the Link Tempo MIDI tab
+- Under MIDI Ports, you should see Out: PlinkySynth MIDI. Set a checkmark for Track.
+
+If do not see Plinky listed here, try another USB cable. 
+<br>Note that some USB cables are charge-only and do not transmit data.
+
+We have enabled MIDI output to Plinky. Now we need to route a MIDI Track to it.
+
+- In this example we use Track 1 MIDI from an empty Live Set. 
+- Or, to create a new one, go to Create > Insert MIDI Track 
+- Make sure the I/O section for Tracks is visible. 
+- If it isn't, go to View > In/Out and set the checkmark.
+- From the MIDI To dropdown, select PlinkySynth MIDI.
+
+![Plinky - TouchOSC Editor](/editors/Max4Live_2.png)
+
+Let's drop the Editor onto the track.
+
+- Go to User Library > Editors > Plinky Editor 
+- Drag and drop Plinky_Editor_1.0.amxd into Track 1 MIDI
+- Click Open to display the user interface
+
+![Plinky - TouchOSC Editor](/editors/Max4Live_3.png)
+
+Now you can use the rotary knobs and sliders to set Plinkys parameters in realtime, via MIDI.
+
+Note that this editor also integrates with [Ableton Push 2 and 3](https://www.ableton.com/en/push/) controllers.
