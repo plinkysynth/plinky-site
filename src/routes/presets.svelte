@@ -25,7 +25,20 @@
 
     <Grid>
       <BigArea>
-        <h4>Meska bank</h4>
+        <iframe width="624" height="351" src="https://www.youtube.com/embed/FsOyG4VjLC4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h4>Grain Blanc Bank</h4>
+        <p>Ambient minimalist Grain Blanc has created this bank of 32 presets, exploring the cinematic side of Plinky with shimmery pads, brassy leads and ghostly soundscapes.
+        Find Grain Blanc's beautiful and haunting performances with Plinky on <a href="https://www.youtube.com/@grainblanc_" target="_blank">YouTube</a>.</p>
+        
+        <p>Includes the preset file, 8 samples and individual links for the <a href="https://plinkysynth.github.io/editor/">patch editor</a>.
+        <br>Find a short description and performance tips in the PDF patch notes.</p>
+        <a class="button" target="_blank" href="/presets/GrainBlanc/GrainBlanc.zip">Download</a>
+      </BigArea>    
+      <BigArea>
+        <iframe width="624" height="351" src="https://www.youtube.com/embed/zXjph5cix2g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h4>Meska Bank</h4>
         <p>This bank of 32 presets by Meska draws focus to the "dark" side of Plinky, exploring lush delays, cavernous reverb, pitch drift and gnarly saturation.
         Meska has created a number of great Plinky patch explainers on <a href="https://www.youtube.com/@Meska_Statik" target="_blank">YouTube</a>.</p>
         
@@ -34,12 +47,12 @@
         <a class="button" target="_blank" href="/presets/Meska/Meska.zip">Download</a>
       </BigArea>
       <BigArea>
-        <h4>LPZW.modules bank</h4>
+        <h4>LPZW.modules Bank</h4>
         <p>These are the presets by LPZW.modules for the Schneidersladen edition of Plinky. It contains the preset file and three samples. For more info, please go to <a href="http://leipzigwest.org/" target="_blank">leipzigwest.org</a>.</p>
         <a class="button" target="_blank" href="/presets/LPZW/LPZW.zip">Download</a>
       </BigArea>
       <BigArea>
-        <h4>Default bank</h4>
+        <h4>Default Bank</h4>
         <p>This is the default preset set with all 32 patches set to the initial sound.</p>
         <a class="button" target="_blank" href="/presets/default/PRESETS.uf2">Download</a>
       </BigArea>
