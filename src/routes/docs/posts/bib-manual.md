@@ -50,6 +50,12 @@ If you don't like the default colours for the Bib LED knob, and your bib is on [
   });
 </script>
 
+## Line-in and out pinout
+
+Bib has a 6 pin connector on her back, that can be used to send stereo line level signals in and out. (Note that europower is still required). The pinout is compatible with some eurorack cases, for example the Intellijel palette cases, which have quarter inch TRS jack sockets. These are often used as mono balanced connections, but with Bib they become stereo unbalanced input and output. The pinout, should you wish to make your own adapter or cable, is below:
+
+<img src="/bib_jacks_pinout.webp">
+
 ## Enabling and Disabling the line-in connection
 
 Bib has stereo eurorack level inputs and outputs on its front panel, but also sports a 6 pin header on its back for line level stereo in and out. These are compatible, for example, with the intellijel palette cases, allowing use of two case mounted TRS jacks as stereo in/out. 
