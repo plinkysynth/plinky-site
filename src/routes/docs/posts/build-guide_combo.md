@@ -53,5 +53,5 @@ Remember, the pins from each mainboard and the front panel sockets you just sold
 
 If you want, go and read the manuals: <a href="docs/bib-manual">Bib</a>, <a href="docs/buzzrito-manual">Buzzrito</a>, and <a href="docs/blueberry-manual">Blueberry</a>. Despite being mounted in a single panel, the 3 are electrically completely separate, so you'll need to plug in 3 eurorack power connectors around the back, and patch the stereo audio signal (if you wish) from one buddy to the next. You can see a good default setup in this feature walkthrough of the entire trio:
 
-TODO INSERT YOUTUBE EMBED WHEN IM NOT ON A PLANE
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7x9_dgjiCaw?si=FpOSyD1-1ArDOMWt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
