@@ -22,7 +22,7 @@ Put a small pillow of solder on a *single* pin on the front panel footprint. You
 
 ![Solder one pin](/buzzrito-build-guide/IMG_7248.jpeg)
 
-now line up the socket and use your iron to heat up the pollow and solder that first pin. It's worth getting the socket nice and straight, centered, and upright while only 1 pin is soldered. Don't bend it! just touch your iron to re-heat the pillow and gently move the socket into place while the solder is melted. 
+now line up the socket and use your iron to heat up the pillow and solder that first pin. It's worth getting the socket nice and straight, centered, and upright while only 1 pin is soldered. Don't bend it! just touch your iron to re-heat the pillow and gently move the socket into place while the solder is melted. 
 
 I should note that buzzy in particular is *tight* - the pads are barely big enough to accomodate the part. err on the side of the connector being shifted towards the big jack holes, and away from the very fine golden traces under the touch pad. Here's how I lined mine up - you'll notice that I have got some messy solder into the socket holes. I did this to... show you what *NOT* to do, honest. You'll need to clean that up with solder wick later, otherwise you'll struggle to get the panel on. 
 

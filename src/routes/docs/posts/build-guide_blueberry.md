@@ -25,7 +25,7 @@ Put a small pillow of solder on a *single* pin on each of the SMD footprints. Yo
   <img src="/blueberry-build-guide/IMG_7237.jpeg" width="40%" />
 </p>
 
-now line up each socket and use your iron to heat up the pollow and solder that first pin. It's worth getting the socket nice and straight, centered, and upright while only 1 pin is soldered. Don't bend it! just touch your iron to re-heat the pillow and gently move the socket into place while the solder is melted. Once you're happy with the alignment, solder the rest of the pins. be sure to heat both pad and pin, so that the solder flows nicely onto both. The power header pins can take quite a bit of heat - let them warm up before flowing a small amount of solder. Here it is, soldered. 
+now line up each socket and use your iron to heat up the pillow and solder that first pin. It's worth getting the socket nice and straight, centered, and upright while only 1 pin is soldered. Don't bend it! just touch your iron to re-heat the pillow and gently move the socket into place while the solder is melted. Once you're happy with the alignment, solder the rest of the pins. be sure to heat both pad and pin, so that the solder flows nicely onto both. The power header pins can take quite a bit of heat - let them warm up before flowing a small amount of solder. Here it is, soldered. 
 
 <p float="left">
   <img src="/blueberry-build-guide/IMG_7235.jpeg" width="42%" />
