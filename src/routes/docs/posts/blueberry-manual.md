@@ -10,6 +10,8 @@ If you're looking for the build guide, go <a href="docs/build-guide_blueberry">h
 
 The latest firmware is available to download at the bottom of this page. 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7x9_dgjiCaw?si=FpOSyD1-1ArDOMWt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Overview
 Blueberry is the third collaboration between Alex Evans – creator of Plinky! – and Ray Yokell aka CrazyEmperor893 of <a href="https://crey.space">The crey emporium</a>. It pairs really well with Bib (fx) and Buzzrito (oscillator) but easily integrates into any eurorack setup by providing a gate and pitch (V/Oct) output in response to touch.
 

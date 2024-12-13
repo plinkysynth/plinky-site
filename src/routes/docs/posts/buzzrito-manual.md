@@ -10,6 +10,8 @@ If you're looking for the build guide, go <a href="docs/build-guide_buzzy">here<
 
 The latest firmware is available to download at the bottom of this page. 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7x9_dgjiCaw?si=FpOSyD1-1ArDOMWt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Overview
 Buzzrito is the second collaboration between Alex Evans – creator of Plinky! – and Ray Yokell aka CrazyEmperor893 of <a href="https://crey.space">The crey emporium</a>. It pairs really well with Bib (fx) and Blueberry (sequencer) but easily integrates into any eurorack setup that can provide gate and pitch (V/Oct).
 
@@ -64,3 +66,5 @@ Drag and drop or otherwise copy the downloaded file onto the RPI-RP2 folder, and
 ## v1 - End October 2024 - 'Thonk edition'
 [Download here: buzzrito_001.uf2](buddies-firmware/buzzrito_001.uf2)
 * Initial release.
+
+

@@ -12,6 +12,8 @@ The latest firmware is available to download at the bottom of this page.
 
 ## Video demo and Jam by izaak from toadstool.tech
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7x9_dgjiCaw?si=FpOSyD1-1ArDOMWt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 <div class="Video">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/c-n1z9zD5Pw?si=tRR9bGGUOqtbDU-O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>

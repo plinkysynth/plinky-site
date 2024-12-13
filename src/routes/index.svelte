@@ -50,16 +50,19 @@
 
 <TextAndImage src="buddies2.png" alt="Buddies design" border={true}>
   <h1>Plinky now welcomes 3 small 12HP x 1U modules to the family: Bib, Buzzrito and Blueberry.</h1>
-  <p>These little buddies provide a plinky style stereo reverb, delay, and drive (<a href="docs/bib-manual">Bib</a>), a rich swarm oscillator (Buzzrito), and a generative touch sequencer (Blueberry).
+  <p>These little buddies provide a plinky style stereo reverb, delay, and drive (<a href="docs/bib-manual">Bib</a>), a rich swarm oscillator (<a href="docs/buzzrito-manual">Buzzrito</a>), 
+  and a generative touch sequencer (<a href="docs/blueberry-manual">Blueberry</a>).
   They take the touch-enabled sensitivity of Plinky, and break it out into 3 small (12HP) modules for your 1U eurorack row.</p>
-  <p>If you don't have a 1U eurorack row, there will be an option to mount all 3 in a single 12HP standard Eurorack module. Stay tuned!</p> 
+  <p>If you don't have a 1U eurorack row, there is an option to mount all 3 in a single 12HP standard Eurorack module.</p> 
   <p>They are the result of a collaboration between Plinky community members <b>mmalex</b> and <b>CrazyEmperor893</b>.</p> 
-  <h4>Tell me more!</h4>
+  <h4>Available now!</h4>
+  <p>The buddies are available now as kits from Thonk. <a href="https://www.thonk.co.uk/shop/plinky-bib/">Bib</a>, <a href="https://www.thonk.co.uk/shop/plinky-buzzrito/">Buzzrito</a>, <a href="https://www.thonk.co.uk/shop/plinky-blueberry/">Blueberry</a>
+  and <a href="https://www.thonk.co.uk/shop/plinky-bib-buzz-blue-3u/">the 3U mega combo bundle</a>.
+</p>  
+<p>Bib is available now, in prebuilt form from the <a href="https://crey.space">Crey Emporium</a>, with the other buddies to follow extremely soon.</p>
   <p>You can read the manuals (<a href="docs/bib-manual">Bib</a>, <a href="docs/buzzrito-manual">Buzzrito</a>, <a href="docs/blueberry-manual">Blueberry</a>) right now,
   and build guides (<a href="docs/build-guide_bib">Bib</a>, <a href="docs/build-guide_buzzy">Buzzrito</a>, <a href="docs/build-guide_blueberry">Blueberry</a>) in the Docs section of this site.</p>
-  <p>More information on Buzzrito and Blueberry will be coming soon! For sneak peaks and sound demos, follow <a href="https://www.instagram.com/plinkysynth">PlinkySynth</a> and <a href="https://www.instagram.com/crazyemperor893/">CrazyEmperor893</a> on instagram.</p>
-  <h4>Bib is available now, the others coming <b>very</b> soon!</h4>
-  <p>Bib is on sale now, in prebuilt form from the <a href="https://crey.space">Crey Emporium</a>, and as a kit from <a href="https://www.thonk.co.uk/shop/plinky-bib/">Thonk</a>. The other two buddies will be available soon!</p>
+  <p>For sneak peaks and sound demos, follow <a href="https://www.instagram.com/plinkysynth">PlinkySynth</a> and <a href="https://www.instagram.com/crazyemperor893/">CrazyEmperor893</a> on instagram.</p>
 </TextAndImage>
 
 
