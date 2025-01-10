@@ -14,6 +14,12 @@ Below are most of the parts of the Blueberry kit, with the exception of the Euro
 
 ![Parts](/blueberry-build-guide/IMG_7215.jpeg)
 
+## Video guide by Meska
+
+Plinky community member extraordinaire Meska has created a step by step video tutorial for soldering Blueberry. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dIyjt8hb8FQ?si=62L1Ar1QQkfW-f5q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## The SMD headers - a nice warmup
 
 Let's get the two 'SMD' headers out of the way - one is the small 6 pin socket for the front panel, the other is a chunky 2x5 eurorack power header.
@@ -25,7 +31,7 @@ Put a small pillow of solder on a *single* pin on each of the SMD footprints. Yo
   <img src="/blueberry-build-guide/IMG_7237.jpeg" width="40%" />
 </p>
 
-now line up each socket and use your iron to heat up the pillow and solder that first pin. It's worth getting the socket nice and straight, centered, and upright while only 1 pin is soldered. Don't bend it! just touch your iron to re-heat the pillow and gently move the socket into place while the solder is melted. Once you're happy with the alignment, solder the rest of the pins. be sure to heat both pad and pin, so that the solder flows nicely onto both. The power header pins can take quite a bit of heat - let them warm up before flowing a small amount of solder. Here it is, soldered. 
+now line up each socket and use your iron to heat up the pillow and solder that first pin. It's worth getting the socket nice and straight, centered, and upright while only 1 pin is soldered. Don't bend it! just touch your iron to re-heat the pillow and gently move the socket into place while the solder is melted. Once you're happy with the alignment, solder the rest of the pins. be sure to heat both pad and pin, so that the solder flows nicely onto both. **The power header pins can take quite a bit of heat** - let them warm up before flowing a small amount of solder. If you are using unleaded solder, you may need to turn up the temperature on your soldering iron. Here it is, soldered. 
 
 <p float="left">
   <img src="/blueberry-build-guide/IMG_7235.jpeg" width="42%" />
