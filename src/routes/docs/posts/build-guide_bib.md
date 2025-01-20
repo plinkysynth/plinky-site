@@ -14,6 +14,12 @@ Below are most of the parts of the Bib kit, with the exception of the Eurorack p
 
 ![Parts](/bib-build-guide/IMG_6306.jpeg)
 
+## Video guide by Meska
+
+Plinky community member extraordinaire Meska has created a step by step video tutorial for soldering Bib.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y6LckqEMlyw?si=xbWO2shfBDhkqOdi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## The headers - a nice warmup
 
 Let's get the two 'SMD' headers out of the way - the small 4 pin socket for the front panel which I missed out of the photo above, and a 2x3 pin header that you can use to connect line level stereo input and headphone output to the quarter inch TRS jacks on an intellijel palette case, for example.

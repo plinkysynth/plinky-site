@@ -14,6 +14,12 @@ Below are most of the parts of the Buzzrito kit, with the exception of the Euror
 
 ![Parts](/buzzrito-build-guide/IMG_7214.jpeg)
 
+## Video guide by Meska
+
+Plinky community member extraordinaire Meska has created a step by step video tutorial for soldering Buzzrito. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uuIfi5wmNVk?si=3Ml1Kzsk05MW_EZa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## The panel header - a nice warmup
 
 Let's get the 'SMD' header out of the way - the small 6 pin socket for the front panel.
