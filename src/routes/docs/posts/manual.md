@@ -842,6 +842,39 @@ Plinky can be powered over USB. Make sure you do not combine eurorack and USB-po
 # Eurorack
 Plinky (V2) fits in standard Eurorack rails. It can be powered over Eurorack, but make sure not to combine USB and eurorack power supplies. Plinky has dedicated inputs and outputs to communicate with (semi-)modular gear. Read the description well, because some of the implementations differ slightly from what’s usual in Eurorack (mostly Gate).
 
+### Quick Start
+
+Here's how you set Plinky up as an Eurorack oscillator:
+
+![Preset](/manual-images/preset.svg) *tap*  Select a patch in **Preset Mode**. Tap the preset pad, then tap a main pad to select a preset (left 32 pads). An initialized patch or [Grain Blanc Bank](../presets) Preset 1 works great in this context. Tap the preset pad again to exit.
+
+![Shift Top](/manual-images/shift-top.svg) *hold*
+![Arp/Latch](/manual-images/arp--latch.svg) *tap*
+
+Enable latch by holding Shift Down and selecting Arp. Set latch to On. 
+</br>This setting will save with your preset.
+</br>Press the lowest pad. you hear a drone.
+
+
+
+Using an Eurorack Sequencer or Arturia Keystep as a CV source:
+
+- Patch gate out to gate in on Plinky. The drone goes away.
+- Patch V/oct CV out to pitch CV in on Plinky.
+
+Play the sequencer, or play keys on the Arturia Keystep. 
+</br>The V/oct CV pitches the drone around. Gate opens the lowpass gate.
+
+- with an open gate, tap another pad and your notes will be transposed.
+- with an open gate, tap two notes and you can have chords.
+
+Plinky's default preset is not latched by default, but of course you can save them like that.
+Each time you power cycle your case, you will need to remove the gate cable and press the lowest pad, once, to start the drone. 
+
+
+### Inputs and outputs
+
+
 The 8 jack inputs, at left, from top to bottom provide:
 #### Clock Input
 A 1/16th note clock input. Plinky responds to 4 PPQN audio pulses. As soon as Plinky receives a clock in the Arpegiator / Sequencer will start playing. Other clocked devices (delay, in the future possibly the LFO’s) will switch back to the internal clock as soon as the external clock stops. 

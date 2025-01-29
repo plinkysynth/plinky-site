@@ -44,7 +44,8 @@
   <p>It fits into 24HP eurorack cases, but can also be played as a standalone desktop mini-synth over CV or MIDI, with line-level stereo input and a headphone output, all powered by USB.</p>
 
   <h4>When is it available?</h4>
-  <p>Plinky is now fully open source! V3 is available as DIY and ready-made kits at <a href="https://www.thonk.co.uk/brand/plinkysynth/">Thonk</a> and <a href="https://schneidersladen.de/en/plinky-plinky-v3">Schneidersladen</a>. Or you can make your own!</p>
+  <p>Plinky is fully open source. It is is available as a full DIY Kit at <a href="https://www.thonk.co.uk/brand/plinkysynth/">Thonk (UK)</a>, <a href="https://www.exploding-shed.com/">Exploding Shed (EU)</a> and <a href="https://nightlife-electronics.com/products/plinky-v3-diy-kit">Nightlife Electronics (CAN)</a>.</p>
+  <p>Built Plinky are available at <a href="https://schneidersladen.de/en/plinky-plinky-v3">Schneidersladen (EU)</a>, <a href="https://www.thonk.co.uk/brand/plinkysynth/">Thonk (UK)</a>, <a href="https://www.perfectcircuit.com/plinky-plinky-v3.html">Perfect&nbsp;Circuit (US)</a> and <a href="https://nightlife-electronics.com/products/plinky">Nightlife Electronics (CAN)</a>. Or you can make your own!</p>
   <a class="button" target="_blank" href="https://github.com/plinkysynth/plinky_public">View on Github</a>
 </TextAndImage>
 
@@ -68,7 +69,7 @@
 
 <div class="Examples">
   <div class="Video">
-    <iframe width="800" title="Plinky introduction video" height="450" src="https://www.youtube.com/embed/us__mX0_Aqk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    <iframe width="800" title="Plinky introduction video" height="450" src="https://www.youtube.com/embed/us__mX0_Aqk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
   
   <div class="Sound">
@@ -109,7 +110,7 @@
   <meta name="Description" content="Plinky specialises in fragile, melancholic sounds. It fits into 24HP eurorack cases, but can also be played as a standalone desktop mini-synth, with line-level stereo input and a headphone output, all powered from a micro-USB connector." />
   <meta property="og:description" content="Plinky specialises in fragile, melancholic sounds. It fits into 24HP eurorack cases, but can also be played as a standalone desktop mini-synth, with line-level stereo input and a headphone output, all powered from a micro-USB connector." />
   <meta name="twitter:card" content="summary_large_image" />
- 	<meta name="twitter:domain" value="plinkysynth.com" />
+ 	<meta name="twitter:domain" content="plinkysynth.com" />
   <meta name="twitter:title" content="Plinky - 8-voice polyphonic touch synthesiser" />
   <meta name="twitter:description" content="Plinky specialises in fragile, melancholic sounds. It fits into 24HP eurorack cases, but can also be played as a standalone desktop mini-synth, with line-level stereo input and a headphone output, all powered from a micro-USB connector." />
 </svelte:head>

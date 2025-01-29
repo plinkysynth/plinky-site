@@ -25,7 +25,7 @@
 
     <Grid>
       <BigArea>
-        <iframe width="624" height="351" src="https://www.youtube.com/embed/FsOyG4VjLC4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="624" title="" height="351" src="https://www.youtube.com/embed/FsOyG4VjLC4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         <h4>Grain Blanc Bank</h4>
         <p>Ambient minimalist Grain Blanc has created this bank of 32 presets, exploring the cinematic side of Plinky with shimmery pads, brassy leads and ghostly soundscapes.
@@ -36,7 +36,7 @@
         <a class="button" target="_blank" href="/presets/GrainBlanc/GrainBlanc.zip">Download</a>
       </BigArea>    
       <BigArea>
-        <iframe width="624" height="351" src="https://www.youtube.com/embed/zXjph5cix2g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="624" title="" height="351" src="https://www.youtube.com/embed/zXjph5cix2g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         <h4>Meska Bank</h4>
         <p>This bank of 32 presets by Meska draws focus to the "dark" side of Plinky, exploring lush delays, cavernous reverb, pitch drift and gnarly saturation.

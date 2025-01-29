@@ -331,7 +331,9 @@ You can see the update process in this [video](https://youtu.be/M9FH82lPIkM?t=27
 
 ### Install firmware (Mac M1 / OS 14)
 
-In UF2 (tunnel of light) mode, Plinky has been unhappy to automatically mount on some Mac OS versions (14 and higher). You can try using the terminal.
+In UF2 (tunnel of light) mode, Plinky has been unhappy to automatically mount on some Mac OS versions (14 and higher). 
+
+Upgrading to [Firmware 0.A7](https://plinkysynth.com/firmware/) fixes this issue. To upgrade, mount the drive using the terminal.
 
 - Make sure your USB cable can transmit data
 - Plug the USB cable into Plinky. 
@@ -362,7 +364,9 @@ You should see the Plinky drive with the UF2 files. You can now either backup th
 
 Here are the steps required to update your firmware to the latest build under Linux. This was tested on Raspberry Pi 4 running Raspian.
 
-Download the latest .bin file from the [GitHub Repository](https://github.com/plinkysynth/plinky_public) page. To do this from the command line, open a terminal and enter
+Upgrading to [Firmware 0.A7](https://plinkysynth.com/firmware/) fixes the USB drive not mounting automatically. To upgrade, mount the drive using the terminal.
+
+Download the latest UF2 file from the [GitHub Repository](https://github.com/plinkysynth/plinky_public) page. To do this from the command line, open a terminal and enter
 
 ```
 wget https://plinkysynth.com/firmware/stable/CURRENT.uf2
