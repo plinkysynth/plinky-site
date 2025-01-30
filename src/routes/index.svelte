@@ -44,7 +44,7 @@
   <p>It fits into 24HP eurorack cases, but can also be played as a standalone desktop mini-synth over CV or MIDI, with line-level stereo input and a headphone output, all powered by USB.</p>
 
   <h4>When is it available?</h4>
-  <p>Plinky is fully open source. It is is available as a full DIY Kit at <a href="https://www.thonk.co.uk/brand/plinkysynth/">Thonk (UK)</a>, <a href="https://www.exploding-shed.com/">Exploding Shed (EU)</a> and <a href="https://nightlife-electronics.com/products/plinky-v3-diy-kit">Nightlife Electronics (CAN)</a>.</p>
+  <p>Plinky is fully open source. It is is available as a full DIY Kit at <a href="https://www.thonk.co.uk/brand/plinkysynth/">Thonk (UK)</a>, <a href="https://www.exploding-shed.com/plinky/100085">Exploding Shed (EU)</a> and <a href="https://nightlife-electronics.com/products/plinky-v3-diy-kit">Nightlife Electronics (CAN)</a>.</p>
   <p>Built Plinky are available at <a href="https://schneidersladen.de/en/plinky-plinky-v3">Schneidersladen (EU)</a>, <a href="https://www.thonk.co.uk/brand/plinkysynth/">Thonk (UK)</a>, <a href="https://www.perfectcircuit.com/plinky-plinky-v3.html">Perfect&nbsp;Circuit (US)</a> and <a href="https://nightlife-electronics.com/products/plinky">Nightlife Electronics (CAN)</a>. Or you can make your own!</p>
   <a class="button" target="_blank" href="https://github.com/plinkysynth/plinky_public">View on Github</a>
 </TextAndImage>
