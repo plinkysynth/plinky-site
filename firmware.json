@@ -1,17 +1,23 @@
 {
   "stable": {
-    "file": "plink0A6.uf2",
-    "version": "0.A6",
-    "date": "2024-08-02",
-    "comment": "Set the MIDI I/O channels from the unprinted pad in the bottom row. Shift up + unprinted pad = MIDI input, Shift down + unprinted pad = MIDI output channel. Stored with each preset."
+    "file": "plink0A7.uf2",
+    "version": "0.A7",
+    "date": "2025-01-29",
+    "comment": "Combined update to Bootloader 1.04 and Firmware 0.A7. For Mac M1+ and Linux users, this update fixes a bug where the Plinky drive in UF2 mode could only be mounted manually via command line. Mac and Linux users: if the USB drive is not showing up for you, follow the Firmware install instructions below, and manually mount Plinky one last time. Then copy the UF2 file to the drive, and press the encoder to reboot."
   },
   "beta": {
-    "file": "plink0A6.uf2",
-    "version": "0.A6",
-    "date": "2024-08-02",
-    "comment": "Set the MIDI I/O channels from the unprinted pad in the bottom row. Shift up + unprinted pad = MIDI input, Shift down + unprinted pad = MIDI output channel. Stored with each preset."
+    "file": "plink0A7.uf2",
+    "version": "0.A7",
+    "date": "2025-01-29",
+    "comment": "Combined update to Bootloader 1.04 and Firmware 0.A7. For Mac M1+ and Linux users, this update fixes a bug where the Plinky drive in UF2 mode could only be mounted manually via command line. Mac and Linux users: if the USB drive is not showing up for you, follow the Firmware install instructions below, and manually mount Plinky one last time. Then copy the UF2 file to the drive, and press the encoder to reboot."
   },
   "history": [
+    {
+      "file": "plink0A6.uf2",
+      "version": "0.A6",
+      "date": "2024-08-02",
+      "comment": "Set the MIDI I/O channels from the unprinted pad in the bottom row. Shift up + unprinted pad = MIDI input, Shift down + unprinted pad = MIDI output channel. Stored with each preset."
+      },    
     {
       "file": "plink0A5.uf2",
       "version": "0.A5",
