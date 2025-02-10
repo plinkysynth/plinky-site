@@ -38,6 +38,8 @@ Buzzy is a very simple module to use: Pitch and Gate go into the left-most jacks
 
 Buzzrito presents as an XY pad that allows you to morph between 7 sounds across the 2D surface. But what if you want to edit those sounds? You are in the right place! Simply connect Buzzy to your PC/Mac's browser via a usb-C cable, and assuming your browser supports WebUSB (you can check [here](https://caniuse.com/?search=webusb)) you can use the UI below to edit the presets live. After you've finished editing, wait at least 5 seconds before powering down your buzzrito (so that it can save your changes to its flash storage).
 
+(note - if this editor is annoyingly small in your browser, click [here](/buzzy_presets.html) to open in its own page)
+
 <iframe id="embedded-frame" src="/buzzy_presets.html" style="border: none;" width="100%"></iframe>
 <script>
   window.addEventListener('message', function(event) {
