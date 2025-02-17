@@ -9,7 +9,7 @@
     "file": "plink0B0.uf2",
     "version": "0.B0",
     "date": "2025-02-17",
-    "comment": "A great number of fixes for the sequencer, contributed by RJ-Eckie. Read PR 35 on the Plinky github for details on the changes, and jump into the discussion on the Plinky discord in the #beta-firmware channel. A big thank you for your stellar contribution, RJ! https://github.com/plinkysynth/plinky_public/pull/35 https://discord.gg/Zf6chA9jAz"
+    "comment": "A great number of fixes for the sequencer, contributed by RJ-Eckie. Read PR 35 on the Plinky github for details on the changes, and jump into the discussion on the Plinky discord in the #beta-firmware channel. A big thank you for your stellar contribution, RJ, and whocano for testing! https://github.com/plinkysynth/plinky_public/pull/35 https://discord.gg/Zf6chA9jAz"
   },
   "history": [
     {
