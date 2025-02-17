@@ -6,10 +6,10 @@
     "comment": "Combined update to Bootloader 1.04 and Firmware 0.A7. For Mac M1+ and Linux users, this update fixes a bug where the Plinky drive in UF2 mode could only be mounted manually via command line. Mac and Linux users: if the USB drive is not showing up for you, follow the Firmware install instructions below, and manually mount Plinky one last time. Then copy the UF2 file to the drive, and press the encoder to reboot."
   },
   "beta": {
-    "file": "plink0A7.uf2",
-    "version": "0.A7",
-    "date": "2025-01-29",
-    "comment": "Combined update to Bootloader 1.04 and Firmware 0.A7. For Mac M1+ and Linux users, this update fixes a bug where the Plinky drive in UF2 mode could only be mounted manually via command line. Mac and Linux users: if the USB drive is not showing up for you, follow the Firmware install instructions below, and manually mount Plinky one last time. Then copy the UF2 file to the drive, and press the encoder to reboot."
+    "file": "plink0B0.uf2",
+    "version": "0.B0",
+    "date": "2025-02-17",
+    "comment": "A great number of fixes for the sequencer, contributed by RJ-Eckie. Read PR 35 on the Plinky github for details on the changes, and jump into the discussion on the Plinky discord in the #beta-firmware channel. A big thank you for your stellar contribution, RJ, and whocano for testing! https://github.com/plinkysynth/plinky_public/pull/35 https://discord.gg/Zf6chA9jAz"
   },
   "history": [
     {
