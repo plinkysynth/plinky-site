@@ -562,7 +562,7 @@ Press *SHIFT TOP* to toggle between Tape mode and Pitch mode.
 
 Tape mode lays out the sample slices across all 64 pads, top to bottom then left to right, allowing you to quickly play from any point within the sample by pressing the appropriate pad. The pitch of playback is only affected by the 'sample rate' parameter.
 
-In Pitch mode, each slice is assigned a base pitch, visible like 'C#3' in the OLED display. You can set this reference pitch for each slice, by sliding your finger in the lower half of the main pad area. Now when you perform notes in plinky, it has set up a multisample key-split and chooses the closest pitched slice to the desired note. Be careful of octaves to be sure to use all your slices. If multiple slices have the same pitch, they will be round-robined.
+In Pitch mode, each slice is assigned a base pitch, visible like 'C#3' in the OLED display. You can set this reference pitch for each slice, by turning the encoder. Now when you perform notes in plinky, it has set up a multisample key-split and chooses the closest pitched slice to the desired note. Be careful of octaves to be sure to use all your slices. If multiple slices have the same pitch, they will be round-robined.
 
 Press *CLEAR* to leave sample edit mode.
 
@@ -654,7 +654,7 @@ An attenuator for the signal coming from the corresponding CV input jacks.
 ![LFO Depth](/manual-images/lfo--depth.svg) Attenuator for the internal LFO's.The default value is zero so turn this up for LFO's.
 
 #### LFO Rate
-![LFO Rate](/manual-images/lfo--rate.svg) Controls the rate of the internal LFO. The LFO rates can range from 20 sceonds (at +100%) to milliseconds at -100%. At 0% the rate is [y] milliseconds. 
+![LFO Rate](/manual-images/lfo--rate.svg) Controls the rate of the internal LFO. The LFO rates can range from milliseconds at +100% to 20 seconds at -100%.
 
 #### LFO Shape
 ![LFO Shape](/manual-images/lfo--shape.svg)  Sets the shape of the LFO.
@@ -670,7 +670,7 @@ An attenuator for the signal coming from the corresponding CV input jacks.
 * Castle (-1 0 1 0 -1 0 1 0, kinda looks like a sandcastle...)
 * BiTrigs (Trigger pulses in positive and negative direction)
 * Trigs (Trigger Pulses in positive direction)
-* Env
+* Env (a shape with a logarithmic rise and fall)
 
 #### LFO Symmetry
 ![LFO Symmetry](/manual-images/lfo--symmetry.svg)  Sets the slope of the LFO shape - for example turning a triangle wave into a sharp ramp up (symmetry +100) or down (symmetry -100). 
@@ -763,7 +763,7 @@ To change the MIDI output channel, you hold down the shift bottom button, and wh
 
 This setting is stored with each patch. That means you can set and recall it individually for each preset.
 
-#### USB Midi in
+#### Midi in
 Here's a list of all the CC parameters that Plinky listens to.
 
 | CC | Category | Parameter |
@@ -833,8 +833,16 @@ Here's a list of all the CC parameters that Plinky listens to.
 |31|Mixer|HPF amt|
 |7|Mixer|Synth level|
 |8|Mixer|Wet/dry|
-#### USB Midi out
-Plinky supports MIDI out over USB. Plinky’s implementation has polyphonic aftertouch.
+
+#### Midi out
+Plinky supports MIDI out over USB and TRS (since hardware v3, or if you have the Expander). 
+
+Plinky’s implementation has polyphonic aftertouch.
+
+In addition to that, 
+- the finger position for each column is sent on CC 32 - 39, 
+- and the pressure for each column is sent on CC 40 - 47.
+
 #### Power
 Plinky can be powered over USB. Make sure you do not combine eurorack and USB-power. 
 
