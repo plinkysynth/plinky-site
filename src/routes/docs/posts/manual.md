@@ -3,11 +3,10 @@ title: Plinky Manual
 date: "2021-01-24T08:38:00.000Z"
 ---
 
-# Plinky Manual
+![](plinky_alpha_2.png)
 
 *Plinky is an 8 voice polyphonic touch synthesiser that specialises in fragile, melancholic sounds.*
 
-![](/manual-images/plinky.png)
 
 Think of it as an 8 stringed instrument, played by touching the 64 main pads, which are arranged in 8 vertical monophonic strips or strings. 
 
