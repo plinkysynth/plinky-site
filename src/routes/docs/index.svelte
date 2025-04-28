@@ -21,6 +21,7 @@
     <div class="post-item"><h3><a href="docs/build-guide-black">Plinky build guide - V3 Black (new)</a></h3></div>
     <div class="post-item"><h3><a href="docs/build-guide-blue">Plinky build guide - V2 Blue (old)</a></h3></div>
     <div class="post-item"><h3><a href="docs/build-guide">Plinky build guide - V1 Green (old)</a></h3></div>
+    <div class="post-item"><h3><a href="docs/expander-manual">Plinky Expander Manual</a></h3></div>
     <div class="post-item"><h3><a href="docs/expander-build-guide">Plinky Expander build guide</a></h3></div>
     <br/>
     <h2>Plinky More information</h2>
