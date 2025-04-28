@@ -3,7 +3,8 @@ title: Plinky Manual
 date: "2021-01-24T08:38:00.000Z"
 ---
 
-![](plinky_alpha_2.png)
+
+<img src="plinky_alpha_2.png" alt="Remove the back panel" style="max-width: 100%;">
 
 *Plinky is an 8 voice polyphonic touch synthesiser that specialises in fragile, melancholic sounds.*
 
