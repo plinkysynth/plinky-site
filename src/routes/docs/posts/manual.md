@@ -149,7 +149,7 @@ The Bottom row of pads (blue leds), are shift and transport controls, from left 
 #### Shift Top & Shift Bottom
 ![Shift Top](/manual-images/shift-top.svg) ![Shift Bottom](/manual-images/shift-bottom.svg)  **Edit Mode** The first two shift buttons are the most important: they allow you to modify the sound. Why two? They map to two complete sets of parameters – primary (top) on *SHIFT TOP* and secondary (bottom) on *SHIFT BOTTOM*, corresponding to the parameters that are written above and below each of the pads. Tap or hold either, then tap an icon pads to choose a parameter to edit.
 
-Once in edit mode, adjust the chosen parameter using the left most column of pads as a slider, or use the encoder to the left of the screen. While in this mode you can play all the pads, except for the left most (slider) pads. Tap again to return to play mode (LED off). 
+Once in edit mode, adjust the chosen parameter using the left most column of pads as a slider, or use the encoder to the right of the screen. While in this mode you can play all the pads, except for the left most (slider) pads. Tap again to return to play mode (LED off). 
 
 #### Preset
 ![Preset](/manual-images/preset.svg)  **Preset Mode** Tap or hold, then tap a main pad to select a preset (left 32 pads), pattern (middle 24), or sample (right 8). A long press on a sample pad will edit it; on other pads, it will copy the current preset / pattern to it. Press and hold *CLEAR* to clear the last touched preset or pattern.
@@ -856,7 +856,7 @@ Here's how you set Plinky up as an Eurorack oscillator:
 
 ![Preset](/manual-images/preset.svg) *tap*  Select a patch in **Preset Mode**. Tap the preset pad, then tap a main pad to select a preset (left 32 pads). An initialized patch or [Grain Blanc Bank](../presets) Preset 1 works great in this context. Tap the preset pad again to exit.
 
-![Shift Top](/manual-images/shift-top.svg) *hold*
+![Shift Top](/manual-images/shift-bottom.svg) *hold*
 ![Arp/Latch](/manual-images/arp--latch.svg) *tap*
 
 Enable latch by holding Shift Down and selecting Arp. Set latch to On. 

@@ -61,7 +61,7 @@ Plinky offers dedicated CV inputs and outputs to communicate with modular gear. 
 
 ![Preset](/manual-images/preset.svg) *tap*  **Select a patch in Preset Mode**. Tap or hold the preset pad, then tap a main pad to select a preset (left 32 pads). An initialized patch or Grain Blanc Bank works great for this purpose. Tap the preset pad again to exit.
 
-![Shift Top](/manual-images/shift-top.svg) *hold*
+![Shift Bottom](/manual-images/shift-bottom.svg) *hold*
 ![Arp/Latch](/manual-images/arp--latch.svg) *tap*
 
 Enable latch by holding Shift Down and tapping the Arp pad. This switches the latch on or off. Set it to ON. Now played notes will sustain even when you take your fingers off plinky.
