@@ -706,8 +706,14 @@ After the synth/sampler, external audio and the effects are mixed, they pass thr
 Plinky’s pitch input is most useful when you have a sequence or latched note playing; the pitch is transposed according to the pitch CV input (1 volt per octave), and you can use this last parameter to choose if the transposition is unquantized, quantized to semitones, or transposed in-scale. 0v (C0) means no transposition.
 
 #### Volume
-![Volume](/manual-images/volume.svg)
+![Shift Top](/manual-images/shift-top.svg) *hold*
+![Volume](/manual-images/volume.svg) *tap*
 Sets the level of the final output stage for the headphone out. Turn this up to 11.
+
+#### Stereo Width
+![Shift Bottom](/manual-images/shift-bottom.svg) *hold*
+![Volume](/manual-images/volume.svg) *tap*
+Sets the stereo width. The setting is applied to the dry synth sound, not to the overall mix. So reverb still adds width, for example.
 
 #### Empty Pad
 ![Accelrometer Sensitivity](/manual-images/blank.svg)
