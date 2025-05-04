@@ -3,6 +3,8 @@ title: Plinky Expander Manual
 date: "2021-01-24T08:38:00.000Z"
 ---
 
+<img src="/expander-manual/Plinky-Expander_Top-Front_blue_1000px.jpg" alt="Plinky Expander 2HP - Technical drawing" style="max-width: 100%;">
+
 The Plinky Expander is a 2HP module that offers extra functionality when using Plinky in your Eurorack. 
 
 It adds four additional CV outputs to connect with the rest of your Eurorack setup, as well as a frontside USB port and TRS MIDI allowing you to access these ports when Plinky is rack mounted.
@@ -226,3 +228,7 @@ In addition to that,
 - and the pressure for each column is sent on CC 40 - 47.
 
 <img src="/expander-manual/Plinky_Expander_MIDI-CCs_Out.png" alt="Plinky MIDI CCs Out" style="max-width: 100%;">
+
+<img src="/expander-manual/Plinky-Expander-Iso_3538-blue_1000px.jpg" alt="Plinky Expander 2HP - Technical drawing" style="max-width: 100%;">
+
+<img src="/expander-manual/Plinky-Expander_Top-Back_mixed_1000px.jpg" alt="Plinky Expander 2HP - Technical drawing" style="max-width: 100%;">
