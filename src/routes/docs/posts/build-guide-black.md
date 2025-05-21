@@ -299,7 +299,7 @@ On Linux, you will need to [grant hardware access](#browser-based-patch-editor-l
 
 ## Firmware
 
-Plinky V3 ships with firmware 0.9z or higher. 
+Plinky V3 ships with firmware 0.A7 or higher. 
 
 ### Install firmware
 
