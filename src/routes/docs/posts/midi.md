@@ -79,3 +79,14 @@ CC| Category | Parameter
 31 | Mixer | HPF amt
 7 | Mixer | Synth level
 8 | Mixer | Wet/dry
+
+## Midi CCs - Output
+Plinky supports MIDI out over USB and TRS (since hardware v3, or if you have the Expander). 
+
+Plinky’s implementation has polyphonic aftertouch.
+
+In addition to that, 
+- the finger position for each column is sent on CC 32 - 39, 
+- and the pressure for each column is sent on CC 40 - 47.
+
+<img src="/expander-manual/Plinky_Expander_MIDI-CCs_Out.png" alt="Plinky MIDI CCs Out" style="max-width: 100%;">

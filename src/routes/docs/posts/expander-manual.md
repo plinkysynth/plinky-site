@@ -1,5 +1,5 @@
 ---
-title: Plinky Expander Manual
+title: Plinky Expander 2HP Manual
 date: "2021-01-24T08:38:00.000Z"
 ---
 
@@ -9,7 +9,7 @@ The Plinky Expander is a 2HP module that offers extra functionality when using P
 
 It adds four additional CV outputs to connect with the rest of your Eurorack setup, as well as a frontside USB port and TRS MIDI allowing you to access these ports when Plinky is rack mounted.
 
-* **TRS MIDI Input** </br> Supports both Type A (Korg) and B (Arturia)
+* **TRS MIDI Input** </br> Supports both Type A (Korg) and B (Arturia). </br> It's the [LPZW.modules](https://leipzigwest.org/) [Autocrossover circuit](https://github.com/kay-lpzw/LPZW_TRS_MIDI/). Thank you Kay!
 
 * **TRS MIDI Output** </br> Supports Type A (Korg)
 

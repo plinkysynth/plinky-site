@@ -19,16 +19,18 @@
     <h2>Plinky Manual & Build guides</h2>
     <div class="post-item"><h3><a href="docs/manual">Plinky Manual</a></h3></div>
     <div class="post-item"><h3><a href="docs/build-guide-black">Plinky build guide - V3 Black (new)</a></h3></div>
-    <div class="post-item"><h3><a href="docs/build-guide-blue">Plinky build guide - V2 Blue (old)</a></h3></div>
-    <div class="post-item"><h3><a href="docs/build-guide">Plinky build guide - V1 Green (old)</a></h3></div>
-    <div class="post-item"><h3><a href="docs/expander-manual">Plinky Expander Manual</a></h3></div>
-    <div class="post-item"><h3><a href="docs/expander-build-guide">Plinky Expander build guide</a></h3></div>
+    <div class="post-item"><h3><a href="docs/expander-manual">Plinky Expander 2HP Manual</a></h3></div>
     <br/>
     <h2>Plinky More information</h2>
-    <div class="post-item"><h3><a href="docs/midi">MIDI</a></h3></div>
     <div class="post-item"><h3><a href="docs/editors">Plinky Editors</a></h3></div>
-    <div class="post-item"><h3><a href="docs/faq">FAQ</a></h3></div>
     <div class="post-item"><h3><a href="docs/play-guide">Plinky Play guide</a></h3></div>
+    <div class="post-item"><h3><a href="docs/midi">MIDI Chart</a></h3></div>
+    <div class="post-item"><h3><a href="docs/faq">FAQ</a></h3></div>
+    <br/>
+    <h2>Plinky Archive</h2>
+    <div class="post-item"><h3><a href="docs/build-guide-blue">Plinky build guide - V2 Blue (old)</a></h3></div>
+    <div class="post-item"><h3><a href="docs/build-guide">Plinky build guide - V1 Green (old)</a></h3></div>
+    <div class="post-item"><h3><a href="docs/expander-build-guide">Plinky Expander 4HP build guide (old)</a></h3></div>
     <br/>
     <h1>Documentation - Buddies</h1>
     <br/>

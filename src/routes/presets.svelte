@@ -48,7 +48,7 @@
       </BigArea>
       <BigArea>
         <h4>LPZW.modules Bank</h4>
-        <p>These are the presets by LPZW.modules for the Schneidersladen edition of Plinky. It contains the preset file and three samples. For more info, please go to <a href="http://leipzigwest.org/" target="_blank">leipzigwest.org</a>.</p>
+        <p>These are the presets by <a href="http://leipzigwest.org/" target="_blank">LPZW.modules</a> for the Schneidersladen edition of Plinky. Includes the preset file, three samples and individual links for the <a href="https://plinkysynth.github.io/editor/">patch editor</a>.</p>
         <a class="button" target="_blank" href="/presets/LPZW/LPZW.zip">Download</a>
       </BigArea>
       <BigArea>
