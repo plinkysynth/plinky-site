@@ -50,7 +50,7 @@ Plug in the broad 2x8 ribbon cable. Both the cable and socket are keyed. If you 
 <img src="/expander-manual/Plinky_Expander_2HP_Connections.png" alt="Plinky Expander 2HP - Technical drawing" style="max-width: 100%;">
 
 ### Connect Plinky to Eurorack power
-On the bottom of Plinky, find the angled 2x8 power socket, labelled "Eurorack power". Plinky comes with a broad 2x8 ribbon cable to connect it to a -12V / +12V Eurorack power supply. Use the ribbon cable to connect the 2x8 pin header to the bus board of your Eurorack case. The red stripe on the ribbon cable needs to match the Red Stripe mark on both Plinky and bus board.Do not power Plinky from its onboard USB ports and Eurorack power at the same time. When powered from Eurorack power, use the USB port on the Expander. It transmits MIDI and Data, but does not power Plinky.
+On the bottom of Plinky, find the angled 2x8 power socket, labelled "Eurorack power". Plinky comes with a broad 2x8 ribbon cable to connect it to a -12V / +12V Eurorack power supply. Use the ribbon cable to connect the 2x8 pin header to the bus board of your Eurorack case. The red stripe on the ribbon cable needs to match the Red Stripe mark on both Plinky and bus board.
 
 Do not power Plinky from its onboard USB ports and Eurorack power at the same time. When powered from Eurorack power, use the USB port on the Expander. It transmits MIDI and Data, but does not power Plinky.
 
