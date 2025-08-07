@@ -1,5 +1,6 @@
 # Redirects from what the browser requests to what we serve
 /webusb              https://plinkysynth.github.io/editor/
-/build               https://www.plinkysynth.com/docs/build-guide-black
-/fw                  https://www.plinkysynth.com/firmware
-/play                https://www.plinkysynth.com/docs/play-guide
+/build               https://plinkysynth.com/docs/build-guide-black
+/fw                  https://plinkysynth.com/firmware
+/play                https://plinkysynth.com/docs/play-guide
+/editors             https://plinkysynth.com/docs/editors
