@@ -285,7 +285,7 @@ table th {
   max-width: 960px;
 }
 
-.Post.manual blockquote, .Post.expander-manual blockquote {
+.Post.manual blockquote, .Post.expander-manual blockquote, .Post.build-guide-plus blockquote  {
   border: 1px solid rgba(255,255,255,0.25);
   margin: 0;
   border-left: 1rem solid rgba(255,255,255,0.25);
