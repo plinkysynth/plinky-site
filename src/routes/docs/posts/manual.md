@@ -26,7 +26,7 @@ A and B also have dedicated physical offset knobs, located to the left of the sc
 Plinky also has global Delay, Reverb, High Pass Filter, Limiter and Saturation units along with a simple Mixer (for audio inputs), Arpeggiator, Sequencer and Sampler.
 
 ## The Quickest Start
-Whether you are completely new to Plinky, or just looking for a quick refresher, here is a 10 minute guide to playing Plinky.
+Whether you are completely new to Plinky, or just looking for a quick refresher, here is a 10 minute guide to playing Plinky. If your Plinky comes fresh out of the box, you should [calibrate](#calibration) it, then return here.
 
 ### You can play anywhere on the surface
 except for these pads - they are reserved for the SHIFT functions.
