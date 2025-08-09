@@ -150,73 +150,224 @@ These pads control an attenuator for the signal coming from the A, B, X, or Y CV
 ## Midi CCs - Input
 Here's a list of all the CC parameters that Plinky listens to.
 
-| CC | Category | Parameter |
-|----|----------|-----------|
-| 13 | Sound | Shape |
-| 4 | Sound | Distortion |
-|9 | Sound |Pitch|
-|14 |Sound|Interval|
-|2|Sound|Noise level|
-|5|Sound|Glide|
-|71|Sound|Resonance|
-|3|ENV 1|Sensitivity (LPF amount)|
-|73|ENV 1|Attack|
-|74|ENV 1|Sustain|
-|75|ENV 1|Decay|
-|72|ENV 1|Release|
-|19|ENV 2|Level|
-|20|ENV 2|Attack|
-|21|ENV 2|Decay|
-|22|ENV 2|Sustain|
-|23|ENV 2|Release|
-|94|FX - Delay|Delay send amt|
-|12|FX - Delay|Delay time|
-|112|FX - Delay|Delay pingpong|
-|113|FX - Delay|Delay wobble|
-|95|FX - Delay|Delay feedback amt|
-|91|FX - Reverb|Reverb send amt|
-|92|FX - Reverb|Reverb time|
-|93|FX - Reverb|Reverb shimmer|
-|114|FX - Reverb|Reverb wobble|
-|102|ARP|On/off|
-|103|ARP|Order|
-|104|ARP|Clock division|
-|105|ARP|Chance|
-|106|ARP|Euclid length|
-|107|ARP|Octaves|
-|108|SEQ|Order|
-|109|SEQ|Clock division|
-|110|SEQ|Chance|
-|111|SEQ|Euclid length|
-|11|SEQ|Gate length|
-|83|SEQ|Pattern|
-|85|SEQ|Steps|
-|15|Sampler|Scrub|
-|16|Sampler|Grain size|
-|17|Sampler|Play speed|
-|18|Sampler|Timestretch|
-|82|Sampler|Sample|
-|116|Sampler|Jitter position|
-|117|Sampler|Jitter grain size|
-|118|Sampler|Jitter rate|
-|119|Sampler|Jitter pulse|
-|24|A|Offset|
-|25|A|Depth|
-|26|A|Rate|
-|27|B|Offset|
-|28|B|Depth|
-|29|B|Rate|
-|78|X|Offset|
-|77|X|Depth|
-|76|X|Rate|
-|81|Y|Offset|
-|80|Y|Depth|
-|79|Y|Rate|
-|89|Mixer|IN volume|
-|90|Mixer|IN wet/dry amt|
-|31|Mixer|HPF amt|
-|7|Mixer|Synth level|
-|8|Mixer|Wet/dry|
+<div markdown class="three">
+
+<div>
+
+#### Oscillator
+
+| CC | Parameter |
+|----|-----------|
+| 13 | Shape |
+| 4 | Distortion |
+|9 |Pitch|
+|14 |Interval|
+|2|Noise level|
+|5|Glide|
+|71|Resonance|
+
+&nbsp;
+
+</div>
+
+<div>
+
+#### Arpeggiator
+
+| CC | Parameter |
+|----|-----------|
+|102|On/off|
+|103|Order|
+|104|Clock division|
+|105|Chance|
+|106|Euclid length|
+|107|Octaves|
+
+&nbsp;
+
+</div>
+
+<div>
+
+#### Sequencer
+
+| CC | Parameter |
+|----|-----------|
+|108|Order|
+|109|Clock division|
+|110|Chance|
+|111|Euclid length|
+|11|Gate length|
+|83|Pattern|
+|85|Steps|
+
+&nbsp;
+
+</div>
+
+</div>
+
+
+
+<div markdown class="three">
+
+<div>
+
+#### Envelope 1
+
+| CC | Parameter |
+|----|-----------|
+|3|Sensitivity (LPF amount)|
+|73|Attack|
+|74|Sustain|
+|75|Decay|
+|72|Release|
+
+&nbsp;
+
+</div>
+
+<div>
+
+#### Envelope 2
+
+| CC | Parameter |
+|----|-----------|
+|19|Level|
+|20|Attack|
+|21|Decay|
+|22|Sustain|
+|23|Release|
+
+&nbsp;
+
+</div>
+
+<div>
+
+#### FX - Delay
+
+| CC | Parameter |
+|----|-----------|
+|94|Delay send amt|
+|12|Delay time|
+|112|Delay pingpong|
+|113|Delay wobble|
+|95|Delay feedback amt|
+
+&nbsp;
+
+</div>
+
+</div>
+
+
+
+<div markdown class="three">
+
+<div>
+
+#### Modulation A B
+
+| CC | Parameter |
+|----|-----------|
+|24|Offset|
+|25|Depth|
+|26|Rate|
+|27|Offset|
+|28|Depth|
+|29|Rate|
+
+&nbsp;
+
+</div>
+
+<div>
+
+#### Modulation X Y
+
+| CC | Parameter |
+|----|-----------|
+|78|Offset|
+|77|Depth|
+|76|Rate|
+|81|Offset|
+|80|Depth|
+|79|Rate|
+
+&nbsp;
+
+</div>
+
+<div>
+
+#### FX - Reverb
+
+| CC | Parameter |
+|----|-----------|
+|91|Reverb send amt|
+|92|Reverb time|
+|93|Reverb shimmer|
+|114|Reverb wobble|
+
+&nbsp;
+
+</div>
+
+</div>
+
+
+
+<div markdown class="three">
+
+<div>
+
+#### Sampler
+
+| CC | Parameter |
+|----|-----------|
+|15|Scrub|
+|16|Grain size|
+|17|Play speed|
+|18|Timestretch|
+|82|Sample|
+
+&nbsp;
+
+</div>
+
+<div>
+
+#### Sampler Jitter
+
+| CC | Parameter |
+|----|-----------|
+|116|Jitter position|
+|117|Jitter grain size|
+|118|Jitter rate|
+|119|Jitter pulse|
+
+&nbsp;
+
+</div>
+
+<div>
+
+#### Mixer
+
+| CC | Parameter |
+|----|-----------|
+|80|Reverb send amt|
+|90|Reverb time|
+|31|HPF amount|
+|7|Synth Level|
+|8|Wet / Dry|
+
+&nbsp;
+
+</div>
+
+</div>
 
 ## Midi CCs - Output
 Plinky supports MIDI out over USB and TRS (since hardware v3, or if you have the Expander). 
