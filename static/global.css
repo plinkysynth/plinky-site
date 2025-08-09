@@ -285,65 +285,65 @@ table th {
   max-width: 960px;
 }
 
-.Post.manual blockquote, .Post.expander-manual blockquote, .Post.build-guide-plus blockquote  {
+.Post.manual blockquote, .Post.expander-manual blockquote, .Post.midi blockquote, .Post.build-guide-plus blockquote  {
   border: 1px solid rgba(255,255,255,0.25);
   margin: 0;
   border-left: 1rem solid rgba(255,255,255,0.25);
   padding: 2rem 2rem 2rem 3rem;
 }
 
-.Post.manual div>p:after, .Post.expander-manual div>p:after {
+.Post.manual div>p:after, .Post.expander-manual div>p:after, .Post.midi div>p:after{
   display:block;
   content:'';
   clear:left;
 }
 
-.Post.manual div+ul, .Post.expander-manual div+ul {
+.Post.manual div+ul, .Post.expander-manual div+ul, .Post.midi div+ul {
   padding-top: 2rem;
   clear: both;
 }
 
-.Post.manual blockquote p, .Post.expander-manual blockquote p {
+.Post.manual blockquote p, .Post.expander-manual blockquote p, .Post.midi blockquote p  {
   margin: 0;
   font-size: 1.75rem;
 }
 
-.Post.manual blockquote p img, .Post.expander-manual blockquote p img {
+.Post.manual blockquote p img, .Post.expander-manual blockquote p img , .Post.midi blockquote p img {
   height: 3rem;
   vertical-align: middle;
 }
 
-.Post.manual blockquote p img:hover, .Post.expander-manual blockquote p img:hover {
+.Post.manual blockquote p img:hover, .Post.expander-manual blockquote p img:hover , .Post.midi blockquote p img:hover {
   height: 6rem;
 }
 
-.Post.manual p > img, .Post.expander-manual p > img,
-.Post.manual  p > img+em, .Post.expander-manual p > img+em{
+.Post.manual p > img, .Post.expander-manual p > img, .Post.midi p > img,
+.Post.manual  p > img+em, .Post.expander-manual p > img+em, .Post.midi p > img+em {
   float: left;
   height: 7rem;
   line-height: 7rem;
 }
-.Post.manual p > img, .Post.expander-manual p > img{
+.Post.manual p > img, .Post.expander-manual p > img, .Post.midi p > img {
   padding-right:0.5rem;
 }
-.Post.manual p > img:last-child, .Post.expander-manual p > img:last-child,
-.Post.manual p > img+em, .Post.expander-manual p > img+em{
+.Post.manual p > img:last-child, .Post.expander-manual p > img:last-child, .Post.midi p > img:last-child,
+.Post.manual p > img+em, .Post.expander-manual p > img+em, .Post.midi p > img+em {
   padding-right: 3rem;
 }
 
-.Post.manual h1, .Post.expander-manual h1,
-.Post.manual h2, .Post.expander-manual h2,
-.Post.manual h4, .Post.expander-manual h4,
-.Post.manual h3, .Post.expander-manual h3,
-.Post.manual p+blockquote, .Post.expander-manual p+blockquote {
+.Post.manual h1, .Post.expander-manual h1 .Post.midi h1,
+.Post.manual h2, .Post.expander-manual h2 .Post.midi h2,
+.Post.manual h4, .Post.expander-manual h4 .Post.midi h4,
+.Post.manual h3, .Post.expander-manual h3 .Post.midi h3,
+.Post.manual p+blockquote, .Post.expander-manual p+blockquote, .Post.midi p+blockquote {
   clear: both !important
 }
 
-.Post.manual p+h3, .Post.expander-manual p+h3 {
+.Post.manual p+h3, .Post.expander-manual p+h3, .Post.midi p+h3 {
   padding-top: 4rem;
 }
 
-.Post.manual p+h4, .Post.expander-manual p+h4 {
+.Post.manual p+h4, .Post.expander-manual p+h4, .Post.midi p+h4 {
   padding-top: 2rem;
 }
 
