@@ -387,3 +387,8 @@ Now you have the Plinky in DFU mode, the PC software you installed should be sho
 ![alt_text](/build-guide-2/image29-min.jpg "image_tooltip")
 
 Now click the green ‘Connect’ button, and then the blue Download button. Wait a few seconds, and it should program. Once it’s done, press Disconnect, and you can unplug your Plinky. Don’t rush. If you unplug mid-program, you may find that you have to repeat this whole process.
+
+
+# Safety Instructions
+
+In Compliance with GPSR EU Regulation 2023/988, find the Safety Instructions [here](../docs/safety).

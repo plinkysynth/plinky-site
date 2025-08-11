@@ -429,3 +429,8 @@ Here are the steps required to update your firmware to the latest build:
 ![Plinky+ DIY Kit – Build Guide](/build-guide-plus/Plinky+_Build-FW_Update.jpg)
 
 </div>
+
+
+# Safety Instructions
+
+In Compliance with GPSR EU Regulation 2023/988, find the Safety Instructions [here](../docs/safety).
