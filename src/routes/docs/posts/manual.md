@@ -213,6 +213,16 @@ To enter parameter edit mode, hold down a shift button on the top left, then sel
 
 The screen always shows the device you are editing in the upper half and the parameter in the lower half. The pads with blue instead of white LEDs are the shift / transport / mode buttons - you can find them the bottom row on Plinky and the leftmost column on Plinky+. 
 
+
+
+<div markdown class="two">
+
+<img src="/manual-images/Plinky_Shift.png" alt="Plinky MIDI CCs Out" style="max-width: 100%;">
+
+<img src="/manual-images/Plinky+_Shift.png" alt="Plinky+ MIDI CCs Out" style="max-width: 100%;">
+
+</div>
+
 <div markdown>
 
 ![Shift Top](/manual-images/shift-top.svg) 
@@ -286,7 +296,11 @@ To remove a parameter's modulation, simply repeat the steps as described above, 
 
 # Plinky hardware
 
-Let’s take a look at Plinky’s inputs and outputs on the top and bottom edges. They have identical functions, and both can be used. On each side you find:
+Let’s take a look at Plinky’s inputs and outputs on the top and bottom edges. They have identical functions, and both can be used. 
+
+<img src="/manual-images/Plinky_In_Out_Eurorack.png" alt="Plinky Inputs and Outputs - Eurorack" style="max-width: 100%;">
+
+On each side you find:
 
 #### Audio in (line level stereo)
 A TRS, 3.5 mm audio jack. Useful for two things. Plinky’s sampler can sample 65 seconds of incoming audio. Additionally, Plinky can act as a mixer with effects (Reverb and Delay), where each of Plinky’s audio inputs are mixed with Plinky’s internal audio. The individual inputs are mixed at unity gain, but the levels of the summed inputs and the internal sounds can be set separately. 
@@ -493,6 +507,13 @@ When modulation is applied, you will see 2 numbers. The small number in the lowe
 
 ## Shift Keys
 
+<div markdown class="two">
+
+<img src="/manual-images/Plinky_Shift.png" alt="Plinky MIDI CCs Out" style="max-width: 100%;">
+
+<img src="/manual-images/Plinky+_Shift.png" alt="Plinky+ MIDI CCs Out" style="max-width: 100%;">
+
+</div>
 
 <div markdown>
 
@@ -1630,7 +1651,13 @@ In addition to that,
 - the finger position for each column is sent on CC 32 - 39, 
 - and the pressure for each column is sent on CC 40 - 47.
 
-<img src="/expander-manual/Plinky_Expander_MIDI-CCs_Out.png" alt="Plinky MIDI CCs Out" style="max-width: 100%;">
+<div markdown class="two">
+
+<img src="/manual-images/Plinky_MIDI-CCs_Out.png" alt="Plinky MIDI CCs Out" style="max-width: 100%;">
+
+<img src="/manual-images/Plinky+_MIDI-CCs_Out.png" alt="Plinky+ MIDI CCs Out" style="max-width: 100%;">
+
+</div>
 
 ### Power
 
@@ -1668,6 +1695,8 @@ Play the sequencer, or play keys on the Arturia Keystep.
 
 Plinky's default preset is not latched by default, but of course you can save them like that.
 Each time you power cycle your case, you will need to remove the gate cable and press the lowest pad, once, to start the drone. 
+
+<img src="/manual-images/Plinky_In_Out_Eurorack.png" alt="Plinky Inputs and Outputs - Eurorack" style="max-width: 100%;">
 
 ### Eurorack Inputs
 
@@ -1713,6 +1742,12 @@ The [Plinky Expander](../docs/expander-manual) is a 2HP module that offers extra
 
 It adds four additional CV outputs to connect with the rest of your Eurorack setup, as well as a frontside USB port and TRS MIDI allowing you to access these ports when Plinky is rack mounted.
 
+
+<div markdown class="two">
+
+<img src="/expander-manual/Plinky_Expander_2HP.png" alt="Plinky Expander 2HP - Technical drawing" style="max-width: 100%;">
+
+
 * **TRS MIDI Input** </br> Supports both Type A (Korg) and B (Arturia).
 
 * **TRS MIDI Output** </br> Supports Type A (Korg)
@@ -1721,7 +1756,10 @@ It adds four additional CV outputs to connect with the rest of your Eurorack set
 
 * **A  B  X  Y  Outputs** </br> Output Plinky‘s A B X Y modulation as CV
 
+</div>
+
 The 2HP Expander is an updated revision of the classic [4HP DIY Plinky Expander](/docs/expander-build-guide), now available as a factory-built and tested module offering the same features in a more compact form factor. 
+
 
 # Safety Instructions
 
