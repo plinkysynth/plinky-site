@@ -1722,3 +1722,7 @@ It adds four additional CV outputs to connect with the rest of your Eurorack set
 * **A  B  X  Y  Outputs** </br> Output Plinky‘s A B X Y modulation as CV
 
 The 2HP Expander is an updated revision of the classic [4HP DIY Plinky Expander](/docs/expander-build-guide), now available as a factory-built and tested module offering the same features in a more compact form factor. 
+
+# Safety Instructions
+
+In Compliance with GPSR EU Regulation 2023/988, find the Safety Instructions [here](../docs/safety).

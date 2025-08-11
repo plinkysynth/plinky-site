@@ -67,3 +67,9 @@ Plug it all together, comme ca:
 
 Plinky should just work when you plug it in. midi in will work just like usb midi!
 
+
+
+# Safety Instructions
+
+In Compliance with GPSR EU Regulation 2023/988, find the Safety Instructions [here](../docs/safety).
+

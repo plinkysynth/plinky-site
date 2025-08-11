@@ -27,6 +27,7 @@
     <div class="post-item"><h3><a href="docs/play-guide">Plinky Play guide</a></h3></div>
     <div class="post-item"><h3><a href="docs/midi">MIDI Chart</a></h3></div>
     <div class="post-item"><h3><a href="docs/faq">FAQ</a></h3></div>
+    <div class="post-item"><h3><a href="docs/safety">Safety</a></h3></div>
     <br/>
     <h2>Plinky Archive</h2>
     <div class="post-item"><h3><a href="docs/build-guide-blue">Plinky build guide - V2 Blue (old)</a></h3></div>
