@@ -36,7 +36,7 @@ Plinky also has global Delay, Reverb, High Pass Filter, Limiter and Saturation u
 
 <img src="/manual-images/Plinky+_0248ab.jpg" alt="Plinky+ and Plinky" style="max-width: 100%;">
 
-## Plinky+ &ndash; what's new?
+## Plinky+ – what's new?
 
 Plinky+ is an iteration on the original Plinky DIY Kit, designed by mmalex, upgraded in a collaborative effort between mmalex and Making Sound Machines.
 
