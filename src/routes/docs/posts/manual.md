@@ -4,7 +4,16 @@ date: "2021-01-24T08:38:00.000Z"
 ---
 
 
-<img src="plinky_alpha_2.png" alt="Remove the back panel" style="max-width: 100%;">
+<!-- <img src="plinky_alpha_2.png" alt="Plinky Touch Surface" style="max-width: 100%;"> -->
+
+
+<div markdown class="two">
+
+<img src="plinky_alpha_2.png" alt="Plinky Touch Surface" style="max-width: 100%;">
+
+<img src="plinky+_alpha.png" alt="Plinky+ Touch Surface" style="max-width: 100%;">
+
+</div>
 
 Plinky is an 8 voice polyphonic touch synthesiser that specialises in fragile, melancholic sounds.
 
@@ -25,10 +34,48 @@ A and B also have dedicated physical offset knobs, located to the left of the sc
 
 Plinky also has global Delay, Reverb, High Pass Filter, Limiter and Saturation units along with a simple Mixer (for audio inputs), Arpeggiator, Sequencer and Sampler.
 
+<img src="/manual-images/Plinky+_0248ab.jpg" alt="Plinky+ and Plinky" style="max-width: 100%;">
+
+## Plinky+ &ndash; what's new?
+
+Plinky+ is an iteration on the original Plinky DIY Kit, designed by mmalex, upgraded in a collaborative effort between mmalex and Making Sound Machines.
+
+Plinky+ is firmware-compatible with the original Plinky, sharing the same audio engine and beautiful sound that make it a favourite among its users. Its hardware though has been greatly improved.
+
+### Plus-sized play surface   
+Relegating all jacks and connectivity to the back allows for a 22 mm spacing per touch strip, similar to the spacing of a keyboard. This makes playing chords on the touch surface easier, and playing pitch and pressure more accurate. 
+The Shift row has been rearranged from the bottom to the left, allowing for a length of 16 cm per strip.
+
+### Bigger Display
+Plinky+ has been upgraded with a much larger OLED display in crisp white on black, making it easier to read from a distance.
+
+### All the I/O
+Plinky+ has all the connectivity of its little sibling,  with the additional A B X Y CV-outs from the Expander built in. All input and output jacks have been moved to the back. 
+
+### Better sound
+The analogue output stage for Line, Euro and Headphone stereo outputs has been reworked to deliver a better sound. The new volume knob lets you set the volume directly from the front panel. The main out has been upgraded to symmetric 6.3mm jacks to make the connection with your other audio gear more robust.
+
+### Rugged Enclosure
+Plinky+ comes in a rugged black powder-coated metal enclosure. The instrument weighs just under 1kg, sitting on your desktop without moving around while playing.
+
+### Battery-operated (optional)
+While Plinky+ does not come with a built-in battery, it has the circuitry and a connector that lets you retrofit a battery pack.
+
+
 ## The Quickest Start
 Whether you are completely new to Plinky, or just looking for a quick refresher, here is a 10 minute guide to playing Plinky. If your Plinky comes fresh out of the box, you should [calibrate](#calibration) it, then return here.
 
+
 ### You can play anywhere on the surface
+
+<div markdown class="two">
+
+<img src="/manual-images/Plinky_Play_Surface.png" alt="Plinky MIDI CCs Out" style="max-width: 100%;">
+
+<img src="/manual-images/Plinky+_Play_Surface.png" alt="Plinky+ MIDI CCs Out" style="max-width: 100%;">
+
+</div>
+
 except for these pads - they are reserved for the SHIFT functions.
 
 <div markdown>
@@ -198,7 +245,15 @@ The two audio inputs, both 3.5 mm TRS stereo jacks, are meant for effect process
 You are now ready to Plink.
 
 ### Play Plinky!
-Each of the center pads plays a note. Plinky is either playing a blank preset, which is a 4 voice unison Saw wave for each of the 'strings', or you are playing one of the factory presets. Plinky can play 8 voices polyphony. Enjoy!
+Each of the center pads plays a note. Plinky is either playing a blank preset, which is a 4 voice unison Saw wave for each of the 8 'strings', or you are playing one of the factory presets. Plinky can play 8 voices polyphony. Enjoy!
+
+<div markdown class="two">
+
+<img src="/manual-images/Plinky_Play_Surface.png" alt="Plinky MIDI CCs Out" style="max-width: 100%;">
+
+<img src="/manual-images/Plinky+_Play_Surface.png" alt="Plinky+ MIDI CCs Out" style="max-width: 100%;">
+
+</div>
 
 ### Changing the Sound
 
@@ -212,8 +267,6 @@ Each of the center pads plays a note. Plinky is either playing a blank preset, w
 To enter parameter edit mode, hold down a shift button on the top left, then select one of the icon pads. The LEDs light up while you have your fingers held down on the pads. Then release all your fingers. While in parameter edit mode, both the shift button and the icon pads' LEDs will pulse. 
 
 The screen always shows the device you are editing in the upper half and the parameter in the lower half. The pads with blue instead of white LEDs are the shift / transport / mode buttons - you can find them the bottom row on Plinky and the leftmost column on Plinky+. 
-
-
 
 <div markdown class="two">
 
@@ -296,32 +349,32 @@ To remove a parameter's modulation, simply repeat the steps as described above, 
 
 # Plinky hardware
 
-Let’s take a look at Plinky’s inputs and outputs on the top and bottom edges. They have identical functions, and both can be used. 
+Let’s take a look at Plinky’s inputs and outputs. They are located on the top and bottom edges, as well as the two columns of jacks on the left and right of the front panel.
 
 <img src="/manual-images/Plinky_In_Out_Eurorack.png" alt="Plinky Inputs and Outputs - Eurorack" style="max-width: 100%;">
 
-On each side you find:
+The inputs and outputs on the top and bottom edges have identical functions, and both can be used simultaneously. On each side you find:
 
-#### Audio in (line level stereo)
+### Audio in (Line level stereo)
 A TRS, 3.5 mm audio jack. Useful for two things. Plinky’s sampler can sample 65 seconds of incoming audio. Additionally, Plinky can act as a mixer with effects (Reverb and Delay), where each of Plinky’s audio inputs are mixed with Plinky’s internal audio. The individual inputs are mixed at unity gain, but the levels of the summed inputs and the internal sounds can be set separately. 
 
 > Remember, if you have Plinky V2 (with the blue main board) you can and absolutely should try running Eurorack signals through Line level inputs to enloy that crunchy analog saturation. 
 
-#### USB
+### USB
 The USB jack is either USB Micro-b on v1/v2, or USB-C on v3. It can power Plinky.  Warning -- do not attempt to power Plinky with both USB and Eurorack simultaneously. 
 
-#### Audio out (line level stereo)
+### Audio out (Line level stereo)
 A TRS 3.5 mm audio jack that outputs the mixed output at line level. 
 
-#### TRS MIDI Out (v3 hardware only)
+### TRS MIDI Out (V3 hardware only)
 TRS 3.5 mm jack - MIDI Type-A
 
-#### TRS MIDI In (v3 hardware only)
+### TRS MIDI In (V3 hardware only)
 TRS 3.5 mm jack - autosensing - accepts both MIDI Type-A and Type-B
 
 The input circuit used is the [LPZW.modules](https://leipzigwest.org/) [Autocrossover circuit](https://github.com/kay-lpzw/LPZW_TRS_MIDI/). Thank you Kay!
 
-#### Columns of Jacks
+### Columns of Jacks
 
 The column of jacks on the left of the front panel are all inputs. The column of jacks on the right are all outputs. Their individual functions are described in detail in the [Eurorack](#eurorack-and-cv) chapter. Here is a quick overview:
 
@@ -351,6 +404,8 @@ Please read the [Eurorack and CV](#eurorack-and-cv) chapter for more details.
 # Plinky+ hardware
 
 Plinky+ has all the connectivity of its little sibling, with the additional A B X Y CV-outs from the [Expander](../docs/expander-manual) built in. All input and output jacks have been moved to the back panel. 
+
+<img src="/manual-images/Plinky+_In_Out_Labels.png" alt="Plinky+ Inputs and Outputs - Eurorack" style="max-width: 100%;">
 
 ### Audio Inputs
 

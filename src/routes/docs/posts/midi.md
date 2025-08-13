@@ -283,4 +283,11 @@ In addition to that,
 - the finger position for each column is sent on CC 32 - 39, 
 - and the pressure for each column is sent on CC 40 - 47.
 
-<img src="/expander-manual/Plinky_Expander_MIDI-CCs_Out.png" alt="Plinky MIDI CCs Out" style="max-width: 100%;">
+
+<div markdown class="two">
+
+<img src="/manual-images/Plinky_MIDI-CCs_Out.png" alt="Plinky MIDI CCs Out" style="max-width: 100%;">
+
+<img src="/manual-images/Plinky+_MIDI-CCs_Out.png" alt="Plinky+ MIDI CCs Out" style="max-width: 100%;">
+
+</div>
