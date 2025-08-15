@@ -18,7 +18,7 @@
     <h1>Documentation - Plinky</h1>
     <h2>Plinky Manual & Build guides</h2>
     <div class="post-item"><h3><a href="docs/manual">Plinky / Plinky+ Manual</a></h3></div>
-    <!--<div class="post-item"><h3><a href="docs/build-guide-plus">Plinky+ build guide</a></h3></div>-->
+    <div class="post-item"><h3><a href="docs/build-guide-plus">Plinky+ build guide</a></h3></div>
     <div class="post-item"><h3><a href="docs/build-guide-black">Plinky build guide - V3 Black</a></h3></div>
     <div class="post-item"><h3><a href="docs/expander-manual">Plinky Expander 2HP Manual</a></h3></div>
     <br/>
