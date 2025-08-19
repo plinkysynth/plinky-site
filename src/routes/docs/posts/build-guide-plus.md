@@ -409,7 +409,7 @@ If in doubt, ask an expert for help, or contact us on the Plinky Discord.
 
 ## Firmware
 
-Plinky+ ships with firmware 0.B2 or higher. 
+Plinky+ ships with firmware 0.B3 or higher. 
 
 ### Install firmware
 

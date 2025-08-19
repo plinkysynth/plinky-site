@@ -1,17 +1,23 @@
 {
   "stable": {
-    "file": "plink0B2.uf2",
-    "version": "0.B2",
-    "date": "2025-05-21",
-    "comment": "Adds support for Plinky+ and includes various general improvements and fixes. For a detailed description of all changes, read the release notes on Plinky's github. https://github.com/plinkysynth/plinky_public/blob/main/release_notes.md"
+    "file": "plink0B3.uf2",
+    "version": "0.B3",
+    "date": "2025-08-19",
+    "comment": "Update for Plinky and Plinky+ - Fixes timbre change when holding Shift while seq is playing. Fixes audio preview when editing slice markers in sample edit. Fixes oscillator spread when playing MIDI. Thank you RJ! For Plinky+, Logo on boot and tweaks in Calibration mode. This is the release version initially shipping with Plinky+."
   },
   "beta": {
+    "file": "plink0B3.uf2",
+    "version": "0.B3",
+    "date": "2025-08-19",
+    "comment": "Update for Plinky and Plinky+ - Fixes timbre change when holding Shift while seq is playing. Fixes audio preview when editing slice markers in sample edit. Fixes oscillator spread when playing MIDI. Thank you RJ! For Plinky+, Logo on boot and tweaks in Calibration mode. This is the release version initially shipping with Plinky+."
+  },
+  "history": [
+    {
     "file": "plink0B2.uf2",
     "version": "0.B2",
     "date": "2025-05-21",
     "comment": "Adds support for Plinky+ and includes various general improvements and fixes. For a detailed description of all changes, read the release notes on Plinky's github. https://github.com/plinkysynth/plinky_public/blob/main/release_notes.md"
-  },
-  "history": [
+    },
     {
     "file": "plink0B0.uf2",
     "version": "0.B0",

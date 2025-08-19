@@ -6,7 +6,9 @@
 
 <div class="page">
 
-  <h1>Plinky firmware</h1>
+  <h1>Plinky / Plinky+ firmware</h1>
+
+  <p>Plinky and Plinky+ are firmware compatible. Plinky+ needs version 0.B2 or higher.</p>
 
   <Grid>
     <BigArea>
@@ -27,7 +29,7 @@
     </BigArea>
   </Grid>
   
-  <h2>Firmware install instructions</h2>
+  <h2>Plinky &ndash; Firmware install instructions</h2>
   
   <p>Installing the firmware takes only a few moments:</p>
 
@@ -59,6 +61,26 @@
     <li><strong>Mac M1 / M2</strong> users on MacOS 14 follow these <a href="https://plinkysynth.com/docs/build-guide-black/#install-firmware-mac-m1-os-14-">steps</a>. Then upgrade to Firmware 0.A7 or higher.</li>
     <li><strong>Linux</strong> users follow these <a href="https://plinkysynth.com/docs/build-guide-black/#install-firmware-linux-">steps</a>. Then upgrade to Firmware 0.A7 or higher.</li>
   </ul>
+  
+  <img src="/build-guide-black/Plinky_Build-Guide_2610.jpg" alt="Plinky in Tunnel of Lights (UF2) Mode" width="49%">
+  <img src="/build-guide-black/Plinky_Build-FW_Update.jpg" alt="Plinky Firmware Update with UF2 File" width="49%">
+
+  <h2>Plinky+ &ndash; Firmware install instructions</h2>
+  
+  <p>Plinky and Plinky+ are firmware compatible. Plinky+ needs version 0.B2 or higher.</p>
+
+  <ul>
+    <li>Unplug all cables from Plinky+</li>
+    <li>With Plinky+ powered off, connect Plinky+ to a power source (PC or Mac USB port, or USB power adapter)</li>
+    <li>Hold down the Encoder, and with it held down, press the on/off button to turn Plinky+ on</li>
+    <li>The screen remains blank, and you’ll see a tunnel of flashing LEDs</li>
+    <li>Plinky should show up on your PC as a USB Drive</li>
+    <li>Drag and drop the UF2 file onto the Plinky USB Drive</li>
+  </ul>
+
+  <img src="/build-guide-plus/Plinky+_Build-Guide_0142.jpg" alt="Plinky+ in Tunnel of Lights (UF2) Mode" width="49%">
+  <img src="/build-guide-plus/Plinky+_Build-FW_Update.jpg" alt="Plinky+ Firmware Update with UF2 File" width="49%">
+
 
 
   <h2>History</h2>
