@@ -437,7 +437,7 @@ Set the gain using the volume knob on the front panel. Note that the volume knob
 
 ### Eurorack Outputs (Bottom row)
 
-- **Trigger Output** - rigger out for each note played by hand, Arpeggiator or Sequencer
+- **Trigger Output** - Trigger out for each note played by hand, Arpeggiator or Sequencer
 - **Touch Output** - outputs the highest amount of pressure that is currently being put on either of the strings
 - **Pitch Hi / Lo Output** - V/oct CV out. Hi is the pitch of the highest note, and Lo of the lowest note being played.
 - **Gate Output** - A Gate signal. As long as one of the pads is being touched, a 5V signal is generated.
