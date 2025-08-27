@@ -130,7 +130,9 @@ Once you have connected both the smaller 6.35 mm and the longer 3.5 mm jack boar
 
 ### Place mainboard in metal enclosure
 
-The mainboard, with 6.35 mm and 3.5 mm jack board connected, needs to slot though the back panel so it sits in the metal enclosure. 
+The mainboard, with 6.35 mm and 3.5 mm jack board connected, needs to slot though the back panel so it sits in the metal enclosure.
+
+Before proceeding, make sure that the 6.35mm jacks do not have the two largest silver hex nuts already placed on them, as may be the case. Nuts on the jacks will prevent the proper installation of the mainboard. If any nuts are present, remove them and save them for the next step.
 
 ![Plinky+ DIY Kit – Build Guide](/build-guide-plus/Plinky+_Build-Guide_0045.jpg)
 
@@ -177,7 +179,7 @@ Once the mainboard is securely attached to the metal case, you need to place the
 
 Find the 24 knurled nuts. These go on the Thonkiconn jacks
 
-Then find the two 2 largest silver hex nuts. These go on the two 6.35 mm Main Out jacks.
+Then find the two largest silver hex nuts. These go on the two 6.35 mm Main Out jacks.
 
 You can either use your fingers or a tool to tighten all 26 nuts. You can find tools for knurled nuts at [Michigan Synthworks](https://michigansynthworks.com/products/nutzwinger) and [Exploding Shed](https://www.exploding-shed.com/4x-nut-tool-set/100019), but if you are just doing these 26 here, doing them by hand will be fine. If you use a tool, be careful not to scratch the back panel.
 
