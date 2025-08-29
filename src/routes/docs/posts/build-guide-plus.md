@@ -339,7 +339,88 @@ While Plinky+ does not come with a built-in battery, it has the circuitry and a 
 Plinky+ can be powered from a 3.7V rechargeable Lithium Ion Battery Pack, with up to four 18650 cells.
 The Battery Pack needs to come with its own charge protection circuit, and a 2.54mm JST connector to plug into the main board.
 
+### Battery Packs 
+
+Here is a list of Battery Packs we tested with Plinky+.
+
+<div class="two">
+
+![Plinky+ DIY Kit – Build Guide](/build-guide-plus/Plinky+_Build-Guide_0348.jpg)
+
+**3.7V Rechargeable Lithium Battery Pack 18650**
+</br>[MLMTEY Store - Aliexpress](https://aliexpress.com/item/1005007342528967.html)
+</br>9000mAh (3 cells) or 12000mAh (4 cells)
+</br>
+</br>Polarity: Black - / <span style="color:#FF0000">Red</span> +
+</br>Needs adapter: No
+
+
+</div>
+
+<div class="two">
+
+![Plinky+ DIY Kit – Build Guide](/build-guide-plus/Plinky+_Build-Guide_0337.jpg)
+
+**Lithium Battery 3.7V 18650 with XH2.54-2P Plug**
+</br>[GM Battery Store - Aliexpress](https://aliexpress.com/item/1005006556927592.html)
+</br>12000mAh (3 cells) or 16000mAh (4 cells)
+</br>
+</br>Polarity: Black - / <span style="color:#FF0000">Red</span> +
+</br>Needs adapter: No
+
+</div>
+
+<div class="two">
+
+![Plinky+ DIY Kit – Build Guide](/build-guide-plus/Plinky+_Build-Guide_0342.jpg)
+
+**3.7V 18650 Lithium Battery Pack**
+</br>[VariCore Official Store - Aliexpress](https://aliexpress.com/item/1005007959033416.html)
+</br>1S3P 9000mAh (3 cells) or 1S4P 12000mAh (4 cells)
+</br>
+</br>Polarity: Black - / <span style="color:#FF0000">Red</span> +
+</br>Needs adapter: No
+
+
+</div>
+
+<div class="two">
+
+![Plinky+ DIY Kit – Build Guide](/build-guide-plus/Plinky+_Build-Guide_0344.jpg)
+
+**18650 3.7V 10200mAh 1S3P Battery Pack Lithium-ion**
+</br>[SUYIJIA AAA Battery Store - Aliexpress](https://aliexpress.com/item/1005009478801385.html)
+</br>1PCS 2P plug (3 cells)
+</br>
+</br>Polarity: Black - / <span style="color:#FF0000">Red</span> +
+</br>Needs adapter: No
+
+</div>
+
+### Installation
+
 Before you disassemble anything, make sure your Plinky+ is switched off and remove any and all cable connections including Audio and USB cables.
+
+
+### Make sure Plinky+ is switched off
+
+Connect Plinky+ to a power adapter using a USB cable and make sure Plinky+'s Power on / off switch is set to **off**.
+</br>The switch has two positions held by a click mechanism. In the off position, it sticks out further.
+
+Remove the USB cable and all other cables before you disassemble the front plate.
+</br>Keep the switch in the off position the whole time you disassemble Plinky+.
+
+Only turn the Power on / off switch on when you are 100% certain the Battery pack is connected with the correct polarity.
+
+### Know the polarity of your Battery Pack
+
+It is vitally important that you know the polarity of your Battery pack.
+</br>Look it up first, in the documentation / datasheet provided by the vendor.
+</br>Use a multimeter to measure the polarity is as documented.
+</br>Then get the connection to the Plinky+ main board right the first time. Don't guess.
+
+If you are at all uncertain, ask for help on the [Plinky Discord](https://discord.gg/Zf6chA9jAz) before you proceed.
+
 
 ### Remove the faceplate
 
@@ -361,6 +442,8 @@ An extra PCB panel with printed safety instructions covers four welded studs tha
 
 Make sure you are electrostatically discharged before you handle the PCB and Electronics. The SMD components are delicate. Handle carefully.
 
+Make sure Plinky+'s Power on / off switch is set to **off**. The switch has two positions held by a click mechanism. In the off position, it sticks out further.
+
 The space between the four screw posts fits a standard 3.7V rechargeable Lithium Ion Battery Pack with four 18650 cells. Place the battery in the space below the mainboard and connect the battery to the 2.45 mm pinheader on the bottom left of the mainboard.
 
 The connector on the PCB is marked Rechargeable Battery – 3.7V Lithium Ion pack with charge protection. A Polarity Warning is printed next to the pinheader.
@@ -368,11 +451,22 @@ The connector on the PCB is marked Rechargeable Battery – 3.7V Lithium Ion pac
 
 ![Plinky+ DIY Kit – Build Guide](/build-guide-plus/Plinky+_Build-Guide_0088.jpg)
 
-Connect the Battery. Make sure you get the polarity right: looking at the mainboard at the side with the  print labels right side up, the negative terminal sits on the left side, the positive terminal on the right.
+Make sure the Power Switch is in the off position, then connect the Battery. Make sure you get the polarity right: looking at the mainboard at the side with the  print labels right side up, the negative terminal sits on the left side, the positive terminal on the right.
 
 Various brands may mark polarity differently – most have a red and black cable, but what that means in terms of polarity may vary. Always check with the datasheet of your Battery Pack that the polarity is indeed correct, and matches the print on the PCB.
 
 > The LED on the board acts as a polarity test. If the LED on the main board lights up, the polarity of the Battery Pack is incorrect. In this case, disconnect the Battery's cable and reverse the polarity!
+
+As an example, the Battery Pack pictured below has a 2.54mm connector and you verified the polarity as Black - / <span style="color:#FF0000">Red</span> +. Now you need to match the polarity with the print on the main board and connect the JST socket to the pinheader.
+
+<div class="two">
+
+![Plinky+ DIY Kit – Build Guide](/build-guide-plus/Plinky+_Build-Guide_0360.jpg)
+
+![Plinky+ DIY Kit – Build Guide](/build-guide-plus/Plinky+_Build-Guide_0364.jpg)
+
+</div>
+
 
 Reinstall the Battery cover using the four black M3 screws.
 
