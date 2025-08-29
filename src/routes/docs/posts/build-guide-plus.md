@@ -101,6 +101,17 @@ Using an M3 Phillips screwdriver, screw in each one of the black screws from the
 
 ![Plinky+ DIY Kit – Build Guide](/build-guide-plus/Plinky+_Build-Guide_0039.jpg)
 
+When screwing the silver hex nut in the upper right corner, please take care to align it so the pointy end of the hexagon points upwards. The 6.35 mm jack board has a small cutout that allows it to fit snugly against the nut. The simplest way to accomplish this is to not over-tighten screw and nut, and rotate the screw with the screwdriver so the hex nut faces the right way.
+
+<div class="two">
+
+![Plinky+ DIY Kit – Build Guide](/build-guide-plus/Plinky+_Build-Guide_0332.jpg)
+
+![Plinky+ DIY Kit – Build Guide](/build-guide-plus/Plinky+_Build-Guide_0320.jpg)
+
+</div>
+
+
 ### Assemble Mainboard and Jacks
 
 For this step you need the mainboard, and both the 3.5 mm and 6.35 mm jack boards.
@@ -109,6 +120,16 @@ For this step you need the mainboard, and both the 3.5 mm and 6.35 mm jack board
 ![Plinky+ DIY Kit – Build Guide](/build-guide-plus/Plinky+_Build-Guide_0197.jpg)
 
 Place the mainboard in front of you, so that the component side faces up and the potentiometers sit at the top. Any printed labels are right side up.
+
+ In your kit, you will find the hex nuts for the 6.35 mm jack board screwed onto the jacks. Unscrew the jacks and remove the washers, and keep them for attaching the jacks to the back panel later.
+
+<div class="two">
+
+![Plinky+ DIY Kit – Build Guide](/build-guide-plus/Plinky+_Build-Guide_0367.jpg)
+
+![Plinky+ DIY Kit – Build Guide](/build-guide-plus/Plinky+_Build-Guide_0369.jpg)
+
+</div>
 
 The smaller of the two jack boards, the 6.35 mm jack board with the big jack connectors, attaches to the pin socket on the right side of the mainboard. Note that on this board, the PCB sits on top of the jacks.
 
@@ -177,7 +198,7 @@ Once the mainboard is securely attached to the metal case, you need to place the
 
 Find the 24 knurled nuts. These go on the Thonkiconn jacks
 
-Then find the two 2 largest silver hex nuts. These go on the two 6.35 mm Main Out jacks.
+Then find the two largest silver hex nuts. These go on the two 6.35 mm Main Out jacks.
 
 You can either use your fingers or a tool to tighten all 26 nuts. You can find tools for knurled nuts at [Michigan Synthworks](https://michigansynthworks.com/products/nutzwinger) and [Exploding Shed](https://www.exploding-shed.com/4x-nut-tool-set/100019), but if you are just doing these 26 here, doing them by hand will be fine. If you use a tool, be careful not to scratch the back panel.
 
