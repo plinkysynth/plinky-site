@@ -121,7 +121,7 @@ For this step you need the mainboard, and both the 3.5 mm and 6.35 mm jack board
 
 Place the mainboard in front of you, so that the component side faces up and the potentiometers sit at the top. Any printed labels are right side up.
 
- In your kit, you will find the hex nuts for the 6.35 mm jack board screwed onto the jacks. Unscrew the jacks and remove the washers, and keep them for attaching the jacks to the back panel later.
+In your kit, you will find the hex nuts for the 6.35 mm jack board screwed onto the jacks. Unscrew the jacks and remove the washers, and keep them for attaching the jacks to the back panel later.
 
 <div class="two">
 
