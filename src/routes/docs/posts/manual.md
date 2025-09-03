@@ -49,17 +49,30 @@ The Shift row has been rearranged from the bottom to the left, allowing for a le
 ### Bigger Display
 Plinky+ has been upgraded with a much larger OLED display in crisp white on black, making it easier to read from a distance.
 
+### Metal Enclosure
+Plinky+ comes in a rugged black powder-coated metal enclosure. The instrument weighs just under 1kg, sitting on your desktop without moving around while playing.
+
+### Clear Dust Cover
+Both the assembled Plinky+ and the DIY Kit come with a custom translucent PET-G lid to protect from dust and save the deck.
+
+
 ### All the I/O
-Plinky+ has all the connectivity of its little sibling,  with the additional A B X Y CV-outs from the Expander built in. All input and output jacks have been moved to the back. 
+Plinky+ has all the connectivity of its little sibling,  with the additional A B X Y CV-outs from the original [Expander](/docs/expander-manual/) built in. All input and output jacks have been moved to the back. 
 
 ### Better sound
 The analogue output stage for Line, Euro and Headphone stereo outputs has been reworked to deliver a better sound. The new volume knob lets you set the volume directly from the front panel. The main out has been upgraded to symmetric 6.3mm jacks to make the connection with your other audio gear more robust.
 
-### Rugged Enclosure
-Plinky+ comes in a rugged black powder-coated metal enclosure. The instrument weighs just under 1kg, sitting on your desktop without moving around while playing.
+### Printed Manual
+Both the assembled Plinky+ and the DIY Kit come with a 48 page printed user manual.
 
 ### Battery-operated (optional)
-While Plinky+ does not come with a built-in battery, it has the circuitry and a connector that lets you retrofit a battery pack.
+While Plinky+ does not come with a built-in battery, it has the circuitry and a connector that lets you [retrofit a battery pack](/docs/build-guide-plus#installing-a-battery-pack).
+
+
+### Assembled or Solderless DIY Kit
+Plinky+ comes fully assembled or as a DIY Kit. The DIY Kit does not require soldering and contains all the parts you need to assemble the synth. You need to bring your own tools like a screwdriver, but other than that it's an easy assembly. To get an impression of the build process, check the [build guide](/docs/build-guide-plus).
+
+
 
 
 ## The Quickest Start
