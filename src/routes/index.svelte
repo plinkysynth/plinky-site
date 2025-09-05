@@ -49,6 +49,25 @@
   <a class="button" target="_blank" href="https://github.com/plinkysynth/plinky_public">View on Github</a>
 </TextAndImage>
 
+<TextAndImage src="plinky+_alpha.png" alt="Plinky+ design" border={true}>
+  <h1>Plinky+ is the extra-large deluxe version of Plinky.</h1>
+  <p>Plinky+ doubles the size of the play surface. It comes with a metal enclosure, a clear dustcover, a bigger display, symmetric 6.35mm audio outputs and a printed manual. It includes all the Eurorack I/O of Plinky and the Expander, and comes assembled or as a solderless DIY Kit.</p>
+
+  <h4>Where can I get one?</h4>
+  <p>Assembled Plinky+ are available at 
+  <a href="https://www.thonk.co.uk/shop/plinky-plus-assembled/">Thonk (UK)</a>, 
+  <a href="https://www.perfectcircuit.com/making-sound-machines-plinky-v3.html">Perfect&nbsp;Circuit (US)</a> and 
+  <a href="https://nightlife-electronics.com/products/plinky-plinky">Nightlife Electronics (CAN)</a>.</p>
+  <p>It is also available as a full DIY Kit at 
+    <a href="https://www.thonk.co.uk/shop/plinky-plus-kit/">Thonk (UK)</a>, 
+    <a href="https://www.exploding-shed.com/plinky/100962">Exploding Shed (EU)</a> and 
+    <a href="https://nightlife-electronics.com/products/plinky-plinky-diy-kit">Nightlife Electronics (CAN)</a>.
+  It does not require soldering and contains all the parts you need to assemble the synth. You need to bring your own tools.</p>
+
+  
+  <a class="button" target="_blank" href="/docs/build-guide-plus">View Build Guide</a>
+</TextAndImage>
+
 <TextAndImage src="buddies2.png" alt="Buddies design" border={true}>
   <h1>Plinky now welcomes 3 small 12HP x 1U modules to the family: Bib, Buzzrito and Blueberry.</h1>
   <p>These little buddies provide a plinky style stereo reverb, delay, and drive (<a href="docs/bib-manual">Bib</a>), a rich swarm oscillator (<a href="docs/buzzrito-manual">Buzzrito</a>), 
