@@ -25,6 +25,15 @@
 
     <Grid>
       <BigArea>
+        <iframe width="624" title="" height="351" src="https://www.youtube.com/embed/b4zJ6FDCMCA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h4>Deadriot Bank</h4>
+        <p><a href="https://soundcloud.com/deadriot_ncn" target="_blank">Deadriot</a> is the experimental alias of Dennis Radtke & Markus Joos. Celebrating the release of Plinky+, their exclusively synth-focussed Bank of 32 Presets explores their love for warm and wide expressive pads and arps.</p>
+        <p>Easily moving through Dark Techno, Rave, Ambient & Broken Beats in their own music, Deadriot's preset bank reflects a passion for carefully crafting sounds that gives their own tracks their warmth and definition, and packs a punch on a club system. Find Deadriot's music on <a href="https://soundcloud.com/deadriot_ncn" target="_blank">Soundcloud</a> and <a href="https://deariotkm.bandcamp.com/album/ruin" target="_blank">Bandcamp</a>.</p>
+        <p>Includes the preset file, a PDF with notes and sweet spots for each patch, and individual links for the <a href="https://plinkysynth.github.io/editor/">patch editor</a>. This Preset Bank works for Plinky and Plinky+.</p>
+        <a class="button" target="_blank" href="/presets/Deadriot/Deadriot.zip">Download</a>
+      </BigArea>        
+      <BigArea>
         <iframe width="624" title="" height="351" src="https://www.youtube.com/embed/FsOyG4VjLC4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         <h4>Grain Blanc Bank</h4>
@@ -33,6 +42,7 @@
         
         <p>Includes the preset file, 8 samples and individual links for the <a href="https://plinkysynth.github.io/editor/">patch editor</a>.
         <br>Find a short description and performance tips in the PDF patch notes.</p>
+        <p>This Preset Bank works for Plinky and Plinky+.</p>
         <a class="button" target="_blank" href="/presets/GrainBlanc/GrainBlanc.zip">Download</a>
       </BigArea>    
       <BigArea>
@@ -44,11 +54,13 @@
         
         <p>Includes the preset file, 8 samples and individual links for the <a href="https://plinkysynth.github.io/editor/">patch editor</a>. 
         <br>On all patches, Knob A is sensitivity. Set to zero, it turns the sound off.</p>
+        <p>This Preset Bank works for Plinky and Plinky+.</p>
         <a class="button" target="_blank" href="/presets/Meska/Meska.zip">Download</a>
       </BigArea>
       <BigArea>
         <h4>LPZW.modules Bank</h4>
         <p>These are the presets by <a href="http://leipzigwest.org/" target="_blank">LPZW.modules</a> for the Schneidersladen edition of Plinky. Includes the preset file, three samples and individual links for the <a href="https://plinkysynth.github.io/editor/">patch editor</a>.</p>
+        <p>This Preset Bank works for Plinky and Plinky+.</p>
         <a class="button" target="_blank" href="/presets/LPZW/LPZW.zip">Download</a>
       </BigArea>
       <BigArea>
