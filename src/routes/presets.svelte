@@ -29,7 +29,8 @@
 
         <h4>Deadriot Bank</h4>
         <p><a href="https://soundcloud.com/deadriot_ncn" target="_blank">Deadriot</a> is the experimental alias of Dennis Radtke & Markus Joos. Celebrating the release of Plinky+, their exclusively synth-focussed Bank of 32 Presets explores their love for warm and wide expressive pads and arps.</p>
-        <p>Easily moving through Dark Techno, Rave, Ambient & Broken Beats in their own music, Deadriot's preset bank reflects a passion for carefully crafting sounds that gives their own tracks their warmth and definition, and packs a punch on a club system. Find Deadriot's music on <a href="https://soundcloud.com/deadriot_ncn" target="_blank">Soundcloud</a> and <a href="https://deariotkm.bandcamp.com/album/ruin" target="_blank">Bandcamp</a>.</p>
+        <p>Easily moving through Dark Techno, Rave, Ambient & Broken Beats in their own music, Deadriot's preset bank reflects a passion for carefully crafting sounds that gives their own tracks their warmth and definition, and packs a punch on a club system. Find Deadriot's music on <a href="https://soundcloud.com/deadriot_ncn" target="_blank">Soundcloud</a>, <a href="https://deadriot-ncn.bandcamp.com" target="_blank">Bandcamp</a> and <a href="
+https://open.spotify.com/artist/763Sp2pF8qoMUefsjC1MnA?si=WLXMx9eKSGKz67wBAhSFTA" target="_blank">Spotify</a>.</p>
         <p>Includes the preset file, a PDF with notes and sweet spots for each patch, and individual links for the <a href="https://plinkysynth.github.io/editor/">patch editor</a>. This Preset Bank works for Plinky and Plinky+.</p>
         <a class="button" target="_blank" href="/presets/Deadriot/Deadriot.zip">Download</a>
       </BigArea>        
