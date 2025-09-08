@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>mmalex blog 2025</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="blog.css">
+    <script defer src="blog.js"></script>
+</head>
+
+<body>
+    <main>
+        <h1>mmalex blog 2025</h1>
+        <header>
+            <p>I thought I'd start jotting down notes on my hobby projects here.
+                Inspired by <a href="https://garten.salat.dev/meta/youre-doing-computing-wrong.html">this post</a>,
+                I've decided to try to stay as un-stuck, aka 'slippy' as possible, and just post things, no matter how
+                messy, small, incomplete, or inconsequential they may be.
+                I have no idea if it will help me or anyone else, but it's worth a try.
+            </p>
+        </header>
+
+        <section class="post" data-slug="test" data-date="2025-09-08" data-title="test post" data-hidden="true">
+            <p>Raw text with an <a href="#">inline link</a>. Some more words.</p>
+
+            <pre><code>print("hello, world, code")</code></pre>
+
+            <figure class="images">
+                <img src="https://picsum.photos/800/400?random=1" alt="single image demo">
+                <figcaption>A single image uses the full content width.</figcaption>
+            </figure>
+
+            <figure class="images">
+                <div class="carousel-scroller">
+                    <img src="https://picsum.photos/800/400?random=2" alt="first">
+                    <img src="https://picsum.photos/800/400?random=3" alt="second">
+                    <img src="https://picsum.photos/800/400?random=4" alt="third">
+                </div>
+                <figcaption>Multiple images.</figcaption>
+            </figure>
+
+            <div class="shadertoy">
+                <iframe src="https://www.shadertoy.com/embed/wffBz8?gui=true&t=10&paused=false&muted=true"
+                    allowfullscreen></iframe>
+            </div>
+
+            <p>here comes a youtube video.</p>
+            <!-- either -->
+            <div class="youtube" data-id="us__mX0_Aqk"></div>
+            <!-- or just paste the URL and let JS extract the id -->
+            <!-- <div class="youtube">https://www.youtube.com/watch?v=us__mX0_Aqk</div> -->
+        </section>
+
+        <section class="post" data-slug="pt1" data-date="2025-09-06" data-title="a path tracer">
+            <div class="shadertoy">
+                <iframe src="https://www.shadertoy.com/embed/3fSyWG?gui=true&t=10&paused=true&muted=true"
+                    allowfullscreen></iframe>
+            </div>
+            <figcaption>Click the play button at the bottom to start. Click in the image to move the camera.</figcaption>
+
+            <p>It's been a while since I've done any hobby graphics programming; however I recently re-watched the
+                brilliant <a href="https://www.youtube.com/watch?v=9r8pxIogxZ0">'Absolute Territory'</a>
+                by <a href="https://bsky.app/profile/prismbeings.com">'Prismbeings'</a> aka Noby.</p>
+            <p>The thing is with me and shadertoy is that I love to just sketch out an idea, and I have noticed that I
+                often repeat the same patterns.</p>
+            <p>This isnt a bad thing! I've come to think of it as a sort of 'personal style' - I love noise, I love
+                softness, I love fog, scattering. My old motto at siggraph was for years, <b>'blur and add noise'</b>
+                and it seems I will never escape that.</p>
+            <p>however blurring in shadertoy is a bit of a faff (ok not much, but more than 0) so I thought - what if I
+                jitter the pixel by a sharp, long tailed distribution?</p>
+            <p>The cauchy distribution is the right vibe here; gaussian is too fat in the middle, giving soggy blurry
+                look. Cauchy - which is basically, a disc sample where the random radii follow tan(Z*pi/2) rather than
+                the usual sqrt(Z) - means that most points end up near their proper place,
+                but a few get thrown out - potentially all the way to infinity. (think of tan shooting up to its
+                vertical asymptote).</p>
+            <p>Beyond that one idea, I just borrowed liberally from Noby's original aeesthetic - Ryoji Ikeda, 4k
+                edition, if you like. Sometimes when you're starting up again,
+                it's helpful to 'borrow' from someone you really respect. And Noby is a master of minimalism. </p>
+            <p>It's easy to miss some of the smaller choices that he makes that make all the difference IMHO: a long
+                lens / aka small FOV gives it a cinematic instead of gameish aesthetic;
+                the complete lack of colour is a real vibe - I actually don't like when colour comes into the original
+                demo. I tried adding a dash, and it hurt the look. so I stayed b&w.</p>
+            <p>I changed the lighting a bit, and the shader ended up departing a bit from the original - but I was
+                having fun!</p>
+            <p>The code is very simple - unidirectional path tracer, diffuse only - well, nearly only - a bit of fresnel
+                on the sphere. and some mirrors. That's it! have a look. </p>
+            <p>I really enjoyed this, and hope to do more. Obvious alex-ish things to add would be fog, perhaps some
+                caustics... who knows. Fun for the fuuture.</p>
+        </section>
+
+        <section class="post" data-slug="scope1" data-date="2025-09-07" data-title="an analog scope">
+            <div class="shadertoy">
+                <iframe src="https://www.shadertoy.com/embed/wffBz8?gui=true&t=10&paused=false&muted=true"
+                    allowfullscreen></iframe>
+            </div>     
+            <figcaption>click to change the frequency and lowpass filter.</figcaption>
+            <p>Using the same cauchy trick to do the bloom around an 'analog' style scope.</p>
+            <p>Just a quick sketch. Visit the shadertoy version for a variation with a vector scope.</p>
+            <figure class="images">
+                <img src="https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:e6eujqhwwnvxbbroeuivqs3w/bafkreigwtiizg6k7wtx2oodhljvcqfl2gvjse5i3sdol4aqdoxoxljtfdu@jpeg" alt="analog scope">
+                <figcaption>analog scope</figcaption>
+            </figure>
+        </section>
+    </main>
+</body>
+
+</html>
