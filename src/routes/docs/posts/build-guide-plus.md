@@ -11,6 +11,17 @@ This is the build guide for the Plinky+ kit. It's easy to identify:
 
 Check out the other build guide if you are building the original [24HP Plinky](/docs/build-guide-plus).
 
+# Build Video
+
+Nathan / SoundStricker has made a fantastic video building Plinky+. Thank you for the wonderful video!
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/pTlcdwfW1fU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+Nathan makes fantastic music with Plinky on his channel, it's absolutely worth checking out his [complete Plinky Playlist](https://www.youtube.com/playlist?list=PLS8-DCzLCiFDGTGRJN0lHCSjthzdDtyEc).
+
+
+# Getting ready
+
 ![Plinky+ DIY Kit – Build Guide](/build-guide-plus/Plinky+_Build-Guide_0003.jpg)
 
 Thank you for getting a Plinky+ DIY Kit. 
