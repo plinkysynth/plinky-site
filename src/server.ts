@@ -179,6 +179,260 @@ app // You can also use Express
 					}));
 				});
 			}
+			else if(req.originalUrl === '/wavetables/Wavetable_11_Spectral_Triangle_Meska/Wavetable_11_Spectral_Triangle_Meska.zip') {
+							
+				const file = path.join(process.cwd(), 'wavetables/', 'Wavetable_11_Spectral_Triangle_Meska.zip');
+				const s = fs.createReadStream(file);
+
+				s.on('open', function () {
+
+						res.writeHead(200, {
+							'Content-Type': 'application/octet-stream',
+							'Content-Disposition': 'attachment; filename="Wavetable_11_Spectral_Triangle_Meska.zip"'
+						});
+						s.pipe(res);
+				});
+				
+				s.on('error', function () {
+					res.writeHead(404, {
+						'Content-Type': 'text/plain'
+					});
+					res.end(JSON.stringify({
+						message: `Not found`
+					}));
+				});
+			}
+			else if(req.originalUrl === '/wavetables/Wavetable_10_VacuumTube_Meska/Wavetable_10_VacuumTube_Meska.zip') {
+							
+				const file = path.join(process.cwd(), 'wavetables/', 'Wavetable_10_VacuumTube_Meska.zip');
+				const s = fs.createReadStream(file);
+
+				s.on('open', function () {
+
+						res.writeHead(200, {
+							'Content-Type': 'application/octet-stream',
+							'Content-Disposition': 'attachment; filename="Wavetable_10_VacuumTube_Meska.zip"'
+						});
+						s.pipe(res);
+				});
+				
+				s.on('error', function () {
+					res.writeHead(404, {
+						'Content-Type': 'text/plain'
+					});
+					res.end(JSON.stringify({
+						message: `Not found`
+					}));
+				});
+			}
+			else if(req.originalUrl === '/wavetables/Wavetable_09_Wavefolder_Meska/Wavetable_09_Wavefolder_Meska.zip') {
+							
+				const file = path.join(process.cwd(), 'wavetables/', 'Wavetable_09_Wavefolder_Meska.zip');
+				const s = fs.createReadStream(file);
+
+				s.on('open', function () {
+
+						res.writeHead(200, {
+							'Content-Type': 'application/octet-stream',
+							'Content-Disposition': 'attachment; filename="Wavetable_09_Wavefolder_Meska.zip"'
+						});
+						s.pipe(res);
+				});
+				
+				s.on('error', function () {
+					res.writeHead(404, {
+						'Content-Type': 'text/plain'
+					});
+					res.end(JSON.stringify({
+						message: `Not found`
+					}));
+				});
+			}
+			else if(req.originalUrl === '/wavetables/Wavetable_08_Phase_Vowels/Wavetable_08_Phase_Vowels.zip') {
+							
+				const file = path.join(process.cwd(), 'wavetables/', 'Wavetable_08_Phase_Vowels.zip');
+				const s = fs.createReadStream(file);
+
+				s.on('open', function () {
+
+						res.writeHead(200, {
+							'Content-Type': 'application/octet-stream',
+							'Content-Disposition': 'attachment; filename="Wavetable_08_Phase_Vowels.zip"'
+						});
+						s.pipe(res);
+				});
+				
+				s.on('error', function () {
+					res.writeHead(404, {
+						'Content-Type': 'text/plain'
+					});
+					res.end(JSON.stringify({
+						message: `Not found`
+					}));
+				});
+			}	
+			else if(req.originalUrl === '/wavetables/Wavetable_07_Additive_Complex/Wavetable_07_Additive_Complex.zip') {
+							
+				const file = path.join(process.cwd(), 'wavetables/', 'Wavetable_07_Additive_Complex.zip');
+				const s = fs.createReadStream(file);
+
+				s.on('open', function () {
+
+						res.writeHead(200, {
+							'Content-Type': 'application/octet-stream',
+							'Content-Disposition': 'attachment; filename="Wavetable_07_Additive_Complex.zip"'
+						});
+						s.pipe(res);
+				});
+				
+				s.on('error', function () {
+					res.writeHead(404, {
+						'Content-Type': 'text/plain'
+					});
+					res.end(JSON.stringify({
+						message: `Not found`
+					}));
+				});
+			}
+			else if(req.originalUrl === '/wavetables/Wavetable_06_Additive_Drawbar/Wavetable_06_Additive_Drawbar.zip') {
+							
+				const file = path.join(process.cwd(), 'wavetables/', 'Wavetable_06_Additive_Drawbar.zip');
+				const s = fs.createReadStream(file);
+
+				s.on('open', function () {
+
+						res.writeHead(200, {
+							'Content-Type': 'application/octet-stream',
+							'Content-Disposition': 'attachment; filename="Wavetable_06_Additive_Drawbar.zip"'
+						});
+						s.pipe(res);
+				});
+				
+				s.on('error', function () {
+					res.writeHead(404, {
+						'Content-Type': 'text/plain'
+					});
+					res.end(JSON.stringify({
+						message: `Not found`
+					}));
+				});
+			}
+			else if(req.originalUrl === '/wavetables/Wavetable_05_FM_Complex/Wavetable_05_FM_Complex.zip') {
+							
+				const file = path.join(process.cwd(), 'wavetables/', 'Wavetable_05_FM_Complex.zip');
+				const s = fs.createReadStream(file);
+
+				s.on('open', function () {
+
+						res.writeHead(200, {
+							'Content-Type': 'application/octet-stream',
+							'Content-Disposition': 'attachment; filename="Wavetable_05_FM_Complex.zip"'
+						});
+						s.pipe(res);
+				});
+				
+				s.on('error', function () {
+					res.writeHead(404, {
+						'Content-Type': 'text/plain'
+					});
+					res.end(JSON.stringify({
+						message: `Not found`
+					}));
+				});
+			}
+			else if(req.originalUrl === '/wavetables/Wavetable_04_FM_Overtones/Wavetable_04_FM_Overtones.zip') {
+							
+				const file = path.join(process.cwd(), 'wavetables/', 'Wavetable_04_FM_Overtones.zip');
+				const s = fs.createReadStream(file);
+
+				s.on('open', function () {
+
+						res.writeHead(200, {
+							'Content-Type': 'application/octet-stream',
+							'Content-Disposition': 'attachment; filename="Wavetable_04_FM_Overtones.zip"'
+						});
+						s.pipe(res);
+				});
+				
+				s.on('error', function () {
+					res.writeHead(404, {
+						'Content-Type': 'text/plain'
+					});
+					res.end(JSON.stringify({
+						message: `Not found`
+					}));
+				});
+			}
+			else if(req.originalUrl === '/wavetables/Wavetable_03_FM_Harmonics/Wavetable_03_FM_Harmonics.zip') {
+							
+				const file = path.join(process.cwd(), 'wavetables/', 'Wavetable_03_FM_Harmonics.zip');
+				const s = fs.createReadStream(file);
+
+				s.on('open', function () {
+
+						res.writeHead(200, {
+							'Content-Type': 'application/octet-stream',
+							'Content-Disposition': 'attachment; filename="Wavetable_03_FM_Harmonics.zip"'
+						});
+						s.pipe(res);
+				});
+				
+				s.on('error', function () {
+					res.writeHead(404, {
+						'Content-Type': 'text/plain'
+					});
+					res.end(JSON.stringify({
+						message: `Not found`
+					}));
+				});
+			}
+			else if(req.originalUrl === '/wavetables/Wavetable_02_Additive_Harmonics/Wavetable_02_Additive_Harmonics.zip') {
+							
+				const file = path.join(process.cwd(), 'wavetables/', 'Wavetable_02_Additive_Harmonics.zip');
+				const s = fs.createReadStream(file);
+
+				s.on('open', function () {
+
+						res.writeHead(200, {
+							'Content-Type': 'application/octet-stream',
+							'Content-Disposition': 'attachment; filename="Wavetable_02_Additive_Harmonics.zip"'
+						});
+						s.pipe(res);
+				});
+				
+				s.on('error', function () {
+					res.writeHead(404, {
+						'Content-Type': 'text/plain'
+					});
+					res.end(JSON.stringify({
+						message: `Not found`
+					}));
+				});
+			}
+			else if(req.originalUrl === '/wavetables/Wavetable_01_Original_Miunau/Wavetable_01_Original_Miunau.zip') {
+							
+				const file = path.join(process.cwd(), 'wavetables/', 'Wavetable_01_Original_Miunau.zip');
+				const s = fs.createReadStream(file);
+
+				s.on('open', function () {
+
+						res.writeHead(200, {
+							'Content-Type': 'application/octet-stream',
+							'Content-Disposition': 'attachment; filename="Wavetable_01_Original_Miunau.zip"'
+						});
+						s.pipe(res);
+				});
+				
+				s.on('error', function () {
+					res.writeHead(404, {
+						'Content-Type': 'text/plain'
+					});
+					res.end(JSON.stringify({
+						message: `Not found`
+					}));
+				});
+			}
+
 			else {
 				return next();
 			}

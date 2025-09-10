@@ -517,6 +517,7 @@ When copying over any of these, make sure the filename matches.
 
 Firmware updates [plinkysynth.com/firmware](../firmware)
 </br>Presets and sounds [plinkysynth.com/presets](../presets)
+</br>Presets and sounds [plinkysynth.com/wavetables](../wavetables)
 
 ### Battery Charge (Plinky+)
 
@@ -541,6 +542,8 @@ The encoder remains tied to the parameter that was last edited, even when Plinky
 When pushed, the encoder will snap the parameter value back to 0. This is useful to remove modulation from a parameter. A long push on the encoder  clears the modulation.
 
 Press and hold the push encoder down while plugging Plinky into power and it will enter the "tunnel of lights" mode where you can update the firmware or change presets. See [https://plinkysynth.com/presets](https://plinkysynth.com/presets) for details. 
+
+To change the wavetable, see [plinkysynth.com/wavetables](../wavetables).
 
 ### Volume Knob (Plinky+)
 
@@ -666,7 +669,7 @@ Plinky pans each set of oscillators, (and the sample grains) a little giving the
 
 > Tip: Honestly, just play with this one for a bit. Assign it to a knob, play an arp or pads and listen to the rich, full scope of sounds Plinky will play. From there on see for yourself. Add an envelope to it, or let pressure modulate the timbre of the sound.
 
-You can find a number of alternate wavetables for Plinky on [github](https://github.com/plinkysynth/wavetable).  The repository also has a python script that lets you convert your own wavetables to Plinky's format. Wavetable files come in the form of `WAVETAB.UF2`.
+You can find install instructions for a number of alternate wavetables [here](../wavetables).  The [wavetable repo on github](https://github.com/plinkysynth/wavetable) also has a python script that lets you convert your own wavetables to Plinky's format. Wavetable files come in the form of `WAVETAB.UF2`.
 
 #### Noise
 ![Shift Bottom](/manual-images/shift-bottom.svg) *hold*
