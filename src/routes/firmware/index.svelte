@@ -17,7 +17,7 @@
       {#if firmware.stable.comment}
         <p>&quot;{firmware.stable.comment}&quot;</p>
       {/if}
-      <a href="/firmware/stable/CURRENT.uf2" class="button">Download STABLE firmware</a>
+      <a href="/firmware/stable/CURRENT.uf2" class="button" download>Download STABLE firmware</a>
     </BigArea>
     <BigArea>
       <h4>Latest BETA firmware</h4>
@@ -25,7 +25,7 @@
       {#if firmware.beta.comment}
         <p>&quot;{firmware.beta.comment}&quot;</p>
       {/if}
-      <a href="/firmware/beta/CURRENT.uf2" class="button">Download BETA firmware</a>
+      <a href="/firmware/beta/CURRENT.uf2" class="button" download>Download BETA firmware</a>
     </BigArea>
   </Grid>
   
@@ -88,7 +88,7 @@
     {#each firmware.history as history}
       <h3>{history.version} ({history.date})</h3>
       <p>{history.comment}</p>
-      <p><a href="https://github.com/plinkysynth/plinky-site/raw/main/firmware/{history.file}" class="button">Download</a></p>
+      <p><a href="https://github.com/plinkysynth/plinky-site/raw/main/firmware/{history.file}" class="button" download>Download</a></p>
       <hr />
     {/each}
 
