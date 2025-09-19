@@ -52,6 +52,7 @@ https://open.spotify.com/artist/763Sp2pF8qoMUefsjC1MnA?si=WLXMx9eKSGKz67wBAhSFTA
         <iframe width="624" title="" height="351" src="https://www.youtube.com/embed/zXjph5cix2g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         <h2>Meska Bank</h2>
+        <p>This bank is the default preset bank on assembled Plinky and Plinky+.</p>
         <p>This bank of 32 presets by Meska draws focus to the "dark" side of Plinky, exploring lush delays, cavernous reverb, pitch drift and gnarly saturation.
         Meska has created a number of great Plinky patch explainers on <a href="https://www.youtube.com/@Meska_Statik" target="_blank">YouTube</a>.</p>
         
@@ -67,8 +68,9 @@ https://open.spotify.com/artist/763Sp2pF8qoMUefsjC1MnA?si=WLXMx9eKSGKz67wBAhSFTA
         <a class="button" target="_blank" href="/presets/LPZW/LPZW.zip" download>Download</a>
       </BigArea>
       <BigArea>
-        <h2>Default Bank</h2>
-        <p>This is the default preset set with all 32 patches set to the initial sound.</p>
+        <h2>Init Sound</h2>
+        <p>Plinky DIY Kits come without presets installed, encouraging you to explore the sound engine and synth parameters.</p>
+        <p>This is a preset set with all 32 patches set to the initial sound.</p>
         <a class="button" target="_blank" href="/presets/default/PRESETS.uf2" download>Download</a>
       </BigArea>
     </Grid>

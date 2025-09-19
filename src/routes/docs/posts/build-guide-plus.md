@@ -241,7 +241,7 @@ Before placing the front panel, do a quick first power-up.
 
 Attach a USB-C cable to Plinky+. We recommend using a simple USB phone charger with around 1A power and a USB C to A cable.
 
-Then push the power button. Plinky+ will boot up and show the Plinky logo, then a calibration menu.
+Then push the power button. Plinky+ will boot up and show the calibration menu.
 
 ![Plinky+ DIY Kit – Build Guide](/build-guide-plus/Plinky+_Build-Guide_0096_power.jpg)
 
@@ -407,6 +407,15 @@ Here is a list of Battery Packs we tested with Plinky+.
 </br>Needs adapter: No
 
 </div>
+
+### Battery Installation Video
+
+Nathan / SoundStricker has made an additional video that shows him retrofitting a Battery Pack for Plinky+. Please make sure you carefully read the written instructions below, in addtion to watching the video. Thank you, Nathan, for the video!
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/QDrn1j6PBww" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+Nathan makes fantastic music with Plinky on his channel, it's absolutely worth checking out his [complete Plinky Playlist](https://www.youtube.com/playlist?list=PLS8-DCzLCiFDGTGRJN0lHCSjthzdDtyEc). 
+
 
 ### Installation
 
