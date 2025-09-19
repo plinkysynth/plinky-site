@@ -71,7 +71,7 @@ https://open.spotify.com/artist/763Sp2pF8qoMUefsjC1MnA?si=WLXMx9eKSGKz67wBAhSFTA
         <h2>Init Sound</h2>
         <p>Plinky DIY Kits come without presets installed, encouraging you to explore the sound engine and synth parameters.</p>
         <p>This is a preset set with all 32 patches set to the initial sound.</p>
-        <a class="button" target="_blank" href="/presets/default/PRESETS.uf2">Download</a>
+        <a class="button" target="_blank" href="/presets/default/PRESETS.uf2" download>Download</a>
       </BigArea>
     </Grid>
 
