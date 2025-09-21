@@ -172,16 +172,130 @@ Here's a list of all the CC parameters that Plinky listens to.
 
 <div>
 
+#### Oscillator
+
+| CC | Parameter |
+|----|-----------|
+| 13 | Shape |
+| 4 | Distortion |
+|9 |Pitch|
+|14 |Interval|
+|2|Noise level|
+|5|Glide|
+|71|Resonance|
+
+&nbsp;
+
+</div>
+
+<div>
+
+#### Arpeggiator
+
+| CC | Parameter |
+|----|-----------|
+|101|Latch|
+|102|On/off|
+|103|Order|
+|104|Clock division|
+|105|Chance|
+|106|Euclid length|
+|107|Octaves|
+
+&nbsp;
+
+</div>
+
+<div>
+
+#### Sequencer
+
+| CC | Parameter |
+|----|-----------|
+|108|Order|
+|109|Clock division|
+|110|Chance|
+|111|Euclid length|
+|11|Gate length|
+|83|Pattern|
+|85|Steps|
+
+&nbsp;
+
+</div>
+
+</div>
+
+
+
+<div markdown class="three">
+
+<div>
+
+#### Envelope 1
+
+| CC | Parameter |
+|----|-----------|
+|3|Sensitivity (LPF amount)|
+|73|Attack|
+|74|Sustain|
+|75|Decay|
+|72|Release|
+
+&nbsp;
+
+</div>
+
+<div>
+
+#### Envelope 2
+
+| CC | Parameter |
+|----|-----------|
+|19|Level|
+|20|Attack|
+|21|Decay|
+|22|Sustain|
+|23|Release|
+
+&nbsp;
+
+</div>
+
+<div>
+
+#### FX - Delay
+
+| CC | Parameter |
+|----|-----------|
+|94|Delay send amt|
+|12|Delay time|
+|112|Delay pingpong|
+|113|Delay wobble|
+|95|Delay feedback amt|
+
+&nbsp;
+
+</div>
+
+</div>
+
+
+
+<div markdown class="three">
+
+<div>
+
 #### Modulation A B
 
 | CC | Parameter |
 |----|-----------|
-|24|Offset|
-|25|Depth|
-|26|Rate|
-|27|Offset|
-|28|Depth|
-|29|Rate|
+|24|A Rate|
+|25|A Depth|
+|26|A Offset|
+|27|B Rate|
+|28|B Depth|
+|29|B Offset|
 
 &nbsp;
 
@@ -193,12 +307,12 @@ Here's a list of all the CC parameters that Plinky listens to.
 
 | CC | Parameter |
 |----|-----------|
-|78|Offset|
-|77|Depth|
-|76|Rate|
-|81|Offset|
-|80|Depth|
-|79|Rate|
+|76|X Rate|
+|77|X Depth|
+|78|X Offset|
+|79|Y Rate|
+|80|Y Depth|
+|81|Y Offset|
 
 &nbsp;
 
@@ -250,7 +364,6 @@ Here's a list of all the CC parameters that Plinky listens to.
 |116|Jitter position|
 |117|Jitter grain size|
 |118|Jitter rate|
-|119|Jitter pulse|
 
 &nbsp;
 
@@ -262,8 +375,8 @@ Here's a list of all the CC parameters that Plinky listens to.
 
 | CC | Parameter |
 |----|-----------|
-|80|Reverb send amt|
-|90|Reverb time|
+|89|External In Volume|
+|90|External In Wet / Dry|
 |31|HPF amount|
 |7|Synth Level|
 |8|Wet / Dry|
