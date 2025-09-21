@@ -81,119 +81,6 @@ Here's a list of all the CC parameters that Plinky listens to.
 
 | CC | Parameter |
 |----|-----------|
-|102|On/off|
-|103|Order|
-|104|Clock division|
-|105|Chance|
-|106|Euclid length|
-|107|Octaves|
-
-&nbsp;
-
-</div>
-
-<div>
-
-#### Sequencer
-
-| CC | Parameter |
-|----|-----------|
-|108|Order|
-|109|Clock division|
-|110|Chance|
-|111|Euclid length|
-|11|Gate length|
-|83|Pattern|
-|85|Steps|
-
-&nbsp;
-
-</div>
-
-</div>
-
-
-
-<div markdown class="three">
-
-<div>
-
-#### Envelope 1
-
-| CC | Parameter |
-|----|-----------|
-|3|Sensitivity (LPF amount)|
-|73|Attack|
-|74|Sustain|
-|75|Decay|
-|72|Release|
-
-&nbsp;
-
-</div>
-
-<div>
-
-#### Envelope 2
-
-| CC | Parameter |
-|----|-----------|
-|19|Level|
-|20|Attack|
-|21|Decay|
-|22|Sustain|
-|23|Release|
-
-&nbsp;
-
-</div>
-
-<div>
-
-#### FX - Delay
-
-| CC | Parameter |
-|----|-----------|
-|94|Delay send amt|
-|12|Delay time|
-|112|Delay pingpong|
-|113|Delay wobble|
-|95|Delay feedback amt|
-
-&nbsp;
-
-</div>
-
-</div>
-
-
-
-<div markdown class="three">
-
-<div>
-
-#### Oscillator
-
-| CC | Parameter |
-|----|-----------|
-| 13 | Shape |
-| 4 | Distortion |
-|9 |Pitch|
-|14 |Interval|
-|2|Noise level|
-|5|Glide|
-|71|Resonance|
-
-&nbsp;
-
-</div>
-
-<div>
-
-#### Arpeggiator
-
-| CC | Parameter |
-|----|-----------|
 |101|Latch|
 |102|On/off|
 |103|Order|
@@ -386,6 +273,7 @@ Here's a list of all the CC parameters that Plinky listens to.
 </div>
 
 </div>
+
 
 ## Midi CCs - Output
 Plinky supports MIDI out over USB and TRS (since hardware v3, or if you have the Expander). 
