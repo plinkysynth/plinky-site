@@ -1521,6 +1521,7 @@ Here's a list of all the CC parameters that Plinky listens to.
 
 | CC | Parameter |
 |----|-----------|
+|101|Latch|
 |102|On/off|
 |103|Order|
 |104|Clock division|
@@ -1616,12 +1617,12 @@ Here's a list of all the CC parameters that Plinky listens to.
 
 | CC | Parameter |
 |----|-----------|
-|24|Offset|
-|25|Depth|
-|26|Rate|
-|27|Offset|
-|28|Depth|
-|29|Rate|
+|24|A Rate|
+|25|A Depth|
+|26|A Offset|
+|27|B Rate|
+|28|B Depth|
+|29|B Offset|
 
 &nbsp;
 
@@ -1633,12 +1634,12 @@ Here's a list of all the CC parameters that Plinky listens to.
 
 | CC | Parameter |
 |----|-----------|
-|78|Offset|
-|77|Depth|
-|76|Rate|
-|81|Offset|
-|80|Depth|
-|79|Rate|
+|76|X Rate|
+|77|X Depth|
+|78|X Offset|
+|79|Y Rate|
+|80|Y Depth|
+|81|Y Offset|
 
 &nbsp;
 
@@ -1690,7 +1691,6 @@ Here's a list of all the CC parameters that Plinky listens to.
 |116|Jitter position|
 |117|Jitter grain size|
 |118|Jitter rate|
-|119|Jitter pulse|
 
 &nbsp;
 
@@ -1702,8 +1702,8 @@ Here's a list of all the CC parameters that Plinky listens to.
 
 | CC | Parameter |
 |----|-----------|
-|80|Reverb send amt|
-|90|Reverb time|
+|89|External In Volume|
+|90|External In Wet / Dry|
 |31|HPF amount|
 |7|Synth Level|
 |8|Wet / Dry|
