@@ -42,7 +42,7 @@
 
         <h2>Vacuum Tube</h2>
         <p>Created by <a href="https://www.youtube.com/@Meska_Statik" target="_blank">Meska</a>.</p> 
-        <p>This set goes from phase-modulated sine wave to vacuum tube feedback. It's a phase-mod sine (around 30%), then clipped by the vacuum tube, adding fedback. Around 70% you have a full-on tube feed, without any input. And after a selection of feeback waves, back to a phased sine wave.</p>
+        <p>This set goes from phase-modulated sine wave to vacuum tube feedback. It's a phase-mod sine (around 30%), then clipped by the vacuum tube, adding feedback. Around 70% you have a full-on tube feed, without any input. And after a selection of feeback waves, back to a phased sine wave.</p>
         <a class="button" target="_blank" href="/wavetables/Wavetable_10_VacuumTube_Meska/Wavetable_10_VacuumTube_Meska.zip" download>Download</a>
       </BigArea> 
 
