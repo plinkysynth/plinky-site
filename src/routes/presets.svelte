@@ -25,7 +25,21 @@
 
     <p><strong>NOTE:</strong> Replacing the preset bank will replace your patterns as well!</p>
 
-    <Grid>
+    <Grid>    
+      <BigArea>
+        <iframe width="624" title="" height="351" src="https://www.youtube.com/embed/hEuJ03CwB0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h2>Meska 2 - Vacuum Space</h2>
+        <p>Meska returns with this bank of 32 presets. 
+        The first to use a custom <a href="https://plinkysynth.github.io/wavetables/">wavetable</a>, Meska has created a fantastic-sounding range of waveforms processing a phase-modulated sine wave through a vacuum tube, progressively adding feedback.</p>
+        <p>Together with sampled material from his modular system, he explores the full width and depth of Plinky's sound engine.
+        Check out his patch explainers on <a href="https://www.youtube.com/@Meska_Statik" target="_blank">YouTube</a>.</p>
+        
+        <p>Includes the preset and wavetable file, 8 samples and links for the <a href="https://plinkysynth.github.io/editor/">patch editor</a>. 
+        <br>On all patches, Knob A is sensitivity. Set to zero, it turns the sound off.</p>
+        <p>This Preset Bank works for Plinky and Plinky+.</p>
+        <a class="button" target="_blank" href="/presets/Meska2/Meska2.zip">Download</a>
+      </BigArea>
       <BigArea>
         <iframe width="624" title="" height="351" src="https://www.youtube.com/embed/b4zJ6FDCMCA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

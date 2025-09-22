@@ -110,6 +110,29 @@ app // You can also use Express
 					}));
 				});
 			}
+			else if(req.originalUrl === '/presets/Meska2/Meska2.zip') {
+							
+				const file = path.join(process.cwd(), 'presets/', 'Meska2.zip');
+				const s = fs.createReadStream(file);
+
+				s.on('open', function () {
+
+						res.writeHead(200, {
+							'Content-Type': 'application/octet-stream',
+							'Content-Disposition': 'attachment; filename="Meska2.zip"'
+						});
+						s.pipe(res);
+				});
+				
+				s.on('error', function () {
+					res.writeHead(404, {
+						'Content-Type': 'text/plain'
+					});
+					res.end(JSON.stringify({
+						message: `Not found`
+					}));
+				});
+			}
 			else if(req.originalUrl === '/presets/GrainBlanc/GrainBlanc.zip') {
 							
 				const file = path.join(process.cwd(), 'presets/', 'GrainBlanc.zip');
