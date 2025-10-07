@@ -25,7 +25,21 @@
 
     <p><strong>NOTE:</strong> Replacing the preset bank will replace your patterns as well!</p>
 
-    <Grid>    
+    <Grid>
+      <BigArea>
+        <iframe width="624" title="" height="351" src="https://www.youtube.com/embed/jzlZNriSvjU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h2>Grain Blanc 2 - Daylight</h2>
+        <p>Ambient minimalist <a href="https://www.instagram.com/grainblanc_/" target="_blank">Grain Blanc</a> explores a theme of light with his second preset bank for Plinky and Plinky+.
+        Shimmery leads, glassy pads, undulating soundscapes and bright plucky arps draw you into exploring the dreamy side of Plinky's sound. 
+        <p>The bank comes with 8 new samples from Grain Blanc's vault, including Tongue drum, Synths, Koto and Pacifica.
+        Check out Grain Blanc's hauntingly beautiful <a href="https://grainblanc.bandcamp.com/" target="_blank">music</a>.</p>
+        
+        <p>Includes the preset and wavetable file, 8 samples and links for the <a href="https://plinkysynth.github.io/editor/">patch editor</a>. 
+        <br>On all patches, turn the A and B for knobs variations or reverb.</p>
+        <p>This Preset Bank works for Plinky and Plinky+.</p>
+        <a class="button" target="_blank" href="/presets/GrainBlanc2/GrainBlanc2.zip">Download</a>
+      </BigArea>    
       <BigArea>
         <iframe width="624" title="" height="351" src="https://www.youtube.com/embed/-hEuJ03CwB0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
