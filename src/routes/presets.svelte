@@ -45,7 +45,7 @@
 
         <h2>Meska 2 - Vacuum Space</h2>
         <p>Meska returns with this bank of 32 presets. 
-        The first to use a custom <a href="https://plinkysynth.github.io/wavetables/">wavetable</a>, Meska has created a fantastic-sounding range of waveforms processing a phase-modulated sine wave through a vacuum tube, progressively adding feedback.</p>
+        The first to use a custom <a href="https://plinkysynth.com/wavetables/">wavetable</a>, Meska has created a fantastic-sounding range of waveforms processing a phase-modulated sine wave through a vacuum tube, progressively adding feedback.</p>
         <p>Together with sampled material from his modular system, he explores the full width and depth of Plinky's sound engine.
         Check out his patch explainers on <a href="https://www.youtube.com/@Meska_Statik" target="_blank">YouTube</a>.</p>
         
