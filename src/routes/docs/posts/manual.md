@@ -1098,7 +1098,7 @@ Sets the length of the gate of each step. The gate is the signal that determines
 ## Video &ndash; Sequencer Deep Dive 
 
 
-Nathan / SoundStricker has made a great two-part deep dive into sequencing with Plinky and Plinky+.
+Nathan Plante has made a great two-part deep dive into sequencing with Plinky and Plinky+.
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/MJ3fEZZ7avM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
