@@ -1093,6 +1093,21 @@ When non zero, this sets the length of the Euclidean pattern used by the sequenc
 ![Sequencer Gate Length](/manual-images/gate-len.svg) *tap*
 Sets the length of the gate of each step. The gate is the signal that determines whether a note is on or off. Longer gates means notes are played longer, which, in tandem with Envelope 1, determines how long notes are sustained.
 
+
+
+## Video &ndash; Sequencer Deep Dive 
+
+
+Nathan / SoundStricker has made a great two-part deep dive into sequencing with Plinky and Plinky+.
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/MJ3fEZZ7avM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/mb3yqXO9JiE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+Nathan makes fantastic music with Plinky on his channel, it's absolutely worth checking out his [complete Plinky Playlist](https://www.youtube.com/playlist?list=PLS8-DCzLCiFDGTGRJN0lHCSjthzdDtyEc). Thank you for the wonderful videos!
+
+
+
 ## Sampler
 <div>
 
