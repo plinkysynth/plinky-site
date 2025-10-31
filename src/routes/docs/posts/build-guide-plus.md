@@ -13,7 +13,7 @@ Check out the other build guide if you are building the original [24HP Plinky](/
 
 # Build Video
 
-Nathan / SoundStricker has made a fantastic video building Plinky+. Thank you for the wonderful video!
+Nathan Plante has made a fantastic video building Plinky+. Thank you for the wonderful video!
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/pTlcdwfW1fU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
@@ -410,7 +410,7 @@ Here is a list of Battery Packs we tested with Plinky+.
 
 ### Battery Installation Video
 
-Nathan / SoundStricker has made an additional video that shows him retrofitting a Battery Pack for Plinky+. Please make sure you carefully read the written instructions below, in addtion to watching the video. Thank you, Nathan, for the video!
+Nathan Plante has made an additional video that shows him retrofitting a Battery Pack for Plinky+. Please make sure you carefully read the written instructions below, in addtion to watching the video. Thank you, Nathan, for the video!
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/QDrn1j6PBww" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
