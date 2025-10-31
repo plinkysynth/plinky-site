@@ -7,9 +7,9 @@
   },
   "beta": {
     "file": "plink0B4.uf2",
-    "version": "0.B3",
+    "version": "0.B4",
     "date": "2025-08-19",
-    "comment": "Update for Plinky and Plinky+ - Removes the soldering check for front panels. Panels now come presoldered and the check occasionally produced false positives."
+    "comment": "Removes the soldering check for front panels. Panels now come presoldered and the check occasionally produced false positives."
   },
   "history": [
     {
