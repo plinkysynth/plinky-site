@@ -6,10 +6,10 @@
     "comment": "Update for Plinky and Plinky+ - Fixes timbre change when holding Shift while seq is playing. Fixes audio preview when editing slice markers in sample edit. Fixes oscillator spread when playing MIDI. Thank you RJ! For Plinky+, Logo on boot and tweaks in Calibration mode. This is the release version initially shipping with Plinky+."
   },
   "beta": {
-    "file": "plink0B3.uf2",
-    "version": "0.B3",
+    "file": "plink0B4.uf2",
+    "version": "0.B4",
     "date": "2025-08-19",
-    "comment": "Update for Plinky and Plinky+ - Fixes timbre change when holding Shift while seq is playing. Fixes audio preview when editing slice markers in sample edit. Fixes oscillator spread when playing MIDI. Thank you RJ! For Plinky+, Logo on boot and tweaks in Calibration mode. This is the release version initially shipping with Plinky+."
+    "comment": "Removes the soldering check for front panels. Panels now come presoldered and the check occasionally produced false positives."
   },
   "history": [
     {
