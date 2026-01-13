@@ -14,7 +14,7 @@ Check out the old build guides if your Plinky has a [green](/docs/build-guide) o
 
 Thank you for getting a Plinky kit. It is an easy DIY build suited for beginners and comes with many of the critical electronics pre-assembled. However, it does require very careful and precise soldering.
 
-If this is your first time soldering, please read the [Adafruit Guide to Excellent Soldering](https://learn.adafruit.com/adafruit-guide-excellent-soldering/) first.
+If this is your first time soldering, please read the [Ifixit Guide to Soldering](https://www.ifixit.com/Device/Soldering) first.
 
 ### Some tools you will need
 

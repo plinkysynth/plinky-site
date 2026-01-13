@@ -53,9 +53,9 @@ So **go slow**! Take care! It’s easier to get it right first than it is to try
 
 TOO MUCH SOLDER = SHORT CIRCUITS, BROKEN (FILLED UP) SOCKETS, BAD TIMES
 
-IF YOU HAVENT SOLDERED BEFORE, PLEASE READ THE ADAFRUIT SOLDERING GUIDE BEFORE STARTING
+IF YOU HAVENT SOLDERED BEFORE, PLEASE READ THE IFIXIT SOLDERING GUIDE BEFORE STARTING
 
-[https://learn.adafruit.com/adafruit-guide-excellent-soldering/](https://learn.adafruit.com/adafruit-guide-excellent-soldering/common-problems)
+[https://www.ifixit.com/Device/Soldering](https://www.ifixit.com/Device/Soldering)
 
 ![Different solder pad problems](/build-guide-2/image34-min.jpg)
 

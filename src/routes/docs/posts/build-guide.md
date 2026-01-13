@@ -49,9 +49,9 @@ So**go slow**! Take care! It’s easier to get it right first than it is to try 
 
 TOO MUCH SOLDER = SHORT CIRCUITS, BROKEN (FILLED UP) SOCKETS, BAD TIMES
 
-IF YOU HAVENT SOLDERED BEFORE, PLEASE READ THE ADAFRUIT SOLDERING GUIDE BEFORE STARTING
+IF YOU HAVENT SOLDERED BEFORE, PLEASE READ THE IFIXIT SOLDERING GUIDE BEFORE STARTING
 
-[https://learn.adafruit.com/adafruit-guide-excellent-soldering/](https://learn.adafruit.com/adafruit-guide-excellent-soldering/common-problems)
+[https://www.ifixit.com/Device/Soldering](https://www.ifixit.com/Device/Soldering)
 
 ![Different solder pad problems](/build-guide-2/image34-min.jpg)
 
@@ -60,7 +60,7 @@ IF YOU HAVENT SOLDERED BEFORE, PLEASE READ THE ADAFRUIT SOLDERING GUIDE BEFORE S
 Ok now some Plinky specific things.
 
 1. **DO NOT ADD LOADS OF SOLDER TO THE SOCKETS**- (one of the first things you solder). They will happily suck up solder into the socket, blocking it full of solid metal! I don’t want to scare you - for most builds, this isnt a problem! But if you’re not aware, it can trip even the most experienced solderer up. This is almost impossible to remove without destroying your socket (at best) and your board (at worst). **You only need enough solder to make a clean joint between the pin and the pad**. Don’t be tempted to keep adding solder and keep adding - its gotta go somewhere! And where it goes is into the socket holes, blocking it up. Getting that sucker out after that happens is *hard*. 
-2. In general, to solder you want to heat up the pad and the pin first with your iron, before adding any solder to it. If you can, use a temperature controlled iron at around 320 degrees C or more. Then, apply the solder - judiciously! - to the joint. Leave the heat there a second longer until the solder has formed a nice clean ‘tent’. Only a small amount of solder is needed per joint!  More info in the adafruit guide above.
+2. In general, to solder you want to heat up the pad and the pin first with your iron, before adding any solder to it. If you can, use a temperature controlled iron at around 320 degrees C or more. Then, apply the solder - judiciously! - to the joint. Leave the heat there a second longer until the solder has formed a nice clean ‘tent’. Only a small amount of solder is needed per joint!  More info in the ifixit guide above.
 3. Fixing a blobby joint - dont just add more and more solder, especially for the sockets. (see 1). ‘Reheat’ (aka reflow) what’s there already, maybe a dab of new solder to supply flux (or even better, add flux directly from a flux pen).
 
 99% of all build problems with Plinky are NOT the LEDs, which everyone is scared of. It’s the sockets and pin headers! So please, take care over them. I’ll add a troubleshooting appendix at the end of this document. But Plinky generally works fine - most problems are a dodgy solder connection on the sockets or the pins that go into them. Plinky isn’t harmed by this! So it’s not the end of the world. But just know that it’s all about the sockets. :)
