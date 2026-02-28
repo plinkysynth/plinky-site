@@ -767,6 +767,10 @@ Nathan Plante has made a number of quick tutorials showcasing individual aspects
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/B0eo0uxu3O8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
+<iframe width="800" height="450" src="https://www.youtube.com/embed/5_m0TuoTOhM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/ch53eStkBe4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
 ## Envelope Generator
 
 Plinky has two Envelope Generators. 

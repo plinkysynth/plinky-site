@@ -45,6 +45,32 @@ Meska, musician with [Statik Collective](https://statikwave.bandcamp.com/) and m
 
 <iframe width="1008" height="567" src="https://www.youtube.com/embed/SHWFx6Hyl9Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+## Sequencer Deep Dive
+
+
+Nathan Plante has made a great two-part deep dive into sequencing with Plinky and Plinky+. Nathan makes fantastic music with Plinky on his channel, it's absolutely worth checking out his [complete Plinky Playlist](https://www.youtube.com/playlist?list=PLS8-DCzLCiFDGTGRJN0lHCSjthzdDtyEc). Thank you for the wonderful videos!
+
+<iframe width="1008" height="567" src="https://www.youtube.com/embed/MJ3fEZZ7avM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<iframe width="1008" height="567" src="https://www.youtube.com/embed/mb3yqXO9JiE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+## Plinky Quickies
+
+Nathan Plante has also made a number of great tutorials showcasing individual aspects of the Plinky / Plinky+ synth engine for his [YouTube channel](https://www.youtube.com/playlist?list=PLS8-DCzLCiFDGTGRJN0lHCSjthzdDtyEc). Check them out below:
+
+<iframe width="1008" height="567" src="https://www.youtube.com/embed/HXCHk5FsdGM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<iframe width="1008" height="567" src="https://www.youtube.com/embed/HSBA67kG7G8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<iframe width="1008" height="567" src="https://www.youtube.com/embed/4XAEp7dq8XE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<iframe width="1008" height="567" src="https://www.youtube.com/embed/B0eo0uxu3O8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<iframe width="1008" height="567" src="https://www.youtube.com/embed/5_m0TuoTOhM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<iframe width="1008" height="567" src="https://www.youtube.com/embed/ch53eStkBe4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+
 ## Draft Manual (PDF)
 
 For the sake of completion, here is a link to the very first [draft manual](/plinky_manual.pdf). It's still a great read even though a couple of details have changed since then.

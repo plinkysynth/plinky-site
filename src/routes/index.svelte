@@ -56,6 +56,8 @@
   <h4>Where can I get one?</h4>
   <p>Assembled Plinky+ are available at 
   <a href="https://www.thonk.co.uk/shop/plinky-plus-assembled/">Thonk (UK)</a>, 
+  <a href="https://schneidersladen.de/making-sound-machines-plinky">Schneidersladen (EU)</a>,
+  <a href="https://www.elevatorsound.com/product/making-sound-machines-plinky-polyphonic-synthesizer-and-sampler/">Elevator Sound (UK)</a>,
   <a href="https://www.perfectcircuit.com/making-sound-machines-plinky-plus.html">Perfect&nbsp;Circuit (US)</a> and 
   <a href="https://nightlife-electronics.com/products/plinky-plinky">Nightlife Electronics (CAN)</a>.</p>
   <p>It is also available as a full DIY Kit at 
