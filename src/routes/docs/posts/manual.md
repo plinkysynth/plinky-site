@@ -763,13 +763,20 @@ Each voice has several oscillators, and this sets a fixed interval between them,
 
 Nathan Plante has made a number of quick tutorials showcasing individual aspects of the Plinky / Plinky+ synth engine for his [YouTube channel](https://www.youtube.com/playlist?list=PLS8-DCzLCiFDGTGRJN0lHCSjthzdDtyEc). Check them out below:
 
+<iframe width="800" height="450" src="https://www.youtube.com/embed/5CkwGPcl2Go" title="Installing Custom Wavetables on Plinky" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/YUe8d_Nik6w" title="Turn Your Plinky Into a Drone Machine" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
 <iframe width="800" height="450" src="https://www.youtube.com/embed/4XAEp7dq8XE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/B0eo0uxu3O8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
-<iframe width="800" height="450" src="https://www.youtube.com/embed/5_m0TuoTOhM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/5_m0TuoTOhM" title="Percussive Transients and Plucked Strings with Plinky" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/ch53eStkBe4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/eGPRaDbspaE" title="Knob Controlled Trills & FM Space Lasers" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
 
 ## Envelope Generator
 
@@ -1252,6 +1259,17 @@ Controls which sequencer pattern is being played back, allowing you to change pa
 ![Shift Bottom](/manual-images/shift-bottom.svg) *hold*
 ![Step Offset](/manual-images/pattern--step-offset.svg) *tap*
 Offsets the starting point of the sequencer pattern allowing for variations in sequencer playback.
+
+## Video: Sampler Deep Dive 
+
+
+Nathan Plante has made a great two-part deep dive into sampling with Plinky and Plinky+.
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/LD3K4ExfybI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/4zRXTc0lMRk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+It's absolutely worth checking out Nathan's [complete Plinky Playlist](https://www.youtube.com/playlist?list=PLS8-DCzLCiFDGTGRJN0lHCSjthzdDtyEc) on YouTube. Thank you for the wonderful videos!
 
 ## Modulation A, B, X and Y - LFOs, CV Inputs and Outputs
 Row 6 and 7 control the A B and X Y modulators. 
