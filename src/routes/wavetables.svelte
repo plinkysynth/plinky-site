@@ -108,6 +108,7 @@
       </BigArea>  
 
       <BigArea>
+        <iframe width="624" title="" height="351" src="https://www.youtube.com/embed/oYPFojx9DfE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      
         <img src="/wavetables/Wavetable_03_FM_Harmonics.png" alt="Wavetable 03 FM Harmonics" style="max-width: 100%;">
 
         <h2>FM Harmonics</h2>
@@ -118,6 +119,7 @@
       </BigArea>  
 
       <BigArea>
+        <iframe width="624" title="" height="351" src="https://www.youtube.com/embed/5XN6xdEqC_c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      
         <img src="/wavetables/Wavetable_02_Additive_Harmonics.png" alt="Wavetable 02 Additive Harmonics" style="max-width: 100%;">
 
         <h2>Additive Harmonics</h2>
@@ -139,6 +141,13 @@
 
     </Grid>
 
+  <h2>Plinky and Plinky+ &ndash; Wavetable install video</h2>
+
+  <p>Nathan Plante has made a quick tutorial showcasing how to install a wavetable on Plinky and Plinky+ for his <a href="https://www.youtube.com/playlist?list=PLS8-DCzLCiFDGTGRJN0lHCSjthzdDtyEc" target ="blank">YouTube channel</a>:</p>
+
+  <iframe width="800" height="450" src="https://www.youtube.com/embed/5CkwGPcl2Go" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+  <p>Thank you Nathan for the fantastic tutorial!</p>
 
   <h2>Plinky &ndash; Wavetable install instructions</h2>
   
