@@ -369,7 +369,7 @@ Let’s take a look at Plinky’s inputs and outputs. They are located on the to
 The inputs and outputs on the top and bottom edges have identical functions, and both can be used simultaneously. On each side you find:
 
 ### Audio in (Line level stereo)
-A TRS, 3.5 mm audio jack. Useful for two things. Plinky’s sampler can sample 65 seconds of incoming audio. Additionally, Plinky can act as a mixer with effects (Reverb and Delay), where each of Plinky’s audio inputs are mixed with Plinky’s internal audio. The individual inputs are mixed at unity gain, but the levels of the summed inputs and the internal sounds can be set separately. 
+A TRS 3.5 mm audio jack. Useful for two things. Plinky's sampler can sample incoming audio into 8 slots of 65 seconds each. Additionally, Plinky can act as a mixer with effects (Reverb and Delay), where each of Plinky’s audio inputs are mixed with Plinky’s internal audio. The individual inputs are mixed at unity gain, but the levels of the summed inputs and the internal sounds can be set separately. 
 
 > Remember, if you have Plinky V2 (with the blue main board) you can and absolutely should try running Eurorack signals through Line level inputs to enloy that crunchy analog saturation. 
 
@@ -1140,7 +1140,7 @@ Nathan makes fantastic music with Plinky on his channel, it's absolutely worth c
 
 </div>
 
-Plinky lets you record 8 samples, each split into 8 'slices', corresponding to the 8 columns (strings). Once recorded, the bottom row of parameters control the granular playback of your samples.
+Plinky's sampler can sample incoming audio from the TRS 3.5 mm audio jack, into 8 slots of 65 seconds each. It lets you record 8 samples, each split into 8 'slices', corresponding to the 8 columns (strings). Once recorded, the bottom row of parameters control the granular playback of your samples.
 
 #### Record Samples
 
