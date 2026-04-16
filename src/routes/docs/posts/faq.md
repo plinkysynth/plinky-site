@@ -39,11 +39,18 @@ When looking at the SHAPE option, you can sweep through several waveforms:
 
 Modulation is locked at these 3 stages relative to the base value. For example, if you set the base value above 0 and assign an LFO to the shape, the LFO will cause a sweep through the wavetable modes. At 0, modulation will affect the supersaw. Below 0, it will sweep through the algorithmic oscillator.
 
+To change the wavetable, see [plinkysynth.com/wavetables](../wavetables).
+
 ## Tech specs
 
 ### What is the CPU in Plinky?
 
 It's a STM32l476VGT6 (or 475).
+
+### What is the sample time?
+
+Plinky's sampler can sample incoming audio into 8 slots of 65 seconds each.
+
 
 ## Mac
 
