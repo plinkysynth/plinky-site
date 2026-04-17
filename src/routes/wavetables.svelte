@@ -88,7 +88,7 @@
       </BigArea>  
 
       <BigArea>
-        <iframe width="624" title="" height="351" src="https://www.youtube.com/embed/nXvhpWuUuz0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="624" title="" height="351" src="https://www.youtube.com/embed/1GSBdr0FVQ8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <img src="/wavetables/Wavetable_05_FM_Complex.png" alt="Wavetable 05 FM Complex" style="max-width: 100%;">
 
         <h2>FM Complex</h2>
