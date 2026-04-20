@@ -10,6 +10,25 @@
     border-bottom: 0;
     padding-bottom: 0;
   }
+  .TopBanner {
+    background: #4b4b62;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    font-family: inherit;
+    font-size: 1.7em;
+    line-height: 1.3;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+  .TopBanner a {
+    color: inherit;
+    text-decoration: underline;
+  }
   iframe {
     width: 100%;
     max-width: 800px;
@@ -30,6 +49,9 @@
     .Examples {
       grid-template-columns: 1fr;
     }
+    .TopBanner {
+      padding: 0.8rem 1rem;
+    }
     .Video {
       padding: 0 0 4rem 0;
     }
@@ -38,6 +60,11 @@
     }
   }
 </style>
+
+<div class="TopBanner">
+  All-new <b>Plinky 12</b> is coming Summer 2026. Head to
+  <a href="https://plinky12.com">plinky12.com</a> for more information!
+</div>
 
 <TextAndImage src="plinky_alpha_2.png" alt="Plinky design">
   <h1>Plinky is an 8-voice polyphonic touch synthesiser that specialises in fragile, melancholic sounds.</h1>
@@ -68,6 +95,20 @@
 
   
   <a class="button" target="_blank" href="/docs/build-guide-plus">View Build Guide</a>
+</TextAndImage>
+
+<TextAndImage src="plinky12_alpha.png" alt="Plinky 12 design" border={true}>
+  <h1>Introducing Plinky 12!</h1>
+  <p>Plinky 12 is an all new family of instruments in a generous 12" x 12" format. Featuring all-new hardware, software, and synth engine, it's the most significant update to the lineup yet.</p>
+  <p>There are 3 standalone Plinky 12 instruments, each designed in collaboration with a different synth maker, lending each panel a distinct playability and unique character.</p>
+
+<p><span style="color: #D4A017"><b>Chords</b></span> is a harmonic inspiration machine. It lets you improvise melodies and chords, with expressive control over voicings, progressions, and immediate musical play. Created by Making Sound Machines, Chords is the panel for finding beautiful harmonic movement quickly.</p>
+
+<p><span style="color: #5484E0"><b>Toadstep</b></span> is a 4-track step sequencer built for super funky riffs, experimental self-generative melodies, and good ol' Acid. Created by Toadstool Tech, the designer behind the Ectocore Eurorack module, Toadstep is fun, immediate and easy to jam with.</p>
+
+<p><span style="color: #DC6CB4"><b>Blocks</b></span> is an open panel built for experimentation, with monome-grid compatibility, Plinky style touch synthesis, and a browser-based coding environment.</p>
+<p>Head to <a href="https://plinky12.com">plinky12.com</a> to learn more. </p>
+  
 </TextAndImage>
 
 <TextAndImage src="buddies2.png" alt="Buddies design" border={true}>
