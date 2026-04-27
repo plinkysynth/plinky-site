@@ -27,6 +27,19 @@
 
     <Grid>
       <BigArea>
+        <iframe width="624" title="" height="351" src="https://www.youtube.com/embed/ZAv09y3x_sw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h2>Shimmery.mp3 Bank</h2>
+        <p><a href="https://www.instagram.com/shimmery.mp3">Shimmery.mp3</a> is an electro-acoustic composer based in southern Sweden. 
+        <br>His pack of 32 presets for Plinky and Plinky+ is instantly performable, and presents a perfect balance between sound design and cinematic patches.</p>
+        <p>Each patch invites you to explore a playful parameter space and tweakable macro controls on the A and B knobs. 
+        Follow Shimmery.mp3 on <a href="https://www.youtube.com/@Shimmery.mp3">YouTube</a> and check out the stunningly beautiful <a href="https://www.youtube.com/watch?v=GsSj-tCW6dU&list=PLy1MUmHT54Y3AsaeOjzCQ4SgaqnCKr4Nx">ambient patches</a> he creates with his synths and modular.</p>
+        
+        <p>Includes the preset and wavetable file, 8 samples and links for the <a href="https://plinkysynth.github.io/editor/">patch editor</a>.</p>
+        <p>This Preset Bank works for Plinky and Plinky+.</p>
+        <a class="button" target="_blank" href="/presets/ShimmeryMp3/ShimmeryMp3.zip">Download</a>
+      </BigArea> 
+      <BigArea>
         <iframe width="624" title="" height="351" src="https://www.youtube.com/embed/jzlZNriSvjU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         <h2>Grain Blanc 2 - Daylight</h2>
