@@ -202,6 +202,29 @@ app // You can also use Express
 					}));
 				});
 			}
+			else if(req.originalUrl === '/presets/ShimmeryMp3/ShimmeryMp3.zip') {
+							
+				const file = path.join(process.cwd(), 'presets/', 'ShimmeryMp3.zip');
+				const s = fs.createReadStream(file);
+
+				s.on('open', function () {
+
+						res.writeHead(200, {
+							'Content-Type': 'application/octet-stream',
+							'Content-Disposition': 'attachment; filename="ShimmeryMp3.zip"'
+						});
+						s.pipe(res);
+				});
+				
+				s.on('error', function () {
+					res.writeHead(404, {
+						'Content-Type': 'text/plain'
+					});
+					res.end(JSON.stringify({
+						message: `Not found`
+					}));
+				});
+			}
 			else if(req.originalUrl === '/presets/LPZW/LPZW.zip') {
 							
 				const file = path.join(process.cwd(), 'presets/', 'LPZW.zip');
