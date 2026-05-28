@@ -204,6 +204,13 @@ Tap PRESET again to exit and play the sound.
 
 Plinky can hold 32 Presets at a time. You can find more preset banks on the [Presets](../presets) page.
 
+## Video: What Note am I even playing?
+
+Nathan Plante has made a fantastic video to help you navigate the pitches on the play surface:
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/Ak5s3Cnr4HU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+Thank you Nathan for the lovely video!
 
 ## Quick Start Guide
 Congratulations! If you read this manual, you either have a pre-assembled Plinky in front of you, or you have successfully built your Plinky from a DIY kit. Welcome to the Plinky user community! We hope you make and share lots of beautiful music – or pure plain filth if you're into that.
@@ -1123,6 +1130,8 @@ Nathan Plante has made a great two-part deep dive into sequencing with Plinky an
 <iframe width="800" height="450" src="https://www.youtube.com/embed/MJ3fEZZ7avM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/mb3yqXO9JiE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/YmIe6vift24" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
 Nathan makes fantastic music with Plinky on his channel, it's absolutely worth checking out his [complete Plinky Playlist](https://www.youtube.com/playlist?list=PLS8-DCzLCiFDGTGRJN0lHCSjthzdDtyEc). Thank you for the wonderful videos!
 

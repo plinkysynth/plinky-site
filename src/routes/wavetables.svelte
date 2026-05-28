@@ -77,6 +77,7 @@
       </BigArea>  
 
       <BigArea>
+        <iframe width="624" title="" height="351" src="https://www.youtube.com/embed/YLRAGDC3ZBs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <img src="/wavetables/Wavetable_06_Additive_Drawbar.png" alt="Wavetable 06 Additive Drawbar" style="max-width: 100%;">
 
         <h2>Additive Drawbar</h2>
