@@ -67,6 +67,7 @@
       </BigArea> 
 
       <BigArea>
+        <iframe width="624" title="" height="351" src="https://www.youtube.com/embed/te9Rjzt6Cxw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
         <img src="/wavetables/Wavetable_07_Additive_Complex.png" alt="Wavetable 07 Additive Complex" style="max-width: 100%;">
 
         <h2>Additive Complex</h2>
