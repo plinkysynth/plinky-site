@@ -8,6 +8,8 @@ date: "2024-10-29T18:38:00.000Z"
 
 If you're looking for the build guide, go <a href="docs/build-guide_blueberry">here</a>.
 
+> **July 2026 note:** We're not actively working on the buddies at this time, but we have open sourced all the hardware and firmware. Head over to [GitHub](https://github.com/plinkysynth/buddies_public) to check them out.
+
 The latest firmware is available to download at the bottom of this page. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7x9_dgjiCaw?si=FpOSyD1-1ArDOMWt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

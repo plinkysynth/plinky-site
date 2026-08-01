@@ -62,8 +62,8 @@
 </style>
 
 <div class="TopBanner">
-  All-new <b>Plinky 12</b> is coming Summer 2026. Head to
-  <a href="https://plinky12.com">plinky12.com</a> for more information!
+  <b>Plinky12</b> has arrived! Head over to
+  <a href="https://plinky12.com">plinky12.com</a> to check it out.
 </div>
 
 <TextAndImage src="plinky_alpha_2.png" alt="Plinky design">
@@ -98,34 +98,33 @@
 </TextAndImage>
 
 <TextAndImage src="plinky12_alpha.png" alt="Plinky 12 design" border={true}>
-  <h1>Introducing Plinky 12!</h1>
-  <p>Plinky 12 is an all new family of instruments in a generous 12" x 12" format. Featuring all-new hardware, software, and synth engine, it's the most significant update to the lineup yet.</p>
-  <p>There are 3 standalone Plinky 12 instruments, each designed in collaboration with a different synth maker, lending each panel a distinct playability and unique character.</p>
+  <h1>Plinky12 has arrived!</h1>
+  <p>Plinky12 is an all new family of instruments in a generous 12" x 12" format. Featuring all-new hardware, software, and synth engine, it's the most significant update to the lineup yet.</p>
+  <p>There are 3 standalone Plinky12 instruments, each designed in collaboration with a different synth maker, lending each panel a distinct playability and unique character.</p>
 
 <p><span style="color: #D4A017"><b>Chords</b></span> is a harmonic inspiration machine. It lets you improvise melodies and chords, with expressive control over voicings, progressions, and immediate musical play. Created by Making Sound Machines, Chords is the panel for finding beautiful harmonic movement quickly.</p>
 
 <p><span style="color: #5484E0"><b>Toadstep</b></span> is a 4-track step sequencer built for super funky riffs, experimental self-generative melodies, and good ol' Acid. Created by Toadstool Tech, the designer behind the Ectocore Eurorack module, Toadstep is fun, immediate and easy to jam with.</p>
 
 <p><span style="color: #DC6CB4"><b>Blocks</b></span> is an open panel built for experimentation, with monome-grid compatibility, Plinky style touch synthesis, and a browser-based coding environment.</p>
-<p>Head to <a href="https://plinky12.com">plinky12.com</a> to learn more. </p>
+<p>Head over to <a href="https://plinky12.com">plinky12.com</a> to check them out. </p>
   
 </TextAndImage>
 
 <TextAndImage src="buddies2.png" alt="Buddies design" border={true}>
-  <h1>Plinky now welcomes 3 small 12HP x 1U modules to the family: Bib, Buzzrito and Blueberry.</h1>
+  <h1>Meet the buddies: Bib, Buzzrito and Blueberry.</h1>
+  <h2>Now Open Source!</h2>
   <p>These little buddies provide a plinky style stereo reverb, delay, and drive (<a href="docs/bib-manual">Bib</a>), a rich swarm oscillator (<a href="docs/buzzrito-manual">Buzzrito</a>), 
   and a generative touch sequencer (<a href="docs/blueberry-manual">Blueberry</a>).
   They take the touch-enabled sensitivity of Plinky, and break it out into 3 small (12HP) modules for your 1U eurorack row.</p>
   <p>If you don't have a 1U eurorack row, there is an option to mount all 3 in a single 12HP standard Eurorack module.</p> 
   <p>They are the result of a collaboration between Plinky community members <b>mmalex</b> and <b>CrazyEmperor893</b>.</p> 
-  <h4>Available now!</h4>
-  <p>The buddies are available now as kits from Thonk. <a href="https://www.thonk.co.uk/shop/plinky-bib/">Bib</a>, <a href="https://www.thonk.co.uk/shop/plinky-buzzrito/">Buzzrito</a>, <a href="https://www.thonk.co.uk/shop/plinky-blueberry/">Blueberry</a>
-  and <a href="https://www.thonk.co.uk/shop/plinky-bib-buzz-blue-3u/">the 3U mega combo bundle</a>.
-</p>  
-<p>Bib is available now, in prebuilt form from the <a href="https://crey.space">Crey Emporium</a>, with the other buddies to follow extremely soon.</p>
+  <h4>Now open source!</h4>
+  <p>At this time we're not actively working on the buddies, but we have open sourced all the hardware and firmware. Head over to <a href="https://github.com/plinkysynth/buddies_public">GitHub</a> to check them out.</p>
+  <p>The buddies were available as kits from Thonk, and Bib was also available in prebuilt form from the <a href="https://crey.space">Crey Emporium</a>. They may be available again in the future.</p>
   <p>You can read the manuals (<a href="docs/bib-manual">Bib</a>, <a href="docs/buzzrito-manual">Buzzrito</a>, <a href="docs/blueberry-manual">Blueberry</a>) right now,
   and build guides (<a href="docs/build-guide_bib">Bib</a>, <a href="docs/build-guide_buzzy">Buzzrito</a>, <a href="docs/build-guide_blueberry">Blueberry</a>) in the Docs section of this site.</p>
-  <p>For sneak peaks and sound demos, follow <a href="https://www.instagram.com/plinkysynth">PlinkySynth</a> and <a href="https://www.instagram.com/crazyemperor893/">CrazyEmperor893</a> on instagram.</p>
+  <p>For sound demos and older posts, follow <a href="https://www.instagram.com/plinkysynth">PlinkySynth</a> and <a href="https://www.instagram.com/crazyemperor893/">CrazyEmperor893</a> on instagram.</p>
 </TextAndImage>
 
 

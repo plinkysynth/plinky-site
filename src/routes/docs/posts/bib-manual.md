@@ -8,6 +8,8 @@ date: "2024-09-07T08:38:00.000Z"
 
 If you're looking for the build guide, go <a href="docs/build-guide_bib">here</a>.
 
+> **July 2026 note:** We're not actively working on the buddies at this time, but we have open sourced all the hardware and firmware. Head over to [GitHub](https://github.com/plinkysynth/buddies_public) to check them out.
+
 The latest firmware is available to download at the bottom of this page. 
 
 ## Video demo and Jam by izaak from toadstool.tech
@@ -125,4 +127,3 @@ Drag and drop or otherwise copy the downloaded file onto the RPI-RP2 folder, and
 ## v2 - July 2024 - 'Knobconn edition'
 [Download here: bib_002.uf2](buddies-firmware/bib_002.uf2)
 * fixed a 'spider pressure overflow' 16 bit bug. this is the earliest usable firmware
-
