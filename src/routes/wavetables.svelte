@@ -57,6 +57,7 @@
       </BigArea> 
 
       <BigArea>
+        <iframe width="624" title="" height="351" src="https://www.youtube.com/embed/arrG3msBp7Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <img src="/wavetables/Wavetable_08_Phase_Vowels.png" alt="Wavetable 10 Vacuum Tube Meska" style="max-width: 100%;">
 
         <h2>Phase Vowels</h2>
@@ -135,6 +136,7 @@
       </BigArea> 
 
       <BigArea>
+        <iframe width="624" title="" height="351" src="https://www.youtube.com/embed/X4uJIQVJRKM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <img src="/wavetables/Wavetable_01_Original_Miunau.png" alt="Wavetable 01 Original Miunau" style="max-width: 100%;">
 
         <h2>Original (Default)</h2>
